@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="402px" height="252px" viewBox="0 0 402 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>manage-third-party-ecosystems</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.5" y="0" width="171" height="79" rx="6.5"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="manage-third-party-ecosystems">
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="402" height="252"></rect>
+            <rect id="Rectangle" stroke="#1A73E8" x="40" y="29" width="322" height="194" rx="18"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="358" y="164" width="8" height="7"></rect>
+            <g id="Group" transform="translate(115.000000, 86.500000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(-16.000000, 14.500000)">
+                        <path d="M162.728,20.272 C159.471,17.015 154.97,15 150,15 L159,6 L168,15 L162.728,20.272 Z" id="Path" stroke="none" fill="#1A73E8" fill-rule="nonzero"></path>
+                        <path d="M159,24 L150,15 L150,33 L159,33 L166.409,25.591 C165.508,23.598 164.254,21.799 162.728,20.272 L159,24 Z" id="Path" stroke="none" fill="#FF6846" fill-rule="nonzero"></path>
+                        <path d="M150,42 L159,33 L168,33 C168,30.359 167.431,27.85 166.409,25.591 L168,24 L168,33 L168,42 L150,42 Z" id="Path" stroke="none" fill="#57E690" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" stroke="#1A73E8" stroke-width="1" fill="none" x="144.5" y="0.5" width="29" height="47" rx="3.5"></rect>
+                        <rect id="Rectangle" stroke="none" fill="#1A73E8" fill-rule="nonzero" x="145" y="51" width="10" height="2" rx="1"></rect>
+                        <polygon id="Path" stroke="none" fill="#57E690" fill-rule="evenodd" points="114 6 132 6 132 15 123 15"></polygon>
+                        <path d="M132,24 L123,15 L114,15 L114,33 C114,28.029 118.03,24 123,24 C127.971,24 132,28.029 132,33 L132,24 Z" id="Path" stroke="none" fill="#FCC934" fill-rule="nonzero"></path>
+                        <path d="M123,42 C118.03,42 114,37.971 114,33 L132,33 C132,37.971 127.97,42 123,42 Z" id="Path" stroke="none" fill="#1A73E8" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" stroke="#1A73E8" stroke-width="1" fill="none" x="108.5" y="0.5" width="29" height="47" rx="3.5"></rect>
+                        <rect id="Rectangle" stroke="none" fill="#1A73E8" fill-rule="nonzero" x="109" y="51" width="10" height="2" rx="1"></rect>
+                        <path d="M87,15 C91.97,15 96,19.029 96,24 L96,6 L78,6 C78,10.052 79.339,13.792 81.599,16.8 C83.103,15.67 84.974,15 87,15 Z" id="Path" stroke="none" fill="#FCC934" fill-rule="nonzero"></path>
+                        <path d="M81.599,16.8 C84.883,21.172 90.111,24 96,24 C96,26.485 94.993,28.735 93.364,30.364 L87,24 L78,33 L78,24 C78,21.056 79.414,18.442 81.599,16.8 Z" id="Path" stroke="none" fill="#FF6846" fill-rule="nonzero"></path>
+                        <path d="M93.364,30.364 L96,33 L87,42 L78,33 L87,33 C89.485,33 91.735,31.993 93.364,30.364 Z" id="Path" stroke="none" fill="#57E690" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" stroke="#1A73E8" stroke-width="1" fill="none" x="72.5" y="0.5" width="29" height="47" rx="3.5"></rect>
+                        <rect id="Rectangle" stroke="none" fill="#1A73E8" fill-rule="nonzero" x="73" y="51" width="10" height="2" rx="1"></rect>
+                        <path d="M42,33 C42,37.971 46.03,42 51,42 C55.97,42 60,37.971 60,33 L42,33 Z M51,24 L42,24 L42,33 L51,24 Z" id="Shape" stroke="none" fill="#1A73E8" fill-rule="evenodd"></path>
+                        <path d="M60,15 L60,33 C60,28.029 55.97,24 51,24 C55.97,24 60,19.971 60,15 Z" id="Path" stroke="none" fill="#FCC934" fill-rule="nonzero"></path>
+                        <path d="M42,15 C42,19.971 46.03,24 51,24 L60,15 L60,6 L51,6 C46.03,6 42,10.029 42,15 Z" id="Path" stroke="none" fill="#FF6846" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" stroke="#1A73E8" stroke-width="1" fill="none" x="36.5" y="0.5" width="29" height="47" rx="3.5"></rect>
+                        <rect id="Rectangle" stroke="none" fill="#1A73E8" fill-rule="nonzero" x="37" y="51" width="10" height="2" rx="1"></rect>
+                        <path d="M15,15 C10.029,15 6,19.029 6,24 L6,6 L24,6 L15,15 Z" id="Path" stroke="none" fill="#1A73E8" fill-rule="nonzero"></path>
+                        <path d="M15,15 L6,24 C6,26.944 7.413,29.558 9.599,31.2 C12.883,26.828 18.111,24 24,24 L24,15 L15,15 Z" id="Path" stroke="none" fill="#57E690" fill-rule="nonzero"></path>
+                        <path d="M6,42 C6,37.948 7.339,34.208 9.599,31.2 C11.103,32.33 12.973,33 15,33 C19.971,33 24,28.971 24,24 L24,42 L6,42 Z" id="Path" stroke="none" fill="#FF6846" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" stroke="#1A73E8" stroke-width="1" fill="none" x="0.5" y="0.5" width="29" height="47" rx="3.5"></rect>
+                        <line x1="138" y1="23.5" x2="144" y2="23.5" id="Path" stroke="#1A73E8" stroke-width="1" fill="none"></line>
+                        <line x1="102" y1="23.5" x2="108" y2="23.5" id="Path" stroke="#1A73E8" stroke-width="1" fill="none"></line>
+                        <line x1="66" y1="23.5" x2="72" y2="23.5" id="Path" stroke="#1A73E8" stroke-width="1" fill="none"></line>
+                        <line x1="30" y1="23.5" x2="36" y2="23.5" id="Path" stroke="#1A73E8" stroke-width="1" fill="none"></line>
+                    </g>
+                </g>
+            </g>
+            <rect id="Rectangle" stroke="#1A73E8" x="115.5" y="86.5" width="171" height="79" rx="6.5"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="36" y="126" width="8" height="7"></rect>
+            <line x1="149.5" y1="196" x2="149.5" y2="166" id="Path" stroke="#1A73E8"></line>
+            <line x1="257.5" y1="87" x2="257.5" y2="57" id="Path" stroke="#1A73E8"></line>
+            <line x1="287" y1="145.5" x2="333" y2="145.5" id="Path" stroke="#1A73E8"></line>
+            <line x1="69" y1="106.5" x2="115" y2="106.5" id="Path" stroke="#1A73E8"></line>
+            <path d="M10.9092,91 C10.9092,88.7909 12.7,87 14.9092,87 L65.091,87 C67.3001,87 69.091,88.7909 69.091,91 L69.091,123 C69.091,125.209 67.3001,127 65.091,127 L14.9092,127 C12.7,127 10.9092,125.209 10.9092,123 L10.9092,91 Z" id="Path" stroke="#1A73E8" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M9.70797,130.703 C10.4665,129.742 11.6233,129.182 12.8475,129.182 L67.1525,129.182 C68.3767,129.182 69.5335,129.742 70.292,130.703 L74.8853,136.521 C76.9562,139.145 75.0878,143 71.7458,143 L8.25419,143 C4.91216,143 3.0438,139.145 5.11467,136.521 L9.70797,130.703 Z" id="Path" stroke="#1A73E8" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <polyline id="Path" stroke="#57E690" stroke-width="2.6439" points="33.6274 106.914 38.2543 111.541 48.8299 100.966"></polyline>
+            <rect id="Rectangle" stroke="#57E690" stroke-width="1.32195" x="29.661" y="97.661" width="19.6781" height="19.6781" rx="9.83903"></rect>
+            <path d="M120.909,199 C120.909,196.791 122.7,195 124.909,195 L175.091,195 C177.3,195 179.091,196.791 179.091,199 L179.091,231 C179.091,233.209 177.3,235 175.091,235 L124.909,235 C122.7,235 120.909,233.209 120.909,231 L120.909,199 Z" id="Path" stroke="#1A73E8" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M119.708,238.703 C120.467,237.742 121.623,237.182 122.848,237.182 L177.152,237.182 C178.377,237.182 179.533,237.742 180.292,238.703 L184.885,244.521 C186.956,247.145 185.088,251 181.746,251 L118.254,251 C114.912,251 113.044,247.145 115.115,244.521 L119.708,238.703 Z" id="Path" stroke="#1A73E8" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <polyline id="Path" stroke="#57E690" stroke-width="2.6439" points="143.627 214.914 148.254 219.541 158.83 208.966"></polyline>
+            <rect id="Rectangle" stroke="#57E690" stroke-width="1.32195" x="139.661" y="205.661" width="19.6781" height="19.6781" rx="9.83903"></rect>
+            <path d="M228.909,5 C228.909,2.79086 230.7,1 232.909,1 L283.091,1 C285.3,1 287.091,2.79086 287.091,5 L287.091,37 C287.091,39.2091 285.3,41 283.091,41 L232.909,41 C230.7,41 228.909,39.2091 228.909,37 L228.909,5 Z" id="Path" stroke="#1A73E8" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M227.708,44.7033 C228.467,43.7425 229.623,43.1819 230.848,43.1819 L285.152,43.1819 C286.377,43.1819 287.533,43.7425 288.292,44.7033 L292.885,50.5215 C294.956,53.1446 293.088,57.0001 289.746,57.0001 L226.254,57.0001 C222.912,57.0001 221.044,53.1446 223.115,50.5215 L227.708,44.7033 Z" id="Path" stroke="#1A73E8" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <polyline id="Path" stroke="#57E690" stroke-width="2.6439" points="251.627 20.9143 256.254 25.5412 266.83 14.9656"></polyline>
+            <rect id="Rectangle" stroke="#57E690" stroke-width="1.32195" x="247.661" y="11.661" width="19.6781" height="19.6781" rx="9.83903"></rect>
+            <polyline id="Path" stroke="#57E690" stroke-width="2.6439" points="251.627 20.9143 256.254 25.5412 266.83 14.9656"></polyline>
+            <rect id="Rectangle" stroke="#57E690" stroke-width="1.32195" x="247.661" y="11.661" width="19.6781" height="19.6781" rx="9.83903"></rect>
+            <path d="M332.909,130 C332.909,127.791 334.7,126 336.909,126 L387.091,126 C389.3,126 391.091,127.791 391.091,130 L391.091,162 C391.091,164.209 389.3,166 387.091,166 L336.909,166 C334.7,166 332.909,164.209 332.909,162 L332.909,130 Z" id="Path" stroke="#1A73E8" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M331.708,169.703 C332.467,168.742 333.623,168.182 334.848,168.182 L389.152,168.182 C390.377,168.182 391.533,168.742 392.292,169.703 L396.885,175.521 C398.956,178.145 397.088,182 393.746,182 L330.254,182 C326.912,182 325.044,178.145 327.115,175.521 L331.708,169.703 Z" id="Path" stroke="#1A73E8" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <polyline id="Path" stroke="#57E690" stroke-width="2.6439" points="355.627 145.914 360.254 150.541 370.83 139.966"></polyline>
+            <rect id="Rectangle" stroke="#57E690" stroke-width="1.32195" x="351.661" y="136.661" width="19.6781" height="19.6781" rx="9.83903"></rect>
+        </g>
+    </g>
+</svg>

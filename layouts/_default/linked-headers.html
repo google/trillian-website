@@ -1,0 +1,155 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+{{ define "main"}}
+<section class="glue-page gmt-6 gmb-4">
+  <div class="glue-grid">
+    <div class="col-span-12 lg:col-span-10 lg:col-start-2 md:text-center">
+      <h1 class="headline2">
+        <div class="eyebrow">{{ .Params.eyebrow }}</div>
+        {{ .Title }}
+      </h1>
+      {{ if .Params.topImage }}
+        <img src="{{ partial "rel" (dict "context" . "url" (printf "%s%s" "/images/application-illustrations/" .Params.topImage)) }}" class="gmt-4 gmb-4 w-full" />
+      {{ else }}
+        <div class="gmb-5"></div>
+      {{ end }}
+    </div>
+  </div>
+  <div class="glue-grid gmb-5 linked-headers">
+    <aside class="submenu col-span-4 gpb-4 sm:col-span-6 md:col-span-4 lg:col-span-3 lg:col-start-2 md:pb-0 md:h-screen md:sticky top-header-plus-padding">
+      <ul id="section-links-list" class="bg-Grey-100">
+        {{ $url := .Params.url }}
+        {{ range .Params.headers }}
+          <li><a href="#{{ .link }}">{{ .display }}</a></li>
+        {{ end }}
+      </ul>
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-7 gmb-7 markdown">
+      {{ .Content }}
+    </article>
+  </div>
+</section>
+
+<script>
+  const scrollHelper = (function() {
+    let scrolling = false;
+    let scrollHandlers = [];
+
+    const recordPageIsScrolling = function(e) {
+      scrolling = true;
+    };
+
+    const checkAndRunScrollHandlers = function() {
+      if (!scrolling || scrollHandlers.length == 0) {
+        return;
+      }
+      scrolling = false;
+
+      console.debug('running ', scrollHandlers.length, 'scroll handlers:', scrollHandlers);
+
+      for (let i = 0, size = scrollHandlers.length; i < size; i++) {
+        const shouldDetach = scrollHandlers[i]();
+
+        if (shouldDetach) {
+          console.debug('scroll handler is done, will remove');
+          scrollHandlers[i] = false; // mark for removal outside loop
+        }
+      }
+
+      scrollHandlers = scrollHandlers.filter(function(h) {
+        return h != false;
+      }); // actually remove them
+    };
+
+    ready(function() {
+      setInterval(checkAndRunScrollHandlers, 500);
+      window.addEventListener('scroll', recordPageIsScrolling);
+    });
+
+    return {
+      // public interface:
+
+      // addScrollHandler adds a function to be called periodically while the page is scrolling.
+      // The handler function takes no arguments.
+      // If the handler returns true, it will not be called again.
+      addScrollHandler: function(handler) {
+        console.log("handler", handler);
+        scrollHandlers.push(handler);
+      },
+
+      scrollYIsBetween: function(lower, upper) {
+        console.log("checking between ", lower, upper);
+        return (lower <= window.scrollY && window.scrollY < upper);
+      },
+
+      // getScrollPercent returns how far down the page the browser is currently scrolled
+      getScrollPercent: function() {
+        const h = document.documentElement;
+        const b = document.body;
+        const st = 'scrollTop';
+        const sh = 'scrollHeight';
+        return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+      },
+    };
+  })();
+
+  const links = document.getElementById('section-links-list').getElementsByTagName('a');
+  const h2s = document.getElementById('content').getElementsByTagName('h2');
+
+  function highlightSectionLink(j) {
+    for (let step = 0; step < links.length; step++) {
+      // Runs 5 times, with values of step 0 through 4.
+      removeClass(links[step], 'in-section');
+    }
+    addClass(links[j], 'in-section');
+  }
+
+  ready(function() {
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(0, 711)) {
+          highlightSectionLink(0);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(711, 1239)) {
+          highlightSectionLink(1);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(1239, 2347)) {
+          highlightSectionLink(2);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(2347, 2755)) {
+          highlightSectionLink(3);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(2755, 3211)) {
+          highlightSectionLink(4);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(3211, 3475)) {
+          highlightSectionLink(5);
+        }
+    });
+  });
+
+</script>
+{{end}}

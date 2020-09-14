@@ -1,0 +1,10 @@
+.link-arrow-svg {
+  @apply ml-0;
+  transition:all 0.1s ease-in-out;
+}
+
+.link-arrow-a-tag:hover {
+  .link-arrow-svg {
+    @apply ml-2;
+  }
+}

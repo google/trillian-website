@@ -1,0 +1,59 @@
+$fixed-spaces: (
+  1: 8px,
+  2: 16px,
+  3: 24px,
+  4: 36px
+);
+
+$sm-variable-spaces: (
+  5: 48px,
+  6: 60px,
+  7: 92px,
+  8: 136px
+);
+
+$lg-variable-spaces: (
+  5: 60px,
+  6: 80px,
+  7: 120px,
+  8: 180px
+);
+
+$types: (
+  gmt: 'margin-top',
+  gmb: 'margin-bottom',
+  gpt: 'padding-top',
+  gpb: 'padding-bottom'
+);
+
+@each $abbr, $type in $types {
+  @each $number, $size in $fixed-spaces {
+    .#{$abbr}-#{$number} {
+      #{$type}: #{$size};
+    }
+  }
+
+  @each $number, $size in $sm-variable-spaces {
+    .#{$abbr}-#{$number} {
+      #{$type}: #{$size};
+      @screen md {
+        #{$type}: #{$size};
+      }
+    }
+  }
+
+  @each $number, $size in $lg-variable-spaces {
+    .#{$abbr}-#{$number} {
+      @screen lg {
+        #{$type}: #{$size};
+      }
+      @screen xl {
+        #{$type}: #{$size};
+      }
+    }
+  }
+}
+
+.top-header-plus-padding {
+  top: 96px;
+}

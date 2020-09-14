@@ -1,0 +1,168 @@
+body {
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 16px;
+  line-height: 1.75; /* 28px */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  @apply text-Grey-800;
+}
+
+a {
+  @apply text-Blue-600;
+}
+
+.headline1, .headline2, .headline3, .headline4, .headline45,
+.headline5, .headline6, .application-headline, .eyebrow {
+  @apply text-Grey-900;
+  font-family: 'Google Sans';
+}
+
+.font-google-sans {
+  font-family: 'Google Sans';
+}
+
+.headline1 {
+  font-size: 32px;
+  line-height: 40px;
+  @screen md {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  @screen lg {
+    font-size: 60px;
+    line-height: 72px;
+  }
+}
+
+.headline2 {
+  font-size: 28px;
+  line-height: 40px;
+  @screen md {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @screen lg {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.headline3 {
+  font-size: 24px;
+  line-height: 32px;
+  @screen md {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  @screen lg {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.headline4 {
+  font-size: 18px;
+  line-height: 28px;
+  @screen md {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  @screen lg {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.headline45 {
+  font-size: 20px;
+  line-height: 28px;
+  @screen md {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  @screen lg {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.headline5 {
+  font-size: 16px;
+  line-height: 28px;
+  @screen md {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  @screen lg {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+// this is headline-4 on mobile, 5 on screens
+.application-headline {
+  font-size: 18px;
+  line-height: 28px;
+  @screen md {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  @screen lg {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.intro-para {
+  line-height: 28px;
+  @screen md {
+    line-height: 32px;
+  }
+}
+
+.eyebrow {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  @extend .gpb-2;
+}
+
+.large {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.list-disc-blue {
+  @apply ml-6;
+  li {
+    @extend .gpb-2;
+    position: relative;
+    &:before {
+      @apply text-Blue-600;
+      content: "●";
+      font-size: 18px;
+      font-weight: bold;
+      position: absolute;
+      left: -1.5rem;
+      top: -0.3rem;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+pre {
+  @extend .gmb-2;
+  @apply bg-Grey-100 p-4 text-xs rounded;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'DM mono', monospace;
+  font-size: 14px;
+}
+
+code {
+  @apply bg-Grey-100 p-1 text-xs rounded;
+}

@@ -1,0 +1,38 @@
+.linked-headers {
+  h1 {
+    @extend .gmb-6;
+    @apply w-full;
+  }
+
+  h2:first-of-type {
+    margin-top: 0;
+  }
+}
+
+aside.submenu {
+  @apply font-google;
+
+  ul {
+    @apply rounded p-6;
+    li {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 12px;
+      a {
+        transition: 0.5s;
+        @apply text-Grey-600 no-underline;
+        &:hover {
+          @apply text-Grey-800;
+        }
+        &.in-section {
+          @screen md {
+            @apply text-Grey-900;
+          }
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

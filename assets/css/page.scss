@@ -1,0 +1,23 @@
+.glue-page {
+  margin-right: 28px;
+  margin-left: 28px;
+}
+@screen sm {
+ .glue-page {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+@screen lg {
+  .glue-page {
+    margin-right: 72px;
+    margin-left: 72px;
+  }
+}
+@screen xl {
+  .glue-page {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1296px;
+  }
+}

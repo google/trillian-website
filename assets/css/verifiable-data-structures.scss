@@ -1,0 +1,99 @@
+.vds-col-full {
+  @apply col-span-4;
+  @screen sm {
+    @apply col-span-12;
+  }
+  @screen md {
+    @apply col-span-10 col-start-2;
+  }
+}
+
+.vds-col-left {
+  @apply order-2 col-span-4;
+  @screen sm {
+    @apply order-2 col-span-12;
+  }
+  @screen md {
+    @apply order-1 col-span-6 col-start-2;
+  }
+}
+
+.vds-col-right {
+  @apply col-span-4 w-3/4 mx-auto;
+  @extend .gmb-3;
+  @screen sm {
+    @apply w-full order-1 col-span-8;
+  }
+  @screen md {
+    @apply w-full order-2 col-span-3 col-start-9 sticky top-header-plus-padding h-64 mb-0;
+  }
+}
+
+.label-height-and-alignment {
+  height: 20px;
+  display: inline-block;
+  vertical-align: sub;
+  &:after {
+    content: " (" attr(class) ")";
+  }
+}
+
+.hash-label-a {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/letter-A.svg');
+}
+
+.hash-label-b {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/letter-B.svg');
+}
+
+.hash-label-c {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/letter-C.svg');
+}
+
+.hash-label-d {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/letter-D.svg');
+}
+
+.hash-label-e {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/letter-E.svg');
+}
+
+.hash-label-f {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/letter-F.svg');
+}
+
+.hash-label-g {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/letter-G.svg');
+}
+
+.hash-label-h {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/letter-H.svg');
+}
+
+.record-label-1 {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/number-01.svg');
+}
+
+.record-label-2 {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/number-02.svg');
+}
+
+.record-label-3 {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/number-03.svg');
+}
+
+.record-label-4 {
+  @extend .label-height-and-alignment;
+  content: url('../images/vds-icons/number-04.svg');
+}

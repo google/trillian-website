@@ -1,0 +1,459 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+---
+url: /index
+layout: index
+title: An open-source append only ledger
+description: Build tamper-evident services with Trillian and cryptographically prove that the data hasn’t been unexpectedly changed.
+---
+
+<section class="glue-page gpt-7 gpb-7">
+  <div class="glue-grid">
+    <div class="col-span-4 sm:col-span-7 sm:col-start-3">
+      <h1 class="headline1 font-medium">
+        Trust your data with a tamper-evident log
+      </h1>
+    </div>
+    <div class="gmt-6 gmb-7 col-span-4 sm:col-span-12 relative overflow-hidden log-wrapper" style="height: 204px;">
+      <div id="log">
+        <div id="template-hash" class="rounded hidden" data-column="0" style="position: absolute; right: 0px; width: 7rem;">
+          <img src="" style="width: 6rem;" alt="a colourful representation of a hash" />
+        </div>
+      </div>
+    </div>
+    <div class="col-span-4 sm:col-span-7 sm:col-start-3 headline5 intro-para">
+      <p class="gmb-3">
+        <strong>You need to trust the data you rely on.</strong> Your organisation handles more data every day,
+        and the data helps you make critical decisions. But you need to know that it hasn't been
+        modified or corrupted.
+      </p>
+      <p class="gmb-3">
+        If you build tamper-evident services with <strong>Trillian, an open-source append only ledger</strong>, you’ll be able to cryptographically prove that the
+        data hasn’t been unexpectedly changed. You’ll be able to monitor third-party ecosystems and simplify
+        regulatory compliance. You can trust the data you rely on.
+      </p>
+      <p>
+        A tamper-evident log stores an <strong>accurate</strong>, <strong>immutable</strong> and
+        <strong>verifiable</strong> history of activity. You could use them to track credits and debits in
+        banking transactions, access logs to sensitive healthcare records, cryptographic hashes of
+        software packages, compliance artifacts of regulated activities, or modifications to a document.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="bg-Grey-050 gpt-6 gpb-5">
+  <section class="glue-page">
+    <div class="glue-grid">
+      <div class="col-span-4 sm:col-span-12">
+        <h2 class="gmb-4 eyebrow sm:text-center">Trillian is relied on by</h2>
+      </div>
+      <div class="col-span-4 sm:col-span-12 flex flex-wrap justify-center">
+        {{< case-study-cards >}}
+      </div>
+    </div>
+  </section>
+</div>
+
+<a id="benefits"></a>
+<section class="glue-page gmt-7 gmb-6">
+  <div class="glue-grid gmt-6 gmb-6">
+    <div class="order-2 col-span-4 sm:order-1 sm:col-span-5 sm:col-start-2">
+      <h3 class="gmb-3 headline3 font-normal">
+        Discourage Insider Threats
+      </h3>
+    </div>
+    <div class="order-1 col-span-4 sm:order-3 sm:col-span-6 sm:mx-8">
+      <img src="{{< rel "/images/benefits/discourage-insider-threats.svg" >}}" class="w-full gmb-4" alt="An illustration of a latops commands being logged" />
+    </div>
+    <div class="order-3 col-span-4 sm:order-2 sm:col-span-5 sm:col-start-2">
+      <p class="gmb-4">
+        A tamper-evident log makes it impossible for a malicious insider to cover their tracks.
+      </p>
+      <ul class="list-disc-blue gmb-3 font-google font-medium">
+        <li>
+          <p class="gmb-1">
+            A tamper-evident log discourages malicious behaviour by increasing the chance of discovery.
+          </p>
+          <p>
+            <a href="{{< relref "/application/reliably-log-all-actions-performed-on-your-servers" >}}">
+              Learn how Trillian can permanently log all actions performed on your <nobr>servers
+              {{< top-right-arrow >}}</nobr>
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="gmb-1">
+            Key Transparency protects users against malicious insiders by making key updates visible.
+          </p>
+          <p>
+            <a href="{{< relref "/application/strengthen-discovery-of-encryption-keys" >}}">
+              Learn how end-to-end encryption providers can use Trillian to strengthen key <nobr>discovery
+              {{< top-right-arrow >}}</nobr>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="glue-grid gmt-6 gmb-6">
+    <div class="order-2 col-span-4 sm:order-1 sm:col-span-5 sm:col-start-2">
+      <h3 class="gmb-3 headline3 font-normal">
+        Simplify regulatory compliance
+      </h3>
+    </div>
+    <div class="order-1 col-span-4 sm:order-3 sm:col-span-6 sm:mx-8">
+      <img src="{{< rel "/images/benefits/simplify-regulatory-compliance.svg" >}}" class="w-full gmb-4" alt="An illustration of compliance receords being logged" />
+    </div>
+    <div class="order-3 col-span-4 sm:order-2 sm:col-span-5 sm:col-start-2">
+      <p class="gmb-1">
+        A tamper-evident log keeps you in control of your audit artifacts and gives auditors confidence.
+      </p>
+      <p class="gmb-1">
+        Regulated industries require companies to collect and retain many types of compliance records. Auditors need to verify the integrity and nonrepudiation of those records.
+      </p>
+      <p class="gmb-4">
+        By using Trillian to store compliance records, you can keep them in one place and simplify presenting them to an auditor. Trillian lets you cryptographically prove they haven't been tampered with.
+      </p>
+      <ul class="list-disc-blue gmb-3 font-google font-medium">
+        <li>
+          <p class="gmb-1">
+            A tamper-evident log is a more efficient way of presenting compliance records to an auditor who can easily verify their history and integrity.
+          </p>
+          <p>
+            <a href="{{< relref "/application/reliably-log-all-actions-performed-on-your-servers" >}}">
+              Learn how Trillian can permanently log all actions performed on your <nobr>servers
+              {{< top-right-arrow >}}</nobr>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="glue-grid gmt-6 gmb-6">
+    <div class="order-2 col-span-4 sm:order-1 sm:col-span-5 sm:col-start-2">
+      <h3 class="gmb-3 headline3 font-normal">
+        Monitor third-party ecosystems
+      </h3>
+    </div>
+    <div class="order-1 col-span-4 sm:order-3 sm:col-span-6 sm:mx-8">
+      <img src="{{< rel "/images/benefits/manage-third-party-ecosystems.svg" >}}" class="w-full gmb-4" alt="An illustration of an ecosystem being monitored" />
+    </div>
+    <div class="order-3 col-span-4 sm:order-2 sm:col-span-5 sm:col-start-2">
+      <p class="gmb-1">
+        A tamper-evident log enables multiple parties to monitor each others' actions.
+      </p>
+      <p class="gmb-4">
+        Where organisations can be required to publish data about their actions, Trillian can hold a permanent record of this data. Trillian can do this at scale, allowing all parties to scrutinise each other.
+      </p>
+      <ul class="list-disc-blue gmb-3 font-google font-medium">
+        <li>
+          <p class="gmb-1">
+            Certificate Transparency discourages misbehaviour of Certificate Authorities by making their actions public.
+          </p>
+          <p>
+            <a href="{{< relref "/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency" >}}">
+              Learn how Trillian enables anyone to monitor Certificate <nobr>Authorities
+              {{< top-right-arrow >}}</nobr>
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="gmb-1">
+            Trillian frustrates software supply chain attacks by providing a shared, global view of the content of packages.
+          </p>
+          <p>
+            <a href="{{< relref "/application/add-tamper-checking-to-a-package-manager" >}}">
+              Learn how Trillian enables Go developers to verify that software packages haven't been tampered <nobr>with
+              {{< top-right-arrow >}}</nobr>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="bg-Grey-050">
+  <a id="how-it-works"></a>
+  <section class="glue-page gpt-6 gpb-6">
+    <div class="glue-grid">
+      <div class="col-span-4 sm:col-span-5 sm:col-start-2">
+        <h2 class="headline3 gmb-4">How it works</h2>
+        <p class="gmb-3">
+          Trillian is similar to a blockchain: it's an append-only log for storing records.
+        </p>
+        <p class="gmb-3">
+          Trillian provides support for several <a href="{{< relref "/verifiable-data-structures" >}}">verifiable data structures</a>, each offering different types of verifiability. In the case of a <a href="https://en.wikipedia.org/wiki/Merkle_tree">Merkle tree</a>, Trillian can cryptographically prove:
+        </p>
+        <ul class="list-disc-blue gmb-3">
+          <li>that a given record is in the log</li>
+          <li>that the log hasn't been tampered with - that nothing has been changed or deleted since a previous point in time</li>
+        </ul>
+        <p class="gmb-3">
+          As an example, Trillian could be used to create a tamper-evident financial transaction ledger.
+        </p>
+        <p class="gmb-3">
+          The financial ledger app provides an API for storing, retrieving and verifying transactions. It uses Trillian to store the transactions and cryptographically prove the integrity of transactions.
+        </p>
+        <p class="gmb-3 font-google font-medium">
+          <a href="{{< relref "/verifiable-data-structures" >}}">
+            Learn about Trillian's verifiable data <nobr>structures
+            {{< top-right-arrow >}}</nobr>
+          </a>
+        </p>
+
+        <p class="mb-0 font-google font-medium">
+          <a href="https://github.com/google/trillian#design">
+            Read the design <nobr>overview
+            {{< top-right-arrow >}}</nobr>
+          </a>
+        </p>
+      </div>
+      <div class="col-span-4 gmt-3 sm:col-span-5">
+        <img src="{{< rel "/images/how-it-works-diagram.svg" >}}" class="gmt-3 w-full" alt="An illustration of the various components that make up a tamper-evident service" />
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="glue-page">
+  <a id="get-started"></a>
+  <h2 class="headline3 gmb-5 gpt-6 sm:text-center"><span class="">Applications of Trillian</span></h2>
+
+  <ul class="glue-grid gmb-7">
+    <li class="col-span-4 sm:col-span-6 lg:col-span-4 gmb-5">
+      <a href="{{< relref "/application/add-tamper-checking-to-a-package-manager" >}}">
+        <img src="{{< rel "/images/application-illustrations/tamper-checking-card.svg" >}}" class="w-full gmb-3" alt="An illustration of a file being downloaded" />
+        <h3 class="application-headline">
+          Add tamper-checking to a package manager
+        </h3>
+      </a>
+    </li>
+    <li class="col-span-4 sm:col-span-6 lg:col-span-4 gmb-5">
+      <a href="{{< relref "/application/reliably-log-all-actions-performed-on-your-servers" >}}">
+        <img src="{{< rel "/images/application-illustrations/log-all-actions-card.svg" >}}" class="gmb-3 w-full" alt="An illustration of a computers commands being logged" />
+        <h3 class="application-headline">
+          Reliably log all actions performed on your servers
+        </h3>
+      </a>
+    </li>
+    <li class="col-span-4 sm:col-span-6 lg:col-span-4 gmb-5">
+      <a href="{{< relref "/application/strengthen-discovery-of-encryption-keys" >}}">
+        <img src="{{< rel "/images/application-illustrations/tamper-checking-card.svg" >}}" class="w-full gmb-3" alt="An illustration of a set of encryption keys" />
+        <h3 class="application-headline">
+          Strengthen discovery of encryption keys with Key Transparency
+        </h3>
+      </a>
+    </li>
+    <li class="col-span-4 sm:col-span-6 lg:col-span-4 lg:col-start-5 gmb-4">
+      <a href="{{< relref "/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency" >}}">
+        <img src="{{< rel "/images/application-illustrations/log-all-actions-card.svg" >}}" class="gmb-3 w-full" alt="An illustration of a certificates being logged" />
+        <h3 class="application-headline">
+          Discourage misbehaviour by third parties in Certificate Transparency
+        </h3>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="glue-page">
+  <div class="glue-grid gmt-4">
+    <div class="col-span-4 sm:col-span-10 sm:col-start-2">
+      <a id="example-code"></a>
+      <h2 class="headline4 gmb-4">Explore some example code</h2>
+      {{< github-list-projects >}}
+    </div>
+  </div>
+</section>
+
+<!-- Get started block -->
+<section class="glue-page gmt-7 gmb-6">
+  <div class="glue-grid">
+    <div class="col-span-4 sm:col-span-10 sm:col-start-2 markdown">
+      <h2 class="headline3 gmt-4 gpb-4 sm:text-center" style="margin-bottom: 0;">Get started</h2>
+      {{< read-markdown-file "/content/get-started.md" >}}
+
+      <div class="gpt-3">
+        {{< trillian-youtube 1Yfb4uSlFTM >}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<a id="why"></a>
+<section class="glue-page gmt-6 gmb-6">
+  <div class="glue-grid md:text-center">
+    <div class="col-span-4  sm:col-start-2 md:col-span-10 md:col-start-2">
+      <h2 class="headline3 gmt-4 gmb-5">Why Trillian?</h2>
+    </div>
+  </div>
+  <ul class="glue-grid md:text-center">
+    <li class="col-span-4 sm:col-start-2 sm:col-span-8 md:col-start-2 md:col-span-5 gmb-5">
+      <img src="{{< rel "/images/abstract-shapes/simple-to-integrate-icon.svg" >}}" class="gmb-4 md:mx-auto" alt="A colourful pattern" />
+      <h3 class="headline45 gmb-2">Simple to integrate</h3>
+      <p>
+        Trillian is designed to be integrated with existing systems, rather than requiring the ground-up rebuild that a blockchain ledger would need.
+      </p>
+    </li>
+    <li class="col-span-4 sm:col-start-2 sm:col-span-8 md:col-span-5 gmb-5">
+      <img src="{{< rel "/images/abstract-shapes/proven-at-scale-icon.svg" >}}" class="gmb-4 md:mx-auto" alt="A colourful pattern" />
+      <h3 class="headline45 gmb-2">Proven at scale</h3>
+      <p class="mb-2">
+        Trillian is the foundation for <a href="https://certificate.transparency.dev/">Certificate&nbsp;Transparency</a>, one of the largest production ledgers on the internet. Performs at over 2,000 writes per second.
+      </p>
+    </li>
+    <li class="col-span-4 sm:col-start-2 sm:col-span-8 md:col-start-2 md:col-span-5 gmb-5">
+      <img src="{{< rel "/images/abstract-shapes/open-source-and-cross-cloud-icon.svg" >}}" class="gmb-4 md:mx-auto" alt="A colourful pattern" />
+      <h3 class="headline45 gmb-2">Open source and cross cloud</h3>
+      <p>
+        Released under the permissive Apache 2.0 licence. You have the freedom to use Trillian on your own terms.
+        Benefit from <a href="https://github.com/google/trillian/tree/master/deployment">the support of Google Cloud Platform</a>,
+        or deploy it yourself on-premise or cross cloud.
+      </p>
+    </li>
+    <li class="col-span-4 sm:col-start-2 sm:col-span-8 md:col-span-5 gmb-5">
+      <img src="{{< rel "/images/abstract-shapes/built-by-google-icon.svg" >}}" class="gmb-4 md:mx-auto" alt="A colourful pattern" />
+      <h3 class="headline45 gmb-2">Built by Google</h3>
+      <p class="mb-2">
+        Google developed the most challenging parts of the technology and maths underpinning Trillian. They continue to make engineering improvements to ensure scalability and availability.
+      </p>
+    </li>
+  </ul>
+</section>
+
+<section class="glue-page gmt-6 gmb-7">
+  <h1 class="headline1 sm:text-center gmb-6">
+    Start using Trillian today
+  </h1>
+
+  <ul class="max-w-xs flex mr-auto sm:mx-auto">
+    <li class="w-1/2 mx-auto">
+      <a href="https://github.com/google/trillian/#using-the-code" class="btn bg-Blue-600 text-white hover:shadow-md flex items-center justify-center">
+        Get started <span class="h-5 -mr-2">{{< github-logo >}}</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<script>
+  'use strict';
+
+  const animation = function() {
+    const numHashImages = 11;
+    const numHashesToShow = 11;
+    const columnPitch = 135; // pixels between each column
+    const log = document.getElementById('log');
+
+    let nextImage = 0;
+
+    return {
+      'numHashesToShow': numHashesToShow,
+      'numHashImages': numHashImages,
+      'columnPitch': columnPitch,
+      'log': log,
+      'getAndIncrementNextImage': function() {
+        const result = nextImage;
+        nextImage = (nextImage + 1) % numHashImages;
+        return result;
+      },
+    };
+  }();
+
+  function drawInitialHashes() {
+    // to draw 10 hashes, we draw 9 "in log" and 1 "outside log" hashes
+
+    for (let i=animation.numHashesToShow-1; i >= 0; i--) {
+      const newHash = renderNewHash(1+i);
+      addClass(newHash, 'in-log');
+    }
+
+    renderNewHash(0);
+  }
+
+  function renderNewHash(atColumnNumber) {
+    // atColumnNumber counts up from 0, where 0 is the rightmost position
+
+    const templateHash = document.getElementById('template-hash');
+    const newHashElement = templateHash.cloneNode(true);
+    newHashElement.removeAttribute('id');
+    addClass(newHashElement, 'hash');
+
+    const imageSequence = animation.getAndIncrementNextImage();
+    const newFilename = 'images/hashes/hash-' + imageSequence + '.svg';
+
+    console.log('adding hash ', newFilename);
+
+    newHashElement.children[0].src = newFilename;
+    setTimeout(function(){ removeClass(newHashElement, 'hidden'); }, 350);
+    animation.log.appendChild(newHashElement);
+
+    if (!atColumnNumber) {
+      atColumnNumber = 0;
+    }
+
+    moveToColumn(newHashElement, atColumnNumber)
+    return newHashElement;
+  }
+
+  function moveToColumn(hashElement, columnRightToLeft) {
+    hashElement.style.right = animation.columnPitch*columnRightToLeft + 'px';
+    hashElement.dataset.column = columnRightToLeft;
+  }
+
+  function animateAddNewHash() {
+    addRightmostHashToLog();
+    renderNewHash(0);
+    deleteExcessHashesFromLeft();
+  }
+
+  function addRightmostHashToLog() {
+    // * shift all the hashes left
+    // * add the in-log class to the rightmost one
+
+    const h = document.getElementsByClassName('hash');
+
+    for (let i=0, numHashes=h.length; i < numHashes; i++) {
+      const newColumn = 1 + parseInt(h[i].dataset.column); // columns count right -> left
+      moveToColumn(h[i], newColumn);
+
+      if (!h[i].classList.contains('in-log')) {
+        console.log('adding `in-log` class in 250ms');
+        setTimeout(function() { addClass(h[i], 'in-log'); }, 250);
+      };
+    }
+  }
+
+  function deleteExcessHashesFromLeft() {
+    // delete any hash whose column is greater than animation.numHashesToShow
+
+    const h = document.getElementsByClassName('hash');
+
+    for (let i=0, numHashes=h.length; i < numHashes; i++) {
+
+      if (parseInt(h[i].dataset.column) > animation.numHashesToShow-1) {
+        setTimeout(function() { h[i].parentNode.removeChild(h[i]); }, 500); // delete it
+      }
+    }
+  }
+
+  ready(function() {
+    drawInitialHashes();
+    window.setInterval(animateAddNewHash, 4000);
+  });
+
+</script>

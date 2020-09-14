@@ -1,0 +1,24 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+{{ range $.Site.Data.case_studies.case_studies }}
+  <div class="w-full sm:w-1/2 lg:w-1/4 sm:px-6 gpb-6 sm:mb-0 sm:text-center">
+    <a href="{{ .url }}" class="p-4 -m-4 rounded-lg block text-Grey-900">
+      <img src="{{ relURL (printf "%s%s" "/images/logos/" .img) }}" class="h-12 sm:mx-auto gmb-3" style="max-width: 10rem;" alt="{{ .img_alt }}" />
+      <p>{{ .sentence }}</p>
+    </a>
+  </div>
+{{ end }}

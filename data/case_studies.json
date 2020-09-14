@@ -1,0 +1,16 @@
+{
+  "case_studies": [
+    {
+      "img": "go-logo.svg",
+      "img_alt": "Golang's Logo",
+      "sentence": "Provides a shared global view of the hash of every software module, enabling reproducible builds.",
+      "url": "https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md"
+    },
+    {
+      "img": "certificate-transparency-logo.svg",
+      "img_alt": "Certificate Transparency's Logo",
+      "sentence": "Trillian helps detect misbehaviour of certificate authorities by enforcing that all certificates are in a verifiable log.",
+      "url": "https://certificate.transparency.dev/"
+    }
+  ]
+}

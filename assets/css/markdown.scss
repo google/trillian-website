@@ -1,0 +1,116 @@
+.markdown {
+  p, ul, ol, figure {
+    @extend .gmb-2;
+  }
+
+  figure {
+    @extend .gmb-4;
+    @extend .gmt-4;
+  }
+
+  @screen md {
+    figure {
+      @apply mx-12;
+    }
+  }
+  figure {
+    img {
+      width: 100%;
+    }
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  h2 {
+    @extend .headline3;
+    @extend .gmt-5;
+    @extend .gmb-3;
+  }
+
+  h3 {
+    @extend .headline5;
+    @extend .gpt-1;
+    @extend .gmt-3;
+    @extend .gmb-2;
+  }
+
+  .footnotes {
+    @apply text-sm;
+    @extend .gmt-6;
+    ol {
+      @extend .gpt-2;
+      list-style: decimal;
+      li{
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  ul {
+    @apply ml-6;
+  }
+  ul li {
+    @extend .gmb-1;
+    position: relative;
+    &:before {
+      @apply text-Blue-600;
+      content: "●";
+      font-size: 18px;
+      font-weight: bold;
+      position: absolute;
+      left: -1.5rem;
+      top: -0.3rem;
+    }
+    >ul, ol {
+      @extend .gmt-1;
+    }
+  }
+  ol {
+    margin-left: 1.2rem;
+    list-style: none;
+  }
+  ol>li {
+    padding-left: 0.5rem;
+    @extend .gmb-2;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: -20px;
+      top: 4px;
+    }
+    &:nth-child(1):before {
+      content: url(../images/list-items/number-01.svg);
+    }
+    &:nth-child(2):before {
+      content: url(../images/list-items/number-02.svg);
+    }
+    &:nth-child(3):before {
+      content: url(../images/list-items/number-03.svg);
+    }
+    &:nth-child(4):before {
+      content: url(../images/list-items/number-04.svg);
+    }
+    &:nth-child(5):before {
+      content: url(../images/list-items/number-05.svg);
+    }
+    &:nth-child(6):before {
+      content: url(../images/list-items/number-06.svg);
+    }
+    &:nth-child(7):before {
+      content: url(../images/list-items/number-07.svg);
+    }
+    &:nth-child(8):before {
+      content: url(../images/list-items/number-08.svg);
+    }
+    &:nth-child(9):before {
+      content: url(../images/list-items/number-09.svg);
+    }
+    >ul, ol {
+      @extend .gmt-1;
+    }
+  }
+}

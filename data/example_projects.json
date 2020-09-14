@@ -1,0 +1,19 @@
+{
+  "example_projects": [
+    {
+      "title": "Start logging with Trillian",
+      "description": "Get started with Trillian by working through our transparent government registers example",
+      "url": "https://github.com/google/trillian-examples/tree/master/registers"
+    },
+    {
+      "title": "Log requests to post public messages",
+      "description": "Employees at your company can post to a public messaging platform ‘Tritter’. Since Tritter doesn’t support multi-login, TritBot uses Trillian to log each message request with the details of the sender in order to discourage abuse.",
+      "url": "https://github.com/mhutchinson/tritter"
+    },
+    {
+      "title": "Pull blockchain transactions into a Trillian Map",
+      "description": "Sync Ethereum transactions into a Trillian Log, then replay the transactions into a Trillian Map.",
+      "url": "https://github.com/google/trillian-examples/blob/master/etherslurp"
+    }
+  ]
+}

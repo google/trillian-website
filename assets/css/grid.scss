@@ -1,0 +1,54 @@
+.test-fixed {
+  z-index: -10;
+  width: calc(100% - 56px);
+  margin-right: 28px;
+  margin-left: 28px;
+}
+@screen sm {
+  .test-fixed {
+    width: calc(100% - 80px);
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+@screen lg {
+  .test-fixed {
+    width: calc(100% - 144px);
+    margin-right: 72px;
+    margin-left: 72px;
+  }
+}
+@screen xl {
+  .test-fixed {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1296px;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+
+.glue-grid {
+  @apply grid;
+  @apply grid-cols-4;
+  column-gap: 28px;
+}
+@screen sm {
+  .glue-grid {
+    @apply grid-cols-12;
+    column-gap: 40px;
+  }
+}
+@screen lg {
+  .glue-grid {
+    @apply grid-cols-12;
+    column-gap: 48px;
+  }
+}
+@screen xl {
+  .glue-grid {
+    @apply grid-cols-12;
+    column-gap: 64px;
+  }
+}
