@@ -13,7 +13,7 @@
 # limitations under the License.
 
 title: Trillian
-baseURL: https://projectsbyif.github.io/trillian-website/
+baseURL: https://transparency.dev
 disableKinds:
 - taxonomy
 - taxonomyTerm
