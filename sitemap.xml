@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://trillian.transparency.dev/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/get-started/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/verifiable-data-structures/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/application/add-tamper-checking-to-a-package-manager/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/application/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/privacy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/application/reliably-log-all-actions-performed-on-your-servers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/application/strengthen-discovery-of-encryption-keys/</loc>
+  </url>
+  
+</urlset>
