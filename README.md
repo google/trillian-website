@@ -54,7 +54,7 @@ We currently deploy to Github Pages.
 
 There's an action setup (in `.github/workflows/gh-pages.yml`) that will build the site and deploy it to Github Pages on every commit to `main`.
 
-It does this using [actions for Github Pages][actions] by `@peaceiris`. It uses the per-repository `ACTIONS_DEPLOY_KEY` to authenticate this.
+It does this using [actions for Github Pages][actions] by `@peaceiris`. It uses the per-repository `ACTIONS_DEPLOY_KEY` to authenticate this. The public key component of this is held as a deploy key on the repository.
 
 Every time you push to `main`, the action checks out the code, builds the site, pushes that build to the `gh-pages` branch and then, thanks to configuration, that's available at a Github Pages URL.
 
