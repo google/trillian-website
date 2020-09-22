@@ -3,15 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://trillian.transparency.dev/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
-  </url>
-  
-  <url>
     <loc>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties/</loc>
   </url>
   
@@ -21,16 +12,19 @@
   </url>
   
   <url>
-    <loc>https://trillian.transparency.dev/verifiable-data-structures/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://trillian.transparency.dev/application/add-tamper-checking-to-a-package-manager/</loc>
   </url>
   
   <url>
+    <loc>https://trillian.transparency.dev/</loc>
+  </url>
+  
+  <url>
     <loc>https://trillian.transparency.dev/application/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
   </url>
   
   <url>
@@ -43,6 +37,10 @@
   
   <url>
     <loc>https://trillian.transparency.dev/application/strengthen-discovery-of-encryption-keys/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trillian.transparency.dev/verifiable-data-structures/</loc>
   </url>
   
 </urlset>

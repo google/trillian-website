@@ -1,0 +1,571 @@
+<!doctype html>
+
+ <!--
+  Copyright 2020 Google LLC
+ 
+  Licensed under the Apache License, Version 2.0 (the 'License');
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an 'AS IS' BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+      
+        
+          Verifiable Data Structures
+         |
+       Trillian
+    </title>
+
+    
+      <meta name="description" content="An overview of Trillian&#39;s verifiable log, verifiable map and log-backed map as well as links to further resources." property="og:description"/>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173407084-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://trillian.transparency.dev/css/styles.min.7450fcf3e4230296c78c1deb23b79a694954ecaffe425b7ff55e997d3059939c.css" integrity="sha256-dFD88&#43;QjApbHjB3rI7eaaUlU7K/&#43;Qlt/9V6ZfTBZk5w=">
+    <script>
+      'use strict';
+
+      function ready(fn) {
+        if (document.attachEvent
+          ? document.readyState === 'complete'
+          : document.readyState !== 'loading') {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      function addClass(el, className) {
+        if (el.classList) {
+          el.classList.add(className);
+        } else {
+          el.className += ' ' + className;
+        }
+      }
+
+      function removeClass(el, className) {
+        if (el.classList) {
+          el.classList.remove(className);
+        } else {
+          el.className = el.className.replace(
+              new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '
+          );
+        }
+      }
+    </script>
+  </head>
+<body>
+    
+
+<div class="bg-white z-50 w-full font-google" id="site-header">
+<nav class="glue-page test-fixed">
+  <div class="md:hidden absolute h-16 flex items-center cursor-pointer">
+    <div id="toggleMenu" class="h-8 flex items-center justify-left px-4 -mx-4 rounded text-Grey-700">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
+        <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  </div>
+  <ul class="mx-auto md:float-left h-16 flex items-center">
+    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Trillian</a></li>
+  </ul>
+  <ul class="invisible md:visible float-right h-16 flex items-center">
+    <li class="text-right inline mr-6"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
+    <li class="text-right inline mr-6"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+  </ul>
+</nav>
+<ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
+  <li class="gmb-2"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
+  <li class="gmb-2"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
+  <li class="gmb-2"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
+  <li class=""><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+</ul>
+</div>
+<div id="nav-spacer" class="h-16"></div>
+
+<script>
+  'use strict';
+  (function(){
+
+    var doc = document.documentElement;
+    var w = window;
+
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+
+    var header = document.getElementById('site-header');
+
+    var checkScroll = function() {
+
+      
+
+
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        
+        direction = 1;
+      }
+
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
+
+      prevScroll = curScroll;
+    };
+
+    var toggleHeader = function(direction, curScroll) {
+      if (direction === 2 && curScroll > 64) {
+        addClass(header, 'hide');
+        addClass(mobileMenu, 'hidden');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        removeClass(header, 'hide');
+        prevDirection = direction;
+      }
+    };
+
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function toggleMenuVisibility() {
+      if (mobileMenu.classList.contains('hidden')) {
+        removeClass(mobileMenu, 'hidden');
+        return;
+      };
+      addClass(mobileMenu, 'hidden');
+    };
+
+    window.addEventListener('scroll', checkScroll);
+    document.getElementById('toggleMenu').onclick = toggleMenuVisibility;
+
+  })();
+</script>
+
+<section class="glue-page gmt-6 gmb-4">
+
+  <div class="glue-grid">
+    <div class="vds-col-full">
+      <h1 class="headline2 gmb-3 gmb-5 text-center">Verifiable data structures</h1>
+    </div>
+  </div>
+  <div class="glue-grid">
+    <div class="vds-col-left md:row-start-1 md:row-span-2">
+      <a id="verifiable-log" class="gpt-4"></a>
+      <h2 class="headline3 gmb-3">Verifiable log</h2>
+
+      <p class="gmb-3">
+        Trillian uses a Merkle tree to implement a verifiable log.
+      </p>
+      <p class="gmb-3">
+        Every record inserted into a verifiable log is added as a new leaf in the Merkle tree. In the diagram <span class="md:hidden"> above</span><span class="hidden md:inline-block">on the right</span>, the four records are shown along the bottom.
+      </p>
+      <p class="gmb-3">
+        The squares in the diagram are cryptographic hash values. The bottom level of hashes - <span class="hash-label-a">A</span>, <span class="hash-label-b">B</span>, <span class="hash-label-d">D</span> and <span class="hash-label-f">F</span> - are calculated by hashing records <span class="record-label-1">1</span>, <span class="record-label-2">2</span>, <span class="record-label-3">3</span> and <span class="record-label-4">4</span>.
+      </p>
+      <p class="gmb-3">
+        The next level - <span class="hash-label-c">C</span> and <span class="hash-label-d">D</span> are calculated by hashing pairs of hashes below. For instance, <span class="hash-label-c">C</span> is the hash of <span class="hash-label-a">A</span> and <span class="hash-label-b">B</span>.
+      </p>
+      <p class="gmb-3">
+        This carries on up until there's a single hash - the <strong>tree head hash</strong> <span class="hash-label-h">H</span>.
+      </p>
+      <a id="tree-head-hash" class="gpt-4"></a>
+
+      <h3 class="headline5 font-bold gpt-4 gmb-3">Tree head hash</h3>
+      <p class="gmb-3">
+        The single hash at the top level - in this case <span class="hash-label-h">H</span> - is called the <em>tree head hash</em>.
+      </p>
+      <p class="gmb-3">
+        If any record is modified, its hash changes. This cascades up all the levels, resulting in a different tree head.
+      </p>
+      <p class="gmb-3">
+        In other words, a record can't be modified, added or deleted without resulting in a completely new tree head hash.
+      </p>
+      <p class="gmb-3">
+        The single tree head hash acts as a snapshot of all the records in the log. By recording the tree head hash at a point in time, you can re-calculate all the hashes at a later date and verify that nothing was changed - all from one single hash.
+      </p>
+      <p class="gmb-3 italic">
+        Also known as: Tree head, Root hash, Merkle tree hash.
+      </p>
+    </div>
+    <aside class="col-span-4 sm:col-span-8 md:col-start-9 md:row-start-1 md:col-span-3 submenu gmb-4 md:mb-0 md:flex-shrink md:h-0">
+      <ul id="section-links-list" class="bg-Grey-100">
+          <li><a href="#verifiable-log">Verifiable log</a></li>
+          <li><a href="#verifiable-map">Verifiable map</a></li>
+          <li><a href="#log-backed-map">Log-backed map</a></li>
+          <li><a href="#resources">Resources</a></li>
+      </ul>
+    </aside>
+    <div class="vds-col-right sm:row-start-2">
+      <img src="
+
+/images/merkle-trees/merkle-tree-a-b-d-f.svg
+" class="w-full gmb-4" />
+      <p class="figure-label text-center sm:text-left text-Grey-600">A Merkle tree with 4 records</p>
+    </div>
+  </div>
+  <div class="glue-grid">
+    <div class="vds-col-left">
+      <a id="signed-tree-head" class="gpt-4"></a>
+      <h3 class="headline5 font-bold gpt-4 gmb-3">Signed tree head</h3>
+      <p class="gmb-3">
+        Trillian always signs tree head hashes with a private key and this is called the <em>signed tree head</em>.
+      </p>
+      <p class="gmb-3">
+        Before trusting a tree head hash from Trillian, clients verify it using a public key that's typically published separately, depending on the application.
+      </p>
+      <p class="gmb-3">
+        This serves two purposes:
+      </p>
+      <ul class="list-disc-blue gmb-3">
+        <li>protects against tampering with the communication between Trillian and the client.</li>
+        <li>acts as a commitment to each tree head hash, making misbehaviour undeniable.</li>
+      </ul>
+
+      <a id="inclusion-proof" class="gpt-4"></a>
+      <h3 class="headline5 font-bold gpt-4 gmb-3">Inclusion proof</h3>
+    </div>
+  </div>
+  <div class="glue-grid">
+    <div class="vds-col-left">
+      <p class="gmb-3">
+        When a client gets a record from Trillian, it mustn't simply trust the record. Instead, it requests an inclusion proof from the log and verifies that the proof is valid. This links the content of that record back to a tree head hash.
+      </p>
+      <p class="gmb-3">
+        The client calculates the hash of the record and the chain of hashes up the tree to the tree head hash.
+      </p>
+      <p class="gmb-3">
+        In the diagram <span class="md:hidden"> above</span><span class="hidden md:inline-block">on the right</span>, calculating an inclusion proof of record <span class="record-label-2">2</span> would mean:
+      </p>
+      <ul class="list-disc-blue gmb-3">
+        <li>calculating the hash of record <span class="record-label-2">2</span>, to get <span class="hash-label-b">B</span></li>
+        <li>asking the log for missing hashes <span class="hash-label-a">A</span> and <span class="hash-label-d">D</span></li>
+        <li>calculating the hash of <span class="hash-label-a">A</span> + <span class="hash-label-b">B</span> to get <span class="hash-label-c">C</span></li>
+        <li>calculating the hash of <span class="hash-label-c">C</span> and <span class="hash-label-d">D</span> to get <span class="hash-label-e">E</span></li>
+        <li>comparing <span class="hash-label-e">E</span> to the tree head hash advertised by the log</li>
+      </ul>
+      <p class="gmb-3">
+        In this case, the inclusion proof verifies that the exact content of record <span class="record-label-2">2</span> is present in the log that has a tree head <span class="hash-label-e">E</span>.
+      </p>
+    </div>
+
+    <div class="vds-col-right">
+      <img src="
+
+/images/merkle-trees/merkle-tree-a-b-d.svg
+" class="w-full gmb-4" />
+      <p class="figure-label text-center sm:text-left text-Grey-600">A Merkle tree with 3 records</p>
+    </div>
+  </div>
+  <div class="glue-grid">
+    <div class="vds-col-left">
+      <a id="consistency-proof" class="gpt-4"></a>
+      <h3 class="headline5 font-bold gpt-4 gmb-3">Consistency proof</h3>
+      <p class="gmb-3">
+        A consistency proof verifies the consistency between a log at two points in time.
+      </p>
+      <p class="gmb-3">
+        It verifies that the later version includes everything in the earlier version, in the same order, and all new entries come after the entries in the older version.
+      </p>
+
+      <h4 class="headline6 font-bold gmt-4 gmb-3">Consistency proofs tell us nothing was tampered with</h4>
+    </div>
+  </div>
+  <div class="glue-grid">
+    <div class="vds-col-left">
+      <p class="gmb-3">
+        Suppose you have a log with three records called Tree 3.
+      </p>
+      <p class="gmb-3">
+        At some point in time you inspected records <span class="record-label-1">1</span>, <span class="record-label-2">2</span> and <span class="record-label-3">3</span> and were confident they were correct.
+      </p>
+      <p class="gmb-3">
+        You kept a copy of the tree head hash <span class="hash-label-e">E</span> as a snapshot of all the records. By re-calculating the hashes you can use <span class="hash-label-e">E</span> to check whether any records are modified.
+      </p>
+      <p class="gmb-3">
+        This means you won't have to inspect those records all over again.
+      </p>
+    </div>
+
+    <div class="vds-col-right">
+      <img src="
+
+/images/merkle-trees/merkle-tree-a-b-d.svg
+" class="w-full gmb-4 " />
+      <p class="figure-label text-center sm:text-left text-Grey-600">Tree 3</p>
+    </div>
+  </div>
+
+  <div class="glue-grid">
+    <div class="vds-col-left">
+      <h4 class="headline6 font-bold gmt-4 gmb-3">When records are added, how to check previous records?</h4>
+    </div>
+  </div>
+
+  <div class="glue-grid">
+    <div class="vds-col-left">
+      <p class="gmb-3">
+        Later, another record <span class="record-label-4">4</span> is added - let's call it Tree 4.
+      </p>
+      <p class="gmb-3">
+        With this new tree, how do you know that records <span class="record-label-1">1</span> − <span class="record-label-3">3</span> haven't been modified? Our snapshot <span class="hash-label-e">E</span> is no longer the tree head hash.
+      </p>
+      <p class="gmb-3">
+        The Merkle tree allows us to calculate a consistency proof using our saved <span class="hash-label-e">E</span> to verify that records <span class="record-label-1">1</span> − <span class="record-label-3">3</span> didn't change.
+      </p>
+      <p class="gmb-3">
+        Specifically, a consistency proof between Tree 3 and Tree 4 answers:
+      </p>
+      <ul class="list-disc-blue gmb-3">
+        <li>Does Tree 4 fully contain Tree 3? (If Tree 4 was only 3 records long, would its tree head hash work out as <span class="hash-label-e">E</span>?)</li>
+        <li>If I took Tree 3 and added record <span class="record-label-4">4</span>, would I get Tree 4?</li>
+      </ul>
+
+      <p class="gmb-3">
+        If both questions are positive, you know that records <span class="record-label-1">1</span> − <span class="record-label-3">3</span> haven't been tampered since you took snapshot <span class="hash-label-e">E</span>.
+      </p>
+
+      <h4 class="headline6 font-bold gmt-4 gmb-3">
+        Clients must store a copy of tree head hashes
+      </h4>
+
+      <p class="gmb-3">
+        In order to check that records haven't been retrospectively altered, or tampered, clients must keep their own separate record of tree head hashes.
+      </p>
+      <p class="gmb-3">
+        By keeping a record of a tree head you saw today, you can confirm that future versions of the log still contain today's log precisely, with no modifications.
+      </p>
+      <p class="gmb-3">
+        In the example above, storing <span class="hash-label-e">E</span> allowed us to verify that Tree 4 was an extension of Tree 3, and contained unmodified records <span class="record-label-1">1</span> − <span class="record-label-3">3</span>.
+      </p>
+      <p class="gmb-3 italic">
+        Also known as: <a href="https://www.certificate-transparency.org/log-proofs-work">Merkle Audit Proof</a>
+      </p>
+    </div>
+
+    <div class="vds-col-right">
+      <img src="
+
+/images/merkle-trees/merkle-tree-a-b-d-f-ghost-e.svg
+" class="w-full gmb-4 " />
+      <p class="figure-label text-center sm:text-left text-Grey-600">Tree 4</p>
+    </div>
+  </div>
+
+  <div class="glue-grid">
+    <div class="vds-col-left">
+      <a id="full-audit" class="gpt-4"></a>
+      <h3 class="headline5 font-bold gpt-4 gmb-3">Full audit</h3>
+      <p class="gmb-3">
+        A malicious log operator could quietly modify a record while neglecting to update its hash and all the other hashes in the tree.
+      </p>
+      <p class="gmb-3">
+        If you requested that record but didn't calculate an inclusion proof, you wouldn't know it had been modified.
+      </p>
+      <p class="gmb-3">
+        A tampered log can be detected by re-calculating every hash from scratch and comparing the tree head hash to a known historical value. By recalculating the whole tree it should always result in the same tree head hash. This is called a full audit.
+      </p>
+
+      <h4 class="headline6 font-bold gmt-4 gmb-3">
+        The role of auditors
+      </h4>
+
+      <p class="gmb-3">
+        An external auditor has two main roles:
+      </p>
+
+      <ol class="list-disc-blue gmb-3">
+        <li class="">confirm that a log's tree is being honestly maintained by performing full audits.</li>
+        <li class="">check the actual information inside the log for good behaviour, which depends on the application.</li>
+      </ol>
+
+      <p class="gmb-3">
+        To carry out a full audit, an auditor needs access to a historical record of tree head hashes to ensure the log hasn't been tampered with. Without this, the whole tree could be simply re-calculated to include a tampered record and there'd be no way to detect it.
+      </p>
+
+      <h4 class="headline6 font-bold gmt-4 gmb-3">
+        Operational considerations
+      </h4>
+      <p class="gmb-3">
+        This demonstrates some important operational considerations:
+      </p>
+      <ol class="list-disc-blue gmb-3">
+        <li>Clients must calculate inclusion proofs for every record they use.</li>
+        <li>Honest log operators should publish and share widely their tree head hashes, allowing a future full audit.</li>
+        <li>Clients should store copies of historical tree head hashes, assist with future audits (as well as carry out their own consistency proofs)</li>
+      </ol>
+
+      <a id="verifiable-map" class="gpt-4"></a>
+      <h2 class="headline3 gpt-6 gmb-3">Verifiable map</h2>
+
+      <p class="gmb-3">
+        While Trillian primarily acts as a verifiable log, it also has an experimental map mode. This allows storing key-value pairs in a verifiable way.
+      </p>
+      <p class="gmb-3">
+        In map mode, Trillian arranges the Merkle tree differently from log mode. Rather than dynamically growing the tree as new log entries are added, the tree is a fixed size.
+      </p>
+      <p class="gmb-3">
+        A hash function is agreed in advance, for example SHA256, which is applied to any key entered into the map.
+      </p>
+      <p class="gmb-3">
+        The tree is arranged so every leaf of the tree represents a particular value of the hash function. That means a given key always results in exactly the same leaf location in the tree.
+      </p>
+      <p class="gmb-3">
+        To find the leaf, you calculate the hash of the key, giving 256 bits (each can be 1 or 0). Starting at the top, you descend the tree and for each bit of the hash value you turn either "left" or "right" (1 or 0). This leads directly to the leaf that contains the public key.
+      </p>
+    </div>
+  </div>
+
+  <div class="glue-grid">
+    <div class="vds-col-left">
+      <p class="gmb-3">
+        In this example, suppose you want to store data against the key
+      </p>
+      <pre class="gmb-3">"hello@example.com"</pre>
+      <p class="gmb-3">
+        You calculate the SHA256 hash of "hello@example.com", giving 256 binary bits:
+      </p>
+      <pre>1011101010011101111011011001101101000001001110001101001111000010110001000011111011101101111111011100100100110000101100100111100101111011111000110101010001000111101100000100111000000011111111111000001000000000111000101010101110010100101010101001000000110</pre>
+      <p class="gmb-3">
+        You descend the tree one level per bit, turning right or left for 0 and 1.
+      </p>
+      <p class="gmb-3">
+        After 256 levels you reach the record that represents the value associated with the key "hello@example.com"
+      </p>
+      <p class="gmb-3">
+        As with a log, the single map head hash is like a snapshot of the entire map. As with a log, you can perform an inclusion proof against a map head hash, verifying that the value associated with the key is really in the map.
+      </p>
+      <p class="gmb-3">
+        Clearly, 2<sup>256</sup> possible keys is far too many keys to actually store. For more details, including how that works, refer to the whitepaper.
+      </p>
+    </div>
+<!--
+    <div class="vds-col-right">
+      <img src="
+
+/images/merkle-trees/merkle-tree-a-b-d-f-ghost-e.svg
+" class="w-full gmb-4 " />
+      <p class="figure-label text-center sm:text-left text-Grey-600">Tree 4</p>
+    </div> -->
+  </div>
+
+  <div class="glue-grid">
+    <div class="vds-col-left">
+      <a id="log-backed-map" class="gpt-4"></a>
+      <h2 class="headline3 gpt-6 gmb-3">Log-backed map</h2>
+
+      <p class="gmb-3">
+        A verifiable map has limitations which can be addressed by combining a verifiable map with a verifiable log. Any changes to the verifiable map are entered into a verifiable log, and only when present in the log are they applied to the verifiable map. This allows proving the correct operation over time.
+      </p>
+      <p class="gmb-3">
+        This is the data structure currently used by Key Transparency.
+      </p>
+      <p class="gmb-3">
+        The Verifiable Data Structures whitepaper discusses the limitations of a verifiable map, and how a log-backed map addresses these.
+      </p>
+
+
+      <a id="resources" class="gpt-4"></a>
+      <h2 class="headline3 gpt-6 gmb-3">Resources</h2>
+
+      <ul class="list-disc-blue gmb-3">
+        <li>
+          <a href="https://github.com/google/trillian/blob/master/docs/papers/VerifiableDataStructures.pdf">Verifiable Data Structures whitepaper</a>
+        </li>
+        <li>
+          <a href="https://github.com/google/trillian/blob/master/README.md">Trillian project README</a><br />
+          See sections on
+          <a href="https://github.com/google/trillian/blob/master/README.md#log-mode">Log Mode</a>,
+          <a href="https://github.com/google/trillian/blob/master/README.md#map-mode">Map Mode</a>,
+          <a href="https://github.com/google/trillian/blob/master/README.md#verifiable-log-backed-map">Verifiable Log-Backed Map</a>
+        </li>
+        <li>
+          <a href="https://github.com/google/keytransparency/blob/master/docs/verification.md#verification-steps">Key Transparency: verification steps</a><br />
+          Illustrates how a log-backed map is verified
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+
+
+<div class="text-white bg-Grey-050 font-google">
+
+  <div class="glue-page gpt-4 gpb-5">
+    <div class="glue-grid">
+      <div class="col-span-4 sm:col-span-5 sm:col-start-2">
+        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Learn about Trillian</h2>
+        <ul class="text-Grey-600">
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900">Benefits</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#how-it-works' class="text-Grey-600 hover:text-Grey-900">How it works</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#example-code' class="text-Grey-600 hover:text-Grey-900">Example code</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900">Verifiable Data Structures</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col-span-4 gmt-2 sm:col-span-5 sm:mt-0">
+        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Applications of Trillian</h2>
+        <ul class="text-Grey-600 gmb-4">
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900">Add tamper-checking to a package manager</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900">Reliably log all actions performed on your servers</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900">Strengthen discovery of encryption keys with Key Transparency</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900">Discourage misbehaviour by third parties in Certificate Transparency</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
+        <img src="/images/logos/google-logo.svg" alt="Google's Logo" />
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm"><a href="privacy" class="text-Grey-600 hover:text-Grey-900">Privacy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

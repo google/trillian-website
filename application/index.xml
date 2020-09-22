@@ -11,15 +11,6 @@
     
     <item>
       <title></title>
-      <link>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</guid>
-      <description>--- url: application/discourage-misbehaviour-by-third-parties-in-certificate-transparency layout: glue-page title: Discourage misbehaviour by third parties in Certificate Transparency description: Certificate Transparency Logs use Trillian in verifiable log mode. Certificates are stored as leaves in the Merkle Tree and the browser verifies that certificates are included in the log, and that the log history hasn’t been tampered with. --- Trillan helps you Discourage misbehaviour by third parties in Certificate Transparency    HTTPS security relies on hundreds of Certificate Authorities (CAs) whose job is to issue certificates while checking that the requester is eligible.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -35,6 +26,16 @@ Unfortunately any CA can issue a certificate for any domain (more or less). So a
       
       <guid>https://trillian.transparency.dev/application/add-tamper-checking-to-a-package-manager/</guid>
       <description>Advantages  Ensure all users receive exactly the same code for a given package version. Protect you against hacked Github accounts force-pushing malicious code. Minimise the impact of a hacked download server. Protect you from a man-in-the-middle attack serving a tampered package with malicious code. Prevent upstream authors modifying the source code of an existing released version.   How it works Tamper checking means the ability to detect if a package file has been modified since it was first added to the package manager.</description>
+    </item>
+    
+    <item>
+      <title>Discourage misbehaviour by third parties in Certificate Transparency</title>
+      <link>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</guid>
+      <description>Trillan helps you Discourage misbehaviour by third parties in Certificate Transparency    HTTPS security relies on hundreds of Certificate Authorities (CAs) whose job is to issue certificates while checking that the requester is eligible. For example, they should only issue a certificate for mozilla.org to entities that can prove they control mozilla.org (hopefully only authorized people at Mozilla!).
+Unfortunately any CA can issue a certificate for any domain (more or less).</description>
     </item>
     
     <item>

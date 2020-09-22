@@ -1,3 +1,476 @@
+<!doctype html>
+
+ <!--
+  Copyright 2020 Google LLC
+ 
+  Licensed under the Apache License, Version 2.0 (the 'License');
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an 'AS IS' BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+      
+        
+          Trillian lets you add tamper checking to a package manager
+         |
+       Trillian
+    </title>
+
+    
+      <meta name="description" content="This means you can detect if a package file has been modified since it was first added to the package manager." property="og:description"/>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173407084-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://trillian.transparency.dev/css/styles.min.7450fcf3e4230296c78c1deb23b79a694954ecaffe425b7ff55e997d3059939c.css" integrity="sha256-dFD88&#43;QjApbHjB3rI7eaaUlU7K/&#43;Qlt/9V6ZfTBZk5w=">
+    <script>
+      'use strict';
+
+      function ready(fn) {
+        if (document.attachEvent
+          ? document.readyState === 'complete'
+          : document.readyState !== 'loading') {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      function addClass(el, className) {
+        if (el.classList) {
+          el.classList.add(className);
+        } else {
+          el.className += ' ' + className;
+        }
+      }
+
+      function removeClass(el, className) {
+        if (el.classList) {
+          el.classList.remove(className);
+        } else {
+          el.className = el.className.replace(
+              new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '
+          );
+        }
+      }
+    </script>
+  </head>
+<body>
+    
+
+<div class="bg-white z-50 w-full font-google" id="site-header">
+<nav class="glue-page test-fixed">
+  <div class="md:hidden absolute h-16 flex items-center cursor-pointer">
+    <div id="toggleMenu" class="h-8 flex items-center justify-left px-4 -mx-4 rounded text-Grey-700">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
+        <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  </div>
+  <ul class="mx-auto md:float-left h-16 flex items-center">
+    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Trillian</a></li>
+  </ul>
+  <ul class="invisible md:visible float-right h-16 flex items-center">
+    <li class="text-right inline mr-6"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
+    <li class="text-right inline mr-6"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+  </ul>
+</nav>
+<ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
+  <li class="gmb-2"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
+  <li class="gmb-2"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
+  <li class="gmb-2"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
+  <li class=""><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+</ul>
+</div>
+<div id="nav-spacer" class="h-16"></div>
+
+<script>
+  'use strict';
+  (function(){
+
+    var doc = document.documentElement;
+    var w = window;
+
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+
+    var header = document.getElementById('site-header');
+
+    var checkScroll = function() {
+
+      
+
+
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        
+        direction = 1;
+      }
+
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
+
+      prevScroll = curScroll;
+    };
+
+    var toggleHeader = function(direction, curScroll) {
+      if (direction === 2 && curScroll > 64) {
+        addClass(header, 'hide');
+        addClass(mobileMenu, 'hidden');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        removeClass(header, 'hide');
+        prevDirection = direction;
+      }
+    };
+
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function toggleMenuVisibility() {
+      if (mobileMenu.classList.contains('hidden')) {
+        removeClass(mobileMenu, 'hidden');
+        return;
+      };
+      addClass(mobileMenu, 'hidden');
+    };
+
+    window.addEventListener('scroll', checkScroll);
+    document.getElementById('toggleMenu').onclick = toggleMenuVisibility;
+
+  })();
+</script>
+
+<section class="glue-page gmt-6 gmb-4">
+  <div class="glue-grid">
+    <div class="col-span-12 lg:col-span-10 lg:col-start-2 md:text-center">
+      <h1 class="headline2">
+        <div class="eyebrow">Trillian lets you</div>
+        Add tamper checking to a package manager
+      </h1>
+      
+        <img src="/images/application-illustrations/top_tamper-checking.svg" class="gmt-4 gmb-4 w-full" />
+      
+    </div>
+  </div>
+  <div class="glue-grid gmb-5 linked-headers">
+    <aside class="submenu col-span-4 gpb-4 sm:col-span-6 md:col-span-4 lg:col-span-3 lg:col-start-2 md:pb-0 md:h-screen md:sticky top-header-plus-padding">
+      <ul id="section-links-list" class="bg-Grey-100">
+        
+        
+          <li><a href="#advantages">Advantages</a></li>
+        
+          <li><a href="#how-it-works">How it works</a></li>
+        
+          <li><a href="#how-the-system-is-verifiable">How the system is verifiable</a></li>
+        
+          <li><a href="#limitations">Limitations</a></li>
+        
+          <li><a href="#how-to-implement-this">How to implement this</a></li>
+        
+          <li><a href="#how-to-further-strengthen">How to further strengthen</a></li>
+        
+          <li><a href="#examples">Examples</a></li>
+        
+          <li><a href="#further-resources">Further resources</a></li>
+        
+      </ul>
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-7 gmb-7 markdown">
+      <h2 id="advantages">Advantages</h2>
+<div class="font-google font-medium">
+<ul>
+<li>Ensure all users receive exactly the same code for a given package version.</li>
+<li>Protect you against hacked Github accounts force-pushing malicious code.</li>
+<li>Minimise the impact of a hacked download server.</li>
+<li>Protect you from a man-in-the-middle attack serving a tampered package with malicious code.</li>
+<li>Prevent upstream authors modifying the source code of an existing released version.</li>
+</ul>
+</div>
+<h2 id="how-it-works">How it works</h2>
+<p>Tamper checking means the ability to detect if a package file has been modified since it was first added to the package manager.</p>
+<p>This is a form of trust-on-first-use, similar to logging into an SSH server for the first time and storing the host key fingerprint. However in this case &ldquo;first use&rdquo; is the first time any user downloaded the file.</p>
 
 
 
+<figure>
+    <img src="/images/application-illustrations/diagram_package-tamper-checking.svg" />
+</figure>
+
+
+<ol>
+<li>The package manager downloads a versioned package from the download server. This is typically a tarball or ZIP file and should never change after it&rsquo;s published.</li>
+<li>The package manager calculates the hash value of the downloaded package.</li>
+<li>The package manager asks the hash database if it has the hash value for the package&rsquo;s name and version number e.g. &ldquo;libfoo-1.4.6&rdquo;</li>
+<li>The hash database checks whether it has previously downloaded the package by looking in its verifiable log. If not, it downloads the package, calculates the hash value and enters it into the verifiable log.</li>
+<li>The hash database returns the checksum along with extra details about the record in the verifiable log.
+The package manager verifies the answer from the hash database and compares the returned checksum with the one it generated in (2). If they match, installation can continue.</li>
+</ol>
+<h2 id="how-the-system-is-verifiable">How the system is verifiable</h2>
+<h3 id="package-records-are-stored-in-a-verifiable-log">Package records are stored in a verifiable log</h3>
+<p>The hash database creates a record for every package that looks like:</p>
+<pre><code>{
+    &quot;package&quot;: &quot;libfoo-1.4.6&quot;,
+    &quot;fileHash&quot;: &quot;h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=&quot;
+}
+</code></pre><p>Every package record is inserted as a leaf node in the Merkle tree underlying the <a href="/verifiable-data-structures/#verifiable-log">verifiable log</a>.</p>
+<h3 id="replies-from-the-hash-database-include-the-signed-tree-head">Replies from the hash database include the signed tree head</h3>
+<p>When the package manager queries the hash database for a package version, it returns the record in addition to a <a href="/verifiable-data-structures/#signed-tree-head">signed tree head</a> and the current tree size.</p>
+<pre><code>{
+    &quot;package&quot;: &quot;libfoo-1.4.6&quot;,
+    &quot;fileHash&quot;: &quot;h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=&quot;,
+    &quot;signedTreeHead&quot;: &quot;8LWIh9TTzhdSA21WbE0oEL4JPlmADkfP3Z0=&quot;,
+    &quot;treeSize&quot;: 1291072
+}
+</code></pre><p>The signed tree head is the top level hash, signed by a private key known only to the hash database. The public key is baked into the package manager. This gives more confidence that the package manager is communicating with the real hash database (and no man-in-the-middle is occurring, for example).</p>
+<h3 id="the-package-manager-proves-the-record-is-in-the-log">The package manager proves the record is in the log</h3>
+<p>The package manager verifies that the hash value is really in the log described by the tree head. It calculates the chain of hashes from the leaf to the top of the tree, verifying it matches the received tree head. If so, it&rsquo;s confirmed the record is in the log. This is called the <a href="/verifiable-data-structures/#inclusion-proof">inclusion proof</a>.</p>
+<h3 id="the-package-manager-checks-previous-trees-havent-been-tampered-with">The package manager checks previous trees haven&rsquo;t been tampered with</h3>
+<p>Every time the package manager validates a signed tree head, it keeps a local copy it will use later. The tree head acts as a snapshot of the tree at a particular point in time or log size.</p>
+<p>As time passes and new records are added to the log, the tree expands. A verifiable log is always populated in a way that the new, larger tree should fully contain any previous trees, providing no records have been tampered with.</p>
+<p>The second time the package queries the checksum database, it receives the updated signed tree head. It uses the previously stored tree head to check that the previous tree is fully contained in the current tree. This proves that nothing in the previous tree has been tampered with.</p>
+<p>This process of comparing one tree against another is called a <a href="/verifiable-data-structures/#consistency-proof">consistency proof</a>.</p>
+<h3 id="tampering-with-the-log-would-be-highly-visible">Tampering with the log would be highly visible</h3>
+<p>Tampering with the log would cause the inclusion proof or consistency proof to fail in every installation of the package manager. This would be highly visible since there could be thousands or millions of installs.</p>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li><strong>It doesn&rsquo;t protect against malicious code</strong> - while an attacker can&rsquo;t modify the code for an existing version number, they could create a new version. However, the new version would become globally visible - it couldn&rsquo;t be delivered to a single user. This would increase the likelihood of it being discovered.</li>
+<li><strong>The hash database could lie to targeted users</strong> - it could return the hash of a malicious variant of a particular package. However:
+<ul>
+<li>It would have to collude with the download server to serve the malicious version of the package to that user (and only them).</li>
+<li>It would have to maintain a separate &ldquo;forked&rdquo; log for that user to pass any subsequent verifications by the package manager.</li>
+</ul>
+</li>
+<li><strong>Tamper detection is only as good as the UI that explains it</strong> - if a user does encounter a tampered package, they may not understand the implications. In the worst case, a user may wipe their verification cache and try again to &ldquo;make it work&rdquo;. This could be mitigated with a feedback loop where the package manager uploads such incidents to a security team.</li>
+</ul>
+<h2 id="how-to-implement-this">How to implement this</h2>
+<p>To implement this you need to build two components:</p>
+<ol>
+<li>
+<p><strong>Hash database</strong> (Trillian personality). This exposes the API used by the package manager, and builds on Trilian&rsquo;s verifiable log data structure. Roughly, the API endpoints would be:</p>
+<ul>
+<li><code>/lookup/{package-name}-{version}</code> - returns the checksum of the package file along with a record number and signed tree head.</li>
+<li><code>/consistency-proof</code> - returns data required to verify that a previously-stored signed tree head exists in a later tree. This verifies that the log hasn&rsquo;t been tampered with since you last accessed it.</li>
+</ul>
+</li>
+<li>
+<p><strong>Verify component</strong> in the package manager. This component:</p>
+<ul>
+<li>Queries the checksum server&rsquo;s API for the package version.</li>
+<li>Compares the checksum of the downloaded file and the checksum returned by the hash database.</li>
+<li>Verifies the checksum server&rsquo;s verifiable log and stores a local cache of all signed tree heads it encounters.</li>
+<li>Carries out consistency proofs for new tree heads.</li>
+</ul>
+</li>
+</ol>
+<h2 id="how-to-further-strengthen">How to further strengthen</h2>
+<ul>
+<li><strong>Encourage external monitors</strong> - to carry out a full audit of the hash database, re-calculating all the hashes in the tree and ensuring they re-create the tree head.</li>
+<li><strong>Notify code authors about new releases</strong> - if an author&rsquo;s account is hacked and a malicious version is released, notifying the author makes it more likely the malicious update is detected.</li>
+<li><strong>Make code diffs visible</strong> - making it easy for members of the community to glance at what actual code has changed between versions makes it more likely malicious code will be spotted.</li>
+<li><strong>Introduce a feedback loop on failures</strong> - sharing verification failures with people familiar with the whole system takes the burden off the end-user and makes it more likely malicious changes will be detected.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p>This is implemented in production for Golang with a <a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">checksum database</a> and <a href="https://blog.golang.org/module-mirror-launch">module mirror</a>.</p>
+<h2 id="further-resources">Further resources</h2>
+<ul>
+<li><a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">Proposal: Secure the Public Go Module Ecosystem</a> describes the checksum database that forms Golang’s approach to this pattern.</li>
+<li><a href="https://www.youtube.com/watch?v=KqTySYYhPUE&amp;t=15m0s">GopherCon 2019: Katie Hockman - Go Module Proxy: Life of a Query</a> -
+Talk from GopherCon explaining how Go achieves 1) - talk from GopherCon explaining how Go achieves 1) reproducible builds, 2) persistent dependencies and 3) trustworthy fetches. Point 3) goes into detail about the checksum database, starting at 15:00.</li>
+<li><a href="https://pretired.dazwilkin.com/posts/200429/">Rust implementation of Crate Transparency using Google Trillian</a> and <a href="https://pretired.dazwilkin.com/posts/190926/">PyPi Transparency</a>
+Daz Wilkin demonstrates building a Trillian personality to apply this pattern to Rust and Python&rsquo;s package managers.</li>
+</ul>
+
+    </article>
+  </div>
+</section>
+
+<script>
+  const scrollHelper = (function() {
+    let scrolling = false;
+    let scrollHandlers = [];
+
+    const recordPageIsScrolling = function(e) {
+      scrolling = true;
+    };
+
+    const checkAndRunScrollHandlers = function() {
+      if (!scrolling || scrollHandlers.length == 0) {
+        return;
+      }
+      scrolling = false;
+
+      console.debug('running ', scrollHandlers.length, 'scroll handlers:', scrollHandlers);
+
+      for (let i = 0, size = scrollHandlers.length; i < size; i++) {
+        const shouldDetach = scrollHandlers[i]();
+
+        if (shouldDetach) {
+          console.debug('scroll handler is done, will remove');
+          scrollHandlers[i] = false; 
+        }
+      }
+
+      scrollHandlers = scrollHandlers.filter(function(h) {
+        return h != false;
+      }); 
+    };
+
+    ready(function() {
+      setInterval(checkAndRunScrollHandlers, 500);
+      window.addEventListener('scroll', recordPageIsScrolling);
+    });
+
+    return {
+      
+
+      
+      
+      
+      addScrollHandler: function(handler) {
+        console.log("handler", handler);
+        scrollHandlers.push(handler);
+      },
+
+      scrollYIsBetween: function(lower, upper) {
+        console.log("checking between ", lower, upper);
+        return (lower <= window.scrollY && window.scrollY < upper);
+      },
+
+      
+      getScrollPercent: function() {
+        const h = document.documentElement;
+        const b = document.body;
+        const st = 'scrollTop';
+        const sh = 'scrollHeight';
+        return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+      },
+    };
+  })();
+
+  const links = document.getElementById('section-links-list').getElementsByTagName('a');
+  const h2s = document.getElementById('content').getElementsByTagName('h2');
+
+  function highlightSectionLink(j) {
+    for (let step = 0; step < links.length; step++) {
+      
+      removeClass(links[step], 'in-section');
+    }
+    addClass(links[j], 'in-section');
+  }
+
+  ready(function() {
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(0, 711)) {
+          highlightSectionLink(0);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(711, 1239)) {
+          highlightSectionLink(1);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(1239, 2347)) {
+          highlightSectionLink(2);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(2347, 2755)) {
+          highlightSectionLink(3);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(2755, 3211)) {
+          highlightSectionLink(4);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(3211, 3475)) {
+          highlightSectionLink(5);
+        }
+    });
+  });
+
+</script>
+
+
+<div class="text-white bg-Grey-050 font-google">
+
+  <div class="glue-page gpt-4 gpb-5">
+    <div class="glue-grid">
+      <div class="col-span-4 sm:col-span-5 sm:col-start-2">
+        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Learn about Trillian</h2>
+        <ul class="text-Grey-600">
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900">Benefits</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#how-it-works' class="text-Grey-600 hover:text-Grey-900">How it works</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#example-code' class="text-Grey-600 hover:text-Grey-900">Example code</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900">Verifiable Data Structures</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col-span-4 gmt-2 sm:col-span-5 sm:mt-0">
+        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Applications of Trillian</h2>
+        <ul class="text-Grey-600 gmb-4">
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900">Add tamper-checking to a package manager</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900">Reliably log all actions performed on your servers</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900">Strengthen discovery of encryption keys with Key Transparency</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900">Discourage misbehaviour by third parties in Certificate Transparency</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
+        <img src="/images/logos/google-logo.svg" alt="Google's Logo" />
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm"><a href="privacy" class="text-Grey-600 hover:text-Grey-900">Privacy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

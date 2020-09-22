@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Trillian</title>
+    <title>An open-source append only ledger on Trillian</title>
     <link>https://trillian.transparency.dev/</link>
-    <description>Recent content on Trillian</description>
+    <description>Recent content in An open-source append only ledger on Trillian</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="https://trillian.transparency.dev/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</guid>
-      <description>--- url: application/discourage-misbehaviour-by-third-parties-in-certificate-transparency layout: glue-page title: Discourage misbehaviour by third parties in Certificate Transparency description: Certificate Transparency Logs use Trillian in verifiable log mode. Certificates are stored as leaves in the Merkle Tree and the browser verifies that certificates are included in the log, and that the log history hasn’t been tampered with. --- Trillan helps you Discourage misbehaviour by third parties in Certificate Transparency    HTTPS security relies on hundreds of Certificate Authorities (CAs) whose job is to issue certificates while checking that the requester is eligible.</description>
-    </item>
     
     <item>
       <title></title>
@@ -40,21 +31,22 @@ Assumptions:
     </item>
     
     <item>
-      <title></title>
-      <link>https://trillian.transparency.dev/verifiable-data-structures/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://trillian.transparency.dev/verifiable-data-structures/</guid>
-      <description>--- url: /verifiable-data-structures layout: index title: Verifiable Data Structures description: An overview of Trillian&#39;s verifiable log, verifiable map and log-backed map as well as links to further resources. --- Verifiable data structures    Verifiable log Trillian uses a Merkle tree to implement a verifiable log. Every record inserted into a verifiable log is added as a new leaf in the Merkle tree. In the diagram aboveon the right, the four records are shown along the bottom.</description>
-    </item>
-    
-    <item>
       <title>Add tamper checking to a package manager</title>
       <link>https://trillian.transparency.dev/application/add-tamper-checking-to-a-package-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://trillian.transparency.dev/application/add-tamper-checking-to-a-package-manager/</guid>
       <description>Advantages  Ensure all users receive exactly the same code for a given package version. Protect you against hacked Github accounts force-pushing malicious code. Minimise the impact of a hacked download server. Protect you from a man-in-the-middle attack serving a tampered package with malicious code. Prevent upstream authors modifying the source code of an existing released version.   How it works Tamper checking means the ability to detect if a package file has been modified since it was first added to the package manager.</description>
+    </item>
+    
+    <item>
+      <title>Discourage misbehaviour by third parties in Certificate Transparency</title>
+      <link>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trillian.transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</guid>
+      <description>Trillan helps you Discourage misbehaviour by third parties in Certificate Transparency    HTTPS security relies on hundreds of Certificate Authorities (CAs) whose job is to issue certificates while checking that the requester is eligible. For example, they should only issue a certificate for mozilla.org to entities that can prove they control mozilla.org (hopefully only authorized people at Mozilla!).
+Unfortunately any CA can issue a certificate for any domain (more or less).</description>
     </item>
     
     <item>
@@ -86,6 +78,15 @@ To disable our use of Google Analytics, enable the Do Not Track setting in your 
       <guid>https://trillian.transparency.dev/application/strengthen-discovery-of-encryption-keys/</guid>
       <description>Key Transparency offers tamper-evident key discovery Key Transparency is a design for a tamper-evident key discovery service that providers of end-to-end encryption services could implement. Key Transparency solves the problem of key discovery using Trillian&amp;rsquo;s Map Mode.
 Advantages of Key Transparency  Automate user discovery of end-to-end encryption keys. Provide a shared global view of public keys - everyone should see the same public key for a given username. Increase the difficulty of an attacker performing a man-in-the-middle attack.</description>
+    </item>
+    
+    <item>
+      <title>Verifiable Data Structures</title>
+      <link>https://trillian.transparency.dev/verifiable-data-structures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trillian.transparency.dev/verifiable-data-structures/</guid>
+      <description>Verifiable data structures    Verifiable log Trillian uses a Merkle tree to implement a verifiable log. Every record inserted into a verifiable log is added as a new leaf in the Merkle tree. In the diagram aboveon the right, the four records are shown along the bottom. The squares in the diagram are cryptographic hash values. The bottom level of hashes - A, B, D and F - are calculated by hashing records 1, 2, 3 and 4.</description>
     </item>
     
   </channel>

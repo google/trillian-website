@@ -1,3 +1,463 @@
+<!doctype html>
+
+ <!--
+  Copyright 2020 Google LLC
+ 
+  Licensed under the Apache License, Version 2.0 (the 'License');
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an 'AS IS' BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+      
+        
+          Use Trillian&#39;s Map Mode to strengthen discovery of encryption keys
+         |
+       Trillian
+    </title>
+
+    
+      <meta name="description" content="Key Transparency is a design for a tamper-evident key discovery service that providers of end-to-end encryption services could implement. Key Transparency uses Trillian&#39;s Map Mode." property="og:description"/>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173407084-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://trillian.transparency.dev/css/styles.min.7450fcf3e4230296c78c1deb23b79a694954ecaffe425b7ff55e997d3059939c.css" integrity="sha256-dFD88&#43;QjApbHjB3rI7eaaUlU7K/&#43;Qlt/9V6ZfTBZk5w=">
+    <script>
+      'use strict';
+
+      function ready(fn) {
+        if (document.attachEvent
+          ? document.readyState === 'complete'
+          : document.readyState !== 'loading') {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      function addClass(el, className) {
+        if (el.classList) {
+          el.classList.add(className);
+        } else {
+          el.className += ' ' + className;
+        }
+      }
+
+      function removeClass(el, className) {
+        if (el.classList) {
+          el.classList.remove(className);
+        } else {
+          el.className = el.className.replace(
+              new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '
+          );
+        }
+      }
+    </script>
+  </head>
+<body>
+    
+
+<div class="bg-white z-50 w-full font-google" id="site-header">
+<nav class="glue-page test-fixed">
+  <div class="md:hidden absolute h-16 flex items-center cursor-pointer">
+    <div id="toggleMenu" class="h-8 flex items-center justify-left px-4 -mx-4 rounded text-Grey-700">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
+        <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  </div>
+  <ul class="mx-auto md:float-left h-16 flex items-center">
+    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Trillian</a></li>
+  </ul>
+  <ul class="invisible md:visible float-right h-16 flex items-center">
+    <li class="text-right inline mr-6"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
+    <li class="text-right inline mr-6"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+  </ul>
+</nav>
+<ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
+  <li class="gmb-2"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
+  <li class="gmb-2"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
+  <li class="gmb-2"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
+  <li class=""><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+</ul>
+</div>
+<div id="nav-spacer" class="h-16"></div>
+
+<script>
+  'use strict';
+  (function(){
+
+    var doc = document.documentElement;
+    var w = window;
+
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+
+    var header = document.getElementById('site-header');
+
+    var checkScroll = function() {
+
+      
+
+
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        
+        direction = 1;
+      }
+
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
+
+      prevScroll = curScroll;
+    };
+
+    var toggleHeader = function(direction, curScroll) {
+      if (direction === 2 && curScroll > 64) {
+        addClass(header, 'hide');
+        addClass(mobileMenu, 'hidden');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        removeClass(header, 'hide');
+        prevDirection = direction;
+      }
+    };
+
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function toggleMenuVisibility() {
+      if (mobileMenu.classList.contains('hidden')) {
+        removeClass(mobileMenu, 'hidden');
+        return;
+      };
+      addClass(mobileMenu, 'hidden');
+    };
+
+    window.addEventListener('scroll', checkScroll);
+    document.getElementById('toggleMenu').onclick = toggleMenuVisibility;
+
+  })();
+</script>
+
+<section class="glue-page gmt-6 gmb-4">
+  <div class="glue-grid">
+    <div class="col-span-12 lg:col-span-10 lg:col-start-2 md:text-center">
+      <h1 class="headline2">
+        <div class="eyebrow">Use Trillian&#39;s Map Mode to</div>
+        Strengthen discovery of encryption keys
+      </h1>
+      
+        <div class="gmb-5"></div>
+      
+    </div>
+  </div>
+  <div class="glue-grid gmb-5 linked-headers">
+    <aside class="submenu col-span-4 gpb-4 sm:col-span-6 md:col-span-4 lg:col-span-3 lg:col-start-2 md:pb-0 md:h-screen md:sticky top-header-plus-padding">
+      <ul id="section-links-list" class="bg-Grey-100">
+        
+        
+          <li><a href="#key-transparency-offers-tamper-evident-key-discovery">Tamper evident discovery</a></li>
+        
+          <li><a href="#advantages-of-key-transparency">Advantages</a></li>
+        
+          <li><a href="#key-transparency-uses-trillians-experimental-map-mode">Experimental map mode</a></li>
+        
+          <li><a href="#users-can-check-theyre-seeing-the-same-public-key">Users can check</a></li>
+        
+          <li><a href="#misbehaviour-by-key-servers-is-permanently-logged">Misbehaviour is logged</a></li>
+        
+          <li><a href="#background-the-problem-with-end-to-end-encryption">Background: the problem</a></li>
+        
+          <li><a href="#further-resources">Further resources</a></li>
+        
+      </ul>
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-7 gmb-7 markdown">
+      <h2 id="key-transparency-offers-tamper-evident-key-discovery">Key Transparency offers tamper-evident key discovery</h2>
+<p>Key Transparency is a design for a tamper-evident key discovery service that providers of end-to-end encryption services could implement. Key Transparency solves <a href="#background-the-problem-with-end-to-end-encryption">the problem of key discovery</a> using Trillian&rsquo;s Map Mode.</p>
+<h2 id="advantages-of-key-transparency">Advantages of Key Transparency</h2>
+<div class="font-google font-medium">
+<ul>
+<li>Automate user discovery of end-to-end encryption keys.</li>
+<li>Provide a shared global view of public keys - everyone should see the same public key for a given username.</li>
+<li>Increase the difficulty of an attacker performing a man-in-the-middle attack.</li>
+<li>Record a history of a user&rsquo;s public keys that can&rsquo;t be altered, ensuring misbehaviour by the key server will be recorded, even if it is temporary.</li>
+<li>Reduce the impact of a compromised server or legal demands for surveillance.</li>
+</ul>
+</div>
+<h2 id="key-transparency-uses-trillians-experimental-map-mode">Key Transparency uses Trillian&rsquo;s Experimental Map Mode</h2>
+<p>Key Transparency uses Trillian&rsquo;s experimental map mode, rather than the more common log mode. Specifically, Key Transparency uses a <a href="/verifiable-data-structures/#log-backed-map">log-backed map</a> which is a <a href="/verifiable-data-structures/#verifiable-map">verifiable map</a> combined with a <a href="/verifiable-data-structures/#verifiable-log">verifiable log</a>.</p>
+<h3 id="key-discovery-with-key-transparency">Key discovery with Key Transparency</h3>
+<p>To illustrate the way key discovery works in Key Transparency, we refer to a messaging app that uses mobile numbers to identify users. (Key Transparency is more flexible, supporting any type of username and multiple public keys per username.)</p>
 
 
 
+<figure>
+    <img src="/images/application-illustrations/diagram_key-transparency.svg" />
+</figure>
+
+
+<p>When Bob wants to send Alice an encrypted message:</p>
+<ol>
+<li>
+<p>Alice&rsquo;s app uploads her mobile number and public key to the key server.</p>
+<p>The key server calculates a special hash on the mobile number and stores the public key in a “log-backed map” - a data structure which links mobile numbers to public keys.</p>
+</li>
+<li>
+<p>Alice&rsquo;s app asks the key server for its own public key.</p>
+<p>The key server calculates the hash of the mobile number and uses it to locate the public key in the log-backed map. It returns the public key along with additional data that can be used to verify the map.</p>
+</li>
+<li>
+<p>The app ensures that the public key matches its local key.</p>
+</li>
+<li>
+<p>The app cryptographically verifies the map by calculating a chain of hashes from the public key up to a single map head hash. <strong>If another user can calculate the same map head hash, it proves both users were querying the same map.</strong></p>
+</li>
+<li>
+<p>The app “gossips” each map head hash it observes to other users by a gossip network. This is currently not defined by Key Transparency.</p>
+<p>Bob has Alice&rsquo;s mobile number and wants to send a message with the app.</p>
+</li>
+<li>
+<p>Bob&rsquo;s app asks the key server for Alice&rsquo;s public key from her mobile number, and receives Alice&rsquo;s public key and a signed map head hash.</p>
+</li>
+<li>
+<p>Bob&rsquo;s app cryptographically verifies the map by calculating a chain of hashes from the public key up to a single map head hash.</p>
+</li>
+<li>
+<p>Bob&rsquo;s app compares the calculated map head hash with the one received via the gossip network.</p>
+<p>If Bob&rsquo;s app saw the same map head hash as Alice&rsquo;s app, they can be sure they have the same public key for Alice.</p>
+</li>
+</ol>
+<p>Terms:</p>
+<ul>
+<li><strong>App</strong> - like Signal or Threema (Key Transparency supports any client software that links a username to a public key.)</li>
+<li><strong>Phone number</strong> - used by other users to identify the person.</li>
+<li><strong>Account</strong> - the link between the app and the users&rsquo; phone number. For example, a user has a WhatsApp account after they receive an SMS from WhatsApp proving they control the number.</li>
+<li><strong>Public key</strong> - the public part of the keys used by other users to encrypt messages to the user.</li>
+<li><strong>Key server</strong> - a server which implements the Key Transparency pattern as a Trillian personality.</li>
+</ul>
+<h2 id="users-can-check-theyre-seeing-the-same-public-key">Users can check they&rsquo;re seeing the same public key</h2>
+<p>The strength of Key Transparency is that two different apps can ensure they are accessing exactly the same map structure as long as they can compare a single value, the map head hash.</p>
+<p>Both the sender and the receiver query for the receiver&rsquo;s public key, while verifying the map. If they both agree on the map head hash, the sender knows it has received the right public key.</p>
+<p>As with all verifiable data structures, it&rsquo;s important they are monitored for consistency over time rather than at a single point in time. This ensures that values from the past can&rsquo;t be covertly modified without being detected.</p>
+<h2 id="misbehaviour-by-key-servers-is-permanently-logged">Misbehaviour by key servers is permanently logged</h2>
+<p>A key server can try and lie about a user&rsquo;s public keys but if the gossip system works, two apps will discover mismatching map heads which is suspicious.
+Because keys are stored in a log-backed map, all changes to the map go into a verifiable log. This means that if a server lies about a key, even for a short time, there&rsquo;s a permanent record in the log.</p>
+<h2 id="background-the-problem-with-end-to-end-encryption">Background: the problem with end-to-end encryption</h2>
+<p>Billions of people&rsquo;s private messages are protected with end-to-end encryption like that built into Signal, iMessage, WhatsApp and others.</p>
+<p>When you send an end-to-end encrypted message, your device encrypts to a public key where the private part exists only on the device of the person you&rsquo;re contacting. The provider doesn&rsquo;t have the private key, so can&rsquo;t read the content of the message as they transport it from you to the other person.</p>
+<h3 id="key-discovery-is-the-weakest-link">Key discovery is the weakest link</h3>
+<p>The weakness is how the sender &ldquo;discovers&rdquo; the public key in the first place. How do they know they got the right key, and not a fake one offered by the provider?</p>
+<p>A provider can offer fake keys to a pair of users and relay messages between them. Neither would know they are encrypting to the provider, rather than directly to the other user. This is called a man-in-the-middle attack.</p>
+<h3 id="governments-are-putting-pressure-on-providers">Governments are putting pressure on providers</h3>
+<p>Users can&rsquo;t trust in the good intentions of their provider. As well as the risk from attackers, many countries—democracies and otherwise—are pursuing laws to make providers circumvent end to end encryption. The obvious technical approach—and that proposed by GCHQ—is to modify the key discovery mechanism to insert additional &ldquo;ghost&rdquo; encryption keys.</p>
+<ul>
+<li>Australia&rsquo;s <a href="https://www.legislation.gov.au/Details/C2018A00148">&ldquo;Assistance and Access&rdquo; Act 2018</a> allows the government to issue Technical Capability Notices to providers requiring them to remove encryption protection. <a href="https://www.eff.org/deeplinks/2018/09/australian-government-ignores-experts-advancing-its-anti-encryption-bill">EFF&rsquo;s explanation and reaction</a>.</li>
+<li><a href="https://www.lawfareblog.com/principles-more-informed-exceptional-access-debate">Principles for a More Informed Exceptional Access Debate</a> by Ian Levy (NCSC) &amp; Crispin Robinson (GCHQ) - thoughtful article. Proposes adding &ldquo;ghost keys&rdquo; without notifying users. Open letter by <a href="https://privacyinternational.org/news-analysis/3002/ghosts-your-machine-spooks-want-secret-access-encrypted-messages">Privacy International hosts an open letter in response</a>.</li>
+<li>USA&rsquo;s <a href="https://www.eff.org/document/earn-it-act">&ldquo;EARN IT Act of 2019&rdquo;</a> which is <a href="https://www.eff.org/deeplinks/2020/01/congress-must-stop-graham-blumenthal-anti-security-bill">viewed by EFF</a> as a way of requiring companies to break encryption.</li>
+</ul>
+<h2 id="further-resources">Further resources</h2>
+<ul>
+<li><a href="https://coniks.cs.princeton.edu/about.html">CONIKS homepage</a>
+CONIKS inspired Key Transparency. The original paper is good background reading: <a href="https://eprint.iacr.org/2014/1004.pdf">CONIKS: Bringing Key Transparency to End Users</a>.</li>
+<li><a href="https://github.com/google/keytransparency/blob/master/docs/overview.md">Key Transparency Overview</a>
+Introduces Key Transparency. The <a href="https://github.com/google/keytransparency/blob/master/docs/design.md">design document</a> and <a href="https://github.com/google/keytransparency/blob/master/docs/verification.md">verification algorithm</a> page are particularly important.</li>
+<li><a href="https://www.cl.cam.ac.uk/~arb33/papers/VasileEtAl-GhostsOnTheWire-SecurityProtocols2019.pdf">&ldquo;Ghost trace on the wire? Using key evidence for informed decisions&rdquo;</a>
+University of Cambridge - proposes an alternative solution to compare mappings between usernames and public keys by gossiping with other users on the same WiFi network.</li>
+</ul>
+
+    </article>
+  </div>
+</section>
+
+<script>
+  const scrollHelper = (function() {
+    let scrolling = false;
+    let scrollHandlers = [];
+
+    const recordPageIsScrolling = function(e) {
+      scrolling = true;
+    };
+
+    const checkAndRunScrollHandlers = function() {
+      if (!scrolling || scrollHandlers.length == 0) {
+        return;
+      }
+      scrolling = false;
+
+      console.debug('running ', scrollHandlers.length, 'scroll handlers:', scrollHandlers);
+
+      for (let i = 0, size = scrollHandlers.length; i < size; i++) {
+        const shouldDetach = scrollHandlers[i]();
+
+        if (shouldDetach) {
+          console.debug('scroll handler is done, will remove');
+          scrollHandlers[i] = false; 
+        }
+      }
+
+      scrollHandlers = scrollHandlers.filter(function(h) {
+        return h != false;
+      }); 
+    };
+
+    ready(function() {
+      setInterval(checkAndRunScrollHandlers, 500);
+      window.addEventListener('scroll', recordPageIsScrolling);
+    });
+
+    return {
+      
+
+      
+      
+      
+      addScrollHandler: function(handler) {
+        console.log("handler", handler);
+        scrollHandlers.push(handler);
+      },
+
+      scrollYIsBetween: function(lower, upper) {
+        console.log("checking between ", lower, upper);
+        return (lower <= window.scrollY && window.scrollY < upper);
+      },
+
+      
+      getScrollPercent: function() {
+        const h = document.documentElement;
+        const b = document.body;
+        const st = 'scrollTop';
+        const sh = 'scrollHeight';
+        return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+      },
+    };
+  })();
+
+  const links = document.getElementById('section-links-list').getElementsByTagName('a');
+  const h2s = document.getElementById('content').getElementsByTagName('h2');
+
+  function highlightSectionLink(j) {
+    for (let step = 0; step < links.length; step++) {
+      
+      removeClass(links[step], 'in-section');
+    }
+    addClass(links[j], 'in-section');
+  }
+
+  ready(function() {
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(0, 711)) {
+          highlightSectionLink(0);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(711, 1239)) {
+          highlightSectionLink(1);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(1239, 2347)) {
+          highlightSectionLink(2);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(2347, 2755)) {
+          highlightSectionLink(3);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(2755, 3211)) {
+          highlightSectionLink(4);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(3211, 3475)) {
+          highlightSectionLink(5);
+        }
+    });
+  });
+
+</script>
+
+
+<div class="text-white bg-Grey-050 font-google">
+
+  <div class="glue-page gpt-4 gpb-5">
+    <div class="glue-grid">
+      <div class="col-span-4 sm:col-span-5 sm:col-start-2">
+        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Learn about Trillian</h2>
+        <ul class="text-Grey-600">
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900">Benefits</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#how-it-works' class="text-Grey-600 hover:text-Grey-900">How it works</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#example-code' class="text-Grey-600 hover:text-Grey-900">Example code</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900">Verifiable Data Structures</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col-span-4 gmt-2 sm:col-span-5 sm:mt-0">
+        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Applications of Trillian</h2>
+        <ul class="text-Grey-600 gmb-4">
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900">Add tamper-checking to a package manager</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900">Reliably log all actions performed on your servers</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900">Strengthen discovery of encryption keys with Key Transparency</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900">Discourage misbehaviour by third parties in Certificate Transparency</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
+        <img src="/images/logos/google-logo.svg" alt="Google's Logo" />
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm"><a href="privacy" class="text-Grey-600 hover:text-Grey-900">Privacy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

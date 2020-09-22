@@ -1,3 +1,434 @@
+<!doctype html>
+
+ <!--
+  Copyright 2020 Google LLC
+ 
+  Licensed under the Apache License, Version 2.0 (the 'License');
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an 'AS IS' BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+      
+        
+          Trillan helps you reliably log all actions performed on your servers
+         |
+       Trillian
+    </title>
+
+    
+      <meta name="description" content="Logging all actions in an immutable log discourages malicious behaviour by increasing the chance of discovery." property="og:description"/>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173407084-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://trillian.transparency.dev/css/styles.min.7450fcf3e4230296c78c1deb23b79a694954ecaffe425b7ff55e997d3059939c.css" integrity="sha256-dFD88&#43;QjApbHjB3rI7eaaUlU7K/&#43;Qlt/9V6ZfTBZk5w=">
+    <script>
+      'use strict';
+
+      function ready(fn) {
+        if (document.attachEvent
+          ? document.readyState === 'complete'
+          : document.readyState !== 'loading') {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      function addClass(el, className) {
+        if (el.classList) {
+          el.classList.add(className);
+        } else {
+          el.className += ' ' + className;
+        }
+      }
+
+      function removeClass(el, className) {
+        if (el.classList) {
+          el.classList.remove(className);
+        } else {
+          el.className = el.className.replace(
+              new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '
+          );
+        }
+      }
+    </script>
+  </head>
+<body>
+    
+
+<div class="bg-white z-50 w-full font-google" id="site-header">
+<nav class="glue-page test-fixed">
+  <div class="md:hidden absolute h-16 flex items-center cursor-pointer">
+    <div id="toggleMenu" class="h-8 flex items-center justify-left px-4 -mx-4 rounded text-Grey-700">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
+        <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  </div>
+  <ul class="mx-auto md:float-left h-16 flex items-center">
+    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Trillian</a></li>
+  </ul>
+  <ul class="invisible md:visible float-right h-16 flex items-center">
+    <li class="text-right inline mr-6"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
+    <li class="text-right inline mr-6"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+  </ul>
+</nav>
+<ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
+  <li class="gmb-2"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
+  <li class="gmb-2"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
+  <li class="gmb-2"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
+  <li class=""><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+</ul>
+</div>
+<div id="nav-spacer" class="h-16"></div>
+
+<script>
+  'use strict';
+  (function(){
+
+    var doc = document.documentElement;
+    var w = window;
+
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+
+    var header = document.getElementById('site-header');
+
+    var checkScroll = function() {
+
+      
+
+
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        
+        direction = 1;
+      }
+
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
+
+      prevScroll = curScroll;
+    };
+
+    var toggleHeader = function(direction, curScroll) {
+      if (direction === 2 && curScroll > 64) {
+        addClass(header, 'hide');
+        addClass(mobileMenu, 'hidden');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        removeClass(header, 'hide');
+        prevDirection = direction;
+      }
+    };
+
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function toggleMenuVisibility() {
+      if (mobileMenu.classList.contains('hidden')) {
+        removeClass(mobileMenu, 'hidden');
+        return;
+      };
+      addClass(mobileMenu, 'hidden');
+    };
+
+    window.addEventListener('scroll', checkScroll);
+    document.getElementById('toggleMenu').onclick = toggleMenuVisibility;
+
+  })();
+</script>
+
+<section class="glue-page gmt-6 gmb-4">
+  <div class="glue-grid">
+    <div class="col-span-12 lg:col-span-10 lg:col-start-2 md:text-center">
+      <h1 class="headline2">
+        <div class="eyebrow">Trillan helps you</div>
+        Reliably log all actions performed on your servers
+      </h1>
+      
+        <img src="/images/application-illustrations/top_log-all-commands.svg" class="gmt-4 gmb-4 w-full" />
+      
+    </div>
+  </div>
+  <div class="glue-grid gmb-5 linked-headers">
+    <aside class="submenu col-span-4 gpb-4 sm:col-span-6 md:col-span-4 lg:col-span-3 lg:col-start-2 md:pb-0 md:h-screen md:sticky top-header-plus-padding">
+      <ul id="section-links-list" class="bg-Grey-100">
+        
+        
+          <li><a href="#advantages">Advantages</a></li>
+        
+          <li><a href="#how-it-works">How it works</a></li>
+        
+          <li><a href="#limitations">Limitations</a></li>
+        
+          <li><a href="#how-to-implement-this">How to implement this</a></li>
+        
+          <li><a href="#other-possible-kinds-of-actions">Other possible actions</a></li>
+        
+          <li><a href="#how-to-further-strengthen-logging">How to further strengthen</a></li>
+        
+          <li><a href="#examples">Examples</a></li>
+        
+          <li><a href="#further-resources">Further resources</a></li>
+        
+      </ul>
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-7 gmb-7 markdown">
+      <h2 id="advantages">Advantages</h2>
+<div class="font-google font-medium">
+<ul>
+<li>Guarantee that an audit record is created for all actions performed on your servers.</li>
+<li>Configure servers to block and report actions that weren&rsquo;t already logged.</li>
+<li>Any malicious actions are permanently logged, increasing the likelihood of discovery.</li>
+<li>You can integrate additional code to monitor the log for potentially malicious actions.</li>
+<li>It simplifies incident response and forensic analysis as you&rsquo;ve got a complete log you can rely on.</li>
+<li>You can prove to auditors exactly what actions were performed on each server.</li>
+</ul>
+</div>
+<h2 id="how-it-works">How it works</h2>
+<p>The user wants to run a command that modifies the server:</p>
+<ol>
+<li>The user&rsquo;s client submits the command to the verifiable log</li>
+<li>The user&rsquo;s computer sends the command to the agent running on the server</li>
+<li>The agent server checks that the command has been added to the log, and simultaneously verifies the log</li>
+<li>The agent runs the command on the server. By having the agent check the log before running a command, it is acting as an enforcer. In order for a command to run on a server, it must first appear in the log. This ensures a user cannot run a malicious command without that command being logged.</li>
+</ol>
+<p>Each agent keeps a record of previously seen <a href="/verifiable-data-structures/#tree-head-hash">tree heads</a>. If an agent finds an inconsistency with a previous tree head - implying the log has been tampered with - it stops working and raises alarms. Therefore all running agents act as a distributed network, continuously verifying the append-only nature of the log.</p>
+<p>The verifiability of the log makes it extremely difficult to tamper with the log to cover up the malicious command.</p>
+<h2 id="limitations">Limitations</h2>
+<p><strong>Users can still run malicious commands</strong> - the log doesn&rsquo;t know whether a command is malicious or not, it simply stores everything. However:</p>
+<ul>
+<li>It&rsquo;s now possible to write software to continuously monitor the log for commands which look suspicious</li>
+<li>Users may be dissuaded from running malicious commands since they&rsquo;ll appear in the log and be very difficult to delete.</li>
+</ul>
+<p><strong>The verifiable log can be tampered with</strong>. However:</p>
+<ul>
+<li>The agents (and any other monitoring code) can detect when that has happened, and decline to run the command.</li>
+<li>To undetectably tamper with the log&rsquo;s history, an attacker would have to simultaneously tamper with the log and all monitors.</li>
+</ul>
+<h2 id="how-to-implement-this">How to implement this</h2>
+<p>You need to create four software components:</p>
+<ol>
+<li><strong>Trillian personality</strong> - to provide the external interface (API) for logging commands and querying the log with cryptographic proof. Together, Trillian and the personality make up the verifiable log in the diagram above.</li>
+<li><strong>Submitting component</strong> - for submitting commands to the log before they are sent to the agent.</li>
+<li><strong>Agent component</strong> - for the agent to verify that received commands are in the log.</li>
+<li><strong>Monitor</strong> - to regularly check the integrity of the verifiable log, and potentially inspect log entries for potentially malicious commands.</li>
+</ol>
+<p>Consider integrating the submitting and agent components as Git hooks in an existing workflow.</p>
+<h2 id="other-possible-kinds-of-actions">Other possible kinds of actions</h2>
+<p>This use case described running commands on servers, but the same principle can be applied to guard any kind of change to a system. Other possible actions include:</p>
+<ul>
+<li><strong>API calls to Kubernetes</strong>, for example. A service sits in front of the API and clients communicate with that instead of calling the API directly. The service verifies that requests from clients exist in the log before calling the API. Alternatively, the service enters requests into the log itself.</li>
+<li><strong>Configuration diffs</strong> for Puppet or other infrastructure-as-code solutions. An agent verifies the git commit exists in the log before applying the changes.</li>
+</ul>
+<h2 id="how-to-further-strengthen-logging">How to further strengthen logging</h2>
+<ul>
+<li>The verifiable log has a signed tree head which can be used to verify the entire data structure. The signed tree head could be regularly published online, encouraging others to store a copy of all the signed tree heads. These can be used to subsequently carry out <a href="/verifiable-data-structures/#consistency-proof">consistency proofs</a>: confirming that the log was append-only since the tree head was stored.</li>
+<li>You could share the verifiable log&rsquo;s entire contents privately with a third party who could monitor for suspicious commands and continuously verify the integrity of the log.</li>
+<li>You could add multi-party authentication for high risk commands. The agent component would ensure that that log received separate additional approvals before a high-risk command would be executed.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p><strong>A payment service provider</strong> uses Trillian to log all configuration changes to hosts in their production environment. When a configuration change is received, an agent running on the host ensures that the request has been logged in their verifiable log before applying the configuration. The agents store a local copy of signed tree heads so they can cryptographically verify the integrity of the log each time they query it.</p>
+<h2 id="further-resources">Further resources</h2>
+<ul>
+<li><a href="https://puppet.com/">Puppet</a>, <a href="https://www.chef.io/products/chef-infra/">Chef</a>, <a href="https://www.ansible.com/">Ansible</a> and <a href="https://www.saltstack.com/">SaltStack</a> are well-known applications for automating provisioning of servers <a href="https://en.wikipedia.org/wiki/Infrastructure_as_code">(infrastructure as code)</a></li>
+<li><a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks">Git hooks</a> can be used to enforce rules before code changes are committed to version control.</li>
+<li><a href="https://en.wikipedia.org/wiki/Change_management_auditing">Change management auditing (Wikipedia)</a> - describes the broader practice of monitoring and auditing changes to systems. <a href="https://www.spiceworks.com/free-help-desk-software/">Spiceworks Help Desk</a> is an example of traditional change-control software.</li>
+</ul>
+
+    </article>
+  </div>
+</section>
+
+<script>
+  const scrollHelper = (function() {
+    let scrolling = false;
+    let scrollHandlers = [];
+
+    const recordPageIsScrolling = function(e) {
+      scrolling = true;
+    };
+
+    const checkAndRunScrollHandlers = function() {
+      if (!scrolling || scrollHandlers.length == 0) {
+        return;
+      }
+      scrolling = false;
+
+      console.debug('running ', scrollHandlers.length, 'scroll handlers:', scrollHandlers);
+
+      for (let i = 0, size = scrollHandlers.length; i < size; i++) {
+        const shouldDetach = scrollHandlers[i]();
+
+        if (shouldDetach) {
+          console.debug('scroll handler is done, will remove');
+          scrollHandlers[i] = false; 
+        }
+      }
+
+      scrollHandlers = scrollHandlers.filter(function(h) {
+        return h != false;
+      }); 
+    };
+
+    ready(function() {
+      setInterval(checkAndRunScrollHandlers, 500);
+      window.addEventListener('scroll', recordPageIsScrolling);
+    });
+
+    return {
+      
+
+      
+      
+      
+      addScrollHandler: function(handler) {
+        console.log("handler", handler);
+        scrollHandlers.push(handler);
+      },
+
+      scrollYIsBetween: function(lower, upper) {
+        console.log("checking between ", lower, upper);
+        return (lower <= window.scrollY && window.scrollY < upper);
+      },
+
+      
+      getScrollPercent: function() {
+        const h = document.documentElement;
+        const b = document.body;
+        const st = 'scrollTop';
+        const sh = 'scrollHeight';
+        return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+      },
+    };
+  })();
+
+  const links = document.getElementById('section-links-list').getElementsByTagName('a');
+  const h2s = document.getElementById('content').getElementsByTagName('h2');
+
+  function highlightSectionLink(j) {
+    for (let step = 0; step < links.length; step++) {
+      
+      removeClass(links[step], 'in-section');
+    }
+    addClass(links[j], 'in-section');
+  }
+
+  ready(function() {
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(0, 711)) {
+          highlightSectionLink(0);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(711, 1239)) {
+          highlightSectionLink(1);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(1239, 2347)) {
+          highlightSectionLink(2);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(2347, 2755)) {
+          highlightSectionLink(3);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(2755, 3211)) {
+          highlightSectionLink(4);
+        }
+    });
+    scrollHelper.addScrollHandler(function() {
+        if (scrollHelper.scrollYIsBetween(3211, 3475)) {
+          highlightSectionLink(5);
+        }
+    });
+  });
+
+</script>
+
+
+<div class="text-white bg-Grey-050 font-google">
+
+  <div class="glue-page gpt-4 gpb-5">
+    <div class="glue-grid">
+      <div class="col-span-4 sm:col-span-5 sm:col-start-2">
+        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Learn about Trillian</h2>
+        <ul class="text-Grey-600">
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900">Benefits</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#how-it-works' class="text-Grey-600 hover:text-Grey-900">How it works</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/#example-code' class="text-Grey-600 hover:text-Grey-900">Example code</a>
+            </li>
+            <li class="" style="margin-bottom: 10px;">
+              <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900">Verifiable Data Structures</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col-span-4 gmt-2 sm:col-span-5 sm:mt-0">
+        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Applications of Trillian</h2>
+        <ul class="text-Grey-600 gmb-4">
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900">Add tamper-checking to a package manager</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900">Reliably log all actions performed on your servers</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900">Strengthen discovery of encryption keys with Key Transparency</a>
+          </li>
+          <li class="" style="margin-bottom: 10px;">
+            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900">Discourage misbehaviour by third parties in Certificate Transparency</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
+        <img src="/images/logos/google-logo.svg" alt="Google's Logo" />
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm"><a href="privacy" class="text-Grey-600 hover:text-Grey-900">Privacy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
+</body>
+</html>

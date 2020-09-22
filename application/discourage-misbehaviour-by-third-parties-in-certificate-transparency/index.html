@@ -23,11 +23,13 @@
     <title>
       
         
-          Privacy policy
+          Discourage misbehaviour by third parties in Certificate Transparency
          |
        Trillian
     </title>
 
+    
+      <meta name="description" content="Certificate Transparency Logs use Trillian in verifiable log mode. Certificates are stored as leaves in the Merkle Tree and the browser verifies that certificates are included in the log, and that the log history hasn’t been tampered with." property="og:description"/>
     
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
@@ -170,27 +172,61 @@
 
 <div class="glue-page gmt-6 gmb-4 markdown">
   <div class="glue-grid">
-    <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
-      <h1 class="headline2 sm:text-center gmb-5">
-        <div class="eyebrow"></div>
-        Privacy policy
-      </h1>
-    </div>
+  <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
+    <h1 class="headline2 sm:text-center gmb-5">
+      <div class="eyebrow">Trillan helps you</div>
+      Discourage misbehaviour by third parties in Certificate Transparency
+    </h1>
   </div>
-  <div class="glue-grid">
-    <div class="col-span-4 sm:col-span-12 md:col-span-8 md:col-start-3">
-      <article id="content" class="gmb-7">
-        <p>We use <strong>Google Analytics</strong> to understand how people arrived on the site and what they did on the site.</p>
-<p>This activity is anonymous to us: we cannot identify a user in Google Analytics, and we don’t send identifiable information to them, either.</p>
-<p>To disable our use of Google Analytics, enable the Do Not Track setting in your browser. Here are instructions for:</p>
-<ul>
-<li><a href="https://support.google.com/chrome/answer/2790761?co=GENIE.Platform%3DDesktop&amp;hl=en">Chrome</a></li>
-<li><a href="https://support.mozilla.org/en-US/kb/how-do-i-turn-do-not-track-feature">Firefox</a></li>
-</ul>
+</div>
+<div class="glue-grid">
+  <div class="col-span-4 sm:col-span-12 md:col-span-7 lg:col-span-8 xl:col-span-7 xl:col-start-2">
+    <article id="content" class="gmb-7">
+      
 
-      </article>
-    </div>
+<p>HTTPS security relies on hundreds of Certificate Authorities (CAs) whose job is to issue certificates while checking that the requester is eligible. For example, they should only issue a certificate for mozilla.org to entities that can prove they control mozilla.org (hopefully only authorized people at Mozilla!).</p>
+<p>Unfortunately any CA can issue a certificate for any domain (more or less). So an obscure CA in Russia could issue a legitimate certificate for a UK bank. This led to many problems:</p>
+<ul>
+<li>Governments made fake certificates for e.g. gmail.com, allowing the government to spy on users’ traffic to that domain with a man-in-the-middle attack.</li>
+<li>Some CAs performed inadequate checking of an organisation and mistakenly issued certificates that shouldn’t have been allowed.</li>
+<li>Some CAs had poor security, resulting in hackers stealing their signing key and creating new illegitimate certificates.</li>
+</ul>
+<p>Fake certificates are hard to detect if they’re used in a limited, targeted way by a malicious user: no-one else sees the fake certificate, so no-one knows it exists. And the whole premise of HTTPS was weakened by sloppy CAs, so there was a big incentive to fix the problem. However, previous attempts to fix it were ineffective. CAs were passing traditional auditing of their business processes but were still miss-issuing certificates.</p>
+<h2 id="certificate-transparency-is-built-with-trillian">Certificate Transparency is built with Trillian</h2>
+<p>Certificate Transparency proposed that <strong>if all certificates had to be published openly</strong> in order to be valid, it would:</p>
+<ul>
+<li>discourage deliberate misbehaviour - since any certificates would be public for all to see</li>
+<li>incentivize better security, since mis-issued certificates would be visible</li>
+<li>and provide a way for domain owners (and others) to keep an eye on certificates issued for their domain</li>
+</ul>
+<p>Google led the adoption of Certificate Transparency by mandating its use in Chrome, the most popular desktop browser. Chrome checks that every certificate has been published into a Certificate Transparency Log and only accepts it if so. This forces CAs to publish their certificates.</p>
+<p>Certificate Transparency Logs use Trillian in verifiable log mode. Certificates are stored as leaves in the Merkle Tree, and the browser verifies that certificates are included in the log<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and that the log history hasn’t been tampered with.
+<a href="https://certificate.transparency.dev/">Certificate Transparency has logged more than 2 billion certificates since 2013</a>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Technically, a new certificate may not yet have been incorporated into the log, which updates its Merkle tree periodically. The browser accepts a &ldquo;promise&rdquo; to insert the certificate (called a signed certificate timestamp, or SCT) as good enough. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+    </article>
   </div>
+  <aside class="col-span-4 sm:col-span-6 md:col-span-5 lg:col-span-4 xl:col-span-3 md:h-64 md:sticky top-header-plus-padding font-google">
+    <a href="https://certificate.transparency.dev/" class="bg-Grey-100 text-Grey-800 rounded p-6 block link-arrow-a-tag">
+      <p>
+        <span class="large">Find out more</span>
+        <span class="text-Blue-600">certificate.transparency.dev</span>
+      </p>
+      <svg class="gmt-2 link-arrow-svg" width="23px" height="18px" viewBox="0 0 23 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
+        <path d="M13.0606602,-0.0606601718 L22.1213203,9 L13.0606602,18.0606602 L10.9393398,15.9393398 L16.3789414,10.4993398 L0.439941406,10.5 L0.439941406,7.5 L16.3789414,7.49933983 L10.9393398,2.06066017 L13.0606602,-0.0606601718 Z"></path>
+      </svg>
+    </a>
+  </aside>
+</div>
+
 </div>
 
 
