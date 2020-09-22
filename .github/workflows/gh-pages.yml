@@ -50,7 +50,7 @@ jobs:
         HUGO_ENVIRONMENT: production
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.5.0
+      uses: peaceiris/actions-gh-pages@v3
       with:
         cname: trillian.transparency.dev
       env:
