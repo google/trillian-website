@@ -53,7 +53,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         cname: trillian.transparency.dev
-        github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./public
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
