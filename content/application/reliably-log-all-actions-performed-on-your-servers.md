@@ -39,6 +39,8 @@ topImage: top_log-all-commands.svg
 
 ## How it works
 
+![A diagram displaying the steps taken to log and verify all commands issued to a service](/images/application-illustrations/diagram_log-all-commands.svg)
+
 The user wants to run a command that modifies the server:
 
 1. The user's client submits the command to the verifiable log
