@@ -54,7 +54,11 @@
       </div>
       <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
         <img src="{{ partial "rel" (dict "context" . "url" "/images/logos/google-logo.svg") }}" alt="Google's Logo" />
-        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm"><a href="privacy" class="text-Grey-600 hover:text-Grey-900">Privacy</a></p>
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm">
+          <a href="{{ "/privacy/" | relURL }}" class="text-Grey-600 hover:text-Grey-900">
+            Privacy
+          </a>
+        </p>
       </div>
     </div>
   </div>
