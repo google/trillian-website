@@ -114,3 +114,15 @@
     }
   }
 }
+
+.markdown #TableOfContents {
+  @apply mb-8;
+  ul {
+    @apply ml-0;
+    li {
+      &:before {
+        content: "";
+      }
+    }
+  }
+}
