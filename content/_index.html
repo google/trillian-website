@@ -26,15 +26,17 @@ description: Build tamper-evident services with Trillian and cryptographically p
         modified or corrupted.
       </p>
       <p class="gmb-3">
-        If you build tamper-evident services with <strong>Trillian, an open-source append only ledger</strong>, you’ll be able to cryptographically prove that the
-        data hasn’t been unexpectedly changed. You’ll be able to monitor third-party ecosystems and simplify
-        regulatory compliance. You can trust the data you rely on.
+        Building with tamper-evident logs means you can <strong>cryptographically prove that the data hasn’t been
+        unexpectedly changed</strong>. Knowing the providence, integrity and sequence your data was created means
+        you’ll be able to monitor third-party ecosystems and simplify regulatory compliance. You can trust
+        the data you rely on.
       </p>
       <p>
         A tamper-evident log stores an <strong>accurate</strong>, <strong>immutable</strong> and
-        <strong>verifiable</strong> history of activity. You could use them to track credits and debits in
-        banking transactions, access logs to sensitive healthcare records, cryptographic hashes of
-        software packages, compliance artifacts of regulated activities, or modifications to a document.
+        <strong>verifiable</strong> history of activity.
+        <strong>This is an example of a verifiable system</strong>. You could use them to track credits
+        and debits in banking transactions, access logs to sensitive healthcare records, cryptographic hashes
+        of software packages, compliance artifacts of regulated activities, or modifications to a document.
       </p>
     </div>
   </div>
@@ -44,7 +46,7 @@ description: Build tamper-evident services with Trillian and cryptographically p
   <section class="glue-page">
     <div class="glue-grid">
       <div class="col-span-4 sm:col-span-12">
-        <h2 class="gmb-4 eyebrow sm:text-center">Trillian is relied on by</h2>
+        <h2 class="gmb-4 eyebrow sm:text-center">Tamper-evident logs are relied on by</h2>
       </div>
       <div class="col-span-4 sm:col-span-12 flex flex-wrap justify-center">
         {{< case-study-cards >}}
@@ -75,7 +77,7 @@ description: Build tamper-evident services with Trillian and cryptographically p
           </p>
           <p>
             <a href="{{< relref "/application/reliably-log-all-actions-performed-on-your-servers" >}}">
-              Learn how Trillian can permanently log all actions performed on your <nobr>servers
+              Learn how you can permanently log all actions performed on your <nobr>servers
               {{< top-right-arrow >}}</nobr>
             </a>
           </p>
@@ -86,7 +88,7 @@ description: Build tamper-evident services with Trillian and cryptographically p
           </p>
           <p>
             <a href="{{< relref "/application/strengthen-discovery-of-encryption-keys" >}}">
-              Learn how end-to-end encryption providers can use Trillian to strengthen key <nobr>discovery
+              Learn how end-to-end encryption providers can use a tamper-evident log to strengthen key <nobr>discovery
               {{< top-right-arrow >}}</nobr>
             </a>
           </p>
@@ -111,7 +113,7 @@ description: Build tamper-evident services with Trillian and cryptographically p
         Regulated industries require companies to collect and retain many types of compliance records. Auditors need to verify the integrity and nonrepudiation of those records.
       </p>
       <p class="gmb-4">
-        By using Trillian to store compliance records, you can keep them in one place and simplify presenting them to an auditor. Trillian lets you cryptographically prove they haven't been tampered with.
+        By using a tamper-evident to store compliance records, you can keep them in one place and simplify presenting them to an auditor. You can cryptographically prove they haven't been tampered with.
       </p>
       <ul class="list-disc-blue gmb-3 font-google font-medium">
         <li>
@@ -120,7 +122,7 @@ description: Build tamper-evident services with Trillian and cryptographically p
           </p>
           <p>
             <a href="{{< relref "/application/reliably-log-all-actions-performed-on-your-servers" >}}">
-              Learn how Trillian can permanently log all actions performed on your <nobr>servers
+              Learn how you can permanently log all actions performed on your <nobr>servers
               {{< top-right-arrow >}}</nobr>
             </a>
           </p>
@@ -142,7 +144,7 @@ description: Build tamper-evident services with Trillian and cryptographically p
         A tamper-evident log enables multiple parties to monitor each others' actions.
       </p>
       <p class="gmb-4">
-        Where organisations can be required to publish data about their actions, Trillian can hold a permanent record of this data. Trillian can do this at scale, allowing all parties to scrutinise each other.
+        Where organisations can be required to publish data about their actions, a tamper-evident log can hold a permanent record of this data.
       </p>
       <ul class="list-disc-blue gmb-3 font-google font-medium">
         <li>
@@ -151,18 +153,18 @@ description: Build tamper-evident services with Trillian and cryptographically p
           </p>
           <p>
             <a href="{{< relref "/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency" >}}">
-              Learn how Trillian enables anyone to monitor Certificate <nobr>Authorities
+              Learn how a tamper-evident log enables anyone to monitor Certificate <nobr>Authorities
               {{< top-right-arrow >}}</nobr>
             </a>
           </p>
         </li>
         <li>
           <p class="gmb-1">
-            Trillian frustrates software supply chain attacks by providing a shared, global view of the content of packages.
+            Tamper-evident logs can frustrates software supply chain attacks by providing a shared, global view of the content of packages.
           </p>
           <p>
             <a href="{{< relref "/application/add-tamper-checking-to-a-package-manager" >}}">
-              Learn how Trillian enables Go developers to verify that software packages haven't been tampered <nobr>with
+              Learn how a tamper-evident log enables Go developers to verify that software packages haven't been tampered <nobr>with
               {{< top-right-arrow >}}</nobr>
             </a>
           </p>
@@ -172,9 +174,54 @@ description: Build tamper-evident services with Trillian and cryptographically p
   </div>
 </section>
 
+<section class="glue-page">
+  <a id="applications"></a>
+  <h2 class="headline3 gmb-5 gpt-6 sm:text-center"><span class="">Applications of Tamper-evident Logs</span></h2>
+
+  <div class="glue-grid gmb-7">
+    <a href="{{< relref "/application/add-tamper-checking-to-a-package-manager" >}}" class="application-card col-span-4 sm:col-span-6 lg:col-span-4">
+      <img src="{{< rel "/images/application-illustrations/tamper-checking-card.svg" >}}" class="w-full gmb-3" alt="An illustration of a file being downloaded" />
+      <h3 class="application-headline px-2">
+        Add tamper-checking to a package manager
+      </h3>
+    </a>
+    <a href="{{< relref "/application/reliably-log-all-actions-performed-on-your-servers" >}}" class="application-card col-span-4 sm:col-span-6 lg:col-span-4">
+      <img src="{{< rel "/images/application-illustrations/log-all-actions-card.svg" >}}" class="gmb-3 w-full" alt="An illustration of a computers commands being logged" />
+      <h3 class="application-headline px-2">
+        Reliably log all actions performed on your servers
+      </h3>
+    </a>
+    <a href="{{< relref "/application/strengthen-discovery-of-encryption-keys" >}}" class="application-card col-span-4 sm:col-span-6 lg:col-span-4">
+      <img src="{{< rel "/images/application-illustrations/key-transparency-card.svg" >}}" class="w-full gmb-3" alt="An illustration of a set of encryption keys" />
+      <h3 class="application-headline px-2">
+        Strengthen discovery of encryption keys with Key Transparency
+      </h3>
+    </a>
+    <a href="{{< relref "/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency" >}}" class="application-card col-span-4 sm:col-span-6 lg:col-span-4 lg:col-start-5">
+      <img src="{{< rel "/images/application-illustrations/certificate-transparency-card.svg" >}}" class="gmb-3 w-full" alt="An illustration of a certificates being logged" />
+      <h3 class="application-headline px-2">
+        Discourage misbehaviour by third parties in Certificate Transparency
+      </h3>
+    </a>
+  </ul>
+</section>
+
 <div class="bg-Grey-050">
-  <a id="how-it-works"></a>
+  <a id="trillian"></a>
   <section class="glue-page gpt-6 gpb-6">
+    <div class="glue-grid">
+      <div class="col-span-10 sm:col-start-2">
+        <h2 class="headline2 gmb-4">
+          Trillian: an open-source verifiable log
+        </h2>
+        <p class="gmb-4 headline5 intro-para">
+          Trillian is a log that stores an accurate, immutable and verifiable history of activity.
+          It is an open-source library and powers one of the world’s largest, most used and respected,
+          production crypto ledger based ecosystems,
+          <a href="https://certificate.transparency.dev/">certificate&nbsp;transparency</a>.
+        </p>
+      </div>
+    </div>
     <div class="glue-grid">
       <div class="col-span-4 sm:col-span-5 sm:col-start-2">
         <h2 class="headline3 gmb-4">How it works</h2>
@@ -216,47 +263,7 @@ description: Build tamper-evident services with Trillian and cryptographically p
 </div>
 
 <section class="glue-page">
-  <a id="get-started"></a>
-  <h2 class="headline3 gmb-5 gpt-6 sm:text-center"><span class="">Applications of Trillian</span></h2>
-
-  <ul class="glue-grid gmb-7">
-    <li class="col-span-4 sm:col-span-6 lg:col-span-4 gmb-5">
-      <a href="{{< relref "/application/add-tamper-checking-to-a-package-manager" >}}">
-        <img src="{{< rel "/images/application-illustrations/tamper-checking-card.svg" >}}" class="w-full gmb-3" alt="An illustration of a file being downloaded" />
-        <h3 class="application-headline">
-          Add tamper-checking to a package manager
-        </h3>
-      </a>
-    </li>
-    <li class="col-span-4 sm:col-span-6 lg:col-span-4 gmb-5">
-      <a href="{{< relref "/application/reliably-log-all-actions-performed-on-your-servers" >}}">
-        <img src="{{< rel "/images/application-illustrations/log-all-actions-card.svg" >}}" class="gmb-3 w-full" alt="An illustration of a computers commands being logged" />
-        <h3 class="application-headline">
-          Reliably log all actions performed on your servers
-        </h3>
-      </a>
-    </li>
-    <li class="col-span-4 sm:col-span-6 lg:col-span-4 gmb-5">
-      <a href="{{< relref "/application/strengthen-discovery-of-encryption-keys" >}}">
-        <img src="{{< rel "/images/application-illustrations/key-transparency-card.svg" >}}" class="w-full gmb-3" alt="An illustration of a set of encryption keys" />
-        <h3 class="application-headline">
-          Strengthen discovery of encryption keys with Key Transparency
-        </h3>
-      </a>
-    </li>
-    <li class="col-span-4 sm:col-span-6 lg:col-span-4 lg:col-start-5 gmb-4">
-      <a href="{{< relref "/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency" >}}">
-        <img src="{{< rel "/images/application-illustrations/certificate-transparency-card.svg" >}}" class="gmb-3 w-full" alt="An illustration of a certificates being logged" />
-        <h3 class="application-headline">
-          Discourage misbehaviour by third parties in Certificate Transparency
-        </h3>
-      </a>
-    </li>
-  </ul>
-</section>
-
-<section class="glue-page">
-  <div class="glue-grid gmt-4">
+  <div class="glue-grid gmt-7">
     <div class="col-span-4 sm:col-span-10 sm:col-start-2">
       <a id="example-code"></a>
       <h2 class="headline4 gmb-4">Explore some example code</h2>
@@ -269,7 +276,7 @@ description: Build tamper-evident services with Trillian and cryptographically p
 <section class="glue-page gmt-7 gmb-6">
   <div class="glue-grid">
     <div class="col-span-4 sm:col-span-10 sm:col-start-2 markdown">
-      <h2 class="headline3 gmt-4 gpb-4 sm:text-center" style="margin-bottom: 0;">Get started</h2>
+      <h2 class="headline3 gmt-4 gpb-4 sm:text-center" style="margin-bottom: 0;">Installing Trillian</h2>
       {{< read-markdown-file "/content/get-started.md" >}}
 
       <div class="gpt-3">
@@ -321,7 +328,7 @@ description: Build tamper-evident services with Trillian and cryptographically p
 </section>
 
 <section class="glue-page gmt-6 gmb-7">
-  <h1 class="headline1 sm:text-center gmb-6">
+  <h1 class="headline2 sm:text-center gmb-6">
     Start using Trillian today
   </h1>
 
