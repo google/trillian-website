@@ -18,6 +18,34 @@ will install the JS dependencies. Once you've done that, you can spin up a local
 
 ## Managing Content
 
+### How to make a new page in Markdown
+
+To make a new page using markdown, first create your markdown file in hugo's content directory, for example: `/content/a-new-page.md`.
+
+In the frontmatter of the page, you need to specify a `url` and `title` for the page and specify that `layout: markdown`, e.g.:
+
+```
+---
+layout: markdown
+url: /hello-world
+title: "Hello World"
+---
+```
+
+Optional values are `author` and `date`, used as follows:
+
+```
+---
+...
+author: "Joe Bloggs"
+date: 2020-11-17
+---
+```
+
+When `author` and/or `date` are set, the layout will render these on the left on the article in an aside element.
+
+If you also want to show a table of contents in this side bar, you can add `show_table_of_contents: true`, which renders out a list of links to all H2 and H3 elements in the markdown file.
+
 ### Homepage: Get started
 
 `content/_index.html` contains a `<section>` element labelled with the comment `<!-- Get started block -->`. This contains all of the content render under the header **Get Started** on the homepage.
