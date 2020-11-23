@@ -9,11 +9,24 @@
     </div>
   </div>
   <div class="glue-grid">
-    <div class="col-span-4 sm:col-span-12 md:col-span-8 md:col-start-3">
-      <article id="content" class="gmb-7">
-        {{ .Content }}
-      </article>
-    </div>
+    <aside class="submenu col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 gmb-3">
+      {{ if .Params.show_table_of_contents }}
+        {{ .TableOfContents }}
+      {{ end }}
+      {{ if .Params.author }}
+        <p class="font-bold">
+          {{ .Params.author }}
+        </p>
+      {{ end }}
+      {{ if .Params.Date }}
+        <p class="text-sm">
+          Published {{ .Date.Format "Monday 2 Jan 2006" }}
+        </p>
+      {{ end }}
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
+      {{ .Content }}
+    </article>
   </div>
 </div>
 {{end}}
