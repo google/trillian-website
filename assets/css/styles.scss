@@ -36,10 +36,11 @@
   }
 }
 
-.github-list-item {
-  .github-logo {
-    @apply -ml-1 inline-block align-baseline;
+.reference-card-list-item {
+  .logo-icon {
+    @apply -ml-1 inline-block align-top;
     height: 1rem;
+    margin-top: 6px;
   }
   @apply border-t border-Grey-300;
   &:last-child {
@@ -47,7 +48,7 @@
   }
 }
 
-.github-link:hover {
+.reference-link:hover {
   h3 {
     @apply text-Blue-600;
   }
