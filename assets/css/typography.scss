@@ -10,6 +10,9 @@ body {
 
 a {
   @apply text-Blue-600;
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .headline1, .headline2, .headline3, .headline4, .headline45,

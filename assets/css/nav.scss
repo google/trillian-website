@@ -20,7 +20,7 @@
     max-height: 100%;
   }
   a {
-    @apply no-underline py-2 ;
+    @apply py-2;
     // mobile menu (vertical list of items)
     @apply block w-full;
     @media (min-width: 1024px) { // desktop menu (horizontal list of items)
