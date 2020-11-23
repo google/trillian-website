@@ -16,17 +16,17 @@
 
 <div class="bg-white z-50 w-full font-google" id="site-header">
 <nav class="glue-page test-fixed">
-  <div class="md:hidden absolute h-16 flex items-center cursor-pointer">
+  <div class="lg:hidden absolute h-16 flex items-center cursor-pointer">
     <div id="toggleMenu" class="h-8 flex items-center justify-left px-4 -mx-4 rounded text-Grey-700">
       <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
         <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
       </svg>
     </div>
   </div>
-  <ul class="mx-auto md:float-left h-16 flex items-center">
+  <ul class="mx-auto lg:float-left h-16 flex items-center">
     <li class="mx-auto"><a href='{{ "/" | relURL }}' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Tamper-evident logs</a></li>
   </ul>
-  <ul class="invisible md:visible float-right h-16 flex items-center">
+  <ul class="invisible lg:visible float-right h-16 flex items-center">
     <li class="text-right inline mr-6"><a href='{{ "/#applications" | relURL }}' class="text-Grey-600 hover:no-underline">Applications</a></li>
     <li class="text-right inline mr-6"><a href='{{ "/#trillian" | relURL }}' class="text-Grey-600 hover:no-underline">Trillian</a></li>
     <li class="text-right inline mr-6"><a href='{{ "/verifiable-data-structures/" | relURL }}' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
