@@ -114,6 +114,13 @@ a {
   }
 }
 
+.footer {
+  line-height: 24px;
+  h2, li {
+    margin-bottom: 12px;
+  }
+}
+
 .intro-para {
   line-height: 28px;
   @screen md {
