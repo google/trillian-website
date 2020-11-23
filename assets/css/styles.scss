@@ -37,11 +37,8 @@
 
 .github-list-item {
   .github-logo {
-    @apply -ml-1;
-    height: 1.2rem;
-    @screen sm {
-      height: 1.4rem;
-    }
+    @apply -ml-1 inline-block align-baseline;
+    height: 1rem;
   }
   @apply border-t border-Grey-300;
   &:last-child {
