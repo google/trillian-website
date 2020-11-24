@@ -81,11 +81,11 @@ When the package manager queries the hash database for a package version, it ret
 
 The signed tree head is the top level hash, signed by a private key known only to the hash database. The public key is baked into the package manager. This gives more confidence that the package manager is communicating with the real hash database (and no man-in-the-middle is occurring, for example).
 
-### The package manager proves the record is in the log
+### The package manager verifies the record is in the log
 
 The package manager verifies that the hash value is really in the log described by the tree head. It calculates the chain of hashes from the leaf to the top of the tree, verifying it matches the received tree head. If so, it's confirmed the record is in the log. This is called the [inclusion proof]({{< relref "/verifiable-data-structures#inclusion-proof" >}}).
 
-### The package manager checks previous trees haven't been tampered with
+### The package manager verifies previous trees haven't been tampered with
 
 Every time the package manager validates a signed tree head, it keeps a local copy it will use later. The tree head acts as a snapshot of the tree at a particular point in time or log size.
 
@@ -115,7 +115,7 @@ To implement this you need to build two components:
     * `/lookup/{package-name}-{version}` - returns the hash value of the package file along with a record number and signed tree head.
     * `/consistency-proof` - returns data required to verify that a previously-stored signed tree head exists in a later tree. This verifies that the log hasn't been tampered with since you last accessed it.
 
-2. **Verify component** in the package manager. This component:
+2. **Log verifier component** in the package manager. This component:
     * Queries the hash database's API for the package version.
     * Compares the calculated hash value of the downloaded file and the hash value returned by the hash database.
     * Verifies the hash database's verifiable log and stores a local cache of all signed tree heads it encounters.
@@ -123,8 +123,8 @@ To implement this you need to build two components:
 
 ## How to further strengthen
 
-* **Encourage external monitors** - to carry out a full audit of the hash database, re-calculating all the hashes in the tree and ensuring they re-create the tree head.
-* **Notify code authors about new releases** - if an author's account is hacked and a malicious version is released, notifying the author makes it more likely the malicious update is detected.
+* **Encourage external verifiers** - to carry out a full audit of the hash database, re-calculating all the hashes in the tree and ensuring they re-create the tree head.
+* **Notify code authors about new releases** - Code authors are uniquely qualified to verify whether an update is legitimate or not. If an author's account is hacked and a malicious version is released, notifying the author makes it more likely the malicious update is detected.
 * **Make code diffs visible** - making it easy for members of the community to glance at what actual code has changed between versions makes it more likely malicious code will be spotted.
 * **Introduce a feedback loop on failures** - sharing verification failures with people familiar with the whole system takes the burden off the end-user and makes it more likely malicious changes will be detected.
 
