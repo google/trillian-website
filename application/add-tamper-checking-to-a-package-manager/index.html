@@ -230,8 +230,8 @@
 <li>The package manager calculates the hash value of the downloaded package.</li>
 <li>The package manager asks the hash database if it has the hash value for the package&rsquo;s name and version number e.g. &ldquo;libfoo-1.4.6&rdquo;</li>
 <li>The hash database checks whether it has previously downloaded the package by looking in its verifiable log. If not, it downloads the package, calculates the hash value and enters it into the verifiable log.</li>
-<li>The hash database returns the checksum along with extra details about the record in the verifiable log.
-The package manager verifies the answer from the hash database and compares the returned checksum with the one it generated in (2). If they match, installation can continue.</li>
+<li>The hash database returns the hash value along with extra details about the record in the verifiable log.
+The package manager verifies the answer from the hash database and compares the returned hash value with the one it generated in (2). If they match, installation can continue.</li>
 </ol>
 <h2 id="how-the-system-is-verifiable">How the system is verifiable</h2>
 <h3 id="package-records-are-stored-in-a-verifiable-log">Package records are stored in a verifiable log</h3>
@@ -250,12 +250,12 @@ The package manager verifies the answer from the hash database and compares the 
     &quot;treeSize&quot;: 1291072
 }
 </code></pre><p>The signed tree head is the top level hash, signed by a private key known only to the hash database. The public key is baked into the package manager. This gives more confidence that the package manager is communicating with the real hash database (and no man-in-the-middle is occurring, for example).</p>
-<h3 id="the-package-manager-proves-the-record-is-in-the-log">The package manager proves the record is in the log</h3>
+<h3 id="the-package-manager-verifies-the-record-is-in-the-log">The package manager verifies the record is in the log</h3>
 <p>The package manager verifies that the hash value is really in the log described by the tree head. It calculates the chain of hashes from the leaf to the top of the tree, verifying it matches the received tree head. If so, it&rsquo;s confirmed the record is in the log. This is called the <a href="/verifiable-data-structures/#inclusion-proof">inclusion proof</a>.</p>
-<h3 id="the-package-manager-checks-previous-trees-havent-been-tampered-with">The package manager checks previous trees haven&rsquo;t been tampered with</h3>
+<h3 id="the-package-manager-verifies-previous-trees-havent-been-tampered-with">The package manager verifies previous trees haven&rsquo;t been tampered with</h3>
 <p>Every time the package manager validates a signed tree head, it keeps a local copy it will use later. The tree head acts as a snapshot of the tree at a particular point in time or log size.</p>
 <p>As time passes and new records are added to the log, the tree expands. A verifiable log is always populated in a way that the new, larger tree should fully contain any previous trees, providing no records have been tampered with.</p>
-<p>The second time the package queries the checksum database, it receives the updated signed tree head. It uses the previously stored tree head to check that the previous tree is fully contained in the current tree. This proves that nothing in the previous tree has been tampered with.</p>
+<p>The second time the package queries the hash database, it receives the updated signed tree head. It uses the previously stored tree head to check that the previous tree is fully contained in the current tree. This proves that nothing in the previous tree has been tampered with.</p>
 <p>This process of comparing one tree against another is called a <a href="/verifiable-data-structures/#consistency-proof">consistency proof</a>.</p>
 <h3 id="tampering-with-the-log-would-be-highly-visible">Tampering with the log would be highly visible</h3>
 <p>Tampering with the log would cause the inclusion proof or consistency proof to fail in every installation of the package manager. This would be highly visible since there could be thousands or millions of installs.</p>
@@ -276,24 +276,24 @@ The package manager verifies the answer from the hash database and compares the 
 <li>
 <p><strong>Hash database</strong> (Trillian personality). This exposes the API used by the package manager, and builds on Trilian&rsquo;s verifiable log data structure. Roughly, the API endpoints would be:</p>
 <ul>
-<li><code>/lookup/{package-name}-{version}</code> - returns the checksum of the package file along with a record number and signed tree head.</li>
+<li><code>/lookup/{package-name}-{version}</code> - returns the hash value of the package file along with a record number and signed tree head.</li>
 <li><code>/consistency-proof</code> - returns data required to verify that a previously-stored signed tree head exists in a later tree. This verifies that the log hasn&rsquo;t been tampered with since you last accessed it.</li>
 </ul>
 </li>
 <li>
-<p><strong>Verify component</strong> in the package manager. This component:</p>
+<p><strong>Log verifier component</strong> in the package manager. This component:</p>
 <ul>
-<li>Queries the checksum server&rsquo;s API for the package version.</li>
-<li>Compares the checksum of the downloaded file and the checksum returned by the hash database.</li>
-<li>Verifies the checksum server&rsquo;s verifiable log and stores a local cache of all signed tree heads it encounters.</li>
+<li>Queries the hash database&rsquo;s API for the package version.</li>
+<li>Compares the calculated hash value of the downloaded file and the hash value returned by the hash database.</li>
+<li>Verifies the hash database&rsquo;s verifiable log and stores a local cache of all signed tree heads it encounters.</li>
 <li>Carries out consistency proofs for new tree heads.</li>
 </ul>
 </li>
 </ol>
 <h2 id="how-to-further-strengthen">How to further strengthen</h2>
 <ul>
-<li><strong>Encourage external monitors</strong> - to carry out a full audit of the hash database, re-calculating all the hashes in the tree and ensuring they re-create the tree head.</li>
-<li><strong>Notify code authors about new releases</strong> - if an author&rsquo;s account is hacked and a malicious version is released, notifying the author makes it more likely the malicious update is detected.</li>
+<li><strong>Encourage external verifiers</strong> - to carry out a full audit of the hash database, re-calculating all the hashes in the tree and ensuring they re-create the tree head.</li>
+<li><strong>Notify code authors about new releases</strong> - Code authors are uniquely qualified to verify whether an update is legitimate or not. If an author&rsquo;s account is hacked and a malicious version is released, notifying the author makes it more likely the malicious update is detected.</li>
 <li><strong>Make code diffs visible</strong> - making it easy for members of the community to glance at what actual code has changed between versions makes it more likely malicious code will be spotted.</li>
 <li><strong>Introduce a feedback loop on failures</strong> - sharing verification failures with people familiar with the whole system takes the burden off the end-user and makes it more likely malicious changes will be detected.</li>
 </ul>

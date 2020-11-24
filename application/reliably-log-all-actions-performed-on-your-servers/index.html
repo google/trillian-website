@@ -228,21 +228,21 @@
 <ol>
 <li>The user&rsquo;s client submits the command to the verifiable log</li>
 <li>The user&rsquo;s computer sends the command to the agent running on the server</li>
-<li>The agent server checks that the command has been added to the log, and simultaneously verifies the log</li>
-<li>The agent runs the command on the server. By having the agent check the log before running a command, it is acting as an enforcer. In order for a command to run on a server, it must first appear in the log. This ensures a user cannot run a malicious command without that command being logged.</li>
+<li>The agent server verifies that the command has been added to the log, and simultaneously verifies the integrity of the log</li>
+<li>The agent runs the command on the server. In order for a command to run on a server, it must first appear in the log. This ensures a user cannot run a malicious command without that command being logged.</li>
 </ol>
 <p>Each agent keeps a record of previously seen <a href="/verifiable-data-structures/#tree-head-hash">tree heads</a>. If an agent finds an inconsistency with a previous tree head - implying the log has been tampered with - it stops working and raises alarms. Therefore all running agents act as a distributed network, continuously verifying the append-only nature of the log.</p>
 <p>The verifiability of the log makes it extremely difficult to tamper with the log to cover up the malicious command.</p>
 <h2 id="limitations">Limitations</h2>
 <p><strong>Users can still run malicious commands</strong> - the log doesn&rsquo;t know whether a command is malicious or not, it simply stores everything. However:</p>
 <ul>
-<li>It&rsquo;s now possible to write software to continuously monitor the log for commands which look suspicious</li>
+<li>It&rsquo;s now possible to write verifier software to continuously monitor the log for commands which look suspicious.</li>
 <li>Users may be dissuaded from running malicious commands since they&rsquo;ll appear in the log and be very difficult to delete.</li>
 </ul>
 <p><strong>The verifiable log can be tampered with</strong>. However:</p>
 <ul>
-<li>The agents (and any other monitoring code) can detect when that has happened, and decline to run the command.</li>
-<li>To undetectably tamper with the log&rsquo;s history, an attacker would have to simultaneously tamper with the log and all monitors.</li>
+<li>The agents (and any other verifier code) can detect when that has happened, and decline to run the command.</li>
+<li>To undetectably tamper with the log&rsquo;s history, an attacker would have to simultaneously tamper with the log and all verifiers.</li>
 </ul>
 <h2 id="how-to-implement-this">How to implement this</h2>
 <p>You need to create four software components:</p>
@@ -250,7 +250,7 @@
 <li><strong>Trillian personality</strong> - to provide the external interface (API) for logging commands and querying the log with cryptographic proof. Together, Trillian and the personality make up the verifiable log in the diagram above.</li>
 <li><strong>Submitting component</strong> - for submitting commands to the log before they are sent to the agent.</li>
 <li><strong>Agent component</strong> - for the agent to verify that received commands are in the log.</li>
-<li><strong>Monitor</strong> - to regularly check the integrity of the verifiable log, and potentially inspect log entries for potentially malicious commands.</li>
+<li><strong>Verifiers</strong> - to regularly check the integrity of the verifiable log, and potentially inspect log entries for malicious commands.</li>
 </ol>
 <p>Consider integrating the submitting and agent components as Git hooks in an existing workflow.</p>
 <h2 id="other-possible-kinds-of-actions">Other possible kinds of actions</h2>
@@ -262,7 +262,7 @@
 <h2 id="how-to-further-strengthen-logging">How to further strengthen logging</h2>
 <ul>
 <li>The verifiable log has a signed tree head which can be used to verify the entire data structure. The signed tree head could be regularly published online, encouraging others to store a copy of all the signed tree heads. These can be used to subsequently carry out <a href="/verifiable-data-structures/#consistency-proof">consistency proofs</a>: confirming that the log was append-only since the tree head was stored.</li>
-<li>You could share the verifiable log&rsquo;s entire contents privately with a third party who could monitor for suspicious commands and continuously verify the integrity of the log.</li>
+<li>You could share the verifiable log&rsquo;s entire contents privately with a third party verifier who could monitor for suspicious commands and continuously verify the integrity of the log.</li>
 <li>You could add multi-party authentication for high risk commands. The agent component would ensure that that log received separate additional approvals before a high-risk command would be executed.</li>
 </ul>
 <h2 id="examples">Examples</h2>
