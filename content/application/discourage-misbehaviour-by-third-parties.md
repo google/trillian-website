@@ -6,7 +6,7 @@ Unfortunately any CA can issue a certificate for any domain (more or less). So a
 * Some CAs performed inadequate checking of an organisation and mistakenly issued certificates that shouldn’t have been allowed.
 * Some CAs had poor security, resulting in hackers stealing their signing key and creating new illegitimate certificates.
 
-Fake certificates are hard to detect if they’re used in a limited, targeted way by a malicious user: no-one else sees the fake certificate, so no-one knows it exists. And the whole premise of HTTPS was weakened by sloppy CAs, so there was a big incentive to fix the problem. However, previous attempts to fix it were ineffective. CAs were passing traditional auditing of their business processes but were still miss-issuing certificates.
+Fake certificates are hard to detect if they’re used in a limited, targeted way by a malicious user: no-one else sees the fake certificate, so no-one knows it exists. And the whole premise of HTTPS was weakened by sloppy CAs, so there was a big incentive to fix the problem. However, previous attempts to fix it were ineffective. CAs were passing traditional auditing of their business processes but were still mis-issuing certificates.
 
 ## Certificate Transparency is built with Trillian
 
