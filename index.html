@@ -43,7 +43,7 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://trillian.transparency.dev/css/styles.min.2e00561699bfbe4dc96f0ad7200471d20b4cd0f7e44f690b74573b49d2aea480.css" integrity="sha256-LgBWFpm/vk3JbwrXIARx0gtM0PfkT2kLdFc7SdKupIA=">
+  <link rel="stylesheet" href="https://trillian.transparency.dev/css/styles.min.6d2928344b4372ea67d5960a98cd7ef109e4e624e1ac41424538fe0e230662be.css" integrity="sha256-bSkoNEtDcupn1ZYKmM1&#43;8Qnk5iThrEFCRTj&#43;DiMGYr4=">
     <script>
       'use strict';
 
@@ -93,12 +93,14 @@
   </ul>
   <ul class="invisible lg:visible float-right h-16 flex items-center">
     <li class="text-right inline mr-6"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+    <li class="text-right inline mr-6"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
     <li class="text-right inline mr-6"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
     <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
   </ul>
 </nav>
 <ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
   <li class="gmb-2"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+  <li class="gmb-2"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
   <li class="gmb-2"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
   <li class=""><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
 </ul>
@@ -434,11 +436,42 @@
   </ul>
 </section>
 
+<section class="glue-page gpb-8">
+  <a id="get-started"></a>
+  <div class="glue-grid gpt-6">
+    <div class="col-span-4 sm:col-span-10 sm:col-start-2 lg:col-span-4 lg:col-start-2">
+      <h2 class="headline2 gmb-4">
+        Start verifying to get more from your log
+      </h2>
+    </div>
+    <div class="col-span-4 sm:col-span-10 sm:col-start-2 lg:col-span-6">
+      <p class="gmb-2 headline5 intro-para">
+        Often people just put everything in the log and stop there.
+      </p>
+      <p class="gmb-2 headline5 intro-para">
+        For a system to be valuable to you and those that rely on it,
+        you need to <strong>identify what’s important to log</strong> and
+        <strong>who will verify its contents</strong>.
+      </p>
+
+      <p class="gmb-4 headline5 intro-para">
+        We've designed two exercises to help you get started.
+      </p>
+
+      <p>
+        <a href="/how-to-design-a-verifiable-system/" class="btn bg-Blue-600 text-white hover:shadow-md inline-flex px-8 items-center justify-center">
+          How to design a verifiable system
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
 <div class="bg-Grey-050">
   <a id="trillian"></a>
   <section class="glue-page gpt-6 gpb-6">
     <div class="glue-grid">
-      <div class="col-span-10 sm:col-start-2">
+      <div class="col-span-10 sm:col-start-2 lg:col-start-2 lg:col-span-8">
         <h2 class="headline2 gmb-4">
           Trillian: an open-source verifiable log
         </h2>
