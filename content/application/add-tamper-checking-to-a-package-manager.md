@@ -48,8 +48,8 @@ This is a form of trust-on-first-use, similar to logging into an SSH server for 
 2. The package manager calculates the hash value of the downloaded package.
 3. The package manager asks the hash database if it has the hash value for the package's name and version number e.g. "libfoo-1.4.6"
 4. The hash database checks whether it has previously downloaded the package by looking in its verifiable log. If not, it downloads the package, calculates the hash value and enters it into the verifiable log.
-5. The hash database returns the checksum along with extra details about the record in the verifiable log.
-   The package manager verifies the answer from the hash database and compares the returned checksum with the one it generated in (2). If they match, installation can continue.
+5. The hash database returns the hash value along with extra details about the record in the verifiable log.
+   The package manager verifies the answer from the hash database and compares the returned hash value with the one it generated in (2). If they match, installation can continue.
 
 ## How the system is verifiable
 
@@ -91,7 +91,7 @@ Every time the package manager validates a signed tree head, it keeps a local co
 
 As time passes and new records are added to the log, the tree expands. A verifiable log is always populated in a way that the new, larger tree should fully contain any previous trees, providing no records have been tampered with.
 
-The second time the package queries the checksum database, it receives the updated signed tree head. It uses the previously stored tree head to check that the previous tree is fully contained in the current tree. This proves that nothing in the previous tree has been tampered with.
+The second time the package queries the hash database, it receives the updated signed tree head. It uses the previously stored tree head to check that the previous tree is fully contained in the current tree. This proves that nothing in the previous tree has been tampered with.
 
 This process of comparing one tree against another is called a [consistency proof]({{< relref "/verifiable-data-structures#consistency-proof" >}}).
 
@@ -112,13 +112,13 @@ Tampering with the log would cause the inclusion proof or consistency proof to f
 To implement this you need to build two components:
 
 1. **Hash database** (Trillian personality). This exposes the API used by the package manager, and builds on Trilian's verifiable log data structure. Roughly, the API endpoints would be:
-    * `/lookup/{package-name}-{version}` - returns the checksum of the package file along with a record number and signed tree head.
+    * `/lookup/{package-name}-{version}` - returns the hash value of the package file along with a record number and signed tree head.
     * `/consistency-proof` - returns data required to verify that a previously-stored signed tree head exists in a later tree. This verifies that the log hasn't been tampered with since you last accessed it.
 
 2. **Verify component** in the package manager. This component:
-    * Queries the checksum server's API for the package version.
-    * Compares the checksum of the downloaded file and the checksum returned by the hash database.
-    * Verifies the checksum server's verifiable log and stores a local cache of all signed tree heads it encounters.
+    * Queries the hash database's API for the package version.
+    * Compares the calculated hash value of the downloaded file and the hash value returned by the hash database.
+    * Verifies the hash database's verifiable log and stores a local cache of all signed tree heads it encounters.
     * Carries out consistency proofs for new tree heads.
 
 ## How to further strengthen
