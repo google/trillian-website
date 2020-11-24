@@ -1,6 +1,8 @@
 .markdown {
-  p, ul, ol, figure {
-    @extend .gmb-2;
+  article {
+    p, ul, ol, figure {
+      @extend .gmb-2;
+    }
   }
 
   figure {
@@ -113,6 +115,18 @@
     }
     >ul, ol {
       @extend .gmt-1;
+    }
+  }
+}
+
+.markdown #TableOfContents {
+  @apply mb-8;
+  ul {
+    @apply ml-0;
+    li {
+      &:before {
+        content: "";
+      }
     }
   }
 }
