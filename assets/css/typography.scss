@@ -178,3 +178,13 @@ pre {
 code {
   @apply bg-Grey-100 p-1 text-xs rounded;
 }
+
+table.claimant-model {
+  td.definition {
+    font-weight: 500;
+    padding-right: 12px;
+  }
+  tr {
+    @apply mb-2 text-sm align-top;
+  }
+}

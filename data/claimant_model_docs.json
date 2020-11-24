@@ -1,0 +1,19 @@
+{
+  "claimant_model_docs": [
+    {
+      "title": "Core Claimant Model",
+      "description": "Read more about the core claimant model with a mapped example for certificate transparency",
+      "url": "https://github.com/google/trillian/blob/master/docs/claimantmodel/CoreModel.md"
+    },
+    {
+      "title": "Claimant Model for Logs",
+      "description": "A paper presenting a model for transparent ecosystems built around logs.",
+      "url": "https://github.com/google/trillian/blob/master/docs/claimantmodel/Logs.md"
+    },
+    {
+      "title": "Transparency, The Implementer’s Story",
+      "description": "A story of how an engineer working on a download server uses The Claimant model to implement a transparent, verifiable-log.",
+      "url": "/transparency-an-implementers-story"
+    }
+  ]
+}
