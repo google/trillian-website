@@ -42,7 +42,7 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://trillian.transparency.dev/css/styles.min.7450fcf3e4230296c78c1deb23b79a694954ecaffe425b7ff55e997d3059939c.css" integrity="sha256-dFD88&#43;QjApbHjB3rI7eaaUlU7K/&#43;Qlt/9V6ZfTBZk5w=">
+  <link rel="stylesheet" href="https://trillian.transparency.dev/css/styles.min.fa88f4b14b2b25041b1cf70102343c1c2fedad694d04188ac08cdd001daa33d1.css" integrity="sha256-&#43;oj0sUsrJQQbHPcBAjQ8HC/trWlNBBiKwIzdAB2qM9E=">
     <script>
       'use strict';
 
@@ -80,28 +80,26 @@
 
 <div class="bg-white z-50 w-full font-google" id="site-header">
 <nav class="glue-page test-fixed">
-  <div class="md:hidden absolute h-16 flex items-center cursor-pointer">
+  <div class="lg:hidden absolute h-16 flex items-center cursor-pointer">
     <div id="toggleMenu" class="h-8 flex items-center justify-left px-4 -mx-4 rounded text-Grey-700">
       <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
         <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
       </svg>
     </div>
   </div>
-  <ul class="mx-auto md:float-left h-16 flex items-center">
-    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Trillian</a></li>
+  <ul class="mx-auto lg:float-left h-16 flex items-center">
+    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Tamper-evident logs</a></li>
   </ul>
-  <ul class="invisible md:visible float-right h-16 flex items-center">
-    <li class="text-right inline mr-6"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
-    <li class="text-right inline mr-6"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
-    <li class="text-right inline mr-6"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
-    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+  <ul class="invisible lg:visible float-right h-16 flex items-center">
+    <li class="text-right inline mr-6"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+    <li class="text-right inline mr-6"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
   </ul>
 </nav>
 <ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
-  <li class="gmb-2"><a href='/#how-it-works' class="text-Grey-600">How it works</a></li>
-  <li class="gmb-2"><a href='/#get-started' class="text-Grey-600">Applications of Trillian</a></li>
-  <li class="gmb-2"><a href='/#why' class="text-Grey-600">Why Trillian</a></li>
-  <li class=""><a href='/verifiable-data-structures/' class="text-Grey-600">Verifiable Data Structures</a></li>
+  <li class="gmb-2"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+  <li class="gmb-2"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+  <li class=""><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
 </ul>
 </div>
 <div id="nav-spacer" class="h-16"></div>
@@ -411,47 +409,49 @@ University of Cambridge - proposes an alternative solution to compare mappings b
 </script>
 
 
-<div class="text-white bg-Grey-050 font-google">
+<div class="text-white bg-Grey-050 font-google font-medium footer">
 
   <div class="glue-page gpt-4 gpb-5">
     <div class="glue-grid">
       <div class="col-span-4 sm:col-span-5 sm:col-start-2">
-        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Learn about Trillian</h2>
+        <h2 class="text-Grey-900">Learn more about tamper-evident logs</h2>
         <ul class="text-Grey-600">
-            <li class="" style="margin-bottom: 10px;">
-              <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900">Benefits</a>
-            </li>
-            <li class="" style="margin-bottom: 10px;">
-              <a href='/#how-it-works' class="text-Grey-600 hover:text-Grey-900">How it works</a>
-            </li>
-            <li class="" style="margin-bottom: 10px;">
-              <a href='/#example-code' class="text-Grey-600 hover:text-Grey-900">Example code</a>
-            </li>
-            <li class="" style="margin-bottom: 10px;">
-              <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900">Verifiable Data Structures</a>
-            </li>
+          <li>
+            <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Benefits of tamper-evident logs</a>
+          </li>
+          <li>
+            <a href='/#trillian' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Trillian: an open-source verifiable log</a>
+          </li>
+          <li>
+            <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Verifiable Data Structures</a>
+          </li>
+        </ul>
         </ul>
       </div>
       <div class="col-span-4 gmt-2 sm:col-span-5 sm:mt-0">
-        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Applications of Trillian</h2>
+        <h2 class="text-Grey-900">Applications of tamper-evident logs</h2>
         <ul class="text-Grey-600 gmb-4">
-          <li class="" style="margin-bottom: 10px;">
-            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900">Add tamper-checking to a package manager</a>
+          <li>
+            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Add tamper-checking to a package manager</a>
           </li>
-          <li class="" style="margin-bottom: 10px;">
-            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900">Reliably log all actions performed on your servers</a>
+          <li>
+            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Reliably log all actions performed on your servers</a>
           </li>
-          <li class="" style="margin-bottom: 10px;">
-            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900">Strengthen discovery of encryption keys with Key Transparency</a>
+          <li>
+            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Strengthen discovery of encryption keys with Key Transparency</a>
           </li>
-          <li class="" style="margin-bottom: 10px;">
-            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900">Discourage misbehaviour by third parties in Certificate Transparency</a>
+          <li>
+            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Discourage misbehaviour by third parties in Certificate Transparency</a>
           </li>
         </ul>
       </div>
       <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
         <img src="/images/logos/google-logo.svg" alt="Google's Logo" />
-        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm"><a href="privacy" class="text-Grey-600 hover:text-Grey-900">Privacy</a></p>
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm">
+          <a href="/privacy/" class="text-Grey-600 hover:text-Grey-900 hover:no-underline">
+            Privacy
+          </a>
+        </p>
       </div>
     </div>
   </div>
