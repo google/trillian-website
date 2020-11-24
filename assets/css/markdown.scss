@@ -25,8 +25,10 @@
 
   h2 {
     @extend .headline3;
-    @extend .gmt-5;
     @extend .gmb-3;
+    &:not(:first-child) {
+      @extend .gmt-5;
+    }
   }
 
   h3 {
@@ -63,7 +65,7 @@
       font-weight: bold;
       position: absolute;
       left: -1.5rem;
-      top: -0.3rem;
+      top: -0.25rem;
     }
     >ul, ol {
       @extend .gmt-1;

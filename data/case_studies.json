@@ -9,7 +9,7 @@
     {
       "img": "certificate-transparency-logo.svg",
       "img_alt": "Certificate Transparency's Logo",
-      "sentence": "Trillian helps detect misbehaviour of certificate authorities by enforcing that all certificates are in a verifiable log.",
+      "sentence": "A verifiable ecosystem helps detect misbehaviour of certificate authorities by enforcing that all certificates are in a verifiable log.",
       "url": "https://certificate.transparency.dev/"
     }
   ]

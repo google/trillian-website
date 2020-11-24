@@ -14,47 +14,49 @@
  limitations under the License.
 -->
 
-<div class="text-white bg-Grey-050 font-google">
+<div class="text-white bg-Grey-050 font-google font-medium footer">
 
   <div class="glue-page gpt-4 gpb-5">
     <div class="glue-grid">
       <div class="col-span-4 sm:col-span-5 sm:col-start-2">
-        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Learn about Trillian</h2>
+        <h2 class="text-Grey-900">Learn more about tamper-evident logs</h2>
         <ul class="text-Grey-600">
-            <li class="" style="margin-bottom: 10px;">
-              <a href='{{ "/#benefits" | relURL }}' class="text-Grey-600 hover:text-Grey-900">Benefits</a>
-            </li>
-            <li class="" style="margin-bottom: 10px;">
-              <a href='{{ "/#how-it-works" | relURL }}' class="text-Grey-600 hover:text-Grey-900">How it works</a>
-            </li>
-            <li class="" style="margin-bottom: 10px;">
-              <a href='{{ "/#example-code" | relURL }}' class="text-Grey-600 hover:text-Grey-900">Example code</a>
-            </li>
-            <li class="" style="margin-bottom: 10px;">
-              <a href='{{ "/verifiable-data-structures/" | relURL }}' class="text-Grey-600 hover:text-Grey-900">Verifiable Data Structures</a>
-            </li>
+          <li>
+            <a href='{{ "/#benefits" | relURL }}' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Benefits of tamper-evident logs</a>
+          </li>
+          <li>
+            <a href='{{ "/#trillian" | relURL }}' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Trillian: an open-source verifiable log</a>
+          </li>
+          <li>
+            <a href='{{ "/verifiable-data-structures/" | relURL }}' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Verifiable Data Structures</a>
+          </li>
+        </ul>
         </ul>
       </div>
       <div class="col-span-4 gmt-2 sm:col-span-5 sm:mt-0">
-        <h2 class="text-Grey-900 " style="margin-bottom: 10px;">Applications of Trillian</h2>
+        <h2 class="text-Grey-900">Applications of tamper-evident logs</h2>
         <ul class="text-Grey-600 gmb-4">
-          <li class="" style="margin-bottom: 10px;">
-            <a href='{{ "/application/add-tamper-checking-to-a-package-manager" | relURL }}' class="text-Grey-600 hover:text-Grey-900">Add tamper-checking to a package manager</a>
+          <li>
+            <a href='{{ "/application/add-tamper-checking-to-a-package-manager" | relURL }}' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Add tamper-checking to a package manager</a>
           </li>
-          <li class="" style="margin-bottom: 10px;">
-            <a href='{{ "/application/reliably-log-all-actions-performed-on-your-servers" | relURL }}' class="text-Grey-600 hover:text-Grey-900">Reliably log all actions performed on your servers</a>
+          <li>
+            <a href='{{ "/application/reliably-log-all-actions-performed-on-your-servers" | relURL }}' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Reliably log all actions performed on your servers</a>
           </li>
-          <li class="" style="margin-bottom: 10px;">
-            <a href='{{ "/application/strengthen-discovery-of-encryption-keys" | relURL }}' class="text-Grey-600 hover:text-Grey-900">Strengthen discovery of encryption keys with Key Transparency</a>
+          <li>
+            <a href='{{ "/application/strengthen-discovery-of-encryption-keys" | relURL }}' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Strengthen discovery of encryption keys with Key Transparency</a>
           </li>
-          <li class="" style="margin-bottom: 10px;">
-            <a href='{{ "/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency" | relURL }}' class="text-Grey-600 hover:text-Grey-900">Discourage misbehaviour by third parties in Certificate Transparency</a>
+          <li>
+            <a href='{{ "/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency" | relURL }}' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Discourage misbehaviour by third parties in Certificate Transparency</a>
           </li>
         </ul>
       </div>
       <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
         <img src="{{ partial "rel" (dict "context" . "url" "/images/logos/google-logo.svg") }}" alt="Google's Logo" />
-        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm"><a href="privacy" class="text-Grey-600 hover:text-Grey-900">Privacy</a></p>
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm">
+          <a href="{{ "/privacy/" | relURL }}" class="text-Grey-600 hover:text-Grey-900 hover:no-underline">
+            Privacy
+          </a>
+        </p>
       </div>
     </div>
   </div>

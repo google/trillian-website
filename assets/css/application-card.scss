@@ -1,0 +1,10 @@
+.application-card {
+    @apply border rounded pt-2 gpb-3 px-2 border-Blue-600;
+    margin-bottom: 40px;
+    @screen lg {
+        margin-bottom: 48px;
+    }
+    @screen xl {
+        margin-bottom: 64px;
+    }
+}

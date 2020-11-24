@@ -10,6 +10,9 @@ body {
 
 a {
   @apply text-Blue-600;
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .headline1, .headline2, .headline3, .headline4, .headline45,
@@ -37,7 +40,7 @@ a {
 
 .headline2 {
   font-size: 28px;
-  line-height: 40px;
+  line-height: 36px;
   @screen md {
     font-size: 40px;
     line-height: 48px;
@@ -114,6 +117,13 @@ a {
   }
 }
 
+.footer {
+  line-height: 24px;
+  h2, li {
+    margin-bottom: 12px;
+  }
+}
+
 .intro-para {
   line-height: 28px;
   @screen md {
@@ -125,6 +135,7 @@ a {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  font-weight: 500;
   letter-spacing: 0.5px;
   @extend .gpb-2;
 }
@@ -141,12 +152,13 @@ a {
     position: relative;
     &:before {
       @apply text-Blue-600;
+      line-height: 28px;
       content: "●";
       font-size: 18px;
       font-weight: bold;
       position: absolute;
-      left: -1.5rem;
-      top: -0.3rem;
+      left: -24px;
+      top: -1px;
     }
     &:last-child {
       padding-bottom: 0;

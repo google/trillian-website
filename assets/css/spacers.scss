@@ -57,3 +57,13 @@ $types: (
 .top-header-plus-padding {
   top: 96px;
 }
+
+.illustration-mb {
+  margin-bottom: 92px; // gmb-7
+  @screen-sm {
+    margin-bottom: 60px; // gmb-6
+  }
+  @screen-md {
+    margin-bottom: 80px; // gmb-6
+  }
+}
