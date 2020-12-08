@@ -1,8 +1,9 @@
 ---
-url: /stories/transparency-an-implementers-story
+url: /transparency-an-implementers-story
+layout: markdown
 title: "Transparency: An Implementer's Story"
-show_side_bar: true
 author: "Martin Hutchinson"
+date: 2020-11-17
 ---
 
 Aether’s team is responsible for running a binary download service. Naming is hard, so their service is simply called DownloadServer. Their service has some guarantees that the binary has not been tampered with, by validating a checksum on the client before any binaries are installed. Aether has a concern that this only mitigates some errors and threat models. If their download servers provide a different binary to some users along with a valid checksum then these clients could install malicious software without detection.

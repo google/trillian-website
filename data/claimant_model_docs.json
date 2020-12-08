@@ -13,7 +13,7 @@
     {
       "title": "Transparency, The Implementer’s Story",
       "description": "A story of how an engineer working on a download server uses The Claimant model to implement a transparent, verifiable-log.",
-      "url": "/stories/transparency-an-implementers-story"
+      "url": "/transparency-an-implementers-story"
     }
   ]
 }
