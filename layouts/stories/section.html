@@ -1,0 +1,23 @@
+{{ define "title"}}{{ .Title }}{{ end }}
+{{ define "main"}}
+<div class="glue-page gmt-6 gmb-4 markdown">
+  <div class="glue-grid">
+    <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
+      <h1 class="headline2 sm:text-center gmb-5">
+        <div class="eyebrow">{{ .Params.eyebrow }}</div>
+        {{ .Title }}
+      </h1>
+    </div>
+  </div>
+  <div class="glue-grid">
+    <div class="col-span-4 md:col-span-8 lg:col-start-3 lg:col-span-8 gmb-7 markdown">
+        <ul>
+            {{ range .Pages }}
+            <h2><a href="{{ relURL .URL }}">{{ .Title }}</a></h2>
+                Published {{ .Date.Format "Monday 2 Jan 2006" }}
+            {{ end }}
+        </ul>
+    </div>
+  </div>
+</div>
+{{end}}
