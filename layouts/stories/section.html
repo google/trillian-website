@@ -14,7 +14,9 @@
         <ul>
             {{ range .Pages }}
             <h2><a href="{{ relURL .URL }}">{{ .Title }}</a></h2>
-                Published {{ .Date.Format "Monday 2 Jan 2006" }}
+              {{ if .Date }}
+                <p>Published {{ .Date.Format "Monday 2 Jan 2006" }}</p>
+              {{ end }}
             {{ end }}
         </ul>
     </div>
