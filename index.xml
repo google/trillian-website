@@ -64,7 +64,7 @@ Unfortunately any CA can issue a certificate for any domain (more or less).</des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/how-to-design-a-verifiable-system/</guid>
-      <description>How to design a verifiable system       Putting everything in a verifiable log isn’t enough  It’s tempting to throw data into a log without thinking about it.  Is anyone monitoring the integrity of your data, or could it be tampered without anyone spotting it?  Is anyone verifying the authenticity of the data in the log, or are you blindly trusting&amp;nbsp;it?  Are you logging enough to actually gain a benefit?</description>
+      <description>How to design a verifiable system       Is anyone monitoring the integrity of your data, or could it be tampered without anyone spotting it? Is anyone verifying the authenticity of the data in the log, or are you blindly trusting&amp;nbsp;it? Are you logging enough to actually gain a benefit? Or too much and you risk releasing something sensitive?   Design a verifiable system and get more from your log  For a system to be verifiable, you need to think more carefully about what you&#39;re logging and why.</description>
     </item>
     
     <item>
