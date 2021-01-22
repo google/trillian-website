@@ -1,5 +1,5 @@
 ---
-url: /stories/transparency-an-implementers-story
+url: /articles/transparency-an-implementers-story
 title: "Transparency: An Implementer's Story"
 show_side_bar: true
 author: "Martin Hutchinson"
