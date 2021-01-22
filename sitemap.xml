@@ -24,6 +24,10 @@
   </url>
   
   <url>
+    <loc>https://transparency.dev/articles/</loc>
+  </url>
+  
+  <url>
     <loc>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
   </url>
   
@@ -40,15 +44,11 @@
   </url>
   
   <url>
-    <loc>https://transparency.dev/stories/</loc>
-  </url>
-  
-  <url>
     <loc>https://transparency.dev/application/strengthen-discovery-of-encryption-keys/</loc>
   </url>
   
   <url>
-    <loc>https://transparency.dev/stories/transparency-an-implementers-story/</loc>
+    <loc>https://transparency.dev/articles/transparency-an-implementers-story/</loc>
   </url>
   
   <url>
