@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://transparency.dev/transparency-an-implementers-story/</loc>
-    <lastmod>2020-11-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://transparency.dev/application/discourage-misbehaviour-by-third-parties/</loc>
   </url>
   
@@ -45,7 +40,15 @@
   </url>
   
   <url>
+    <loc>https://transparency.dev/stories/</loc>
+  </url>
+  
+  <url>
     <loc>https://transparency.dev/application/strengthen-discovery-of-encryption-keys/</loc>
+  </url>
+  
+  <url>
+    <loc>https://transparency.dev/stories/transparency-an-implementers-story/</loc>
   </url>
   
   <url>

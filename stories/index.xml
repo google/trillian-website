@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stories on Trillian</title>
+    <link>https://transparency.dev/stories/</link>
+    <description>Recent content in Stories on Trillian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://transparency.dev/stories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Transparency: An Implementer&#39;s Story</title>
+      <link>https://transparency.dev/stories/transparency-an-implementers-story/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/stories/transparency-an-implementers-story/</guid>
+      <description>Aether’s team is responsible for running a binary download service. Naming is hard, so their service is simply called DownloadServer. Their service has some guarantees that the binary has not been tampered with, by validating a checksum on the client before any binaries are installed. Aether has a concern that this only mitigates some errors and threat models. If their download servers provide a different binary to some users along with a valid checksum then these clients could install malicious software without detection.</description>
+    </item>
+    
+  </channel>
+</rss>
