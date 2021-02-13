@@ -88,7 +88,7 @@ Every time you push to `main`, the action checks out the code, builds the site, 
 
 The `CNAME` for the site's URL is not stored in the repository; instead, it is set every time via the `gh-pages` action, and configured with the `cname` variable inside the workflow.
 
-Note that the environment variable `HUGO_ENV` should be set to `production` to enable CSS minifcation/fingerprinting and to disable SCSS sourcemaps. This is currently the case on our Pages deployment, where it is made available as a Secret.
+Note that the environment variable `HUGO_ENV` should be set to `production` to enable CSS minification/fingerprinting and to disable SCSS sourcemaps. This is currently the case on our Pages deployment, where it is made available as a Secret.
 
 The site also automatically deploys whenever a Pull Request is closed.
 
