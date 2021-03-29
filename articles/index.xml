@@ -18,5 +18,15 @@
       <description>Aether’s team is responsible for running a binary download service. Naming is hard, so their service is simply called DownloadServer. Their service has some guarantees that the binary has not been tampered with, by validating a checksum on the client before any binaries are installed. Aether has a concern that this only mitigates some errors and threat models. If their download servers provide a different binary to some users along with a valid checksum then these clients could install malicious software without detection.</description>
     </item>
     
+    <item>
+      <title>Verifying Evolution of Logs vs Maps</title>
+      <link>https://transparency.dev/articles/logs-vs-maps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/articles/logs-vs-maps/</guid>
+      <description>Log Evolution Verifiable Logs represent a list which is committed to by a Checkpoint. Given a Checkpoint, a client can:
+ Verify inclusion of the value at any position in the list Cheaply verify that another Checkpoint is consistent with it  If two Checkpoints are consistent then the lists they commit to are either the same, or one is a prefix of the other. If any of this doesn’t make sense then now would be a good time to review Verifiable Data Structures.</description>
+    </item>
+    
   </channel>
 </rss>

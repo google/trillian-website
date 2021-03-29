@@ -107,5 +107,15 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <description>Verifiable data structures    Verifiable log Trillian uses a Merkle tree to implement a verifiable log. Every record inserted into a verifiable log is added as a new leaf in the Merkle tree. In the diagram aboveon the right, the four records are shown along the bottom. The squares in the diagram are cryptographic hash values. The bottom level of hashes - A, B, D and F - are calculated by hashing records 1, 2, 3 and 4.</description>
     </item>
     
+    <item>
+      <title>Verifying Evolution of Logs vs Maps</title>
+      <link>https://transparency.dev/articles/logs-vs-maps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/articles/logs-vs-maps/</guid>
+      <description>Log Evolution Verifiable Logs represent a list which is committed to by a Checkpoint. Given a Checkpoint, a client can:
+ Verify inclusion of the value at any position in the list Cheaply verify that another Checkpoint is consistent with it  If two Checkpoints are consistent then the lists they commit to are either the same, or one is a prefix of the other. If any of this doesn’t make sense then now would be a good time to review Verifiable Data Structures.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -23,7 +23,7 @@
     <title>
       
         
-          Articles
+          Verifying Evolution of Logs vs Maps
          |
        Trillian
     </title>
@@ -173,24 +173,59 @@
 <div class="glue-page gmt-6 gmb-4 markdown">
   <div class="glue-grid">
     <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
-      <h1 class="headline2 sm:text-center gmb-5">
+      <h1 class="headline2 md:text-center mb-5 md:mb-16">
         <div class="eyebrow"></div>
-        Articles
+        Verifying Evolution of Logs vs Maps
       </h1>
     </div>
   </div>
   <div class="glue-grid">
-    <div class="col-span-4 md:col-span-8 lg:col-start-3 lg:col-span-8 gmb-7 markdown">
-        <ul>
-            
-            <h2><a href="/articles/transparency-an-implementers-story">Transparency: An Implementer&#39;s Story</a></h2>
-              
-            
-            <h2><a href="/articles/logs-vs-maps">Verifying Evolution of Logs vs Maps</a></h2>
-              
-            
-        </ul>
-    </div>
+    <aside class="submenu col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 gmb-3">
+      
+      
+        <p class="font-bold">
+          Martin Hutchinson
+        </p>
+      
+      
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
+      <h2 id="log-evolution">Log Evolution</h2>
+<p>Verifiable Logs represent a list which is committed to by a Checkpoint. Given a Checkpoint, a client can:</p>
+<ol>
+<li>Verify inclusion of the value at any position in the list</li>
+<li>Cheaply verify that another Checkpoint is consistent with it</li>
+</ol>
+<p>If two Checkpoints are consistent then the lists they commit to are either the same, or one is a prefix of the other. If any of this doesn’t make sense then now would be a good time to review <a href="https://github.com/google/trillian/blob/master/docs/papers/VerifiableDataStructures.pdf">Verifiable Data Structures</a>.</p>
+<p>Sidebar: a Golden Checkpoint represents an observer’s accepted view of a Verifiable Data Structure. This Golden Checkpoint commits to the state of the data structure that this observer has relied on (whether in the role of a Believer or a Verifier).</p>
+<p>A typical client will maintain a Golden Checkpoint locally, only updating it to a newer Checkpoint when they are assured that this new Checkpoint is consistent with their Golden Checkpoint. In this way, a client can follow the evolution of the Verifiable Log, and cannot be coerced into updating to a new state which is inconsistent with their Golden state. In the event that they have 2 checkpoints for which consistency cannot be verified, this represents non-repudiable evidence from the Log which can be used to prove incorrect operation (e.g. editing, removing, reordering values which have been committed to).</p>
+<p>So, once a client has a Golden Checkpoint, they can cheaply check that any evolution of the Log is only ever an extension of the list. However, in the absence of any way for these clients to communicate (e.g. Gossip), different clients have no way to know that they are seeing the same list. This “split view” could occur at any time. For example, both clients may see the list [D,O], but client G gets [D,O,G] and client T gets [D,O,T]. Both of these states are consistent with [D,O] but inconsistent with each other.</p>
+<p><strong>Presenting a split view is easy and can be done cheaply. It can even be done by accident. But maintaining it and ensuring it remains undetected indefinitely is expensive.</strong> A Verifiable Log which commits to a split view needs to continue to do so and never present a client with a view that contradicts their established viewpoint; a single lapse in this protocol brings the whole house of cards down. This hinges on the ease of client-side consistency checks; once two clients have seen different sides of a split view they can only be put back onto the same view of the log if one of them breaks protocol and updates the Golden Checkpoint without checking consistency.</p>
+<h2 id="map-evolution">Map Evolution</h2>
+<p>A Verifiable Map represents a mapping from keys to values, which are committed to by a Checkpoint. Given a Checkpoint, a client can:</p>
+<ol>
+<li>Verify the binding of a value (or absence of value) to a particular key</li>
+</ol>
+<p>There is no feature support for clients to check consistency, and that’s because there is no efficient way to determine correct Map evolution. On the other hand, unlike Logs which have a clear append-only property which defines their correct evolution, we haven&rsquo;t really defined what Map evolution is.</p>
+<p>One evolution strategy which is similar to Logs is the Insert-Only Map. A Checkpoint commits to the set of key+values that make up the Map, and Checkpoints are consistent if there is a superset relationship between the sets they commit to. It is illegal to have multiple values for the same key (one can construct a Map of Logs to support multimaps, but verifying this more complex data structure is more difficult than a simple Insert-Only Map).</p>
+<p>The brute force method to fully verify consistency between two Insert-Only Map Checkpoints M1 and M2 is:</p>
+<ol>
+<li>Enumerate KV1 and KV2: the set of all key+value pairs at each revision</li>
+<li>Build the Merkle Tree for each and verify that M1 and M2 commit to these sets</li>
+<li>Verify that KV1 is a subset of KV2</li>
+</ol>
+<p>This is a radically different proposition for the average client than the one of a Verifiable Log; instead of needing to maintain local state which is logarithmic to the size of the data structure, the Map Client needs to duplicate the whole data structure. The amount of local state can be optimized to just require a checkpoint, at the cost of making the consistency proof more expensive (O(M log N) hashes are needed to prove that one map of N keys is M entries bigger than another one).</p>
+<p>For the vast majority of applications (think lightweight clients such as IoT devices, or even mobile phones), this is likely to be too expensive and thus client-side consistency checks are not feasible for Verifiable Maps (note that this is contrary to what is stated in Verifiable Data Structures; Verifiable Map clients cannot efficiently determine split-view attacks).</p>
+<p>Without client-side consistency checks, we need to find a different mechanism to reliably update Golden Checkpoints. Relying on trust in the Map alone to update these checkpoints means that two Map Clients seeing different sides of a split view can be coerced into accepting the same view of the Map on a future update. Thus the long-term expense of maintaining a split-view has evaporated. The significance of this cannot be understated. Thus we must find some mechanism to verify the evolution of Verifiable Maps.</p>
+<p>Two proposals to address this rely on the introduction of a Verifiable Log to store Map Checkpoints. Clients should only trust Checkpoints that are in this Log, and can safely update their Golden Checkpoint to any later entry in the Log. Verifying that this sequence of Checkpoints do represent valid evolutions of the Map is handled differently:</p>
+<ul>
+<li>Verifiable Log-Backed Maps: The Map is derived via a well-defined mapping function from the entries in an input Log. Verification relies on a Verifier constructing the Map from the log for every Map Checkpoint and confirming equivalent construction. This approach is possible for the append-only map built for SumDB (trillian-examples).</li>
+<li>Map Of Logs: Each client takes the role of Verifier for their own keyspace within the Map. The security hinges on all clients reviewing the values under their keys for correctness in every revision of the Map. Any revision which is not checked could contain a radically different log; see oscillation attacks in the linked paper.</li>
+</ul>
+<p>Verification of Map evolution is only possible if extra trust assumptions are made on external Verifiers, and furthermore, <strong>the cost of verifying Map Evolution currently scales linearly in the number of revisions.</strong> Until a practical solution to the cost of verification being O(#revisions) is solved, feasible deployments of Verifiable Maps must limit the frequency of updates to a cadence that all verifiers can process.</p>
+<p>With this in mind, the TrustFabric team is currently working on Verifiable Maps built using batch pipelines instead of an online/incremental approach. This allows far larger Maps to be constructed, at a tradeoff of latency for inclusion of updates. The batch approach now available in <a href="https://github.com/google/trillian/tree/master/experimental/batchmap">trillian/experimental/batchmap</a> has been demonstrated to create &amp; maintain updates to Verifiable Maps with 2<sup>30</sup> entries, producing revisions in the order of every 30 minutes.</p>
+
+    </article>
   </div>
 </div>
 
