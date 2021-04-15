@@ -11,6 +11,12 @@
       "img_alt": "Certificate Transparency's Logo",
       "sentence": "A verifiable ecosystem helps detect misbehaviour of certificate authorities by enforcing that all certificates are in a verifiable log.",
       "url": "https://certificate.transparency.dev/"
+    },
+    {
+      "img": "sigstore.svg",
+      "img_alt": "Sigstore's Logo",
+      "sentence": "A non-profit, public good software signing & transparency service.",
+      "url": "https://sigstore.dev/"
     }
   ]
 }
