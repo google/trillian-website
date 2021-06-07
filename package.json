@@ -1,6 +1,6 @@
 {
   "name": "trillian-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "postcss": "^7.0.32",
     "postcss-cli": "^7.1.1",
