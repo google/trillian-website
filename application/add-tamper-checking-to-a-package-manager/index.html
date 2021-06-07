@@ -302,10 +302,10 @@ The package manager verifies the answer from the hash database and compares the 
 <li><strong>Introduce a feedback loop on failures</strong> - sharing verification failures with people familiar with the whole system takes the burden off the end-user and makes it more likely malicious changes will be detected.</li>
 </ul>
 <h2 id="examples">Examples</h2>
-<p>This is implemented in production for Golang with a <a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">checksum database</a> and <a href="https://blog.golang.org/module-mirror-launch">module mirror</a>.</p>
+<p>This is implemented in production for Go with a <a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">checksum database</a> and <a href="https://blog.golang.org/module-mirror-launch">module mirror</a>.</p>
 <h2 id="further-resources">Further resources</h2>
 <ul>
-<li><a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">Proposal: Secure the Public Go Module Ecosystem</a> describes the checksum database that forms Golang’s approach to this pattern.</li>
+<li><a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">Proposal: Secure the Public Go Module Ecosystem</a> describes the checksum database that forms Go’s approach to this pattern.</li>
 <li><a href="https://www.youtube.com/watch?v=KqTySYYhPUE&amp;t=15m0s">GopherCon 2019: Katie Hockman - Go Module Proxy: Life of a Query</a> -
 Talk from GopherCon explaining how Go achieves 1) - talk from GopherCon explaining how Go achieves 1) reproducible builds, 2) persistent dependencies and 3) trustworthy fetches. Point 3) goes into detail about the checksum database, starting at 15:00.</li>
 <li><a href="https://pretired.dazwilkin.com/posts/200429/">Rust implementation of Crate Transparency using Google Trillian</a> and <a href="https://pretired.dazwilkin.com/posts/190926/">PyPi Transparency</a>
