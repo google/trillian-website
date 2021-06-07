@@ -129,10 +129,10 @@ To implement this you need to build two components:
 * **Introduce a feedback loop on failures** - sharing verification failures with people familiar with the whole system takes the burden off the end-user and makes it more likely malicious changes will be detected.
 
 ## Examples
-This is implemented in production for Golang with a [checksum database](https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md) and [module mirror](https://blog.golang.org/module-mirror-launch).
+This is implemented in production for Go with a [checksum database](https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md) and [module mirror](https://blog.golang.org/module-mirror-launch).
 
 ## Further resources
-* [Proposal: Secure the Public Go Module Ecosystem](https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md) describes the checksum database that forms Golang’s approach to this pattern.
+* [Proposal: Secure the Public Go Module Ecosystem](https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md) describes the checksum database that forms Go’s approach to this pattern.
 * [GopherCon 2019: Katie Hockman - Go Module Proxy: Life of a Query](https://www.youtube.com/watch?v=KqTySYYhPUE&t=15m0s) -
   Talk from GopherCon explaining how Go achieves 1) - talk from GopherCon explaining how Go achieves 1) reproducible builds, 2) persistent dependencies and 3) trustworthy fetches. Point 3) goes into detail about the checksum database, starting at 15:00.
 * [Rust implementation of Crate Transparency using Google Trillian](https://pretired.dazwilkin.com/posts/200429/) and [PyPi Transparency](https://pretired.dazwilkin.com/posts/190926/)
