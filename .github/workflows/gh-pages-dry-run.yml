@@ -1,4 +1,4 @@
-# Copyright 2020 Google LLC
+# Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,15 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Build/deploy to GH Pages
+name: Dry run of Build for GH Pages
 
-on:
-  push:
-    branches:
-    - main
+on: pull_request
 
 jobs:
-  build-deploy:
+  dry-run-build:
     runs-on: ubuntu-18.04
 
     steps:
@@ -54,15 +51,3 @@ jobs:
       run: hugo --gc
       env:
         HUGO_ENVIRONMENT: production
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        cname: transparency.dev
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        publish_dir: ./public
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./public
