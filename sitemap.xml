@@ -1,62 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://transparency.dev/application/discourage-misbehaviour-by-third-parties/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/get-started/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/application/add-tamper-checking-to-a-package-manager/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/application/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/articles/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/how-to-design-a-verifiable-system/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/privacy/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/application/reliably-log-all-actions-performed-on-your-servers/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/application/strengthen-discovery-of-encryption-keys/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/articles/transparency-an-implementers-story/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/verifiable-data-structures/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://transparency.dev/articles/logs-vs-maps/</loc>
   </url>
-  
 </urlset>
