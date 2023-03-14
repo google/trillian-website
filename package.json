@@ -6,7 +6,7 @@
     "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
-    "postcss-purgecss": "^1.0.0",
+    "postcss-purgecss": "^5.0.0",
     "tailwindcss": "^2.0.4"
   }
 }
