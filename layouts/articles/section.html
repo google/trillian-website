@@ -13,7 +13,7 @@
     <div class="col-span-4 md:col-span-8 lg:col-start-3 lg:col-span-8 gmb-7 markdown">
         <ul>
             {{ range .Pages }}
-            <h2><a href="{{ relURL .URL }}">{{ .Title }}</a></h2>
+            <h2><a href="{{ relURL .RelPermalink }}">{{ .Title }}</a></h2>
               {{ if .Date }}
                 <p>Published {{ .Date.Format "Monday 2 Jan 2006" }}</p>
               {{ end }}
