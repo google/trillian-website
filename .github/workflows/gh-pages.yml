@@ -33,9 +33,9 @@ jobs:
         extended: true
 
     - name: Setup Node
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: 18
 
     - name: Cache node modules
       uses: actions/cache@v1
