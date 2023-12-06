@@ -1,0 +1,293 @@
+<!doctype html>
+
+ <!--
+  Copyright 2020 Google LLC
+ 
+  Licensed under the Apache License, Version 2.0 (the 'License');
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an 'AS IS' BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+      
+        
+          Transparency Logs: A Verifiable Transport Layer
+         |
+       Trillian
+    </title>
+
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173407084-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://transparency.dev/css/styles.min.4830a4c5705e897f886c218269f74ae0ee9b47b7c46a9c29aeac1fa81aa4a33d.css" integrity="sha256-SDCkxXBeiX&#43;IbCGCafdK4O6bR7fEapwprqwfqBqkoz0=">
+    <script>
+      'use strict';
+
+      function ready(fn) {
+        if (document.attachEvent
+          ? document.readyState === 'complete'
+          : document.readyState !== 'loading') {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      function addClass(el, className) {
+        if (el.classList) {
+          el.classList.add(className);
+        } else {
+          el.className += ' ' + className;
+        }
+      }
+
+      function removeClass(el, className) {
+        if (el.classList) {
+          el.classList.remove(className);
+        } else {
+          el.className = el.className.replace(
+              new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '
+          );
+        }
+      }
+    </script>
+  </head>
+<body>
+    
+
+<div class="bg-white z-50 w-full font-google" id="site-header">
+<nav class="glue-page test-fixed">
+  <div class="lg:hidden absolute h-16 flex items-center cursor-pointer">
+    <div id="toggleMenu" class="h-8 flex items-center justify-left px-4 -mx-4 rounded text-Grey-700">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
+        <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  </div>
+  <ul class="mx-auto lg:float-left h-16 flex items-center">
+    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Tamper-evident logs</a></li>
+  </ul>
+  <ul class="invisible lg:visible float-right h-16 flex items-center">
+    <li class="text-right inline mr-6"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+    <li class="text-right inline mr-6"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
+    <li class="text-right inline mr-6"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
+    <li class="text-right inline mr-6"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+  </ul>
+</nav>
+<ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
+  <li class="gmb-2"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+  <li class="gmb-2"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
+  <li class="gmb-2"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+  <li class="gmb-2"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
+  <li class=""><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+</ul>
+</div>
+<div id="nav-spacer" class="h-16"></div>
+
+<script>
+  'use strict';
+  (function(){
+
+    var doc = document.documentElement;
+    var w = window;
+
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+
+    var header = document.getElementById('site-header');
+
+    var checkScroll = function() {
+
+      
+
+
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        
+        direction = 1;
+      }
+
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
+
+      prevScroll = curScroll;
+    };
+
+    var toggleHeader = function(direction, curScroll) {
+      if (direction === 2 && curScroll > 64) {
+        addClass(header, 'hide');
+        addClass(mobileMenu, 'hidden');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        removeClass(header, 'hide');
+        prevDirection = direction;
+      }
+    };
+
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function toggleMenuVisibility() {
+      if (mobileMenu.classList.contains('hidden')) {
+        removeClass(mobileMenu, 'hidden');
+        return;
+      };
+      addClass(mobileMenu, 'hidden');
+    };
+
+    window.addEventListener('scroll', checkScroll);
+    document.getElementById('toggleMenu').onclick = toggleMenuVisibility;
+
+  })();
+</script>
+
+<div class="glue-page gmt-6 gmb-4 markdown">
+  <div class="glue-grid">
+    <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
+      <h1 class="headline2 md:text-center mb-5 md:mb-16">
+        <div class="eyebrow"></div>
+        Transparency Logs: A Verifiable Transport Layer
+      </h1>
+    </div>
+  </div>
+  <div class="glue-grid">
+    <aside class="submenu col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 gmb-3">
+      
+      
+        <p class="font-bold">
+          Martin Hutchinson
+        </p>
+      
+      
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
+      <h1 id="transparency-logs-a-verifiable-transport-layer">Transparency Logs: A Verifiable Transport Layer</h1>
+<p>Transparency logs are a powerful tool for storing information and presenting it to all users in such a way that they can all verify they see the same entries. Originally deployed for Certificate Transparency over a decade ago, logs are now being used to provide tamper evidence for other ecosystems such as <a href="https://security.googleblog.com/2023/08/pixel-binary-transparency-verifiable.html">binary transparency</a> and <a href="https://security.googleblog.com/2023/10/increasing-transparency-in-ai-security.html?m=1">AI model transparency</a>. When a transparency log is used correctly in a tight feedback loop it allows for timely detection and response to malfeasance, forming an important part of security response to protect users.</p>
+<p>This article looks at what it means to verify a log. Readers familiar with verifiable logs probably have an idea about what “verifying a log” means, which is likely one of the following:</p>
+<ol>
+<li>Verifying that an entry is included in a log</li>
+<li>Verifying that a new checkpoint for a log is consistent with any previous version (i.e. the log has grown in an append-only fashion)</li>
+<li>Verifying that all users are seeing the same entries in a log</li>
+<li>Verifying the entries in a log to discover any malfeasance</li>
+</ol>
+<p>The fact that logs can be verified on so many levels is both a blessing and a curse. The blessing is that the first three verification options cover all of the properties of transparency logs needed to provide security guarantees. When these are fully verified, nobody needs to trust the log operator; if the log operator is misbehaving then they will be caught. The curse is that one or more of these verification options is often forgotten because it is easy to fall into the trap of believing that the log is already verified after performing some subset of the verification checks.</p>
+<p>Note that the paragraph above delineates these checks into two subgroups:</p>
+<ul>
+<li>Checks 1-3 verify that the log operator is behaving correctly</li>
+<li>Check 4 verifies that the entries in the log are safe to rely on and aren’t evidence of malicious activity</li>
+</ul>
+<p>Checking for correct log operation is a well beaten path at this point; libraries for verifying inclusion and consistency are available at <a href="https://github.com/transparency-dev/merkle">github.com/transparency-dev/merkle</a>, and witnessing libraries are available at <a href="github.com/transparency-dev/witness">github.com/transparency-dev/witness</a>. This verification is standard across all logs that use the <a href="github.com/transparency-dev/formats">standard checkpoint format</a>.</p>
+<p>The rest of the article will discuss the remaining verification check: looking for evidence of malfeasance stored in the log. This check is arguably the most important, and is the primary motivation for introducing transparency logs: &ldquo;sunlight is the best disinfectant&rdquo; after all. Once a log has integrated an entry, an appropriate party must verify the contents of that entry in a timely manner. This verification must go beyond checking the cryptographic log proofs because an entry being present in a log <em>does not mean that this entry is good</em>. Lies can also be recorded in logs. Prompt verification of log entries allows such lies to be detected and corrective action taken, ideally before harm is caused.</p>
+<h2 id="a-quick-analogy-store-cctv">A quick analogy: store CCTV</h2>
+<p>Many large stores have a CCTV security system. If nobody is watching this footage then theft can go undetected indefinitely. Even if the theft is detected via other security practices, e.g. a stock count, then determining how and when the theft occurred will require someone to look through all of the footage.</p>
+<p>If this footage was being tracked in real-time, then the thief could be apprehended before they had got away with the crime.</p>
+<p>Transparency logs are like this CCTV in that they record everything that happens, but the security benefits are only realised if this recorded data is verified in a timely manner. If you verify the data close to real time, you can prevent fraud or other malicious activity. However, if you don&rsquo;t verify the data until after the fact, the entries are only useful for forensics once the crime is complete and detected via its impact in the real world. Either way the perpetrator will be dealt with, but less damage will occur if they are caught sooner.</p>
+<h2 id="the-role-of-verifiers">The role of verifiers</h2>
+<p>By now you should be convinced that verifying entries in a log is just as important as putting entries in a log to realise security benefits from transparency. Any ecosystem trying to drive an increase in security through transparency logs must have one or more entities that are verifying the correctness of entries in the log. Such verifiers must understand how to parse and interpret an entry in order to verify it. This is quite different from verifiers that operate only on the log as a generic verifiable data structure, such as a <a href="https://github.com/transparency-dev/witness">log witness</a>.</p>
+<p>Let’s look at some real world examples:</p>
+<ul>
+<li><a href="https://certificate.transparency.dev/">Certificate Transparency</a>: each entry is an X.509 certificate issued by Certificate Authorities on behalf of a Domain Owner. The only actor that can verify a certificate to ensure that it hasn’t been misissued is the Domain Owner.</li>
+<li><a href="https://sum.golang.org/">Go Sum DB</a>: each entry is a tuple of {module, version, hash}. Any actor can verify that no module + version is mapped to more than one hash within the log.</li>
+<li><a href="https://www.sigstore.dev/">Sigstore</a>: each entry contains a tuple of {identity, certificate, signature}. Only the identity owner can verify that these signatures were created on their behalf, and not as the result of key, identity or service compromise.</li>
+<li><a href="https://github.com/usbarmory/armory-drive/wiki/Firmware-Transparency">USBArmory Firmware Transparency</a>: each entry contains a tuple of {git commit hash, toolchain, binary hash}. Any actor can check out the code at the given commit, run the build toolchain, and verify that a binary with the given hash is the resulting build artefact.</li>
+</ul>
+<p>Some of these ecosystems also have additional verifiers. For example, USBArmory Firmware Transparency also logs a signature, which enables the owner of the release keys to verify that no releases were made without their knowledge. This is similar to Sigstore identity verification.</p>
+<p>The <a href="https://transparency.dev/how-to-design-a-verifiable-system/">Claimant Model</a> provides precise terminology to allow clear analysis and discussion of the different <em>claims</em> that verifiers check.</p>
+<h2 id="in-practice">In practice</h2>
+<p>Unlike most users of a log, verifiers must download and inspect every entry at least once. This is required even if the verifier is only responsible for verifying a subset of entries that match a particular condition. The reason for this is that logs cannot verifiably prove that they have returned all entries that match a particular condition, even if the log operator runs a search service alongside the log. Consequently, a verifier that operated only using a search service could be misled into believing they had verified all of the entries that applied to them, but bad results not returned in the search would remain unverified. The good news is that <a href="https://github.com/google/trillian/tree/master/experimental/batchmap">verifiable maps</a> can provide log operators, or indeed anyone else, a way to run a verifiable search service.</p>
+<p>To see these principles in practice, let’s look at a concrete implementation. The <a href="https://github.com/google/trillian-examples/tree/master/clone/cmd/sumdbverify">Go Sum DB Verifier</a> can be deployed by anyone. When running, it downloads all of the entries from the log into a local database, and then verifies the entries in the log using this local database. Initially this runs in a batch mode to quickly copy the log to the local storage. After completing the initial download, the log is polled frequently to check for new entries. All downloaded entries are cryptographically checked to make sure the local copy is the same as the log publicly commits to. The verifier periodically checks the local copy of the log in the database to ensure that there are no duplicate entries.</p>
+<p>Writing a verifier for another log should be possible using this verifier as a template. Much of the code remains the same, with customization only required for:</p>
+<ul>
+<li>Binding the clone tool to a different log API</li>
+<li>The verification logic</li>
+</ul>
+<h2 id="call-to-action">Call to action</h2>
+<p><strong>Ecosystem designers</strong>: be clear about what the entries in logs are claiming, and be thoughtful about who can verify the truth of these claims. Provide open source tooling to help verification, and be clear in your messaging that verification of logs contents is an important part of your security.</p>
+<p><strong>Ecosystem participants</strong>: verify logs you depend on if possible. If you can’t verify claims yourself, ensure that someone is verifying them. If you depend on a claim that is never verified, you could be tricked and it might never be detected.</p>
+
+    </article>
+  </div>
+</div>
+
+
+<div class="text-white bg-Grey-050 font-google font-medium footer">
+
+  <div class="glue-page gpt-4 gpb-5">
+    <div class="glue-grid">
+      <div class="col-span-4 sm:col-span-5 sm:col-start-2">
+        <h2 class="text-Grey-900">Learn more about tamper-evident logs</h2>
+        <ul class="text-Grey-600">
+          <li>
+            <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Benefits of tamper-evident logs</a>
+          </li>
+          <li>
+            <a href='/#trillian' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Trillian: an open-source verifiable log</a>
+          </li>
+          <li>
+            <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Verifiable Data Structures</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+      <div class="col-span-4 gmt-2 sm:col-span-5 sm:mt-0">
+        <h2 class="text-Grey-900">Applications of tamper-evident logs</h2>
+        <ul class="text-Grey-600 gmb-4">
+          <li>
+            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Add tamper-checking to a package manager</a>
+          </li>
+          <li>
+            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Reliably log all actions performed on your servers</a>
+          </li>
+          <li>
+            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Strengthen discovery of encryption keys with Key Transparency</a>
+          </li>
+          <li>
+            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Discourage misbehaviour by third parties in Certificate Transparency</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
+        <img src="/images/logos/google-logo.svg" alt="Google's Logo" />
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm">
+          <a href="/privacy/" class="text-Grey-600 hover:text-Grey-900 hover:no-underline">
+            Privacy
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

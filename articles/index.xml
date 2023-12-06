@@ -6,6 +6,15 @@
     <description>Recent content in Articles on Trillian</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Transparency Logs: A Verifiable Transport Layer</title>
+      <link>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</guid>
+      <description>Transparency Logs: A Verifiable Transport Layer Transparency logs are a powerful tool for storing information and presenting it to all users in such a way that they can all verify they see the same entries. Originally deployed for Certificate Transparency over a decade ago, logs are now being used to provide tamper evidence for other ecosystems such as binary transparency and AI model transparency. When a transparency log is used correctly in a tight feedback loop it allows for timely detection and response to malfeasance, forming an important part of security response to protect users.</description>
+    </item>
+    
+    <item>
       <title>Transparency: An Implementer&#39;s Story</title>
       <link>https://transparency.dev/articles/transparency-an-implementers-story/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
