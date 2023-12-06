@@ -5,8 +5,6 @@ show_side_bar: true
 author: "Martin Hutchinson"
 ---
 
-# Transparency Logs: A Verifiable Transport Layer
-
 Transparency logs are a powerful tool for storing information and presenting it to all users in such a way that they can all verify they see the same entries. Originally deployed for Certificate Transparency over a decade ago, logs are now being used to provide tamper evidence for other ecosystems such as [binary transparency](https://security.googleblog.com/2023/08/pixel-binary-transparency-verifiable.html) and [AI model transparency](https://security.googleblog.com/2023/10/increasing-transparency-in-ai-security.html?m=1). When a transparency log is used correctly in a tight feedback loop it allows for timely detection and response to malfeasance, forming an important part of security response to protect users.
 
 This article looks at what it means to verify a log. Readers familiar with verifiable logs probably have an idea about what “verifying a log” means, which is likely one of the following:
