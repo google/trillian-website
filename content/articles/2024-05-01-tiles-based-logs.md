@@ -5,8 +5,6 @@ show_side_bar: true
 author: "Jay Hou"
 ---
 
-# Tiles-Based Transparency Logs
-
 ## Background
 
 The TrustFabric team launched Trillian in 2016 as an implementation for verifiable logs - a tamper-evident data structure based on Merkle trees. Since then, Trillian has been adopted by and had transformative impact on applications like Certificate Transparency, [binary transparency](https://security.googleblog.com/2023/08/pixel-binary-transparency-verifiable.html), and [AI model transparency](https://security.googleblog.com/2023/10/increasing-transparency-in-ai-security.html?m=1). Trillian provides readers with APIs to get entries from the log and request proofs from the log to verify it hasn't been tampered with. To read more or brush up on verifiable logs, head over to the [Verifiable Data Structures](https://transparency.dev/verifiable-data-structures/) page.
