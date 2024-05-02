@@ -27,10 +27,11 @@ So you can see that while the interface to the log is changing, the underlying c
 
 *   Improve cacheability: Static, immutable resources, like tiles, are much easier to trivially cache via CDN, or even locally on the client, than parameterised requests as in Trillian.
 *   Uniform interface across logs and ecosystems: allows different ecosystems to build shared tools.
-    *   For example, witnessing, which protects against split-view attacks and verifies that logs are consistent.
-*    Logs are easier to spin up: transparency ecosystems can use the standard tiles API which incorporates best practices, rather than designing their own front end personalities.
-*    Logs are easier to maintain: since reads are cheaper to serve with better caching, the cost of operation goes down.
-*    Static responses: when a client requests leaves from the log, it gets a static, cacheable, response.
-    *   This removes the need for complex optimizations, such as the leaf-aligning in the current GetLeavesByRange Trillian call.
+    * For example, witnessing, which protects against split-view attacks and verifies that logs are consistent.
+*   Logs are easier to spin up: transparency ecosystems can use the standard tiles API which incorporates best practices, rather than designing their own front end personalities.
+*   Logs are easier to maintain: since reads are cheaper to serve with better caching, the cost of operation goes down.
+*   Static responses: when a client requests leaves from the log, it gets a static, cacheable, response.
+    * This removes the need for complex optimizations, such as the leaf-aligning in the current GetLeavesByRange Trillian call.
+
 
 As with any migration, there's a cost to moving a transparency ecosystem to the new tiles logs. However, we think the benefits above outweigh the costs and bring benefits to all participants in the ecosystem. Logs that are easier and cheaper to run ultimately make transparency systems stronger, and clients benefit from higher performance logs. If you're interested in contributing or talking more about it, we'd love to hear from you. Come join us on [Slack](https://transparency-dev.slack.com/)!
