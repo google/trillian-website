@@ -23,7 +23,7 @@
     <title>
       
         
-          Articles
+          Tile-Based Transparency Logs
          |
        Trillian
     </title>
@@ -173,30 +173,51 @@
 <div class="glue-page gmt-6 gmb-4 markdown">
   <div class="glue-grid">
     <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
-      <h1 class="headline2 sm:text-center gmb-5">
+      <h1 class="headline2 md:text-center mb-5 md:mb-16">
         <div class="eyebrow"></div>
-        Articles
+        Tile-Based Transparency Logs
       </h1>
     </div>
   </div>
   <div class="glue-grid">
-    <div class="col-span-4 md:col-span-8 lg:col-start-3 lg:col-span-8 gmb-7 markdown">
-        <ul>
-            
-            <h2><a href="/articles/tile-based-logs/">Tile-Based Transparency Logs</a></h2>
-              
-            
-            <h2><a href="/articles/logs-a-verifiable-transport-layer/">Transparency Logs: A Verifiable Transport Layer</a></h2>
-              
-            
-            <h2><a href="/articles/transparency-an-implementers-story/">Transparency: An Implementer&#39;s Story</a></h2>
-              
-            
-            <h2><a href="/articles/logs-vs-maps/">Verifying Evolution of Logs vs Maps</a></h2>
-              
-            
-        </ul>
-    </div>
+    <aside class="submenu col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 gmb-3">
+      
+      
+        <p class="font-bold">
+          Jay Hou
+        </p>
+      
+      
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
+      <h2 id="background">Background</h2>
+<p>The TrustFabric team launched Trillian in 2016 as an implementation for verifiable logs - a tamper-evident data structure based on Merkle trees. Since then, Trillian has been adopted by, and had transformative impact on, applications like Certificate Transparency, <a href="https://security.googleblog.com/2023/08/pixel-binary-transparency-verifiable.html">binary transparency</a>, and <a href="https://security.googleblog.com/2023/10/increasing-transparency-in-ai-security.html?m=1">AI model transparency</a>. Trillian provides readers with APIs to get entries from the log and request proofs from the log to verify it hasn&rsquo;t been tampered with. To read more or brush up on verifiable logs, head over to the <a href="https://transparency.dev/verifiable-data-structures/">Verifiable Data Structures</a> page.</p>
+<p>After years of working with these logs at scale – building, operating, learning from other operators – collectively, we&rsquo;ve found there are better ways to design and implement APIs to make logs more scalable, particularly to reads, and cheaper to operate, in terms of engineering and storage resources. A new approach, based on the concept of exposing storage as &ldquo;tiles&rdquo;, has already been tested and proven in several ecosystems, and has been available in our <a href="https://github.com/transparency-dev/serverless-log">serverless tooling</a> since 2021. The ecosystems include the <a href="https://go.dev/blog/module-mirror-launch">Go module checksum database</a>, <a href="https://github.com/usbarmory/armory-drive/wiki/Firmware-Transparency">ArmoryDrive Firmware Transparency</a>, <a href="https://developers.google.com/android/binary_transparency/pixel">Pixel Binary Transparency</a>, and <a href="https://letsencrypt.org/2024/03/14/introducing-sunlight.html">Sunlight</a> in Certificate Transparency. Today, we&rsquo;re announcing that we&rsquo;re working on a general, ecosystem-agnostic implementation which embodies these changes and explaining why we believe it&rsquo;s better for transparency ecosystems to adopt.</p>
+<h2 id="what-are-tiles">What are tiles?</h2>
+<p>A Merkle tree is composed of hash values. To optimize storage and hash re-computation, Trillian splits the Merkle tree data into tiles, where a tile contains more than one hash value.</p>
+<p><img src="/images/tile-based-logs/merkle-tree-tiles.svg" alt="How to represent a Merkle tree with tiles"></p>
+<p>When Trillian serves a read request such as an <a href="https://transparency.dev/verifiable-data-structures/">inclusion proof</a>, it does some computing to find which hash values within a Merkle tree must be used to compute and prove a given entry is included in the tree. It fetches these hashes from tiles, and serves them to clients. The reader then takes the hash values the server provides, uses them to recompute the root hash, and checks that it matches the one claimed by the log.</p>
+<p>In a world where the interface to the log is via the tiles API, the log makes these subtree tiles available directly to clients, and rather than asking the log to build proofs, the clients identify which tiles includes the hashes they need and fetch them in order to build and verify the proof themselves.</p>
+<h2 id="benefits-of-tiles">Benefits of tiles</h2>
+<p>So you can see that while the interface to the log is changing, the underlying cryptography — the hashing and proofs — are not. Why, then, are we making this change?</p>
+<ul>
+<li>Improve cacheability: Static, immutable resources, like tiles, are much easier to trivially cache via CDN, or even locally on the client, than parameterised requests.</li>
+<li>Uniform interface across logs and ecosystems: allows different ecosystems to build shared tools.
+<ul>
+<li>For example, witnessing, which protects against split-view attacks and verifies that logs are consistent.</li>
+</ul>
+</li>
+<li>Logs are easier to spin up: transparency ecosystems can use the standard tiles API which incorporates best practices, rather than designing their own front end personalities from scratch.</li>
+<li>Logs are easier to maintain: since reads are cheaper to serve with better caching, the cost of operation goes down.</li>
+<li>Static responses: when a client requests leaves from the log, it gets a static, cacheable, response.
+<ul>
+<li>This removes the need for complex optimizations, such as the leaf-aligning in the current GetLeavesByRange Trillian call.</li>
+</ul>
+</li>
+</ul>
+<p>As with any migration, there&rsquo;s a cost to moving a transparency ecosystem to the new tiles logs. However, we think the benefits above outweigh the costs and bring benefits to all participants in the ecosystem. Logs that are easier and cheaper to run ultimately make transparency systems stronger, and clients benefit from higher performance logs. If you&rsquo;re interested in contributing or talking more about it, we&rsquo;d love to hear from you. Come join us on <a href="https://transparency-dev.slack.com/">Slack</a>!</p>
+
+    </article>
   </div>
 </div>
 

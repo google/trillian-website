@@ -86,6 +86,15 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
     </item>
     
     <item>
+      <title>Tile-Based Transparency Logs</title>
+      <link>https://transparency.dev/articles/tile-based-logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/articles/tile-based-logs/</guid>
+      <description>Background The TrustFabric team launched Trillian in 2016 as an implementation for verifiable logs - a tamper-evident data structure based on Merkle trees. Since then, Trillian has been adopted by, and had transformative impact on, applications like Certificate Transparency, binary transparency, and AI model transparency. Trillian provides readers with APIs to get entries from the log and request proofs from the log to verify it hasn&amp;rsquo;t been tampered with. To read more or brush up on verifiable logs, head over to the Verifiable Data Structures page.</description>
+    </item>
+    
+    <item>
       <title>Transparency Logs: A Verifiable Transport Layer</title>
       <link>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
