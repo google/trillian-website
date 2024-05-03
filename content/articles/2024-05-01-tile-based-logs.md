@@ -1,6 +1,6 @@
 ---
-url: /articles/tiles-based-logs
-title: "Tiles-Based Transparency Logs"
+url: /articles/tile-based-logs
+title: "Tile-Based Transparency Logs"
 show_side_bar: true
 author: "Jay Hou"
 ---
@@ -9,13 +9,13 @@ author: "Jay Hou"
 
 The TrustFabric team launched Trillian in 2016 as an implementation for verifiable logs - a tamper-evident data structure based on Merkle trees. Since then, Trillian has been adopted by, and had transformative impact on, applications like Certificate Transparency, [binary transparency](https://security.googleblog.com/2023/08/pixel-binary-transparency-verifiable.html), and [AI model transparency](https://security.googleblog.com/2023/10/increasing-transparency-in-ai-security.html?m=1). Trillian provides readers with APIs to get entries from the log and request proofs from the log to verify it hasn't been tampered with. To read more or brush up on verifiable logs, head over to the [Verifiable Data Structures](https://transparency.dev/verifiable-data-structures/) page.
 
-After years of working with these logs at scale – building, operating, learning from other operators – we've found there are better ways to design and implement APIs to make logs more scalable, particularly to reads, and cheaper to operate, in terms of engineering and storage resources. This tiles-based approach has already been tested and proven in several ecosystems, and has been available in our [serverless tooling](https://github.com/transparency-dev/serverless-log) since 2021. The ecosystems include the [Go module checksum database](https://go.dev/blog/module-mirror-launch), [ArmoryDrive Firmware Transparency](https://github.com/usbarmory/armory-drive/wiki/Firmware-Transparency), [Pixel Binary Transparency](https://developers.google.com/android/binary_transparency/pixel), and [Sunlight](https://letsencrypt.org/2024/03/14/introducing-sunlight.html) in Certificate Transparency. Today, we're announcing that we're working on a general, ecosystem-agnostic implementation which embodies these changes and explaining why we believe it's better for transparency ecosystems to adopt.
+After years of working with these logs at scale – building, operating, learning from other operators – we've found there are better ways to design and implement APIs to make logs more scalable, particularly to reads, and cheaper to operate, in terms of engineering and storage resources. This tile-based approach has already been tested and proven in several ecosystems, and has been available in our [serverless tooling](https://github.com/transparency-dev/serverless-log) since 2021. The ecosystems include the [Go module checksum database](https://go.dev/blog/module-mirror-launch), [ArmoryDrive Firmware Transparency](https://github.com/usbarmory/armory-drive/wiki/Firmware-Transparency), [Pixel Binary Transparency](https://developers.google.com/android/binary_transparency/pixel), and [Sunlight](https://letsencrypt.org/2024/03/14/introducing-sunlight.html) in Certificate Transparency. Today, we're announcing that we're working on a general, ecosystem-agnostic implementation which embodies these changes and explaining why we believe it's better for transparency ecosystems to adopt.
 
 ## What are tiles?
 
 A Merkle tree is composed of hash values. To optimize storage and hash re-computation, Trillian splits the Merkle tree data into tiles, where a tile contains more than one hash value.
 
-![How to represent a Merkle tree with tiles](/images/tiles-based-logs/merkle-tree-tiles.svg)
+![How to represent a Merkle tree with tiles](/images/tile-based-logs/merkle-tree-tiles.svg)
 
 When Trillian serves a read request such as an [inclusion proof](https://transparency.dev/verifiable-data-structures/), it does some computing to find which hash values within a Merkle tree must be used to compute and prove a given entry is included in the tree. It fetches these hashes from tiles, and serves them to clients. The reader then takes the hash values the server provides, uses them to recompute the root hash, and checks that it matches the one claimed by the log.
 
