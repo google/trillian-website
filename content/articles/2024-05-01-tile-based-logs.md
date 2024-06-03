@@ -35,3 +35,5 @@ So you can see that while the interface to the log is changing, the underlying c
 
 
 As with any migration, there's a cost to moving a transparency ecosystem to the new tiles logs. However, we think the benefits above outweigh the costs and bring benefits to all participants in the ecosystem. Logs that are easier and cheaper to run ultimately make transparency systems stronger, and clients benefit from higher performance logs. If you're interested in contributing or talking more about it, we'd love to hear from you. Come join us on [Slack](https://transparency-dev.slack.com/)!
+
+For a more thorough and theoretical explanation of tiles, check out Russ Cox's [blog post](https://research.swtch.com/tlog#tiling_a_log).
