@@ -95,21 +95,21 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
     </item>
     
     <item>
-      <title>Transparency Dev Summit</title>
-      <link>https://transparency.dev/summit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/summit/</guid>
-      <description>Transparency.dev Summit       Join us for Transparency.dev Summit at Google London (6 Pancras Sq, London N1C 4AG) on October 9-11, 2024. This event aims to bring together implementers, operators, and clients of real world transparency systems in order to meet peers, share best practices, and learn about the latest developments in the community. In addition to general transparency topics, the event will also feature dedicated sessions for the Certificate Transparency community (e.</description>
-    </item>
-    
-    <item>
       <title>Transparency Logs: A Verifiable Transport Layer</title>
       <link>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</guid>
       <description>Transparency logs are a powerful tool for storing information and presenting it to all users in such a way that they can all verify they see the same entries. Originally deployed for Certificate Transparency over a decade ago, logs are now being used to provide tamper evidence for other ecosystems such as binary transparency and AI model transparency. When a transparency log is used correctly in a tight feedback loop it allows for timely detection and response to malfeasance, forming an important part of security response to protect users.</description>
+    </item>
+    
+    <item>
+      <title>Transparency.dev Summit</title>
+      <link>https://transparency.dev/summit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit/</guid>
+      <description>Transparency.dev Summit       Join us for Transparency.dev Summit at Google London (6 Pancras Sq, London N1C 4AG) on October 9-11, 2024. This event aims to bring together implementers, operators, and clients of real world transparency systems in order to meet peers, share best practices, and learn about the latest developments in the community. In addition to general transparency topics, the event will also feature dedicated sessions for the Certificate Transparency community (e.</description>
     </item>
     
     <item>
