@@ -1,0 +1,19 @@
+{{ define "main"}}
+<section class="glue-page gmt-6 gmb-4">
+  <div class="glue-grid">
+    <div class="col-span-12 lg:col-span-10 lg:col-start-2 md:text-center">
+      <h1 class="headline2">
+        <div class="eyebrow">{{ .Params.eyebrow }}</div>
+        {{ .Title }}
+      </h1>
+      {{ if .Params.topImage }}
+        <img src="{{ partial "rel" (dict "context" . "url" (printf "%s%s" "/images/application-illustrations/" .Params.topImage)) }}" class="gmt-4 illustration-mb w-full" />
+      {{ else }}
+        <div class="gmb-5"></div>
+      {{ end }}
+    </div>
+  </div>
+
+</section>
+{{ .Content }}
+{{end}}

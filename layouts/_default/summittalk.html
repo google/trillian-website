@@ -1,0 +1,45 @@
+{{ define "main"}}
+<div class="glue-page gmt-6 gmb-4 markdown">
+  <div class="glue-grid">
+    <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
+      <h1 class="headline3 md:text-center mb-5 md:mb-16">
+        <div class="eyebrow">Transparency.dev Summit 2024</div>
+        {{ .Title }}
+        <div class="eyebrow"></div>
+        <div class="eyebrow">🗓️ {{ time.Format "Monday 2 Jan 2006, 03:04pm" .Params.start }}</div>
+        <div class="eyebrow">📍 {{ .Params.room }}</div>
+      </h1>
+      {{ if .Params.topImage }}
+        <img src="{{ partial "rel" (dict "context" . "url" (printf "%s%s" "/images/transparency-dev-summit/" .Params.topImage)) }}" class="gmt-3 illustration-mb w-full" />
+      {{ else }}
+        <div class="gmb-5"></div>
+      {{ end }}
+    </div>
+  </div>
+  <div class="glue-grid">
+    <aside class="submenu col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 gmb-3">
+      {{ if .Params.show_table_of_contents }}
+        {{ .TableOfContents }}
+      {{ end }}
+      {{ if .Params.speaker }}
+        <p class="font-bold">
+          {{ .Params.speaker }}
+        </p>
+        {{ if .Params.speakerTitle }}
+        <p class="font-bold">
+          {{ .Params.speakerTitle }}
+        </p>
+        {{ end }}
+      {{ end }}
+      {{ if .Params.Date }}
+        <p class="text-sm">
+          Published {{ .Date.Format "Monday 2 Jan 2006" }}
+        </p>
+      {{ end }}
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+{{end}}
