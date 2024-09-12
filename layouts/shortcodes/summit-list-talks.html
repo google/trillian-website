@@ -1,0 +1,86 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+{{ $section := .Get 0 }}
+{{ $day := .Get 1 }}
+
+<section class="glue-page">
+  <div class="glue-grid gmt-4 gmb-2">
+    <div class="col-span-12 sm:col-span-12 sm:col-start-0">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
+          <tr>
+            <th scope="col" colspan="1" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+              Time
+            </th>
+            <th scope="col" colspan="1" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+              Agenda
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+
+{{ range where $.Site.Sections ".Section" $section }}
+  {{ $pages := .Pages }}
+  {{ $pagesByDay := dict }}
+
+  {{ range $pages }}
+    {{ if isset .Params "type" }}
+      {{ $parsedStart := time.AsTime .Params.start }}
+      {{ $day := $parsedStart.Format "2006-01-02" }}
+      {{ if not (isset $pagesByDay $day) }}
+        {{ $pagesByDay = $pagesByDay | merge (dict $day (slice)) }}
+      {{ end }}
+      {{ $dayPages := index $pagesByDay $day }}
+      {{ $dayPages = $dayPages | append (dict "page" . "startAsTime" $parsedStart) }}
+      {{ $pagesByDay = merge $pagesByDay (dict $day $dayPages) }}
+    {{ end }}
+  {{ end }}
+
+  {{ $dayPages := index $pagesByDay $day }}
+  {{ range sort $dayPages "startAsTime" }}
+    {{ if eq .page.Params.type "break" }}
+      <tr class="border-b border-gray-200 dark:border-gray-700">
+        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+          {{ time.Format "03:04pm" .startAsTime }}
+        </td>
+        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+          {{ .page.Title }}</a></li>
+        </td>
+      </tr>
+    {{ else }}
+      <tr class="border-b border-gray-200 dark:border-gray-700">
+        <td class="px-6 py-4">
+          {{ time.Format "03:04pm" .startAsTime }}
+        </td>
+        <td class="px-6 py-4">
+          {{ if .page.Params.speaker }}
+            <a href="{{ .page.RelPermalink }}">{{ .page.Title }} - {{ .page.Params.speaker }}</a></li>
+          {{ else }}
+            <a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></li>
+          {{ end }}          
+        </td>
+      </tr>
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
