@@ -6,7 +6,7 @@ topImage:
 type: standard
 room: Ziggy Stardust
 start: 2024-10-10T09:30:00
-speaker: Joe deBlasio, Philippe Boneff
+speaker: Joe DeBlasio, Philippe Boneff
 speakerTitle: 
 ---
 
@@ -19,7 +19,7 @@ Lessons learned from CT: scaling an ecosystem beyond a single log
 
 ### Speaker
 
-Joe deBlasio, Philippe Boneff
+Joe DeBlasio, Philippe Boneff
 
 
 </div>
