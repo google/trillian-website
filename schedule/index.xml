@@ -1,40 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>An open-source append only ledger on Transparency.dev</title>
-    <link>https://transparency.dev/</link>
-    <description>Recent content in An open-source append only ledger on Transparency.dev</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://transparency.dev/application/discourage-misbehaviour-by-third-parties/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/application/discourage-misbehaviour-by-third-parties/</guid>
-      <description>HTTPS security relies on hundreds of Certificate Authorities (CAs) whose job is to issue certificates while checking that the requester is eligible. For example, they should only issue a certificate for mozilla.org to entities that can prove they control mozilla.org (hopefully only authorized people at Mozilla!).
-Unfortunately any CA can issue a certificate for any domain (more or less). So an obscure CA in Russia could issue a legitimate certificate for a UK bank.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://transparency.dev/get-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/get-started/</guid>
-      <description>This is a short video showing how quick download Trillian from github and get it running.
-Assumptions:
- You have MySQL installed, listening on the standard MySQL port 3306 (mysql --host=127.0.0.1 --port=3306 connects OK) The root MySQL user does not require a password  </description>
-    </item>
-    
-    <item>
-      <title>Add tamper checking to a package manager</title>
-      <link>https://transparency.dev/application/add-tamper-checking-to-a-package-manager/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/application/add-tamper-checking-to-a-package-manager/</guid>
-      <description>Advantages  Ensure all users receive exactly the same code for a given package version. Protect you against hacked Github accounts force-pushing malicious code. Minimise the impact of a hacked download server. Protect you from a man-in-the-middle attack serving a tampered package with malicious code. Prevent upstream authors modifying the source code of an existing released version.   How it works Tamper checking means the ability to detect if a package file has been modified since it was first added to the package manager.</description>
-    </item>
-    
+    <title>Transparency.dev Summit Schedule on Transparency.dev</title>
+    <link>https://transparency.dev/schedule/</link>
+    <description>Recent content in Transparency.dev Summit Schedule on Transparency.dev</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/schedule/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Armored Witness</title>
       <link>https://transparency.dev/schedule/armoredwitness.html</link>
@@ -178,25 +148,6 @@ Assumptions:
     </item>
     
     <item>
-      <title>Discourage misbehaviour by third parties in Certificate Transparency</title>
-      <link>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</guid>
-      <description>Trillan helps you Discourage misbehaviour by third parties in Certificate Transparency    HTTPS security relies on hundreds of Certificate Authorities (CAs) whose job is to issue certificates while checking that the requester is eligible. For example, they should only issue a certificate for mozilla.org to entities that can prove they control mozilla.org (hopefully only authorized people at Mozilla!).
-Unfortunately any CA can issue a certificate for any domain (more or less).</description>
-    </item>
-    
-    <item>
-      <title>Get the most out of your log</title>
-      <link>https://transparency.dev/how-to-design-a-verifiable-system/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/how-to-design-a-verifiable-system/</guid>
-      <description>How to design a verifiable system       Is anyone monitoring the integrity of your data, or could it be tampered without anyone spotting it? Is anyone verifying the authenticity of the data in the log, or are you blindly trusting&amp;nbsp;it? Are you logging enough to actually gain a benefit? Or too much and you risk releasing something sensitive?   Design a verifiable system and get more from your log  For a system to be verifiable, you need to think more carefully about what you&#39;re logging and why.</description>
-    </item>
-    
-    <item>
       <title>Imagining a zero-trust future for PyPI</title>
       <link>https://transparency.dev/schedule/pypi.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -262,27 +213,6 @@ Unfortunately any CA can issue a certificate for any domain (more or less).</des
     </item>
     
     <item>
-      <title>Privacy policy</title>
-      <link>https://transparency.dev/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/privacy/</guid>
-      <description>We use Google Analytics to understand how people arrived on the site and what they did on the site.
-This activity is anonymous to us: we cannot identify a user in Google Analytics, and we don’t send identifiable information to them, either.
-To disable our use of Google Analytics, enable the Do Not Track setting in your browser. Here are instructions for:
- Chrome Firefox  </description>
-    </item>
-    
-    <item>
-      <title>Reliably log all actions performed on your servers</title>
-      <link>https://transparency.dev/application/reliably-log-all-actions-performed-on-your-servers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/application/reliably-log-all-actions-performed-on-your-servers/</guid>
-      <description>Advantages  Guarantee that an audit record is created for all actions performed on your servers. Configure servers to block and report actions that weren&amp;rsquo;t already logged. Any malicious actions are permanently logged, increasing the likelihood of discovery. You can integrate additional code to monitor the log for potentially malicious actions. It simplifies incident response and forensic analysis as you&amp;rsquo;ve got a complete log you can rely on. You can prove to auditors exactly what actions were performed on each server.</description>
-    </item>
-    
-    <item>
       <title>Shining a new light on Certificate Transparency</title>
       <link>https://transparency.dev/schedule/letsencrypt.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -300,16 +230,6 @@ To disable our use of Google Analytics, enable the Do Not Track setting in your 
       <guid>https://transparency.dev/schedule/talk12.html</guid>
       <description>TBC
  Speaker TBC</description>
-    </item>
-    
-    <item>
-      <title>Strengthen discovery of encryption keys</title>
-      <link>https://transparency.dev/application/strengthen-discovery-of-encryption-keys/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/application/strengthen-discovery-of-encryption-keys/</guid>
-      <description>Key Transparency offers tamper-evident key discovery Key Transparency is a design for a tamper-evident key discovery service that providers of end-to-end encryption services could implement. Key Transparency solves the problem of key discovery using Trillian&amp;rsquo;s Map Mode.
-Advantages of Key Transparency  Automate user discovery of end-to-end encryption keys. Provide a shared global view of public keys - everyone should see the same public key for a given username. Increase the difficulty of an attacker performing a man-in-the-middle attack.</description>
     </item>
     
     <item>
@@ -353,33 +273,6 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
     </item>
     
     <item>
-      <title>Tile-Based Transparency Logs</title>
-      <link>https://transparency.dev/articles/tile-based-logs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/articles/tile-based-logs/</guid>
-      <description>Background The TrustFabric team launched Trillian in 2016 as an implementation for verifiable logs - a tamper-evident data structure based on Merkle trees. Since then, Trillian has been adopted by, and had transformative impact on, applications like Certificate Transparency, binary transparency, and AI model transparency. Trillian provides readers with APIs to get entries from the log and request proofs from the log to verify it hasn&amp;rsquo;t been tampered with. To read more or brush up on verifiable logs, head over to the Verifiable Data Structures page.</description>
-    </item>
-    
-    <item>
-      <title>Transparency Logs: A Verifiable Transport Layer</title>
-      <link>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</guid>
-      <description>Transparency logs are a powerful tool for storing information and presenting it to all users in such a way that they can all verify they see the same entries. Originally deployed for Certificate Transparency over a decade ago, logs are now being used to provide tamper evidence for other ecosystems such as binary transparency and AI model transparency. When a transparency log is used correctly in a tight feedback loop it allows for timely detection and response to malfeasance, forming an important part of security response to protect users.</description>
-    </item>
-    
-    <item>
-      <title>Transparency.dev Summit</title>
-      <link>https://transparency.dev/summit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/summit/</guid>
-      <description>Transparency.dev Summit       Join us for Transparency.dev Summit at Google London (6 Pancras Sq, London N1C 4AG) on October 9-11, 2024. This event aims to bring together implementers, operators, and clients of real world transparency systems in order to meet peers, share best practices, and learn about the latest developments in the community. In addition to general transparency topics, the event will also feature dedicated sessions for the Certificate Transparency community (e.</description>
-    </item>
-    
-    <item>
       <title>Transparency.dev Summit Schedule</title>
       <link>https://transparency.dev/schedule/friday.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -407,40 +300,12 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
     </item>
     
     <item>
-      <title>Transparency: An Implementer&#39;s Story</title>
-      <link>https://transparency.dev/articles/transparency-an-implementers-story/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/articles/transparency-an-implementers-story/</guid>
-      <description>Aether’s team is responsible for running a binary download service. Naming is hard, so their service is simply called DownloadServer. Their service has some guarantees that the binary has not been tampered with, by validating a checksum on the client before any binaries are installed. Aether has a concern that this only mitigates some errors and threat models. If their download servers provide a different binary to some users along with a valid checksum then these clients could install malicious software without detection.</description>
-    </item>
-    
-    <item>
       <title>Using verifiable logs to bring human-centred transparency to healthcare</title>
       <link>https://transparency.dev/schedule/healthcare.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/healthcare.html</guid>
       <description> Speaker </description>
-    </item>
-    
-    <item>
-      <title>Verifiable Data Structures</title>
-      <link>https://transparency.dev/verifiable-data-structures/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/verifiable-data-structures/</guid>
-      <description>Verifiable data structures    Verifiable log Trillian uses a Merkle tree to implement a verifiable log. Every record inserted into a verifiable log is added as a new leaf in the Merkle tree. In the diagram aboveon the right, the four records are shown along the bottom. The squares in the diagram are cryptographic hash values. The bottom level of hashes - A, B, D and F - are calculated by hashing records 1, 2, 3 and 4.</description>
-    </item>
-    
-    <item>
-      <title>Verifying Evolution of Logs vs Maps</title>
-      <link>https://transparency.dev/articles/logs-vs-maps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/articles/logs-vs-maps/</guid>
-      <description>Log Evolution Verifiable Logs represent a list which is committed to by a Checkpoint. Given a Checkpoint, a client can:
- Verify inclusion of the value at any position in the list Cheaply verify that another Checkpoint is consistent with it  If two Checkpoints are consistent then the lists they commit to are either the same, or one is a prefix of the other. If any of this doesn’t make sense then now would be a good time to review Verifiable Data Structures.</description>
     </item>
     
     <item>
