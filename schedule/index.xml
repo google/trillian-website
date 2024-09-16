@@ -124,7 +124,7 @@
       
       <guid>https://transparency.dev/schedule/ct-breakout-part1.html</guid>
       <description>Certificate Transparency Breakout Room (Part I)
- Session Leaders: Joe deBlasio</description>
+ Session Leaders: Joe DeBlasio</description>
     </item>
     
     <item>
@@ -134,7 +134,7 @@
       
       <guid>https://transparency.dev/schedule/ct-breakout-part2.html</guid>
       <description>Certificate Transparency Breakout Room (Part II)
- Session Leaders: Joe deBlasio</description>
+ Session Leaders: Joe DeBlasio</description>
     </item>
     
     <item>
@@ -144,7 +144,8 @@
       
       <guid>https://transparency.dev/schedule/chrome.html</guid>
       <description>Lessons learned from CT: scaling an ecosystem beyond a single log
- Speaker Joe deBlasio, Philippe Boneff</description>
+ Speaker Joe DeBlasio, Philippe Boneff
+ </description>
     </item>
     
     <item>
@@ -287,7 +288,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/thursday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe deBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  TBC - TBC   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Binary Transparency Breakout Room (Part I)   01:30pm  Certificate Transparency Breakout Room (Part I)   02:15pm  Break   03:15pm  Certificate Transparency Breakout Room (Part II)   03:15pm  Binary Transparency Breakout Room (Part II)   05:30pm  🌟 Rooftop Reception 🌟        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  TBC - TBC   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Binary Transparency Breakout Room (Part I)   01:30pm  Certificate Transparency Breakout Room (Part I)   02:15pm  Break   03:15pm  Certificate Transparency Breakout Room (Part II)   03:15pm  Binary Transparency Breakout Room (Part II)   05:30pm  🌟 Rooftop Reception 🌟        </description>
     </item>
     
     <item>
