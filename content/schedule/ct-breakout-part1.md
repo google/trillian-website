@@ -19,4 +19,4 @@ Certificate Transparency Breakout Room (Part I)
 
 ### Session Leaders:
 
-Joe deBlasio
+Joe DeBlasio
