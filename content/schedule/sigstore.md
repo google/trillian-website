@@ -12,8 +12,6 @@ speakerTitle: Tech Lead Manager at Google, OSS Supply Chain Security
 
 <div class="font-google font-medium">
 
-
-Nowhere to Hide - Using Transparency Logs to Secure Your Supply Chain with Sigstore
 This talk explores the motivations behind signature transparency, the role of transparency in Sigstore identities, and the ongoing improvements we're making to enhance Sigstore's transparency adoption.
 
 ---
