@@ -289,8 +289,8 @@ To disable our use of Google Analytics, enable the Do Not Track setting in your 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/letsencrypt.html</guid>
-      <description>Let’s Encrypt has run CT logs for many years now. We are excited about the new Sunlight log implementation. This talk covers what pain points we’ve had with operating CT logs in the past, and why we think Sunlight will be a better fit for us and for the CT ecosystem.
- Speaker </description>
+      <description>Let&amp;rsquo;s Encrypt operates one of the largest Certificate Authorities, along with Certificate Transparency logs. This talk discusses our experiences both as a submitter to CT as well as a log operator. We are excited about the new Sunlight log implementation, and will cover why we think Sunlight will be a good fit for us and for the larger CT ecosystem.
+ Speaker Matthew is the technical lead for the Let&amp;rsquo;s Encrypt SRE team, which operates our Certificate Authority and Certificate Transparency logs.</description>
     </item>
     
     <item>
