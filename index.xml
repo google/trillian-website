@@ -222,7 +222,7 @@ Unfortunately any CA can issue a certificate for any domain (more or less).</des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/keynote.html</guid>
-      <description>The opening keynote kicking off the event will be delivered by recent Levchin prize winners Ben Laurie and Al Cutter. </description>
+      <description>The opening keynote kicking off the event will be delivered by recent Levchin prize winners Al Cutter. </description>
     </item>
     
     <item>
@@ -404,7 +404,7 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/wednesday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     10:00am  Welcome and Introduction   10:15am  Keynote - Ben Laurie, Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  TBC - TBC   01:00pm  Lunch   02:00pm  The Witness Ecosystem - Fillipo Valsorda   02:30pm  TBC - TBC   02:45pm  Armored Witness - Andrea Barsani   03:15pm  Break   03:45pm  ⚡ Lightning Talks - Various Speakers   06:00pm  🎯 Evening Reception        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  TBC - TBC   01:00pm  Lunch   02:00pm  The Witness Ecosystem - Fillipo Valsorda   02:30pm  TBC - TBC   02:45pm  Armored Witness - Andrea Barsani   03:15pm  Break   03:45pm  ⚡ Lightning Talk: SCT Auditing Revisited - Lena Heimberger   03:55pm  ⚡ Lightning Talks - Various Speakers   06:00pm  🎯 Evening Reception        </description>
     </item>
     
     <item>
@@ -471,6 +471,15 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <guid>https://transparency.dev/schedule/witness-breakout.html</guid>
       <description>Witness Breakout Room
  Session Leaders: </description>
+    </item>
+    
+    <item>
+      <title>⚡ Lightning Talk: SCT Auditing Revisited</title>
+      <link>https://transparency.dev/schedule/sct-auditing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/sct-auditing.html</guid>
+      <description>A Signed Certificate Timestamp (SCT) is a promise that a Certificate Transparency (CT) log will eventually incorporate a certificate into its public log. This inclusion allows users to account for issued certificates and detect misissued certificates. By default, clients do not check if the log fulfilled the promise given with the SCT, as requesting a proof of inclusion from the log leaks the browsing history to the log. If an SCT is not checked, a sophisticated attacker could serve a bogus certificate that compromises privacy.</description>
     </item>
     
     <item>
