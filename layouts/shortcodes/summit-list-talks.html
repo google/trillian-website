@@ -20,10 +20,10 @@
 <section class="glue-page">
   <div class="glue-grid gmt-4 gmb-2">
     <div class="col-span-12 sm:col-span-12 sm:col-start-0">
-      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <table class="table-auto w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
           <tr>
-            <th scope="col" colspan="1" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+            <th scope="col" colspan="1" class="w-24 px-6 py-3 bg-gray-50 dark:bg-gray-800">
               Time
             </th>
             <th scope="col" colspan="1" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
@@ -54,7 +54,7 @@
   {{ range sort $dayPages "startAsTime" }}
     {{ if eq .page.Params.type "break" }}
       <tr class="border-b border-gray-200 dark:border-gray-700">
-        <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+        <td class="w-24 px-6 py-4 bg-gray-50 dark:bg-gray-800">
           {{ time.Format "03:04pm" .startAsTime }}
         </td>
         <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
@@ -63,7 +63,7 @@
       </tr>
     {{ else }}
       <tr class="border-b border-gray-200 dark:border-gray-700">
-        <td class="px-6 py-4">
+        <td class="w-24 px-6 py-4">
           {{ time.Format "03:04pm" .startAsTime }}
         </td>
         <td class="px-6 py-4">
