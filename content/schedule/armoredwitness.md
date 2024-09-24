@@ -6,7 +6,7 @@ topImage:
 type: standard
 room: Ziggy Stardust
 start: 2024-10-09T14:45:00
-speaker: Andrea Barsani
+speaker: Andrea Barisani
 speakerTitle: 
 ---
 
