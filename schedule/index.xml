@@ -205,6 +205,15 @@
     </item>
     
     <item>
+      <title>ML Model Signing: Cryptographically paving the way to transparency in machine learning models</title>
+      <link>https://transparency.dev/schedule/modelsigning.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/modelsigning.html</guid>
+      <description>How do I know where my machine learning model came from, and how can I prove it? This question has remained largely unanswered as adoption of machine learning and artificial intelligence has skyrocketed, with over 600,000 ML models freely available on model repositories like Hugging Face. Current cryptographic signing mechanisms are not designed with ML models in mind, nor are they fit for purpose largely due to one simple fact: models are not just a singular file.</description>
+    </item>
+    
+    <item>
       <title>Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore</title>
       <link>https://transparency.dev/schedule/sigstore.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -222,16 +231,6 @@
       <guid>https://transparency.dev/schedule/letsencrypt.html</guid>
       <description>Let&amp;rsquo;s Encrypt operates one of the largest Certificate Authorities, along with Certificate Transparency logs. This talk discusses our experiences both as a submitter to CT as well as a log operator. We are excited about the new Sunlight log implementation, and will cover why we think Sunlight will be a good fit for us and for the larger CT ecosystem.
  Speaker Matthew is the technical lead for the Let&amp;rsquo;s Encrypt SRE team, which operates our Certificate Authority and Certificate Transparency logs.</description>
-    </item>
-    
-    <item>
-      <title>Standard Talk TBC</title>
-      <link>https://transparency.dev/schedule/talk12.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/schedule/talk12.html</guid>
-      <description>TBC
- Speaker TBC</description>
     </item>
     
     <item>
@@ -280,7 +279,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/friday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts   10:00am  Standard Talk TBC - TBC   10:30am  Break   10:45am  ⚡ Lightning Talks - Various Speakers   12:00pm  🏆 Quiz and Awards   12:15pm  Lunch   01:30pm  Witness Breakout   02:15pm  Break   03:15pm  💻 Birds of a Feather        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  ⚡ Lightning Talks - Various Speakers   12:00pm  🏆 Quiz and Awards   12:15pm  Lunch   01:30pm  Witness Breakout   02:15pm  Break   03:15pm  💻 Birds of a Feather        </description>
     </item>
     
     <item>
