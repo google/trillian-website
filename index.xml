@@ -52,8 +52,7 @@ Assumptions:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/bt-breakout-part1.html</guid>
-      <description>Binary Transparency Breakout Room (Part I)
- Session Leaders: </description>
+      <description>Binary Transparency Breakout Room (Part I) With the widespread success of certificate transparency, it wasn&amp;rsquo;t long before the transparency principles were applied to other domains. Several projects emerged, such as Go module checksum database, Sigstore, and Sigsum, often grouped under the broader umbrella of &amp;lsquo;Binary Transparency&amp;rsquo;. But what exactly is Binary Transparency? Can we define it in a meaningful way that fosters collaborative growth across these initiatives and delivers transformative benefits on par with those seen in the certificate transparency ecosystem?</description>
     </item>
     
     <item>
@@ -62,8 +61,8 @@ Assumptions:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/bt-breakout-part1.html</guid>
-      <description>Binary Transparency Breakout Room (Part II)
- Session Leaders: </description>
+      <description>Binary Transparency Breakout Room (Part II) The Binary Transparency breakout continues after the break.
+With the widespread success of certificate transparency, it wasn&amp;rsquo;t long before the transparency principles were applied to other domains. Several projects emerged, such as Go module checksum database, Sigstore, and Sigsum, often grouped under the broader umbrella of &amp;lsquo;Binary Transparency&amp;rsquo;. But what exactly is Binary Transparency? Can we define it in a meaningful way that fosters collaborative growth across these initiatives and delivers transformative benefits on par with those seen in the certificate transparency ecosystem?</description>
     </item>
     
     <item>
@@ -395,7 +394,7 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/thursday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  TBC - TBC   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Binary Transparency Breakout Room (Part I)   01:30pm  Certificate Transparency Breakout Room (Part I)   02:15pm  Break   03:15pm  Certificate Transparency Breakout Room (Part II)   03:15pm  Binary Transparency Breakout Room (Part II)   05:30pm  🌟 Rooftop Reception 🌟        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  TBC - TBC   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   01:30pm  Certificate Transparency Breakout Room (Part I)   02:15pm  Break   03:15pm  Certificate Transparency Breakout Room (Part II)   03:15pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:30pm  🌟 Rooftop Reception 🌟        </description>
     </item>
     
     <item>
