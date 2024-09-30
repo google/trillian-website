@@ -5,8 +5,8 @@ title: "⚡ Lightning Talks"
 topImage:
 type: lightning
 room: Ziggy Stardust
-start: 2024-10-09T15:55:00
-speaker: Various Speakers
+start: 2024-10-09T16:30:00
+speaker: Various Speakers TBC
 speakerTitle: 
 ---
 
