@@ -27,10 +27,10 @@
     
     <item>
       <title>Binary Transparency Breakout Room (Part II)</title>
-      <link>https://transparency.dev/schedule/bt-breakout-part1.html</link>
+      <link>https://transparency.dev/schedule/bt-breakout-part2.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/bt-breakout-part1.html</guid>
+      <guid>https://transparency.dev/schedule/bt-breakout-part2.html</guid>
       <description>Binary Transparency Breakout Room (Part II) The Binary Transparency breakout continues after the break.
 With the widespread success of certificate transparency, it wasn&amp;rsquo;t long before the transparency principles were applied to other domains. Several projects emerged, such as Go module checksum database, Sigstore, and Sigsum, often grouped under the broader umbrella of &amp;lsquo;Binary Transparency&amp;rsquo;. But what exactly is Binary Transparency? Can we define it in a meaningful way that fosters collaborative growth across these initiatives and delivers transformative benefits on par with those seen in the certificate transparency ecosystem?</description>
     </item>
@@ -223,6 +223,15 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
     </item>
     
     <item>
+      <title>Registration</title>
+      <link>https://transparency.dev/schedule/registration.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/registration.html</guid>
+      <description>A registration desk will be set up at the reception of Google London - 6 Pancras Square. Attendees will pick up their badges there and then be escorted up to the event space. Enjoy some coffee and breakfast and get to know your fellow conference attendees ahead of the talk sessions. Please be aware that attendees will be required to pick up a new badge each day they attend the conference.</description>
+    </item>
+    
+    <item>
       <title>Shining a new light on Certificate Transparency</title>
       <link>https://transparency.dev/schedule/letsencrypt.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -287,7 +296,7 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/thursday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  TBC - TBC   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   01:30pm  Certificate Transparency Breakout Room (Part I)   02:15pm  Break   03:15pm  Certificate Transparency Breakout Room (Part II)   03:15pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:30pm  🌟 Rooftop Reception 🌟        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  TBC - TBC   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   01:30pm  Certificate Transparency Breakout Room (Part I)   03:00pm  Break   03:30pm  Certificate Transparency Breakout Room (Part II)   03:30pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:30pm  🌟 Rooftop Reception 🌟        </description>
     </item>
     
     <item>
@@ -296,7 +305,7 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/wednesday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  TBC - TBC   01:00pm  Lunch   02:00pm  The Witness Ecosystem - Fillipo Valsorda   02:30pm  TBC - TBC   02:45pm  Armored Witness - Andrea Barisani   03:15pm  Break   03:45pm  ⚡ Lightning Talk: SCT Auditing Revisited - Lena Heimberger   03:55pm  ⚡ Lightning Talks - Various Speakers   06:00pm  🎯 Evening Reception        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  TBC - TBC   01:00pm  Lunch   02:00pm  The Witness Ecosystem - Fillipo Valsorda   02:30pm  TBC - TBC   02:45pm  Armored Witness - Andrea Barisani   03:15pm  Break   03:45pm  ⚡ Lightning Talk: SCT Auditing Revisited - Lena Heimberger   03:55pm  ⚡ Lightning Talks - Various Speakers   06:00pm  🎯 Evening Reception        </description>
     </item>
     
     <item>
