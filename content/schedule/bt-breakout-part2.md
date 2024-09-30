@@ -1,11 +1,11 @@
 ---
-url: schedule/bt-breakout-part1.html
+url: schedule/bt-breakout-part2.html
 layout: summittalk
 title: Binary Transparency Breakout Room (Part II)
 topImage:
 type: standard
 room: Ziggy Stardust
-start: 2024-10-10T15:15:00
+start: 2024-10-10T15:30:00
 speaker: "Session Leader: Hayden Blauzvern"
 speakerTitle: 
 ---

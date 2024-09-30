@@ -5,7 +5,7 @@ title: Certificate Transparency Breakout Room (Part II)
 topImage:
 type: standard
 room: Ziggy Stardust
-start: 2024-10-10T15:15:00
+start: 2024-10-10T15:30:00
 speaker: 
 speakerTitle: 
 ---
