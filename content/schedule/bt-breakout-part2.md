@@ -1,5 +1,5 @@
 ---
-url: schedule/bt-breakout-part1.html
+url: schedule/bt-breakout-part2.html
 layout: summittalk
 title: Binary Transparency Breakout Room (Part II)
 topImage:
