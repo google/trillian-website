@@ -5,7 +5,7 @@ title: "⚡ Lightning Talk: Deps.dev & Certificate Transparency data: What next?
 topImage:
 type: lightning
 room: Ziggy Stardust
-start: 2024-10-09T16:00:00
+start: 2024-10-09T16:15:00
 speaker: Josie Anugerah
 speakerTitle: Software Engineer, Google
 ---
