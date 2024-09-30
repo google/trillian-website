@@ -24,3 +24,5 @@ To explore this further and help shape the future of this space, we invite you t
 ### Session Leader:
 
 Hayden Blauzvern is a technical lead & manager on Google’s Open Source Security Team, focused on making open-source software more secure through code signing and applied transparency. Hayden is a maintainer and the community chair on the Sigstore project, and is currently focused on improving supply chain security for package registries.
+
+</div>
