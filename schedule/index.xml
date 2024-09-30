@@ -305,7 +305,7 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/wednesday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  TBC - TBC   01:00pm  Lunch   02:00pm  The Witness Ecosystem - Fillipo Valsorda   02:30pm  TBC - TBC   02:45pm  Armored Witness - Andrea Barisani   03:15pm  Break   03:45pm  ⚡ Lightning Talk: SCT Auditing Revisited - Lena Heimberger   03:55pm  ⚡ Lightning Talks - Various Speakers   06:00pm  🎯 Evening Reception        </description>
+      <description>Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  TBC - TBC   01:00pm  Lunch   02:00pm  The Witness Ecosystem - Fillipo Valsorda   02:30pm  TBC - TBC   02:45pm  Armored Witness - Andrea Barisani   03:15pm  Break   03:45pm  ⚡ Lightning Talk: SCT Auditing Revisited - Lena Heimberger   04:00pm  ⚡ Lightning Talk: CT Logs Ingestion from RFC6962 to Static CT API - Roger Ng   04:00pm  ⚡ Lightning Talk: Deps.</description>
     </item>
     
     <item>
@@ -344,6 +344,26 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
       <guid>https://transparency.dev/schedule/witness-breakout.html</guid>
       <description>Witness Breakout Room
  Session Leaders: </description>
+    </item>
+    
+    <item>
+      <title>⚡ Lightning Talk: CT Logs Ingestion from RFC6962 to Static CT API</title>
+      <link>https://transparency.dev/schedule/logingestion.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/logingestion.html</guid>
+      <description>This lightning talk explores the CT Logs Ingestion journey from RFC6962 to Static CT API. Curious about the real-world implementation story and lesson learnt? Join me in this talk to embrace the Static CT API logs.
+ Speaker Roger Ng is a software engineer of Google Open Source Security team (GOSST) / TrustFabric based in London, working on security transparency.</description>
+    </item>
+    
+    <item>
+      <title>⚡ Lightning Talk: Deps.dev &amp; Certificate Transparency data: What next?</title>
+      <link>https://transparency.dev/schedule/depsdev.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/depsdev.html</guid>
+      <description>What metrics, APIs and indexes on Certificate Transparency data would be useful to you? New to the CT ecosystem, deps.dev is excited to be working with Certificate Transparency data and wants to hear from you. Hear about the insights deps.dev has provided on open source packages, and hear about potential insights that deps.dev could provide into Certificate Transparency data.
+ Speaker Josie is an engineer at Google, working on Open Source Supply Chain Security.</description>
     </item>
     
     <item>
