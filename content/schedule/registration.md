@@ -16,4 +16,10 @@ A registration desk will be set up at the reception of [Google London - 6 Pancra
 Enjoy some coffee and breakfast and get to know your fellow conference attendees ahead of the talk sessions. 
 Please be aware that attendees will be required to pick up a new badge each day they attend the conference. 
 
+*Breakfast* 
+   * Freshly brewed filter coffee, a selection of Clipper tea infusions 
+   * Pressed orange juice
+   * Selection of pastries and preserves 
+
+
 </div>
