@@ -24,7 +24,7 @@ This breakout session on Key Transparency will explore the critical role it play
    * Attendee Introductions: name, organization, and their interest in Key Transparency
    * Key Transparency Applications: attendees working on Key Transparency share their approach and insights
       * Proton - Daniels Huigens
-      * TBC
+      * KT @ Cloudflare - Thibault Meunier
       * TBC 
    * Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees
    * Session wraps up - key takeaways to be presented to main conference on Friday morning
