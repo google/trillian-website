@@ -13,8 +13,6 @@
   </url><url>
     <loc>https://transparency.dev/application/</loc>
   </url><url>
-    <loc>https://transparency.dev/schedule/armoredwitness.html</loc>
-  </url><url>
     <loc>https://transparency.dev/articles/</loc>
   </url><url>
     <loc>https://transparency.dev/schedule/bt-breakout-part1.html</loc>
@@ -46,6 +44,8 @@
     <loc>https://transparency.dev/schedule/chrome.html</loc>
   </url><url>
     <loc>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
+  </url><url>
+    <loc>https://transparency.dev/schedule/witness.html</loc>
   </url><url>
     <loc>https://transparency.dev/how-to-design-a-verifiable-system/</loc>
   </url><url>
@@ -79,13 +79,7 @@
   </url><url>
     <loc>https://transparency.dev/application/strengthen-discovery-of-encryption-keys/</loc>
   </url><url>
-    <loc>https://transparency.dev/schedule/talk10.html</loc>
-  </url><url>
     <loc>https://transparency.dev/schedule/talk4.html</loc>
-  </url><url>
-    <loc>https://transparency.dev/schedule/talk7.html</loc>
-  </url><url>
-    <loc>https://transparency.dev/schedule/witness.html</loc>
   </url><url>
     <loc>https://transparency.dev/articles/tile-based-logs/</loc>
   </url><url>
@@ -106,6 +100,8 @@
     <loc>https://transparency.dev/schedule/healthcare.html</loc>
   </url><url>
     <loc>https://transparency.dev/verifiable-data-structures/</loc>
+  </url><url>
+    <loc>https://transparency.dev/schedule/hsm.html</loc>
   </url><url>
     <loc>https://transparency.dev/articles/logs-vs-maps/</loc>
   </url><url>

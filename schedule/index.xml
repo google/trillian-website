@@ -6,17 +6,6 @@
     <description>Recent content in Transparency.dev Summit Schedule on Transparency.dev</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/schedule/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Armored Witness</title>
-      <link>https://transparency.dev/schedule/armoredwitness.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/schedule/armoredwitness.html</guid>
-      <description>TBC
- Speaker TBC
- </description>
-    </item>
-    
-    <item>
       <title>Binary Transparency Breakout Room (Part I)</title>
       <link>https://transparency.dev/schedule/bt-breakout-part1.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -149,6 +138,16 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
     </item>
     
     <item>
+      <title>From Witnessing to Transparent Ecosystems</title>
+      <link>https://transparency.dev/schedule/witness.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/witness.html</guid>
+      <description>In this focused session, &amp;ldquo;From Witnessing to Transparent Ecosystems,&amp;rdquo; we will explore the journey from the foundational concept of &amp;ldquo;witnessing&amp;rdquo; to the realization of fully transparent, end-to-end ecosystems. Our four talks are structured to interlock seamlessly, providing a holistic view of Witnessing and its broader impact.
+ Witnessing &amp;amp; ArmoredWitness overview - Martin Hutchinson Using TamaGo to build the ArmoredWitness - Andrea Barisani Firmware Transparency for the ArmoredWitness - Al Cutter End-to-end ecosystems - Fillipo Valsorda   Speakers Filippo Valsorda</description>
+    </item>
+    
+    <item>
       <title>Imagining a zero-trust future for PyPI</title>
       <link>https://transparency.dev/schedule/pypi.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -174,7 +173,7 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
       
       <guid>https://transparency.dev/schedule/kt-breakout-part1.html</guid>
       <description>Key Transparency Breakout Room (Part I) This breakout session on Key Transparency will explore the critical role it plays in secure communications, highlighting some of the ongoing applications in the space, and emphasizing the importance of collaboration among experts to drive innovation and ensure trust in this space.
-Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens TBC TBC   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning  </description>
+Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier TBC   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning  </description>
     </item>
     
     <item>
@@ -185,7 +184,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <guid>https://transparency.dev/schedule/kt-breakout-part2.html</guid>
       <description>Key Transparency Breakout Room (Part II) The Key Transparency breakout continues after the break.
 This breakout session on Key Transparency will explore the critical role it plays in secure communications, highlighting some of the ongoing applications in the space, and emphasizing the importance of collaboration among experts to drive innovation and ensure trust in this space.
-Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens TBC TBC   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning   </description>
+Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier TBC   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning   </description>
     </item>
     
     <item>
@@ -264,42 +263,12 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
     
     <item>
       <title>TBC</title>
-      <link>https://transparency.dev/schedule/talk10.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/schedule/talk10.html</guid>
-      <description>TBC
- Speaker TBC</description>
-    </item>
-    
-    <item>
-      <title>TBC</title>
       <link>https://transparency.dev/schedule/talk4.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/talk4.html</guid>
       <description>TBC
  Speaker TBC</description>
-    </item>
-    
-    <item>
-      <title>TBC</title>
-      <link>https://transparency.dev/schedule/talk7.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/schedule/talk7.html</guid>
-      <description>TBC
- Speaker TBC</description>
-    </item>
-    
-    <item>
-      <title>The Witness Ecosystem</title>
-      <link>https://transparency.dev/schedule/witness.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/schedule/witness.html</guid>
-      <description>The Witness Ecosystem
- Speaker Filippo is a cryptography engineer and an open source maintainer. He&amp;rsquo;s been maintaining the Go cryptography standard library since 2018, first as the head of the Go Security team at Google, and then as the founder of the independent maintainers organization Geomys. He co-designed the Go Checksum Database and worked on the Sigsum log design, contributing to the specification of the interoperable checkpoint format, witness API, and related C2SP specs.</description>
     </item>
     
     <item>
@@ -317,7 +286,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/thursday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  TBC - TBC   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Certificate Transparency Breakout Room (Part I)   01:30pm  Key Transparency Breakout Room (Part I)   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   03:00pm  Break   03:30pm  Key Transparency Breakout Room (Part II)   03:30pm  Certificate Transparency Breakout Room (Part II)   03:30pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:30pm  🌟 Rooftop Reception 🌟        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  Verifiable state transitions within a memory constrained environment - Chervine Majeri   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Certificate Transparency Breakout Room (Part I)   01:30pm  Key Transparency Breakout Room (Part I)   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   03:00pm  Break   03:30pm  Key Transparency Breakout Room (Part II)   03:30pm  Certificate Transparency Breakout Room (Part II)   03:30pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:30pm  🌟 Rooftop Reception 🌟        </description>
     </item>
     
     <item>
@@ -326,7 +295,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/wednesday.html</guid>
-      <description>Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  TBC - TBC   01:00pm  Lunch   02:00pm  The Witness Ecosystem - Fillipo Valsorda   02:30pm  TBC - TBC   02:45pm  Armored Witness - Andrea Barisani   03:15pm  Break   03:45pm  ⚡ Lightning Talk: SCT Auditing Revisited - Lena Heimberger   04:00pm  ⚡ Lightning Talk: CT Logs Ingestion from RFC6962 to Static CT API - Roger Ng   04:15pm  ⚡ Lightning Talk: Deps.</description>
+      <description>Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  TBC - TBC   01:00pm  Lunch   02:00pm  From Witnessing to Transparent Ecosystems - Fillipo Valsorda, Andrea Barisani et al.</description>
     </item>
     
     <item>
@@ -336,6 +305,15 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       
       <guid>https://transparency.dev/schedule/healthcare.html</guid>
       <description> Speaker </description>
+    </item>
+    
+    <item>
+      <title>Verifiable state transitions within a memory constrained environment</title>
+      <link>https://transparency.dev/schedule/hsm.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/hsm.html</guid>
+      <description>Highly sensitive code managing crypto secrets needs to run in secure environments, often very constrained in capacity. Given these constraints, I will explain how we managed to fit as much logic as possible, as close to the secrets as possible, while also addressing the roles that transparency and verifiability play in ensuring security and trust. Speaker Chervine is an engineer leading the R&amp;amp;D team at Taurus, where he helps design scalable, secure systems.</description>
     </item>
     
     <item>
