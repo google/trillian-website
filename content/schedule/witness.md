@@ -17,7 +17,7 @@ In this focused session, "From Witnessing to Transparent Ecosystems," we will ex
    * Witnessing & ArmoredWitness overview - Martin Hutchinson
    * Using TamaGo to build the ArmoredWitness - Andrea Barisani
    * Firmware Transparency for the ArmoredWitness - Al Cutter
-   * End-to-end ecosystems - Fillipo Valsorda 
+   * End-to-end transparency from logging to monitoring - Fillipo Valsorda 
 
 ---
 
