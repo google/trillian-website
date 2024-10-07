@@ -213,8 +213,7 @@ Unfortunately any CA can issue a certificate for any domain (more or less).</des
       <guid>https://transparency.dev/schedule/tesseratalk.html</guid>
       <description>Introducing Trillian Tessera, next-generation tile-based transparency logs
  Speakers Al Cutter
-Martin Hutchinson
-Martin is a software engineer at Google, primarily working in open source. He&amp;rsquo;s been developing and maintaining the TrustFabric open source portfolio since 2019, working on everything from CT, Trillian, witnessing, development of specs, and the Claimant Model. Prior to this chapter in open source, he was an SRE and this still drives a passion to make software secure, scaleable, reliable, and maintainable.</description>
+Al is the Tech Lead for the TrustFabric team at Google, where he&amp;rsquo;s been designing and implementing open source transparency-related systems, specs, and tooling since 2012. He was awarded the 2024 Levchin Prize for creating and deploying Certificate Transparency at scale, and is currently working to enable the easy adoption of transparency principles and infrastructure by other ecosystems too.</description>
     </item>
     
     <item>
@@ -244,7 +243,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/keynote.html</guid>
-      <description>The opening keynote kicking off the event will be delivered by recent Levchin prize winners Al Cutter. </description>
+      <description>The opening keynote kicking off the event will be delivered by recent Levchin prize winner Al Cutter.  </description>
     </item>
     
     <item>
