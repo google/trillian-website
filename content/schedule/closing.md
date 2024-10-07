@@ -1,11 +1,11 @@
 ---
-url: schedule/awards.html
+url: schedule/closing.html
 layout: summittalk
-title: 🏆 Quiz and Awards
+title: Closing Session
 topImage:
 type: standard
 room: Ziggy Stardust
-start: 2024-10-11T12:00:00
+start: 2024-10-11T12:15:00
 speaker:
 speakerTitle:
 ---
