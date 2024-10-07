@@ -29,6 +29,12 @@ Filippo is a cryptography engineer and an open source maintainer. He's been main
 
 *Andrea Barisani*
 
+[Andrea Barisani](https://andrea.bio/) is an internationally recognized security researcher. Since owning his first Commodore-64 he has never stopped studying new technologies, developing unconventional attack vectors and exploring what makes things tick...and break.
+
+His experience builds on large-scale infrastructure defense, penetration testing and code auditing with particular focus on safety critical environments, with more than 15 years of professional experience in security consulting.
+
+His main focus lies on the converge between secure hardware and software, an interest consolidated in the authorship of the USB armory hardware project and the TamaGo bare metal framework.
+
 *Martin Hutchinson*
 
 Martin is a software engineer at Google, primarily working in open source.
@@ -36,5 +42,8 @@ He's been developing and maintaining the TrustFabric open source portfolio since
 Prior to this chapter in open source, he was an SRE and this still drives a passion to make software secure, scaleable, reliable, and maintainable.
 
 *Al Cutter*
+
+Al is the Tech Lead for the TrustFabric team at Google, where he's been designing and implementing open source transparency-related systems, specs, and tooling since 2012.
+He was awarded the [2024 Levchin Prize](https://rwc.iacr.org/LevchinPrize/winners.html#CT) for creating and deploying Certificate Transparency at scale, and is currently working to enable the easy adoption of transparency principles and infrastructure by other ecosystems too.
 
 </div>

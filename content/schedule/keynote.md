@@ -11,7 +11,7 @@ speaker: Al Cutter
 ---
 
 <div class="font-google font-medium">
-The opening keynote kicking off the event will be delivered by recent Levchin prize winners Al Cutter. 
+The opening keynote kicking off the event will be delivered by recent Levchin prize winner Al Cutter. 
 
 
 </div>
