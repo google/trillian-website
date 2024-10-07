@@ -43,6 +43,8 @@
   </url><url>
     <loc>https://transparency.dev/schedule/chrome.html</loc>
   </url><url>
+    <loc>https://transparency.dev/schedule/closing.html</loc>
+  </url><url>
     <loc>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
   </url><url>
     <loc>https://transparency.dev/schedule/witness.html</loc>
@@ -52,6 +54,8 @@
     <loc>https://transparency.dev/schedule/pypi.html</loc>
   </url><url>
     <loc>https://transparency.dev/schedule/tesseratalk.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/schedule/keytransparencyproton.html</loc>
   </url><url>
     <loc>https://transparency.dev/schedule/kt-breakout-part1.html</loc>
   </url><url>
@@ -115,17 +119,19 @@
   </url><url>
     <loc>https://transparency.dev/schedule/depsdev.html</loc>
   </url><url>
-    <loc>https://transparency.dev/schedule/sct-auditing.html</loc>
-  </url><url>
     <loc>https://transparency.dev/schedule/lightning-talks-day1.html</loc>
   </url><url>
+    <loc>https://transparency.dev/schedule/sct-auditing.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/schedule/ctkt.html</loc>
+  </url><url>
     <loc>https://transparency.dev/schedule/lightning-talks-day3.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/schedule/digitalid.html</loc>
   </url><url>
     <loc>https://transparency.dev/schedule/rooftop-reception.html</loc>
   </url><url>
     <loc>https://transparency.dev/schedule/break-day1-afternoon.html</loc>
-  </url><url>
-    <loc>https://transparency.dev/schedule/awards.html</loc>
   </url><url>
     <loc>https://transparency.dev/schedule/bof.html</loc>
   </url>

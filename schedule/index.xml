@@ -103,7 +103,7 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
       
       <guid>https://transparency.dev/schedule/readouts.html</guid>
       <description>Readouts from the breakout rooms:
- Certificate Transparency Binary Transparency  </description>
+ Certificate Transparency Binary Transparency Key Transparency  </description>
     </item>
     
     <item>
@@ -138,6 +138,16 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
     </item>
     
     <item>
+      <title>Closing Session</title>
+      <link>https://transparency.dev/schedule/closing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/closing.html</guid>
+      <description>Closing out the talk portion of the event we will have a fun closing quiz and some awards.
+More details to come.</description>
+    </item>
+    
+    <item>
       <title>From Witnessing to Transparent Ecosystems</title>
       <link>https://transparency.dev/schedule/witness.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -168,13 +178,23 @@ Al is the Tech Lead for the TrustFabric team at Google, where he&amp;rsquo;s bee
     </item>
     
     <item>
+      <title>Key Transparency at Proton</title>
+      <link>https://transparency.dev/schedule/keytransparencyproton.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/keytransparencyproton.html</guid>
+      <description>What are the challenges faced implementing key transparency for email? This talk looks at how Proton has approached implementing key transparency.
+ Speaker Daniel Huigens, Proton.</description>
+    </item>
+    
+    <item>
       <title>Key Transparency Breakout Room (Part I)</title>
       <link>https://transparency.dev/schedule/kt-breakout-part1.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/kt-breakout-part1.html</guid>
       <description>Key Transparency Breakout Room (Part I) This breakout session on Key Transparency will explore the critical role it plays in secure communications, highlighting some of the ongoing applications in the space, and emphasizing the importance of collaboration among experts to drive innovation and ensure trust in this space.
-Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier TBC   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning  </description>
+Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier KT @ Google - Jason Novak   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning  </description>
     </item>
     
     <item>
@@ -185,7 +205,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <guid>https://transparency.dev/schedule/kt-breakout-part2.html</guid>
       <description>Key Transparency Breakout Room (Part II) The Key Transparency breakout continues after the break.
 This breakout session on Key Transparency will explore the critical role it plays in secure communications, highlighting some of the ongoing applications in the space, and emphasizing the importance of collaboration among experts to drive innovation and ensure trust in this space.
-Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier TBC   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning   </description>
+Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier KT @ Google - Jason Novak   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning   </description>
     </item>
     
     <item>
@@ -278,7 +298,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/friday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  ⚡ Lightning Talks - Various Speakers   12:00pm  🏆 Quiz and Awards   12:15pm  Lunch   01:30pm  Witness Breakout   02:15pm  Break   03:15pm  💻 Birds of a Feather        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talk: The design space between CT and KT - Dennis Jackson   11:30am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout   02:15pm  Break   03:15pm  💻 Birds of a Feather        </description>
     </item>
     
     <item>
@@ -367,6 +387,16 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
     </item>
     
     <item>
+      <title>⚡ Lightning Talk: Multi-layer interoperability for transparency technology</title>
+      <link>https://transparency.dev/schedule/lightning-talks-day1.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/lightning-talks-day1.html</guid>
+      <description>Transparency approaches have extremely wide applicability throughout the technology and information landscape. Different use cases have different functional and non-functional requirements which suggest the need for a diverse – but not too diverse – transparency ecosystem to enable broad, practical adoption. This lightning talk aims to stimulate conversation and highlight opportunities for advancement of transparency technology through interoperable data structures, standards, open source code, and group cooperation.
+ Speaker Jon brings deep expertise in cryptography, cybersecurity, and blockchains to DataTrails where we’re tackling the thorny problems of Supply Chain Security, Integrity, Transparency and Trust for sensitive use cases from nuclear waste handling to connected industry.</description>
+    </item>
+    
+    <item>
       <title>⚡ Lightning Talk: SCT Auditing Revisited</title>
       <link>https://transparency.dev/schedule/sct-auditing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -376,13 +406,12 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
     </item>
     
     <item>
-      <title>⚡ Lightning Talks</title>
-      <link>https://transparency.dev/schedule/lightning-talks-day1.html</link>
+      <title>⚡ Lightning Talk: The design space between CT and KT</title>
+      <link>https://transparency.dev/schedule/ctkt.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/lightning-talks-day1.html</guid>
-      <description>TBC
- Speaker TBC</description>
+      <guid>https://transparency.dev/schedule/ctkt.html</guid>
+      <description>Append-only ledgers like Certificate Transparency logs are simple, elegant and the bedrock of most modern transparency systems. Key Transparency systems are comparatively complex, but achieve much stronger privacy and transparency properties and have in recent years proven they can be successfully deployed at a global scale. This talk will consider systems that fall into the middle ground between these two approaches and ask whether they offer an interesting path forward for real world applications like the WebPKI.</description>
     </item>
     
     <item>
@@ -391,7 +420,16 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/lightning-talks-day3.html</guid>
-      <description>Lightning Talks</description>
+      <description>Sign up to give a lightning talk at the summit! Details to be shared on the opening day.</description>
+    </item>
+    
+    <item>
+      <title>⚡ Lightning Talks: From Issuance to Revocation: Enhancing Trust in Digital Identity Ecosystems with Transparency Logs</title>
+      <link>https://transparency.dev/schedule/digitalid.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/digitalid.html</guid>
+      <description>In this lightning talk, we will explore the critical role of transparency logs in establishing trust and security within digital identity ecosystems. Transparency logs provide a robust mechanism for creating an auditable, tamper-proof record of credential lifecycle events, including issuance, presentations, and revocations. To implement these logs effectively, it is essential to utilize privacy-preserving cryptographic techniques, alongside scalable log structures and proof systems that can meet the requirements of large-scale digital identity solutions.</description>
     </item>
     
     <item>
@@ -411,16 +449,6 @@ More details to be shared.</description>
       
       <guid>https://transparency.dev/schedule/break-day1-afternoon.html</guid>
       <description>All event attendees are invited to join us for an evening reception with food, drinks and some fun 🎯! More details to be shared.</description>
-    </item>
-    
-    <item>
-      <title>🏆 Quiz and Awards</title>
-      <link>https://transparency.dev/schedule/awards.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/schedule/awards.html</guid>
-      <description>Closing out the talk portion of the event we will have a fun closing quiz and some awards.
-More details to come.</description>
     </item>
     
     <item>
