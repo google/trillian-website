@@ -15,4 +15,5 @@ speakerTitle:
 Readouts from the breakout rooms:
    * Certificate Transparency
    * Binary Transparency
+   * Key Transparency
 
