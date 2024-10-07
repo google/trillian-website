@@ -4,7 +4,7 @@ layout: summittalk
 title: Lunch
 type: break
 room: Ziggy Stardust
-start: 2024-10-11T12:15:00
+start: 2024-10-11T12:30:00
 ---
 
 ## Keynote
