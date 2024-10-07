@@ -31,6 +31,10 @@ Filippo is a cryptography engineer and an open source maintainer. He's been main
 
 *Martin Hutchinson*
 
+Martin is a software engineer at Google, primarily working in open source.
+He's been developing and maintaining the TrustFabric open source portfolio since 2019, working on everything from CT, Trillian, witnessing, development of specs, and the Claimant Model.
+Prior to this chapter in open source, he was an SRE and this still drives a passion to make software secure, scaleable, reliable, and maintainable.
+
 *Al Cutter*
 
 </div>
