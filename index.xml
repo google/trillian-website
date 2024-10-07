@@ -212,7 +212,9 @@ Unfortunately any CA can issue a certificate for any domain (more or less).</des
       
       <guid>https://transparency.dev/schedule/tesseratalk.html</guid>
       <description>Introducing Trillian Tessera, next-generation tile-based transparency logs
- Speaker TBC</description>
+ Speakers Al Cutter
+Martin Hutchinson
+Martin is a software engineer at Google, primarily working in open source. He&amp;rsquo;s been developing and maintaining the TrustFabric open source portfolio since 2019, working on everything from CT, Trillian, witnessing, development of specs, and the Claimant Model. Prior to this chapter in open source, he was an SRE and this still drives a passion to make software secure, scaleable, reliable, and maintainable.</description>
     </item>
     
     <item>
