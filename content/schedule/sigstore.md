@@ -5,7 +5,7 @@ title: "Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain wit
 topImage:
 type: standard
 room: Ziggy Stardust
-start: 2024-10-09T12:00:00
+start: 2024-10-09T12:15:00
 speaker: Hayden Blauzvern
 speakerTitle: Tech Lead Manager at Google, OSS Supply Chain Security
 ---
