@@ -5,7 +5,7 @@ title: Introducing Trillian Tessera
 topImage:
 type: standard
 room: Ziggy Stardust
-start: 2024-10-09T11:30:00
+start: 2024-10-09T11:45:00
 speaker: Al Cutter, Martin Hutchinson
 speakerTitle: 
 ---

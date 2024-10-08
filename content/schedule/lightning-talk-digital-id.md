@@ -5,7 +5,7 @@ title: "⚡ Lightning Talk: From Issuance to Revocation: Enhancing Trust in Digi
 topImage:
 type: lightning
 room: Ziggy Stardust
-start: 2024-10-09T12:30:00
+start: 2024-10-09T12:45:00
 speaker: Edona Fasllija
 speakerTitle: IT Security Researcher at the Austrian Secure Information Technology Center (A-SIT) and Graz University of Technology
 ---
