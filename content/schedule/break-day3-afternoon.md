@@ -4,7 +4,7 @@ layout: summittalk
 title: Break
 type: break
 room: Ziggy Stardust
-start: 2024-10-11T14:15:00
+start: 2024-10-11T14:30:00
 ---
 
 <div class="font-google font-medium">
