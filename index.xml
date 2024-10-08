@@ -254,7 +254,7 @@ Al is the Tech Lead for the TrustFabric team at Google, where he&amp;rsquo;s bee
       
       <guid>https://transparency.dev/schedule/kt-breakout-part1.html</guid>
       <description>Key Transparency Breakout Room (Part I) This breakout session on Key Transparency will explore the critical role it plays in secure communications, highlighting some of the ongoing applications in the space, and emphasizing the importance of collaboration among experts to drive innovation and ensure trust in this space.
-Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier KT @ Google - Jason Novak   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning  </description>
+Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier KT @ Google - Jason Novak   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning  Session Leaders: Jason Novak, Patrick Flynn</description>
     </item>
     
     <item>
@@ -265,7 +265,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <guid>https://transparency.dev/schedule/kt-breakout-part2.html</guid>
       <description>Key Transparency Breakout Room (Part II) The Key Transparency breakout continues after the break.
 This breakout session on Key Transparency will explore the critical role it plays in secure communications, highlighting some of the ongoing applications in the space, and emphasizing the importance of collaboration among experts to drive innovation and ensure trust in this space.
-Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier KT @ Google - Jason Novak   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning   </description>
+Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier KT @ Google - Jason Novak   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning  Session Leaders: Jason Novak, Patrick Flynn</description>
     </item>
     
     <item>
@@ -374,13 +374,12 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
     </item>
     
     <item>
-      <title>TBC</title>
-      <link>https://transparency.dev/schedule/talk4.html</link>
+      <title>The End</title>
+      <link>https://transparency.dev/schedule/break-day3-afternoon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/talk4.html</guid>
-      <description>TBC
- Speaker TBC</description>
+      <guid>https://transparency.dev/schedule/break-day3-afternoon.html</guid>
+      <description> Break  </description>
     </item>
     
     <item>
@@ -416,7 +415,7 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/friday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talk: The design space between CT and KT - Dennis Jackson   11:30am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout - Session Leader: Al Cutter   02:15pm  Break   03:15pm  💻 Birds of a Feather        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout - Session Leader: Al Cutter   02:30pm  Break   03:00pm  💻 Birds of a Feather   04:00pm  The End        </description>
     </item>
     
     <item>
@@ -425,7 +424,7 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/thursday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  Verifiable state transitions within a memory constrained environment - Chervine Majeri   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Certificate Transparency Breakout Room (Part I) - Session Leader: Joe DeBlasio   01:30pm  Key Transparency Breakout Room (Part I)   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   03:00pm  Break   03:30pm  Key Transparency Breakout Room (Part II)   03:30pm  Certificate Transparency Breakout Room (Part II) - Session Leader: Joe DeBlasio   03:30pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:00pm  🌟 Rooftop Reception 🌟        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  Verifiable state transitions within a memory constrained environment - Chervine Majeri   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Certificate Transparency Breakout Room (Part I) - Session Leader: Joe DeBlasio   01:30pm  Key Transparency Breakout Room (Part I) - Session Leaders: Jason Novak, Patrick Flynn   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   03:00pm  Break   03:30pm  Key Transparency Breakout Room (Part II) - Session Leaders: Jason Novak, Patrick Flynn   03:30pm  Certificate Transparency Breakout Room (Part II) - Session Leader: Joe DeBlasio   03:30pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:00pm  🌟 Rooftop Reception 🌟        </description>
     </item>
     
     <item>
@@ -434,7 +433,7 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/wednesday.html</guid>
-      <description>Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  TBC - TBC   01:00pm  Lunch   02:00pm  From Witnessing to Transparent Ecosystems - Fillipo Valsorda, Andrea Barisani et al.</description>
+      <description>Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:30am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:00pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:30pm  ⚡ Lightning Talk: From Issuance to Revocation: Enhancing Trust in Digital Identity Ecosystems with Transparency Logs - Edona Fasllija   01:00pm  Lunch   02:00pm  From Witnessing to Transparent Ecosystems - Fillipo Valsorda, Andrea Barisani et al.</description>
     </item>
     
     <item>
@@ -532,6 +531,15 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
     </item>
     
     <item>
+      <title>⚡ Lightning Talk: From Issuance to Revocation: Enhancing Trust in Digital Identity Ecosystems with Transparency Logs</title>
+      <link>https://transparency.dev/schedule/digitalid.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/schedule/digitalid.html</guid>
+      <description>In this lightning talk, we will explore the critical role of transparency logs in establishing trust and security within digital identity ecosystems. Transparency logs provide a robust mechanism for creating an auditable, tamper-proof record of credential lifecycle events, including issuance, presentations, and revocations. To implement these logs effectively, it is essential to utilize privacy-preserving cryptographic techniques, alongside scalable log structures and proof systems that can meet the requirements of large-scale digital identity solutions.</description>
+    </item>
+    
+    <item>
       <title>⚡ Lightning Talk: Multi-layer interoperability for transparency technology</title>
       <link>https://transparency.dev/schedule/lightning-talks-day1.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -566,15 +574,6 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       
       <guid>https://transparency.dev/schedule/lightning-talks-day3.html</guid>
       <description>Sign up to give a lightning talk at the summit! Details to be shared on the opening day.</description>
-    </item>
-    
-    <item>
-      <title>⚡ Lightning Talks: From Issuance to Revocation: Enhancing Trust in Digital Identity Ecosystems with Transparency Logs</title>
-      <link>https://transparency.dev/schedule/digitalid.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/schedule/digitalid.html</guid>
-      <description>In this lightning talk, we will explore the critical role of transparency logs in establishing trust and security within digital identity ecosystems. Transparency logs provide a robust mechanism for creating an auditable, tamper-proof record of credential lifecycle events, including issuance, presentations, and revocations. To implement these logs effectively, it is essential to utilize privacy-preserving cryptographic techniques, alongside scalable log structures and proof systems that can meet the requirements of large-scale digital identity solutions.</description>
     </item>
     
     <item>
