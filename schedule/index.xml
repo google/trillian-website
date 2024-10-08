@@ -112,8 +112,8 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/ct-breakout-part1.html</guid>
-      <description>Certificate Transparency Breakout Room (Part I)
- Session Leaders: Joe DeBlasio</description>
+      <description>Certificate Transparency Breakout Room (Part I) The breakout session on Certificate Transparency offers a valuable opportunity for members of the ecosystem to come together to brainstorm ways to make CT more robust and address emerging challenges. Industry practitioners as well as those new to the space are welcome to join.
+Preliminary Agenda  Understanding and reducing existing challenges for log operators and other members of the ecosystem, both in an RFC6962 and static-ct-api world.</description>
     </item>
     
     <item>
@@ -122,8 +122,9 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/ct-breakout-part2.html</guid>
-      <description>Certificate Transparency Breakout Room (Part II)
- Session Leaders: Joe DeBlasio</description>
+      <description>Certificate Transparency Breakout Room (Part II) The Certificate Transparency breakout continues after the break.
+The breakout session on Certificate Transparency offers a valuable opportunity for members of the ecosystem to come together to brainstorm ways to make CT more robust and address emerging challenges. Industry practitioners as well as those new to the space are welcome to join.
+Preliminary Agenda  Understanding and reducing existing challenges for log operators and other members of the ecosystem, both in an RFC6962 and static-ct-api world.</description>
     </item>
     
     <item>
@@ -298,7 +299,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/friday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talk: The design space between CT and KT - Dennis Jackson   11:30am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout   02:15pm  Break   03:15pm  💻 Birds of a Feather        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talk: The design space between CT and KT - Dennis Jackson   11:30am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout - Session Leader: Al Cutter   02:15pm  Break   03:15pm  💻 Birds of a Feather        </description>
     </item>
     
     <item>
@@ -307,7 +308,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/thursday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  Verifiable state transitions within a memory constrained environment - Chervine Majeri   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Certificate Transparency Breakout Room (Part I)   01:30pm  Key Transparency Breakout Room (Part I)   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   03:00pm  Break   03:30pm  Key Transparency Breakout Room (Part II)   03:30pm  Certificate Transparency Breakout Room (Part II)   03:30pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:30pm  🌟 Rooftop Reception 🌟        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  Verifiable state transitions within a memory constrained environment - Chervine Majeri   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Certificate Transparency Breakout Room (Part I) - Session Leader: Joe DeBlasio   01:30pm  Key Transparency Breakout Room (Part I)   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   03:00pm  Break   03:30pm  Key Transparency Breakout Room (Part II)   03:30pm  Certificate Transparency Breakout Room (Part II) - Session Leader: Joe DeBlasio   03:30pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:00pm  🌟 Rooftop Reception 🌟        </description>
     </item>
     
     <item>
@@ -362,8 +363,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/witness-breakout.html</guid>
-      <description>Witness Breakout Room
- Session Leaders: </description>
+      <description>Witness Discussion Room (Part I) In Wednesday’s talks, we explored the significance of witnessing and the need to realize fully transparent, end-to-end ecosystems. Now, it’s time to dive into the practicalities of making this vision a reality. Join this breakout session to discuss how we, as a community, can collaborate to bring these ideas to life in meaningful and effective ways. Session Leader: Al Cutter</description>
     </item>
     
     <item>
@@ -438,8 +438,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/rooftop-reception.html</guid>
-      <description>All event attendees are invited to join us for a rooptop reception with food, drinks and amazing views of London!
-More details to be shared.</description>
+      <description>All event attendees are invited to join us in the A Space Oddity event room on the 11th floor at Google for a reception with food, drinks and amazing views of London!</description>
     </item>
     
     <item>
