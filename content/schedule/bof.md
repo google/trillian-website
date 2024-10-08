@@ -5,7 +5,7 @@ title: 💻 Birds of a Feather
 topImage:
 type: standard
 room: Ziggy Stardust
-start: 2024-10-11T15:15:00
+start: 2024-10-11T15:00:00
 speaker: 
 speakerTitle: 
 ---

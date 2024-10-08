@@ -5,7 +5,7 @@ title: "⚡ Lightning Talk: The design space between CT and KT"
 topImage:
 type: lightning
 room: Ziggy Stardust
-start: 2024-10-11T11:15:00
+start: 2024-10-09T16:30:00
 speaker: Dennis Jackson
 speakerTitle: Senior Staff Cryptography Engineer, Mozilla
 ---

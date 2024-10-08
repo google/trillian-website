@@ -5,7 +5,7 @@ title: "⚡ Lightning Talk: Multi-layer interoperability for transparency techno
 topImage:
 type: lightning
 room: Ziggy Stardust
-start: 2024-10-09T16:30:00
+start: 2024-10-09T16:45:00
 speaker: Jon Geater
 speakerTitle: 
 ---

@@ -1,10 +1,10 @@
 ---
 url: schedule/break-day3-afternoon.html
 layout: summittalk
-title: Break
+title: The End
 type: break
 room: Ziggy Stardust
-start: 2024-10-11T14:30:00
+start: 2024-10-11T16:00:00
 ---
 
 <div class="font-google font-medium">
