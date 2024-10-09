@@ -12,11 +12,12 @@ speakerTitle:
 
 <div class="font-google font-medium">
 
-
 [Sigsum](https://www.sigsum.org) is a free and open-source software project that
 makes a signer's key-usage transparent.  This talk introduces the design, which
 can be used as a building block to transparently publish executable binaries,
 reproducibility statements, KT tree heads, configuration files, and much more.
+
+**Speaker slides:** [What is Sigsum and how can I use it for my application?](https://git.glasklar.is/rgdd/tdev-summit-24/-/blob/main/slides.pdf)
 
 ---
 
