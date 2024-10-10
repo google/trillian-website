@@ -12,6 +12,7 @@ speakerTitle:
 
 <div class="font-google font-medium">
 
-Sign up to give a lightning talk at the summit! Details to be shared on the opening day. 
+Lightning Talks Schedule (coming soon):
+   *  
 
 </div>
