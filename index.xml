@@ -205,7 +205,7 @@ Unfortunately any CA can issue a certificate for any domain (more or less).</des
       
       <guid>https://transparency.dev/schedule/witness.html</guid>
       <description>In this focused session, &amp;ldquo;From Witnessing to Transparent Ecosystems,&amp;rdquo; we will explore the journey from the foundational concept of &amp;ldquo;witnessing&amp;rdquo; to the realization of fully transparent, end-to-end ecosystems. Our four talks are structured to interlock seamlessly, providing a holistic view of Witnessing and its broader impact.
- Witnessing &amp;amp; ArmoredWitness overview - Martin Hutchinson Using TamaGo to build the ArmoredWitness - Andrea Barisani Firmware Transparency for the ArmoredWitness - Al Cutter End-to-end transparency from logging to monitoring - Fillipo Valsorda   Speakers Filippo Valsorda</description>
+ Witnessing &amp;amp; ArmoredWitness overview - Martin Hutchinson Using TamaGo to build the ArmoredWitness - Andrea Barisani Firmware Transparency for the ArmoredWitness - Al Cutter End-to-end transparency from logging to monitoring - Filippo Valsorda   Speakers Filippo Valsorda</description>
     </item>
     
     <item>
@@ -415,7 +415,7 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/friday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts - Various   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout - Session Leader: Al Cutter   02:30pm  Break   03:00pm  💻 Birds of a Feather   04:00pm  The End        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts - Various   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout - Session Leaders: Al Cutter, Filippo Valsorda   02:30pm  Break   03:00pm  💻 Birds of a Feather   04:00pm  The End        </description>
     </item>
     
     <item>
@@ -433,7 +433,7 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/wednesday.html</guid>
-      <description>Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:45am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:15pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:45pm  ⚡ Lightning Talk: From Issuance to Revocation: Enhancing Trust in Digital Identity Ecosystems with Transparency Logs - Edona Fasllija   01:00pm  Lunch   02:00pm  From Witnessing to Transparent Ecosystems - Fillipo Valsorda, Andrea Barisani et al.</description>
+      <description>Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:45am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:15pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:45pm  ⚡ Lightning Talk: From Issuance to Revocation: Enhancing Trust in Digital Identity Ecosystems with Transparency Logs - Edona Fasllija   01:00pm  Lunch   02:00pm  From Witnessing to Transparent Ecosystems - Filippo Valsorda, Andrea Barisani et al.</description>
     </item>
     
     <item>
@@ -508,7 +508,7 @@ Speaker slides: What is Sigsum and how can I use it for my application?
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/witness-breakout.html</guid>
-      <description>Witness Discussion Room (Part I) In Wednesday’s talks, we explored the significance of witnessing and the need to realize fully transparent, end-to-end ecosystems. Now, it’s time to dive into the practicalities of making this vision a reality. Join this breakout session to discuss how we, as a community, can collaborate to bring these ideas to life in meaningful and effective ways. Session Leader: Al Cutter</description>
+      <description>Witness Discussion Room (Part I) In Wednesday’s talks, we explored the significance of witnessing and the need to realize fully transparent, end-to-end ecosystems. Now, it’s time to dive into the practicalities of making this vision a reality. Join this breakout session to discuss how we, as a community, can collaborate to bring these ideas to life in meaningful and effective ways. Session Leaders: Al Cutter, Filippo Valsorda</description>
     </item>
     
     <item>
@@ -575,7 +575,7 @@ Speaker slides: What is Sigsum and how can I use it for my application?
       
       <guid>https://transparency.dev/schedule/lightning-talks-day3.html</guid>
       <description>Lightning Talks Schedule:
- Verifiable runtime transparency - Fredrik Strömberg Open Source Project Version - Yogesh Deshpande Auditing key transparency and making it public - Thibault Meunier The challenge of adopting post quantum cryptography - Bas Westerbaan Taking the pain a way with linear logs: its just an array!	- Robin Bryce Running a Witness on Tkey?	- Niels Möller Silent CT Monitoring - Rasmus Dahlberg  </description>
+ Verifiable runtime transparency - Fredrik Strömberg Open Source Project Veraison - Yogesh Deshpande Auditing key transparency and making it public - Thibault Meunier The challenge of adopting post quantum cryptography - Bas Westerbaan Taking the pain a way with linear logs: its just an array!	- Robin Bryce Running a Witness on Tkey?	- Niels Möller Silent CT Monitoring - Rasmus Dahlberg  </description>
     </item>
     
     <item>
