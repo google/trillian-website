@@ -14,7 +14,7 @@ speakerTitle:
 
 Lightning Talks Schedule:
    * Verifiable runtime transparency - Fredrik Strömberg
-   * Open Source Project Version - Yogesh Deshpande
+   * Open Source Project Veraison - Yogesh Deshpande
    * Auditing key transparency and making it public - Thibault Meunier
    * The challenge of adopting post quantum cryptography - Bas Westerbaan
    * Taking the pain a way with linear logs: its just an array!	- Robin Bryce

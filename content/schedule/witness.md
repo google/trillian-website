@@ -6,7 +6,7 @@ topImage:
 type: standard
 room: Ziggy Stardust
 start: 2024-10-09T14:00:00
-speaker: Fillipo Valsorda, Andrea Barisani et al.
+speaker: Filippo Valsorda, Andrea Barisani et al.
 speakerTitle:
 ---
 
@@ -17,7 +17,7 @@ In this focused session, "From Witnessing to Transparent Ecosystems," we will ex
    * Witnessing & ArmoredWitness overview - Martin Hutchinson
    * Using TamaGo to build the ArmoredWitness - Andrea Barisani
    * Firmware Transparency for the ArmoredWitness - Al Cutter
-   * End-to-end transparency from logging to monitoring - Fillipo Valsorda 
+   * End-to-end transparency from logging to monitoring - Filippo Valsorda 
 
 ---
 
