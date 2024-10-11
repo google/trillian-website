@@ -6,14 +6,14 @@ topImage:
 type: standard
 room: Ziggy Stardust
 start: 2024-10-11T09:30:00
-speaker: 
+speaker: Various
 speakerTitle: 
 ---
 
 <div class="font-google font-medium">
 
-Readouts from the breakout rooms:
-   * Certificate Transparency
+Readouts from Thursday's breakout rooms:
+   * Certificate Transparency 
    * Binary Transparency
    * Key Transparency
 

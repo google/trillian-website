@@ -12,6 +12,13 @@ speakerTitle:
 
 <div class="font-google font-medium">
 
-Sign up to give a lightning talk at the summit! Details to be shared on the opening day. 
+Lightning Talks Schedule:
+   * Verifiable runtime transparency - Fredrik Strömberg
+   * Open Source Project Version - Yogesh Deshpande
+   * Auditing key transparency and making it public - Thibault Meunier
+   * The challenge of adopting post quantum cryptography - Bas Westerbaan
+   * Taking the pain a way with linear logs: its just an array!	- Robin Bryce
+   * Running a Witness on Tkey?	- Niels Möller
+   * Silent CT Monitoring - Rasmus Dahlberg
 
 </div>
