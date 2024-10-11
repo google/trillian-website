@@ -102,7 +102,7 @@ With the widespread success of certificate transparency, it wasn&amp;rsquo;t lon
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/readouts.html</guid>
-      <description>Readouts from the breakout rooms:
+      <description>Readouts from Thursday&amp;rsquo;s breakout rooms:
  Certificate Transparency Binary Transparency Key Transparency  </description>
     </item>
     
@@ -298,7 +298,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/friday.html</guid>
-      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout - Session Leader: Al Cutter   02:30pm  Break   03:00pm  💻 Birds of a Feather   04:00pm  The End        </description>
+      <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts - Various   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout - Session Leader: Al Cutter   02:30pm  Break   03:00pm  💻 Birds of a Feather   04:00pm  The End        </description>
     </item>
     
     <item>
@@ -429,7 +429,8 @@ Speaker slides: What is Sigsum and how can I use it for my application?
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/lightning-talks-day3.html</guid>
-      <description>Sign up to give a lightning talk at the summit! Details to be shared on the opening day.</description>
+      <description>Lightning Talks Schedule:
+ Verifiable runtime transparency - Fredrik Strömberg Open Source Project Version - Yogesh Deshpande Auditing key transparency and making it public - Thibault Meunier The challenge of adopting post quantum cryptography - Bas Westerbaan Taking the pain a way with linear logs: its just an array!	- Robin Bryce Running a Witness on Tkey?	- Niels Möller Silent CT Monitoring - Rasmus Dahlberg  </description>
     </item>
     
     <item>
