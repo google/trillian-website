@@ -15,6 +15,9 @@ speakerTitle: Senior Staff Cryptography Engineer, Mozilla
 Append-only ledgers like Certificate Transparency logs are simple, elegant and the bedrock of most modern transparency systems. Key Transparency systems are comparatively complex, but achieve much stronger privacy and transparency properties and have in recent years proven they can be successfully deployed at a global scale.
 This talk will consider systems that fall into the middle ground between these two approaches and ask whether they offer an interesting path forward for real world applications like the WebPKI.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2024/The Design Space between CT and KT.pdf">}})
+* [Talk Recording](https://youtu.be/FRyNAer9SD8?si=IplimUj-UoNRraCN)
+
 ---
 
 ### Speaker

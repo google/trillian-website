@@ -15,6 +15,9 @@ speakerTitle:
 
 Lessons learned from CT: scaling an ecosystem beyond a single log
 
+* [Speaker Slides]({{< rel "/pdfs/summit2024/Scaling transparency ecosystems_ Lessons learned from CT.pdf" >}})
+* [Talk Recording](https://youtu.be/59PU99hQfro?si=VKLsIo6etIIH2vri)
+
 ---
 
 ### Speaker

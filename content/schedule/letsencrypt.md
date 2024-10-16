@@ -14,6 +14,9 @@ speakerTitle: SRE Tech Lead
 
 Let's Encrypt operates one of the largest Certificate Authorities, along with Certificate Transparency logs.  This talk discusses our experiences both as a submitter to CT as well as a log operator. We are excited about the new Sunlight log implementation, and will cover why we think Sunlight will be a good fit for us and for the larger CT ecosystem.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2024/Let's Encrypt CT @ Transparency Dev.pdf" >}})
+* [Talk Recording](https://youtu.be/QZnz8pvsN_w?si=kZsrAYNHzenzKGVK)
+
 ---
 
 ### Speaker

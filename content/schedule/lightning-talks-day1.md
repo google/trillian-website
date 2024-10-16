@@ -14,6 +14,8 @@ speakerTitle:
 
 Transparency approaches have extremely wide applicability throughout the technology and information landscape. Different use cases have different functional and non-functional requirements which suggest the need for a diverse – but not too diverse – transparency ecosystem to enable broad, practical adoption. This lightning talk aims to stimulate conversation and highlight opportunities for advancement of transparency technology through interoperable data structures, standards, open source code, and group cooperation.
 
+* [Talk Recording](https://youtu.be/x2qvdXjSKPE?si=4-yJc1nKMHIpV3tS)
+
 ---
 
 ### Speaker

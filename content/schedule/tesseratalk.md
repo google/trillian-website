@@ -15,6 +15,9 @@ speakerTitle:
 
 Introducing Trillian Tessera, next-generation tile-based transparency logs
 
+* [Speaker Slides]({{< rel "/pdfs/summit2024/tdev2024_ Tessera.pdf">}})
+* [Talk Recording](https://youtu.be/9j_8FbQ9qSc?si=Fh619Ad_n6j4sClF)
+
 ---
 
 ### Speakers
