@@ -164,7 +164,7 @@ Preliminary Agenda  Understanding and reducing existing challenges for log opera
       
       <guid>https://transparency.dev/schedule/chrome.html</guid>
       <description>Lessons learned from CT: scaling an ecosystem beyond a single log
- Speaker Joe DeBlasio, Philippe Boneff
+ Speaker Slides Talk Recording   Speaker Joe DeBlasio, Philippe Boneff
  </description>
     </item>
     
@@ -175,7 +175,7 @@ Preliminary Agenda  Understanding and reducing existing challenges for log opera
       
       <guid>https://transparency.dev/schedule/closing.html</guid>
       <description>Closing out the talk portion of the event we will have a fun closing quiz and some awards.
-More details to come.</description>
+ Talk Recording  </description>
     </item>
     
     <item>
@@ -205,7 +205,9 @@ Unfortunately any CA can issue a certificate for any domain (more or less).</des
       
       <guid>https://transparency.dev/schedule/witness.html</guid>
       <description>In this focused session, &amp;ldquo;From Witnessing to Transparent Ecosystems,&amp;rdquo; we will explore the journey from the foundational concept of &amp;ldquo;witnessing&amp;rdquo; to the realization of fully transparent, end-to-end ecosystems. Our four talks are structured to interlock seamlessly, providing a holistic view of Witnessing and its broader impact.
- Witnessing &amp;amp; ArmoredWitness overview - Martin Hutchinson Using TamaGo to build the ArmoredWitness - Andrea Barisani Firmware Transparency for the ArmoredWitness - Al Cutter End-to-end transparency from logging to monitoring - Filippo Valsorda   Speakers Filippo Valsorda</description>
+  Witnessing &amp;amp; ArmoredWitness overview - Martin Hutchinson
+  Using TamaGo to build the ArmoredWitness - Andrea Barisani
+  Firmware Transparency for the ArmoredWitness - Al Cutter</description>
     </item>
     
     <item>
@@ -233,7 +235,7 @@ Unfortunately any CA can issue a certificate for any domain (more or less).</des
       
       <guid>https://transparency.dev/schedule/tesseratalk.html</guid>
       <description>Introducing Trillian Tessera, next-generation tile-based transparency logs
- Speakers Al Cutter
+ Speaker Slides Talk Recording   Speakers Al Cutter
 Al is the Tech Lead for the TrustFabric team at Google, where he&amp;rsquo;s been designing and implementing open source transparency-related systems, specs, and tooling since 2012. He was awarded the 2024 Levchin Prize for creating and deploying Certificate Transparency at scale, and is currently working to enable the easy adoption of transparency principles and infrastructure by other ecosystems too.</description>
     </item>
     
@@ -244,7 +246,7 @@ Al is the Tech Lead for the TrustFabric team at Google, where he&amp;rsquo;s bee
       
       <guid>https://transparency.dev/schedule/keytransparencyproton.html</guid>
       <description>What are the challenges faced implementing key transparency for email? This talk looks at how Proton has approached implementing key transparency.
- Speaker Daniel Huigens, Proton.</description>
+ Speaker Slides Talk Recording   Speaker Daniel Huigens, Proton.</description>
     </item>
     
     <item>
@@ -274,7 +276,8 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/keynote.html</guid>
-      <description>The opening keynote kicking off the event will be delivered by recent Levchin prize winner Al Cutter.  </description>
+      <description>The opening keynote kicking off the event will be delivered by recent Levchin prize winner Al Cutter.
+ Speaker Slides Talk Recording    </description>
     </item>
     
     <item>
@@ -320,7 +323,7 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
       
       <guid>https://transparency.dev/schedule/sigstore.html</guid>
       <description>This talk explores the motivations behind signature transparency, the role of transparency in Sigstore identities, and the ongoing improvements we&amp;rsquo;re making to enhance Sigstore&amp;rsquo;s transparency adoption.
- Speaker Hayden Blauzvern is a technical lead &amp;amp; manager on Google’s Open Source Security Team, focused on making open-source software more secure through code signing and applied transparency. Hayden is a maintainer and the community chair on the Sigstore project, and is currently focused on improving supply chain security for package registries.</description>
+ Speaker Slides Talk Recording   Speaker Hayden Blauzvern is a technical lead &amp;amp; manager on Google’s Open Source Security Team, focused on making open-source software more secure through code signing and applied transparency. Hayden is a maintainer and the community chair on the Sigstore project, and is currently focused on improving supply chain security for package registries.</description>
     </item>
     
     <item>
@@ -360,7 +363,7 @@ To disable our use of Google Analytics, enable the Do Not Track setting in your 
       
       <guid>https://transparency.dev/schedule/letsencrypt.html</guid>
       <description>Let&amp;rsquo;s Encrypt operates one of the largest Certificate Authorities, along with Certificate Transparency logs. This talk discusses our experiences both as a submitter to CT as well as a log operator. We are excited about the new Sunlight log implementation, and will cover why we think Sunlight will be a good fit for us and for the larger CT ecosystem.
- Speaker Matthew is the technical lead for the Let&amp;rsquo;s Encrypt SRE team, which operates our Certificate Authority and Certificate Transparency logs.</description>
+ Speaker Slides Talk Recording   Speaker Matthew is the technical lead for the Let&amp;rsquo;s Encrypt SRE team, which operates our Certificate Authority and Certificate Transparency logs.</description>
     </item>
     
     <item>
@@ -451,7 +454,7 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/healthcare.html</guid>
-      <description> Speaker </description>
+      <description> Talk Recording  </description>
     </item>
     
     <item>
@@ -469,7 +472,8 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/schedule/hsm.html</guid>
-      <description>Highly sensitive code managing crypto secrets needs to run in secure environments, often very constrained in capacity. Given these constraints, I will explain how we managed to fit as much logic as possible, as close to the secrets as possible, while also addressing the roles that transparency and verifiability play in ensuring security and trust. Speaker Chervine is an engineer leading the R&amp;amp;D team at Taurus, where he helps design scalable, secure systems.</description>
+      <description>Highly sensitive code managing crypto secrets needs to run in secure environments, often very constrained in capacity. Given these constraints, I will explain how we managed to fit as much logic as possible, as close to the secrets as possible, while also addressing the roles that transparency and verifiability play in ensuring security and trust.
+ Talk Recording   Speaker Chervine is an engineer leading the R&amp;amp;D team at Taurus, where he helps design scalable, secure systems.</description>
     </item>
     
     <item>
@@ -498,8 +502,7 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       
       <guid>https://transparency.dev/schedule/sigsum.html</guid>
       <description>Sigsum is a free and open-source software project that makes a signer&amp;rsquo;s key-usage transparent. This talk introduces the design, which can be used as a building block to transparently publish executable binaries, reproducibility statements, KT tree heads, configuration files, and much more.
-Speaker slides: What is Sigsum and how can I use it for my application?
- Speaker Rasmus Dahlberg is a computer scientist and software engineer based in Karlstad, Sweden.</description>
+ Speaker slides Talk Recording   Speaker Rasmus Dahlberg is a computer scientist and software engineer based in Karlstad, Sweden. He has contributed to transparency log research and development since 2016.</description>
     </item>
     
     <item>
@@ -518,7 +521,7 @@ Speaker slides: What is Sigsum and how can I use it for my application?
       
       <guid>https://transparency.dev/schedule/logingestion.html</guid>
       <description>This lightning talk explores the CT Logs Ingestion journey from RFC6962 to Static CT API. Curious about the real-world implementation story and lesson learnt? Join me in this talk to embrace the Static CT API logs.
- Speaker Roger Ng is a software engineer of Google Open Source Security team (GOSST) / TrustFabric based in London, working on security transparency.</description>
+ Talk Recording   Speaker Roger Ng is a software engineer of Google Open Source Security team (GOSST) / TrustFabric based in London, working on security transparency.</description>
     </item>
     
     <item>
@@ -528,7 +531,7 @@ Speaker slides: What is Sigsum and how can I use it for my application?
       
       <guid>https://transparency.dev/schedule/depsdev.html</guid>
       <description>What metrics, APIs and indexes on Certificate Transparency data would be useful to you? New to the CT ecosystem, deps.dev is excited to be working with Certificate Transparency data and wants to hear from you. Hear about the insights deps.dev has provided on open source packages, and hear about potential insights that deps.dev could provide into Certificate Transparency data.
- Speaker Josie is an engineer at Google, working on Open Source Supply Chain Security.</description>
+ Talk Recording   Speaker Josie is an engineer at Google, working on Open Source Supply Chain Security.</description>
     </item>
     
     <item>
@@ -547,7 +550,7 @@ Speaker slides: What is Sigsum and how can I use it for my application?
       
       <guid>https://transparency.dev/schedule/lightning-talks-day1.html</guid>
       <description>Transparency approaches have extremely wide applicability throughout the technology and information landscape. Different use cases have different functional and non-functional requirements which suggest the need for a diverse – but not too diverse – transparency ecosystem to enable broad, practical adoption. This lightning talk aims to stimulate conversation and highlight opportunities for advancement of transparency technology through interoperable data structures, standards, open source code, and group cooperation.
- Speaker Jon brings deep expertise in cryptography, cybersecurity, and blockchains to DataTrails where we’re tackling the thorny problems of Supply Chain Security, Integrity, Transparency and Trust for sensitive use cases from nuclear waste handling to connected industry.</description>
+ Talk Recording   Speaker Jon brings deep expertise in cryptography, cybersecurity, and blockchains to DataTrails where we’re tackling the thorny problems of Supply Chain Security, Integrity, Transparency and Trust for sensitive use cases from nuclear waste handling to connected industry.</description>
     </item>
     
     <item>
@@ -575,7 +578,7 @@ Speaker slides: What is Sigsum and how can I use it for my application?
       
       <guid>https://transparency.dev/schedule/lightning-talks-day3.html</guid>
       <description>Lightning Talks Schedule:
- Verifiable runtime transparency - Fredrik Strömberg Open Source Project Veraison - Yogesh Deshpande Auditing key transparency and making it public - Thibault Meunier The challenge of adopting post quantum cryptography - Bas Westerbaan Taking the pain a way with linear logs: its just an array!	- Robin Bryce Running a Witness on Tkey?	- Niels Möller Silent CT Monitoring - Rasmus Dahlberg  </description>
+ Verifiable runtime transparency - Fredrik Strömberg  Speaker Slides Talk Recording   Open Source Project Veraison - Yogesh Deshpande  Speaker Slides Talk Recording   Auditing key transparency and making it public - Thibault Meunier  Speaker Slides Talk Recording   The challenge of adopting post quantum cryptography - Bas Westerbaan  Speaker Slides Talk Recording   Taking the pain a way with linear logs: its just an array!</description>
     </item>
     
     <item>
