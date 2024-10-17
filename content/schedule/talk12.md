@@ -16,6 +16,9 @@ How do I know where my machine learning model came from, and how can I prove it?
 
 We present an open-source specification and implementation to cryptographically sign an arbitrary collection of files which comprise an ML model, to create a mechanism to verify the integrity of a machine learning model to ensure trust between the model producer and end-user. By implementing model signing, we are paving the way for model transparency which helps strengthen the AI supply chain. With this, one could see who has trained the model, what training framework has been used, what datasets were used, and much other useful information.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2024/ML Model Signing.pdf">}})
+* [Talk Recording](https://youtu.be/QHOzEkw_9d4?si=Sc0p3IL6Uty861C2)
+
 ---
 
 ### Speaker

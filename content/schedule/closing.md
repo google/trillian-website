@@ -14,6 +14,6 @@ speakerTitle:
 
 Closing out the talk portion of the event we will have a fun closing quiz and some awards. 
 
-More details to come. 
+* [Talk Recording](https://youtu.be/lHfLMiiwsHA?si=Xr8aGOroSlS0DX0a)
 
 </div>

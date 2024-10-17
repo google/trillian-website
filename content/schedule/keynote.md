@@ -11,7 +11,12 @@ speaker: Al Cutter
 ---
 
 <div class="font-google font-medium">
-The opening keynote kicking off the event will be delivered by recent Levchin prize winner Al Cutter. 
 
+The opening keynote kicking off the event will be delivered by recent Levchin prize winner Al Cutter.
+
+* [Speaker Slides]({{< rel "/pdfs/summit2024/tdev2024_ Opener.pdf">}})
+* [Talk Recording](https://youtu.be/IJfgKh3gwOQ?si=hjTwg4SOj9z2pilS)
+
+---
 
 </div>

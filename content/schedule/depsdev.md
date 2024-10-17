@@ -14,6 +14,8 @@ speakerTitle: Software Engineer, Google
 
 What metrics, APIs and indexes on Certificate Transparency data would be useful to you? New to the CT ecosystem, [deps.dev](https://deps.dev/) is excited to be working with Certificate Transparency data and wants to hear from you. Hear about the insights [deps.dev](https://deps.dev/) has provided on open source packages, and hear about potential insights that [deps.dev](https://deps.dev/) could provide into Certificate Transparency data.
 
+* [Talk Recording](https://youtu.be/vd1uaLH3V5Q?si=QbdVvFUXZeXKzfAO)
+
 ---
 
 ### Speaker

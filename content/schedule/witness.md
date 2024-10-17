@@ -14,10 +14,14 @@ speakerTitle:
 
 In this focused session, "From Witnessing to Transparent Ecosystems," we will explore the journey from the foundational concept of "witnessing" to the realization of fully transparent, end-to-end ecosystems. Our four talks are structured to interlock seamlessly, providing a holistic view of Witnessing and its broader impact.
 
-   * Witnessing & ArmoredWitness overview - Martin Hutchinson
-   * Using TamaGo to build the ArmoredWitness - Andrea Barisani
-   * Firmware Transparency for the ArmoredWitness - Al Cutter
-   * End-to-end transparency from logging to monitoring - Filippo Valsorda 
+* Witnessing & ArmoredWitness overview - Martin Hutchinson
+* Using TamaGo to build the ArmoredWitness - Andrea Barisani
+* Firmware Transparency for the ArmoredWitness - Al Cutter
+* End-to-end transparency from logging to monitoring - Filippo Valsorda 
+
+   * [Speaker Slides]({{< rel "/pdfs/summit2024/tdev2024_ ArmoredWitness.pdf">}})
+   * [Talk Recording Part 1](https://youtu.be/v9cgvZXRRZU?si=IViyJo-1LupkqMSd)
+   * [Talk Recording Part 2](https://youtu.be/uZXESulUuKA?si=YdJ4n_I8aE-tJ8K_)
 
 ---
 

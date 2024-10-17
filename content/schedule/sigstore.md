@@ -14,6 +14,9 @@ speakerTitle: Tech Lead Manager at Google, OSS Supply Chain Security
 
 This talk explores the motivations behind signature transparency, the role of transparency in Sigstore identities, and the ongoing improvements we're making to enhance Sigstore's transparency adoption.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2024/Nowhere to Hide - Sigstore.pdf">}})
+* [Talk Recording](https://youtu.be/au_nkj0iBj8?si=YSo9C2hFSZyrlnz_)
+
 ---
 
 ### Speaker

@@ -12,11 +12,6 @@ speakerTitle: Projects by IF
 
 <div class="font-google font-medium">
 
-
----
-
-### Speaker
-
-
+* [Talk Recording](https://youtu.be/Rj8l6Fd_iBg?si=CdCsqGpREbGX8pTU)
 
 </div>

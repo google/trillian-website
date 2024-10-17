@@ -14,6 +14,8 @@ speakerTitle: Software Engineer, Google
 
 This lightning talk explores the CT Logs Ingestion journey from RFC6962 to Static CT API. Curious about the real-world implementation story and lesson learnt? Join me in this talk to embrace the Static CT API logs.
 
+* [Talk Recording](https://youtu.be/HmHJiNoTh9I?si=Zz9CMapSceA2gccc)
+
 ---
 
 ### Speaker
