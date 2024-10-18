@@ -63,14 +63,5 @@ Unfortunately any CA can issue a certificate for any domain (more or less).</des
 Advantages of Key Transparency  Automate user discovery of end-to-end encryption keys. Provide a shared global view of public keys - everyone should see the same public key for a given username. Increase the difficulty of an attacker performing a man-in-the-middle attack.</description>
     </item>
     
-    <item>
-      <title>Transparency.dev Summit</title>
-      <link>https://transparency.dev/summit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://transparency.dev/summit/</guid>
-      <description>Transparency.dev Summit       Join us for Transparency.dev Summit at Google London (6 Pancras Sq, London N1C 4AG) on October 9-11, 2024. This event aims to bring together implementers, operators, and clients of real world transparency systems in order to meet peers, share best practices, and learn about the latest developments in the community. In addition to general transparency topics, the event will also feature dedicated sessions for the Certificate Transparency community (e.</description>
-    </item>
-    
   </channel>
 </rss>

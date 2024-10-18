@@ -1,0 +1,430 @@
+<!doctype html>
+
+ <!--
+  Copyright 2020 Google LLC
+ 
+  Licensed under the Apache License, Version 2.0 (the 'License');
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an 'AS IS' BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+      
+        
+          Transparency.dev Summit
+         |
+       Trillian
+    </title>
+
+    
+      <meta name="description" content="Event page for the 2024 Transparency.dev Summit" property="og:description"/>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173407084-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://transparency.dev/css/styles.min.23bbbdf08e68ae404f6dcc666521c2f4bb1e5fa1892fa4d41bb8601d407aa603.css" integrity="sha256-I7u98I5orkBPbcxmZSHC9LseX6GJL6TUG7hgHUB6pgM=">
+    <script>
+      'use strict';
+
+      function ready(fn) {
+        if (document.attachEvent
+          ? document.readyState === 'complete'
+          : document.readyState !== 'loading') {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      function addClass(el, className) {
+        if (el.classList) {
+          el.classList.add(className);
+        } else {
+          el.className += ' ' + className;
+        }
+      }
+
+      function removeClass(el, className) {
+        if (el.classList) {
+          el.classList.remove(className);
+        } else {
+          el.className = el.className.replace(
+              new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '
+          );
+        }
+      }
+    </script>
+  </head>
+<body>
+    
+
+<div class="bg-white z-50 w-full font-google" id="site-header">
+<nav class="glue-page test-fixed">
+  <div class="lg:hidden absolute h-16 flex items-center cursor-pointer">
+    <div id="toggleMenu" class="h-8 flex items-center justify-left px-4 -mx-4 rounded text-Grey-700">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
+        <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  </div>
+  <ul class="mx-auto lg:float-left h-16 flex items-center">
+    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Tamper-evident logs</a></li>
+  </ul>
+  <ul class="invisible lg:visible float-right h-16 flex items-center">
+    <li class="text-right inline mr-6"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+    <li class="text-right inline mr-6"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
+    <li class="text-right inline mr-6"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
+    <li class="text-right inline mr-6"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+    <li class="text-right inline mr-6"><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
+  </ul>
+</nav>
+<ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
+  <li class="gmb-2"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+  <li class="gmb-2"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
+  <li class="gmb-2"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+  <li class="gmb-2"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
+  <li class="gmb-2"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+  <li class=""><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
+</ul>
+</div>
+<div id="nav-spacer" class="h-16"></div>
+
+<script>
+  'use strict';
+  (function(){
+
+    var doc = document.documentElement;
+    var w = window;
+
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+
+    var header = document.getElementById('site-header');
+
+    var checkScroll = function() {
+
+      
+
+
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        
+        direction = 1;
+      }
+
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
+
+      prevScroll = curScroll;
+    };
+
+    var toggleHeader = function(direction, curScroll) {
+      if (direction === 2 && curScroll > 64) {
+        addClass(header, 'hide');
+        addClass(mobileMenu, 'hidden');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        removeClass(header, 'hide');
+        prevDirection = direction;
+      }
+    };
+
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function toggleMenuVisibility() {
+      if (mobileMenu.classList.contains('hidden')) {
+        removeClass(mobileMenu, 'hidden');
+        return;
+      };
+      addClass(mobileMenu, 'hidden');
+    };
+
+    window.addEventListener('scroll', checkScroll);
+    document.getElementById('toggleMenu').onclick = toggleMenuVisibility;
+
+  })();
+</script>
+
+<section class="glue-page gmt-7 gmb-3">
+  <div class="glue-grid">
+    <div class="col-span-4 sm:col-span-10 sm:col-start-2 text-center">
+      <h1 class="headline2 gmb-2">Transparency.dev Summit</h1>
+    </div>
+  </div>
+</section>
+
+<div class="glue-page">
+  <div class="glue-grid illustration-mb">
+    <div class="col-span-4 sm:col-span-10 sm:col-start-2 ">
+      <img src="
+
+/images/transparency-dev-summit/tdev_summit_banner.svg
+" class="gmb-3" />
+    </div>
+  </div>
+</div>
+
+<section class="glue-page">
+  <div class="glue-grid gmb-2">
+    <div class="col-span-4 sm:col-span-8 sm:col-start-3">
+      <p class="headline5 gmb-2">
+        Join us for Transparency.dev Summit at Google London (6 Pancras Sq, London N1C 4AG) on October 9-11, 2024.
+      </p>
+      <p class="headline5 gmb-2">
+        This event aims to bring together implementers, operators, and clients of real world transparency systems in order to meet peers, share best practices, and learn about the latest developments in the community.
+      </p>
+      <p class="headline5 gmb-2">
+        In addition to general transparency topics, the event will also feature dedicated sessions for the Certificate Transparency community (e.g a colocated CT day style event). 
+      </p>
+      <p class="headline5 gmb-2">
+        The call for proposals has now closed. Thanks to all who have submitted.
+      </p>
+      <p class="headline4 gmt-4 gmb-2">
+        Registration
+      </p>  
+      <p class="headline5 gmb-2">
+        Registration is now closed. Please join the <a href="https://join.slack.com/t/transparency-dev/shared_invite/zt-27pkqo21d-okUFhur7YZ0rFoJVIOPznQ">Slack Channel </a> for details of talk recordings and livestreaming. 
+      </p>
+      <div class="col-span-4 sm:col-span-8 sm:col-start-3">
+        <h2 class="headline4 gpt-4 gmb-2">Code of Conduct</h2>
+        <p class="gmb-2">
+          We are dedicated to providing a welcoming and inspiring community for all attendees. Please treat all attendees with respect and abide by our <a href="codeofconduct">Code of Conduct</a>.
+        </p>
+      </div>                            
+    </div>
+  </div>
+</section>
+
+<section class="glue-page">
+  <div class="glue-grid gmt-4 gmb-2">
+    <div class="col-span-4 sm:col-span-8 sm:col-start-3">
+      <h2 class="headline4 gmb-4">Agenda</h2>
+      <p class="headline5 gmb-4">
+        <a href="schedule.html" class="btn bg-Blue-600 text-white hover:shadow-md inline-flex px-8 items-center justify-center">
+          View the Full Schedule
+        </a>
+      </p>    
+    </div>        
+    <div class="col-span-4 sm:col-span-8 sm:col-start-3">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
+          <tr>
+            <th scope="col" colspan="3" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+              Schedule at a Glance
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+              Wednesday, 9 October
+            </th>
+            <td class="px-6 py-4">
+              Morning
+            </td>
+            <td class="px-6 py-4">
+              Keynote, Talks
+            </td>
+          </tr>
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+
+            </th>
+            <td class="px-6 py-4">
+              Afternoon
+            </td>
+            <td class="px-6 py-4">
+              Talks, Lightning Talks
+            </td>
+          </tr>
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+
+            </th>
+            <td class="px-6 py-4">
+              Evening
+            </td>
+            <td class="px-6 py-4">
+              Social Event
+            </td>
+          </tr>          
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+              Thursday, 10 October
+            </th>
+            <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+              Morning
+            </td>
+            <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+              Talks
+            </td>
+          </tr>
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+
+            </th>
+            <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+              Afternoon
+            </td>
+            <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+              Certificate Transparency, Binary Transparency & Key Transparency Breakouts
+            </td>
+          </tr>
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+
+            </th>
+            <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+              Evening
+            </td>
+            <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+              Rooftop Reception
+            </td>
+          </tr>          
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+              Friday, 11 October
+            </th>
+            <td class="px-6 py-4">
+              Morning
+            </td>
+            <td class="px-6 py-4">
+              Readouts, Talks, Lightning Talks, Closing
+            </td>
+          </tr>
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+
+            </th>
+            <td class="px-6 py-4">
+              Afternoon
+            </td>
+            <td class="px-6 py-4">
+              Witness Breakout, Birds of a Feather
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="glue-page">
+  <div class="glue-grid gmb-4">    
+    <div class="col-span-4 sm:col-span-8 sm:col-start-3">
+      <h2 class="headline4 gpt-4 gmb-2">Event FAQ</h2>      
+      <h3 class="headline5 gpt-2 gmb-2">Getting There</h3>
+      <p class="gmb-2">
+        You can easily get to the venue via tube, bike or foot. It is a ~2 minute walk from <a href="https://maps.app.goo.gl/aRSybpgFsRSQ7CPG6">Kings Cross</a> and <a href="https://maps.app.goo.gl/MpPsnuoDUyEK4Yy9A">St Pancras</a> stations. 
+      </p>
+      <h3 class="headline5 gpt-2 gmb-2">Airport</h3>
+      <p class="gmb-2">
+        Airport
+If you haven’t visited London in a while (or before!), we have exciting news, the Elizabeth line is open! This gives a couple of choices for getting to the venue either with the Elizabeth line or Piccadilly: <a href="https://maps.app.goo.gl/yvJrzmcqGe6ZqfuD6">Heathrow to Google 6PS</a> (~60 minutes).
+      </p>
+      <h3 class="headline5 gpt-2 gmb-2">Room Block</h3>      
+      <p class="gmb-1">
+        We do not have a room block with discounted rooms, but there are plenty of great places to stay nearby, including:
+        <li> <a href="https://maps.app.goo.gl/vjQSK5gc5xuMEYET9">Great Northern Hotel</a> (Marriott property)</li>
+        <li> <a href="https://maps.app.goo.gl/UdVqc54jujpQkZJC6">hub by Premier Inn London King's Cross</a></li>
+        <li> <a href="https://www.easyhotel.com/hotels/united-kingdom/london/london-city-shoreditch">London City Shoreditch</a> (easyHotel property)</li>
+      </p>
+      <h3 class="headline5 gpt-3 gmb-2">Apps to Download</h3>      
+      <p class="list-disc-blue gmb-2">
+        <li>City Mapper</li>
+        <li>TfL Go</li>
+        <li>Lime Bike</li>
+        <li>Lyft (for Bikes)</li>
+        <li>Bolt or FreeNow (for cars, or hail a black cab)</li>
+      </p>      
+    </div>
+  </div>
+</section>
+
+
+
+
+<div class="text-white bg-Grey-050 font-google font-medium footer">
+
+  <div class="glue-page gpt-4 gpb-5">
+    <div class="glue-grid">
+      <div class="col-span-4 sm:col-span-5 sm:col-start-2">
+        <h2 class="text-Grey-900">Learn more about tamper-evident logs</h2>
+        <ul class="text-Grey-600">
+          <li>
+            <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Benefits of tamper-evident logs</a>
+          </li>
+          <li>
+            <a href='/#trillian' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Trillian: an open-source verifiable log</a>
+          </li>
+          <li>
+            <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Verifiable Data Structures</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+      <div class="col-span-4 gmt-2 sm:col-span-5 sm:mt-0">
+        <h2 class="text-Grey-900">Applications of tamper-evident logs</h2>
+        <ul class="text-Grey-600 gmb-4">
+          <li>
+            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Add tamper-checking to a package manager</a>
+          </li>
+          <li>
+            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Reliably log all actions performed on your servers</a>
+          </li>
+          <li>
+            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Strengthen discovery of encryption keys with Key Transparency</a>
+          </li>
+          <li>
+            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Discourage misbehaviour by third parties in Certificate Transparency</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
+        <img src="/images/logos/google-logo.svg" alt="Google's Logo" />
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm">
+          <a href="/privacy/" class="text-Grey-600 hover:text-Grey-900 hover:no-underline">
+            Privacy
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

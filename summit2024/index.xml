@@ -1,127 +1,127 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Transparency.dev Summit Schedule on Transparency.dev</title>
-    <link>https://transparency.dev/schedule/</link>
-    <description>Recent content in Transparency.dev Summit Schedule on Transparency.dev</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/schedule/index.xml" rel="self" type="application/rss+xml" />
+    <title>Transparency.dev Summit on Transparency.dev</title>
+    <link>https://transparency.dev/summit2024/</link>
+    <description>Recent content in Transparency.dev Summit on Transparency.dev</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/summit2024/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binary Transparency Breakout Room (Part I)</title>
-      <link>https://transparency.dev/schedule/bt-breakout-part1.html</link>
+      <link>https://transparency.dev/summit2024/bt-breakout-part1.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/bt-breakout-part1.html</guid>
+      <guid>https://transparency.dev/summit2024/bt-breakout-part1.html</guid>
       <description>Binary Transparency Breakout Room (Part I) With the widespread success of certificate transparency, it wasn&amp;rsquo;t long before the transparency principles were applied to other domains. Several projects emerged, such as Go module checksum database, Sigstore, and Sigsum, often grouped under the broader umbrella of &amp;lsquo;Binary Transparency&amp;rsquo;. But what exactly is Binary Transparency? Can we define it in a meaningful way that fosters collaborative growth across these initiatives and delivers transformative benefits on par with those seen in the certificate transparency ecosystem?</description>
     </item>
     
     <item>
       <title>Binary Transparency Breakout Room (Part II)</title>
-      <link>https://transparency.dev/schedule/bt-breakout-part2.html</link>
+      <link>https://transparency.dev/summit2024/bt-breakout-part2.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/bt-breakout-part2.html</guid>
+      <guid>https://transparency.dev/summit2024/bt-breakout-part2.html</guid>
       <description>Binary Transparency Breakout Room (Part II) The Binary Transparency breakout continues after the break.
 With the widespread success of certificate transparency, it wasn&amp;rsquo;t long before the transparency principles were applied to other domains. Several projects emerged, such as Go module checksum database, Sigstore, and Sigsum, often grouped under the broader umbrella of &amp;lsquo;Binary Transparency&amp;rsquo;. But what exactly is Binary Transparency? Can we define it in a meaningful way that fosters collaborative growth across these initiatives and delivers transformative benefits on par with those seen in the certificate transparency ecosystem?</description>
     </item>
     
     <item>
       <title>Break</title>
-      <link>https://transparency.dev/schedule/break-day1-afternoon.html</link>
+      <link>https://transparency.dev/summit2024/break-day1-afternoon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day1-afternoon.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day1-afternoon.html</guid>
       <description> Break  </description>
     </item>
     
     <item>
       <title>Break</title>
-      <link>https://transparency.dev/schedule/break-day1-morning.html</link>
+      <link>https://transparency.dev/summit2024/break-day1-morning.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day1-morning.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day1-morning.html</guid>
       <description> Break  </description>
     </item>
     
     <item>
       <title>Break</title>
-      <link>https://transparency.dev/schedule/break-day2-afternoon.html</link>
+      <link>https://transparency.dev/summit2024/break-day2-afternoon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day2-afternoon.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day2-afternoon.html</guid>
       <description> Break  </description>
     </item>
     
     <item>
       <title>Break</title>
-      <link>https://transparency.dev/schedule/break-day2-morning.html</link>
+      <link>https://transparency.dev/summit2024/break-day2-morning.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day2-morning.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day2-morning.html</guid>
       <description> Break  </description>
     </item>
     
     <item>
       <title>Break</title>
-      <link>https://transparency.dev/schedule/break-day3-afternoon.html</link>
+      <link>https://transparency.dev/summit2024/break-day3-afternoon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day3-afternoon.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day3-afternoon.html</guid>
       <description> Break  </description>
     </item>
     
     <item>
       <title>Break</title>
-      <link>https://transparency.dev/schedule/break-day3-morning.html</link>
+      <link>https://transparency.dev/summit2024/break-day3-morning.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day3-morning.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day3-morning.html</guid>
       <description> Break  </description>
     </item>
     
     <item>
       <title>Breakfast &amp; Hallway Track</title>
-      <link>https://transparency.dev/schedule/breakfast-day2.html</link>
+      <link>https://transparency.dev/summit2024/breakfast-day2.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/breakfast-day2.html</guid>
+      <guid>https://transparency.dev/summit2024/breakfast-day2.html</guid>
       <description>Join attendees for the hallway track over breakfast before the talks get started.</description>
     </item>
     
     <item>
       <title>Breakfast &amp; Hallway Track</title>
-      <link>https://transparency.dev/schedule/breakfast-day3.html</link>
+      <link>https://transparency.dev/summit2024/breakfast-day3.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/breakfast-day3.html</guid>
+      <guid>https://transparency.dev/summit2024/breakfast-day3.html</guid>
       <description>Join attendees for the hallway track over breakfast before the talks get started.</description>
     </item>
     
     <item>
       <title>Breakout Readouts</title>
-      <link>https://transparency.dev/schedule/readouts.html</link>
+      <link>https://transparency.dev/summit2024/readouts.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/readouts.html</guid>
+      <guid>https://transparency.dev/summit2024/readouts.html</guid>
       <description>Readouts from Thursday&amp;rsquo;s breakout rooms:
  Certificate Transparency Binary Transparency Key Transparency  </description>
     </item>
     
     <item>
       <title>Certificate Transparency Breakout Room (Part I)</title>
-      <link>https://transparency.dev/schedule/ct-breakout-part1.html</link>
+      <link>https://transparency.dev/summit2024/ct-breakout-part1.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/ct-breakout-part1.html</guid>
+      <guid>https://transparency.dev/summit2024/ct-breakout-part1.html</guid>
       <description>Certificate Transparency Breakout Room (Part I) The breakout session on Certificate Transparency offers a valuable opportunity for members of the ecosystem to come together to brainstorm ways to make CT more robust and address emerging challenges. Industry practitioners as well as those new to the space are welcome to join.
 Preliminary Agenda  Understanding and reducing existing challenges for log operators and other members of the ecosystem, both in an RFC6962 and static-ct-api world.</description>
     </item>
     
     <item>
       <title>Certificate Transparency Breakout Room (Part II)</title>
-      <link>https://transparency.dev/schedule/ct-breakout-part2.html</link>
+      <link>https://transparency.dev/summit2024/ct-breakout-part2.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/ct-breakout-part2.html</guid>
+      <guid>https://transparency.dev/summit2024/ct-breakout-part2.html</guid>
       <description>Certificate Transparency Breakout Room (Part II) The Certificate Transparency breakout continues after the break.
 The breakout session on Certificate Transparency offers a valuable opportunity for members of the ecosystem to come together to brainstorm ways to make CT more robust and address emerging challenges. Industry practitioners as well as those new to the space are welcome to join.
 Preliminary Agenda  Understanding and reducing existing challenges for log operators and other members of the ecosystem, both in an RFC6962 and static-ct-api world.</description>
@@ -129,10 +129,10 @@ Preliminary Agenda  Understanding and reducing existing challenges for log opera
     
     <item>
       <title>Chrome Lessons Learned from CT</title>
-      <link>https://transparency.dev/schedule/chrome.html</link>
+      <link>https://transparency.dev/summit2024/chrome.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/chrome.html</guid>
+      <guid>https://transparency.dev/summit2024/chrome.html</guid>
       <description>Lessons learned from CT: scaling an ecosystem beyond a single log
  Speaker Slides Talk Recording   Speaker Joe DeBlasio, Philippe Boneff
  </description>
@@ -140,20 +140,20 @@ Preliminary Agenda  Understanding and reducing existing challenges for log opera
     
     <item>
       <title>Closing Session</title>
-      <link>https://transparency.dev/schedule/closing.html</link>
+      <link>https://transparency.dev/summit2024/closing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/closing.html</guid>
+      <guid>https://transparency.dev/summit2024/closing.html</guid>
       <description>Closing out the talk portion of the event we will have a fun closing quiz and some awards.
  Talk Recording  </description>
     </item>
     
     <item>
       <title>From Witnessing to Transparent Ecosystems</title>
-      <link>https://transparency.dev/schedule/witness.html</link>
+      <link>https://transparency.dev/summit2024/witness.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/witness.html</guid>
+      <guid>https://transparency.dev/summit2024/witness.html</guid>
       <description>In this focused session, &amp;ldquo;From Witnessing to Transparent Ecosystems,&amp;rdquo; we will explore the journey from the foundational concept of &amp;ldquo;witnessing&amp;rdquo; to the realization of fully transparent, end-to-end ecosystems. Our four talks are structured to interlock seamlessly, providing a holistic view of Witnessing and its broader impact.
   Witnessing &amp;amp; ArmoredWitness overview - Martin Hutchinson
   Using TamaGo to build the ArmoredWitness - Andrea Barisani
@@ -162,19 +162,19 @@ Preliminary Agenda  Understanding and reducing existing challenges for log opera
     
     <item>
       <title>Imagining a zero-trust future for PyPI</title>
-      <link>https://transparency.dev/schedule/pypi.html</link>
+      <link>https://transparency.dev/summit2024/pypi.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/pypi.html</guid>
+      <guid>https://transparency.dev/summit2024/pypi.html</guid>
       <description>Over the past year, PyPI (the default package index for the Python ecosystem) has moved rapidly to adopt digital attestations, building atop the foundations offered by the Sigstore project and previous initiatives like Trusted Publishing. This work has left PyPI itself in a stronger position than ever before, but has not yet meaningfully diminished the amount of trust required by package consumers in PyPI. This talk attempts to tackle the latter: it imagines a hypothetical “zero-trust” future for PyPI, and asks which technologies (whether currently practical and not) could get us to that future.</description>
     </item>
     
     <item>
       <title>Introducing Trillian Tessera</title>
-      <link>https://transparency.dev/schedule/tesseratalk.html</link>
+      <link>https://transparency.dev/summit2024/tesseratalk.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/tesseratalk.html</guid>
+      <guid>https://transparency.dev/summit2024/tesseratalk.html</guid>
       <description>Introducing Trillian Tessera, next-generation tile-based transparency logs
  Speaker Slides Talk Recording   Speakers Al Cutter
 Al is the Tech Lead for the TrustFabric team at Google, where he&amp;rsquo;s been designing and implementing open source transparency-related systems, specs, and tooling since 2012. He was awarded the 2024 Levchin Prize for creating and deploying Certificate Transparency at scale, and is currently working to enable the easy adoption of transparency principles and infrastructure by other ecosystems too.</description>
@@ -182,30 +182,30 @@ Al is the Tech Lead for the TrustFabric team at Google, where he&amp;rsquo;s bee
     
     <item>
       <title>Key Transparency at Proton</title>
-      <link>https://transparency.dev/schedule/keytransparencyproton.html</link>
+      <link>https://transparency.dev/summit2024/keytransparencyproton.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/keytransparencyproton.html</guid>
+      <guid>https://transparency.dev/summit2024/keytransparencyproton.html</guid>
       <description>What are the challenges faced implementing key transparency for email? This talk looks at how Proton has approached implementing key transparency.
  Speaker Slides Talk Recording   Speaker Daniel Huigens, Proton.</description>
     </item>
     
     <item>
       <title>Key Transparency Breakout Room (Part I)</title>
-      <link>https://transparency.dev/schedule/kt-breakout-part1.html</link>
+      <link>https://transparency.dev/summit2024/kt-breakout-part1.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/kt-breakout-part1.html</guid>
+      <guid>https://transparency.dev/summit2024/kt-breakout-part1.html</guid>
       <description>Key Transparency Breakout Room (Part I) This breakout session on Key Transparency will explore the critical role it plays in secure communications, highlighting some of the ongoing applications in the space, and emphasizing the importance of collaboration among experts to drive innovation and ensure trust in this space.
 Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier KT @ Google - Jason Novak   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning  Session Leaders: Jason Novak, Patrick Flynn</description>
     </item>
     
     <item>
       <title>Key Transparency Breakout Room (Part II)</title>
-      <link>https://transparency.dev/schedule/kt-breakout-part2.html</link>
+      <link>https://transparency.dev/summit2024/kt-breakout-part2.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/kt-breakout-part2.html</guid>
+      <guid>https://transparency.dev/summit2024/kt-breakout-part2.html</guid>
       <description>Key Transparency Breakout Room (Part II) The Key Transparency breakout continues after the break.
 This breakout session on Key Transparency will explore the critical role it plays in secure communications, highlighting some of the ongoing applications in the space, and emphasizing the importance of collaboration among experts to drive innovation and ensure trust in this space.
 Preliminary Agenda  Welcome and opening remarks by the session moderator Attendee Introductions: name, organization, and their interest in Key Transparency Key Transparency Applications: attendees working on Key Transparency share their approach and insights  Proton - Daniels Huigens KT @ Cloudflare - Thibault Meunier KT @ Google - Jason Novak   Open Discussion: Discussions on use cases, common challenges or any topics of interest from attendees Session wraps up - key takeaways to be presented to main conference on Friday morning  Session Leaders: Jason Novak, Patrick Flynn</description>
@@ -213,253 +213,262 @@ Preliminary Agenda  Welcome and opening remarks by the session moderator Attende
     
     <item>
       <title>Keynote</title>
-      <link>https://transparency.dev/schedule/keynote.html</link>
+      <link>https://transparency.dev/summit2024/keynote.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/keynote.html</guid>
+      <guid>https://transparency.dev/summit2024/keynote.html</guid>
       <description>The opening keynote kicking off the event will be delivered by recent Levchin prize winner Al Cutter.
  Speaker Slides Talk Recording    </description>
     </item>
     
     <item>
       <title>Lunch</title>
-      <link>https://transparency.dev/schedule/break-day1-lunch.html</link>
+      <link>https://transparency.dev/summit2024/break-day1-lunch.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day1-lunch.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day1-lunch.html</guid>
       <description> Content/abstract here.  </description>
     </item>
     
     <item>
       <title>Lunch</title>
-      <link>https://transparency.dev/schedule/break-day2-lunch.html</link>
+      <link>https://transparency.dev/summit2024/break-day2-lunch.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day2-lunch.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day2-lunch.html</guid>
       <description>Keynote  Content/abstract here.  </description>
     </item>
     
     <item>
       <title>Lunch</title>
-      <link>https://transparency.dev/schedule/break-day3-lunch.html</link>
+      <link>https://transparency.dev/summit2024/break-day3-lunch.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day3-lunch.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day3-lunch.html</guid>
       <description>Keynote  Content/abstract here.  </description>
     </item>
     
     <item>
       <title>ML Model Signing: Cryptographically paving the way to transparency in machine learning models</title>
-      <link>https://transparency.dev/schedule/modelsigning.html</link>
+      <link>https://transparency.dev/summit2024/modelsigning.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/modelsigning.html</guid>
+      <guid>https://transparency.dev/summit2024/modelsigning.html</guid>
       <description>How do I know where my machine learning model came from, and how can I prove it? This question has remained largely unanswered as adoption of machine learning and artificial intelligence has skyrocketed, with over 600,000 ML models freely available on model repositories like Hugging Face. Current cryptographic signing mechanisms are not designed with ML models in mind, nor are they fit for purpose largely due to one simple fact: models are not just a singular file.</description>
     </item>
     
     <item>
       <title>Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore</title>
-      <link>https://transparency.dev/schedule/sigstore.html</link>
+      <link>https://transparency.dev/summit2024/sigstore.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/sigstore.html</guid>
+      <guid>https://transparency.dev/summit2024/sigstore.html</guid>
       <description>This talk explores the motivations behind signature transparency, the role of transparency in Sigstore identities, and the ongoing improvements we&amp;rsquo;re making to enhance Sigstore&amp;rsquo;s transparency adoption.
  Speaker Slides Talk Recording   Speaker Hayden Blauzvern is a technical lead &amp;amp; manager on Google’s Open Source Security Team, focused on making open-source software more secure through code signing and applied transparency. Hayden is a maintainer and the community chair on the Sigstore project, and is currently focused on improving supply chain security for package registries.</description>
     </item>
     
     <item>
       <title>Registration</title>
-      <link>https://transparency.dev/schedule/registration.html</link>
+      <link>https://transparency.dev/summit2024/registration.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/registration.html</guid>
+      <guid>https://transparency.dev/summit2024/registration.html</guid>
       <description>A registration desk will be set up at the reception of Google London - 6 Pancras Square. Attendees will pick up their badges there and then be escorted up to the event space. Enjoy some coffee and breakfast and get to know your fellow conference attendees ahead of the talk sessions. Please be aware that attendees will be required to pick up a new badge each day they attend the conference.</description>
     </item>
     
     <item>
       <title>Shining a new light on Certificate Transparency</title>
-      <link>https://transparency.dev/schedule/letsencrypt.html</link>
+      <link>https://transparency.dev/summit2024/letsencrypt.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/letsencrypt.html</guid>
+      <guid>https://transparency.dev/summit2024/letsencrypt.html</guid>
       <description>Let&amp;rsquo;s Encrypt operates one of the largest Certificate Authorities, along with Certificate Transparency logs. This talk discusses our experiences both as a submitter to CT as well as a log operator. We are excited about the new Sunlight log implementation, and will cover why we think Sunlight will be a good fit for us and for the larger CT ecosystem.
  Speaker Slides Talk Recording   Speaker Matthew is the technical lead for the Let&amp;rsquo;s Encrypt SRE team, which operates our Certificate Authority and Certificate Transparency logs.</description>
     </item>
     
     <item>
       <title>The End</title>
-      <link>https://transparency.dev/schedule/break-day3-afternoon.html</link>
+      <link>https://transparency.dev/summit2024/break-day3-afternoon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day3-afternoon.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day3-afternoon.html</guid>
       <description> Break  </description>
     </item>
     
     <item>
       <title>Transparency.dev Summit Schedule</title>
-      <link>https://transparency.dev/schedule/friday.html</link>
+      <link>https://transparency.dev/summit2024/friday.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/friday.html</guid>
+      <guid>https://transparency.dev/summit2024/friday.html</guid>
       <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Breakout Readouts - Various   10:00am  ML Model Signing: Cryptographically paving the way to transparency in machine learning models - Mihai Maruseac   10:30am  Break   10:45am  Key Transparency at Proton - Daniel Huigens   11:15am  ⚡ Lightning Talks - Various Speakers   12:15pm  Closing Session   12:30pm  Lunch   01:30pm  Witness Breakout - Session Leaders: Al Cutter, Filippo Valsorda   02:30pm  Break   03:00pm  💻 Birds of a Feather   04:00pm  The End        </description>
     </item>
     
     <item>
       <title>Transparency.dev Summit Schedule</title>
-      <link>https://transparency.dev/schedule/thursday.html</link>
+      <link>https://transparency.dev/summit2024/schedule.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/thursday.html</guid>
+      <guid>https://transparency.dev/summit2024/schedule.html</guid>
+      <description>Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:45am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:15pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:45pm  ⚡ Lightning Talk: From Issuance to Revocation: Enhancing Trust in Digital Identity Ecosystems with Transparency Logs - Edona Fasllija   01:00pm  Lunch   02:00pm  From Witnessing to Transparent Ecosystems - Filippo Valsorda, Andrea Barisani et al.</description>
+    </item>
+    
+    <item>
+      <title>Transparency.dev Summit Schedule</title>
+      <link>https://transparency.dev/summit2024/thursday.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2024/thursday.html</guid>
       <description> Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Breakfast &amp;amp; Hallway Track   09:30am  Chrome Lessons Learned from CT - Joe DeBlasio, Philippe Boneff   10:00am  Shining a new light on Certificate Transparency - Matthew McPherrin   10:30am  Break   10:45am  Verifiable state transitions within a memory constrained environment - Chervine Majeri   11:15am  Imagining a zero-trust future for PyPI - William Woodruff   11:45am  Using verifiable logs to bring human-centred transparency to healthcare - Peter Wells   12:15pm  Lunch   01:30pm  Certificate Transparency Breakout Room (Part I) - Session Leader: Joe DeBlasio   01:30pm  Key Transparency Breakout Room (Part I) - Session Leaders: Jason Novak, Patrick Flynn   01:30pm  Binary Transparency Breakout Room (Part I) - Session Leader: Hayden Blauzvern   03:00pm  Break   03:30pm  Key Transparency Breakout Room (Part II) - Session Leaders: Jason Novak, Patrick Flynn   03:30pm  Certificate Transparency Breakout Room (Part II) - Session Leader: Joe DeBlasio   03:30pm  Binary Transparency Breakout Room (Part II) - Session Leader: Hayden Blauzvern   05:00pm  🌟 Rooftop Reception 🌟        </description>
     </item>
     
     <item>
       <title>Transparency.dev Summit Schedule</title>
-      <link>https://transparency.dev/schedule/wednesday.html</link>
+      <link>https://transparency.dev/summit2024/wednesday.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/wednesday.html</guid>
+      <guid>https://transparency.dev/summit2024/wednesday.html</guid>
       <description>Wednesday, October 9  Thursday, October 10  Friday, October 11     Time  Agenda     09:00am  Registration   10:00am  Welcome and Introduction   10:15am  Keynote - Al Cutter   10:45am  What is Sigsum and how can I use it for my application? - Rasmus Dahlberg, he/him   11:15am  Break   11:45am  Introducing Trillian Tessera - Al Cutter, Martin Hutchinson   12:15pm  Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore - Hayden Blauzvern   12:45pm  ⚡ Lightning Talk: From Issuance to Revocation: Enhancing Trust in Digital Identity Ecosystems with Transparency Logs - Edona Fasllija   01:00pm  Lunch   02:00pm  From Witnessing to Transparent Ecosystems - Filippo Valsorda, Andrea Barisani et al.</description>
     </item>
     
     <item>
       <title>Using verifiable logs to bring human-centred transparency to healthcare</title>
-      <link>https://transparency.dev/schedule/healthcare.html</link>
+      <link>https://transparency.dev/summit2024/healthcare.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/healthcare.html</guid>
+      <guid>https://transparency.dev/summit2024/healthcare.html</guid>
       <description> Talk Recording  </description>
     </item>
     
     <item>
       <title>Verifiable state transitions within a memory constrained environment</title>
-      <link>https://transparency.dev/schedule/hsm.html</link>
+      <link>https://transparency.dev/summit2024/hsm.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/hsm.html</guid>
+      <guid>https://transparency.dev/summit2024/hsm.html</guid>
       <description>Highly sensitive code managing crypto secrets needs to run in secure environments, often very constrained in capacity. Given these constraints, I will explain how we managed to fit as much logic as possible, as close to the secrets as possible, while also addressing the roles that transparency and verifiability play in ensuring security and trust.
  Talk Recording   Speaker Chervine is an engineer leading the R&amp;amp;D team at Taurus, where he helps design scalable, secure systems.</description>
     </item>
     
     <item>
       <title>Welcome and Introduction</title>
-      <link>https://transparency.dev/schedule/intro.html</link>
+      <link>https://transparency.dev/summit2024/intro.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/intro.html</guid>
+      <guid>https://transparency.dev/summit2024/intro.html</guid>
       <description>Welcome and introductory session to kick off Transparency.dev Summit</description>
     </item>
     
     <item>
       <title>What is Sigsum and how can I use it for my application?</title>
-      <link>https://transparency.dev/schedule/sigsum.html</link>
+      <link>https://transparency.dev/summit2024/sigsum.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/sigsum.html</guid>
+      <guid>https://transparency.dev/summit2024/sigsum.html</guid>
       <description>Sigsum is a free and open-source software project that makes a signer&amp;rsquo;s key-usage transparent. This talk introduces the design, which can be used as a building block to transparently publish executable binaries, reproducibility statements, KT tree heads, configuration files, and much more.
  Speaker slides Talk Recording   Speaker Rasmus Dahlberg is a computer scientist and software engineer based in Karlstad, Sweden. He has contributed to transparency log research and development since 2016.</description>
     </item>
     
     <item>
       <title>Witness Breakout</title>
-      <link>https://transparency.dev/schedule/witness-breakout.html</link>
+      <link>https://transparency.dev/summit2024/witness-breakout.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/witness-breakout.html</guid>
+      <guid>https://transparency.dev/summit2024/witness-breakout.html</guid>
       <description>Witness Discussion Room (Part I) In Wednesday’s talks, we explored the significance of witnessing and the need to realize fully transparent, end-to-end ecosystems. Now, it’s time to dive into the practicalities of making this vision a reality. Join this breakout session to discuss how we, as a community, can collaborate to bring these ideas to life in meaningful and effective ways. Session Leaders: Al Cutter, Filippo Valsorda</description>
     </item>
     
     <item>
       <title>⚡ Lightning Talk: CT Logs Ingestion from RFC6962 to Static CT API</title>
-      <link>https://transparency.dev/schedule/logingestion.html</link>
+      <link>https://transparency.dev/summit2024/logingestion.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/logingestion.html</guid>
+      <guid>https://transparency.dev/summit2024/logingestion.html</guid>
       <description>This lightning talk explores the CT Logs Ingestion journey from RFC6962 to Static CT API. Curious about the real-world implementation story and lesson learnt? Join me in this talk to embrace the Static CT API logs.
  Talk Recording   Speaker Roger Ng is a software engineer of Google Open Source Security team (GOSST) / TrustFabric based in London, working on security transparency.</description>
     </item>
     
     <item>
       <title>⚡ Lightning Talk: Deps.dev &amp; Certificate Transparency data: What next?</title>
-      <link>https://transparency.dev/schedule/depsdev.html</link>
+      <link>https://transparency.dev/summit2024/depsdev.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/depsdev.html</guid>
+      <guid>https://transparency.dev/summit2024/depsdev.html</guid>
       <description>What metrics, APIs and indexes on Certificate Transparency data would be useful to you? New to the CT ecosystem, deps.dev is excited to be working with Certificate Transparency data and wants to hear from you. Hear about the insights deps.dev has provided on open source packages, and hear about potential insights that deps.dev could provide into Certificate Transparency data.
  Talk Recording   Speaker Josie is an engineer at Google, working on Open Source Supply Chain Security.</description>
     </item>
     
     <item>
       <title>⚡ Lightning Talk: From Issuance to Revocation: Enhancing Trust in Digital Identity Ecosystems with Transparency Logs</title>
-      <link>https://transparency.dev/schedule/digitalid.html</link>
+      <link>https://transparency.dev/summit2024/digitalid.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/digitalid.html</guid>
+      <guid>https://transparency.dev/summit2024/digitalid.html</guid>
       <description>In this lightning talk, we will explore the critical role of transparency logs in establishing trust and security within digital identity ecosystems. Transparency logs provide a robust mechanism for creating an auditable, tamper-proof record of credential lifecycle events, including issuance, presentations, and revocations. To implement these logs effectively, it is essential to utilize privacy-preserving cryptographic techniques, alongside scalable log structures and proof systems that can meet the requirements of large-scale digital identity solutions.</description>
     </item>
     
     <item>
       <title>⚡ Lightning Talk: Multi-layer interoperability for transparency technology</title>
-      <link>https://transparency.dev/schedule/lightning-talks-day1.html</link>
+      <link>https://transparency.dev/summit2024/lightning-talks-day1.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/lightning-talks-day1.html</guid>
+      <guid>https://transparency.dev/summit2024/lightning-talks-day1.html</guid>
       <description>Transparency approaches have extremely wide applicability throughout the technology and information landscape. Different use cases have different functional and non-functional requirements which suggest the need for a diverse – but not too diverse – transparency ecosystem to enable broad, practical adoption. This lightning talk aims to stimulate conversation and highlight opportunities for advancement of transparency technology through interoperable data structures, standards, open source code, and group cooperation.
  Talk Recording   Speaker Jon brings deep expertise in cryptography, cybersecurity, and blockchains to DataTrails where we’re tackling the thorny problems of Supply Chain Security, Integrity, Transparency and Trust for sensitive use cases from nuclear waste handling to connected industry.</description>
     </item>
     
     <item>
       <title>⚡ Lightning Talk: SCT Auditing Revisited</title>
-      <link>https://transparency.dev/schedule/sct-auditing.html</link>
+      <link>https://transparency.dev/summit2024/sct-auditing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/sct-auditing.html</guid>
+      <guid>https://transparency.dev/summit2024/sct-auditing.html</guid>
       <description>A Signed Certificate Timestamp (SCT) is a promise that a Certificate Transparency (CT) log will eventually incorporate a certificate into its public log. This inclusion allows users to account for issued certificates and detect misissued certificates. By default, clients do not check if the log fulfilled the promise given with the SCT, as requesting a proof of inclusion from the log leaks the browsing history to the log. If an SCT is not checked, a sophisticated attacker could serve a bogus certificate that compromises privacy.</description>
     </item>
     
     <item>
       <title>⚡ Lightning Talk: The design space between CT and KT</title>
-      <link>https://transparency.dev/schedule/ctkt.html</link>
+      <link>https://transparency.dev/summit2024/ctkt.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/ctkt.html</guid>
+      <guid>https://transparency.dev/summit2024/ctkt.html</guid>
       <description>Append-only ledgers like Certificate Transparency logs are simple, elegant and the bedrock of most modern transparency systems. Key Transparency systems are comparatively complex, but achieve much stronger privacy and transparency properties and have in recent years proven they can be successfully deployed at a global scale. This talk will consider systems that fall into the middle ground between these two approaches and ask whether they offer an interesting path forward for real world applications like the WebPKI.</description>
     </item>
     
     <item>
       <title>⚡ Lightning Talks</title>
-      <link>https://transparency.dev/schedule/lightning-talks-day3.html</link>
+      <link>https://transparency.dev/summit2024/lightning-talks-day3.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/lightning-talks-day3.html</guid>
+      <guid>https://transparency.dev/summit2024/lightning-talks-day3.html</guid>
       <description>Lightning Talks Schedule:
  Verifiable runtime transparency - Fredrik Strömberg  Speaker Slides Talk Recording   Open Source Project Veraison - Yogesh Deshpande  Speaker Slides Talk Recording   Auditing key transparency and making it public - Thibault Meunier  Speaker Slides Talk Recording   The challenge of adopting post quantum cryptography - Bas Westerbaan  Speaker Slides Talk Recording   Taking the pain a way with linear logs: its just an array!</description>
     </item>
     
     <item>
       <title>🌟 Rooftop Reception 🌟</title>
-      <link>https://transparency.dev/schedule/rooftop-reception.html</link>
+      <link>https://transparency.dev/summit2024/rooftop-reception.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/rooftop-reception.html</guid>
+      <guid>https://transparency.dev/summit2024/rooftop-reception.html</guid>
       <description>All event attendees are invited to join us in the A Space Oddity event room on the 11th floor at Google for a reception with food, drinks and amazing views of London!</description>
     </item>
     
     <item>
       <title>🎯 Evening Reception</title>
-      <link>https://transparency.dev/schedule/break-day1-afternoon.html</link>
+      <link>https://transparency.dev/summit2024/break-day1-afternoon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/break-day1-afternoon.html</guid>
+      <guid>https://transparency.dev/summit2024/break-day1-afternoon.html</guid>
       <description>All event attendees are invited to join us for an evening reception with food, drinks and some fun 🎯! More details to be shared.</description>
     </item>
     
     <item>
       <title>💻 Birds of a Feather</title>
-      <link>https://transparency.dev/schedule/bof.html</link>
+      <link>https://transparency.dev/summit2024/bof.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/schedule/bof.html</guid>
+      <guid>https://transparency.dev/summit2024/bof.html</guid>
       <description>The final segment of the conference focuses on collaborative efforts to advance our ecosystem. The Birds-of-a-Feather session offers an informal space where everyone is welcome to share ideas, work on projects, or dive deep into code, all while fostering meaningful connections. Community leaders will be available to answer questions and engage with attendees on a variety of topics. Some of the proposed topics include:
  Monitoring logs Sigsum  </description>
     </item>

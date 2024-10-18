@@ -1,0 +1,274 @@
+<!doctype html>
+
+ <!--
+  Copyright 2020 Google LLC
+ 
+  Licensed under the Apache License, Version 2.0 (the 'License');
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an 'AS IS' BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+      
+        
+          What is Sigsum and how can I use it for my application?
+         |
+       Trillian
+    </title>
+
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173407084-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://transparency.dev/css/styles.min.23bbbdf08e68ae404f6dcc666521c2f4bb1e5fa1892fa4d41bb8601d407aa603.css" integrity="sha256-I7u98I5orkBPbcxmZSHC9LseX6GJL6TUG7hgHUB6pgM=">
+    <script>
+      'use strict';
+
+      function ready(fn) {
+        if (document.attachEvent
+          ? document.readyState === 'complete'
+          : document.readyState !== 'loading') {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      function addClass(el, className) {
+        if (el.classList) {
+          el.classList.add(className);
+        } else {
+          el.className += ' ' + className;
+        }
+      }
+
+      function removeClass(el, className) {
+        if (el.classList) {
+          el.classList.remove(className);
+        } else {
+          el.className = el.className.replace(
+              new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '
+          );
+        }
+      }
+    </script>
+  </head>
+<body>
+    
+
+<div class="bg-white z-50 w-full font-google" id="site-header">
+<nav class="glue-page test-fixed">
+  <div class="lg:hidden absolute h-16 flex items-center cursor-pointer">
+    <div id="toggleMenu" class="h-8 flex items-center justify-left px-4 -mx-4 rounded text-Grey-700">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
+        <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  </div>
+  <ul class="mx-auto lg:float-left h-16 flex items-center">
+    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Tamper-evident logs</a></li>
+  </ul>
+  <ul class="invisible lg:visible float-right h-16 flex items-center">
+    <li class="text-right inline mr-6"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+    <li class="text-right inline mr-6"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
+    <li class="text-right inline mr-6"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
+    <li class="text-right inline mr-6"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+    <li class="text-right inline mr-6"><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
+  </ul>
+</nav>
+<ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
+  <li class="gmb-2"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+  <li class="gmb-2"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
+  <li class="gmb-2"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+  <li class="gmb-2"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
+  <li class="gmb-2"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+  <li class=""><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
+</ul>
+</div>
+<div id="nav-spacer" class="h-16"></div>
+
+<script>
+  'use strict';
+  (function(){
+
+    var doc = document.documentElement;
+    var w = window;
+
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+
+    var header = document.getElementById('site-header');
+
+    var checkScroll = function() {
+
+      
+
+
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        
+        direction = 1;
+      }
+
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
+
+      prevScroll = curScroll;
+    };
+
+    var toggleHeader = function(direction, curScroll) {
+      if (direction === 2 && curScroll > 64) {
+        addClass(header, 'hide');
+        addClass(mobileMenu, 'hidden');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        removeClass(header, 'hide');
+        prevDirection = direction;
+      }
+    };
+
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function toggleMenuVisibility() {
+      if (mobileMenu.classList.contains('hidden')) {
+        removeClass(mobileMenu, 'hidden');
+        return;
+      };
+      addClass(mobileMenu, 'hidden');
+    };
+
+    window.addEventListener('scroll', checkScroll);
+    document.getElementById('toggleMenu').onclick = toggleMenuVisibility;
+
+  })();
+</script>
+
+<div class="glue-page gmt-6 gmb-4 markdown">
+  <div class="glue-grid">
+    <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
+      <h1 class="headline3 md:text-center mb-5 md:mb-16">
+        <div class="eyebrow">Transparency.dev Summit 2024</div>
+        What is Sigsum and how can I use it for my application?
+        <div class="eyebrow"></div>
+        <div class="eyebrow">🗓️ Wednesday 9 Oct 2024, 10:45am</div>
+        <div class="eyebrow">📍 Ziggy Stardust</div>
+      </h1>
+      
+        <div class="gmb-5"></div>
+      
+    </div>
+  </div>
+  <div class="glue-grid">
+    <aside class="submenu col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 gmb-3">
+      
+      
+        <p class="font-bold">
+          Rasmus Dahlberg, he/him
+        </p>
+        
+      
+      
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
+      <div class="font-google font-medium">
+<p><a href="https://www.sigsum.org">Sigsum</a> is a free and open-source software project that
+makes a signer&rsquo;s key-usage transparent.  This talk introduces the design, which
+can be used as a building block to transparently publish executable binaries,
+reproducibility statements, KT tree heads, configuration files, and much more.</p>
+<ul>
+<li><a href="https://git.glasklar.is/rgdd/tdev-summit-24/-/blob/main/slides.pdf">Speaker slides</a></li>
+<li><a href="https://youtu.be/Mp23yQxYm2c?si=hhkYjqvWBOgzCDyV">Talk Recording</a></li>
+</ul>
+<hr>
+<h3 id="speaker">Speaker</h3>
+<p>Rasmus Dahlberg is a computer scientist and software engineer based in Karlstad,
+Sweden.  He has contributed to transparency log research and development since
+2016.  Examples of recent contributions include his involvement in the Sigsum
+project and the C2SP community specifications related to witness cosigning.</p>
+</div>
+    </article>
+  </div>
+</div>
+
+
+<div class="text-white bg-Grey-050 font-google font-medium footer">
+
+  <div class="glue-page gpt-4 gpb-5">
+    <div class="glue-grid">
+      <div class="col-span-4 sm:col-span-5 sm:col-start-2">
+        <h2 class="text-Grey-900">Learn more about tamper-evident logs</h2>
+        <ul class="text-Grey-600">
+          <li>
+            <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Benefits of tamper-evident logs</a>
+          </li>
+          <li>
+            <a href='/#trillian' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Trillian: an open-source verifiable log</a>
+          </li>
+          <li>
+            <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Verifiable Data Structures</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+      <div class="col-span-4 gmt-2 sm:col-span-5 sm:mt-0">
+        <h2 class="text-Grey-900">Applications of tamper-evident logs</h2>
+        <ul class="text-Grey-600 gmb-4">
+          <li>
+            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Add tamper-checking to a package manager</a>
+          </li>
+          <li>
+            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Reliably log all actions performed on your servers</a>
+          </li>
+          <li>
+            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Strengthen discovery of encryption keys with Key Transparency</a>
+          </li>
+          <li>
+            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Discourage misbehaviour by third parties in Certificate Transparency</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
+        <img src="/images/logos/google-logo.svg" alt="Google's Logo" />
+        <p class="mt-6 sm:mt-0 sm:ml-16 text-sm">
+          <a href="/privacy/" class="text-Grey-600 hover:text-Grey-900 hover:no-underline">
+            Privacy
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
