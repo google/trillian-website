@@ -16,6 +16,7 @@ speakerTitle:
 ### Witness Discussion Room (Part I)
 
 In Wednesday’s talks, we explored the significance of witnessing and the need to realize fully transparent, end-to-end ecosystems. Now, it’s time to dive into the practicalities of making this vision a reality. Join this breakout session to discuss how we, as a community, can collaborate to bring these ideas to life in meaningful and effective ways.
+
 ---
 
 ### Session Leaders:
