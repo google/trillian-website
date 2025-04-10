@@ -31,19 +31,39 @@
   </url><url>
     <loc>https://transparency.dev/summit2024/break-day3-morning.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/break-day1-afternoon.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/break-day1-morning.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/break-day2-afternoon.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/break-day2-morning.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/break-day3-morning.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/breakfast-day2.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/breakfast-day3.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/breakfast-day2.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/breakfast-day3.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/readouts.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/ct-breakout-part1.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/ct-breakout-part1.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/ct-breakout-part2.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/ct-breakout-part2.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/chrome.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/closing.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/closing.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit/codeofconduct/</loc>
   </url><url>
@@ -65,11 +85,17 @@
   </url><url>
     <loc>https://transparency.dev/summit2024/keynote.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/keynote.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/break-day1-lunch.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/break-day2-lunch.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/break-day3-lunch.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/break-day1-lunch.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/break-day2-lunch.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/modelsigning.html</loc>
   </url><url>
@@ -79,19 +105,29 @@
   </url><url>
     <loc>https://transparency.dev/summit2024/registration.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/registration.html</loc>
+  </url><url>
     <loc>https://transparency.dev/application/reliably-log-all-actions-performed-on-your-servers/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/letsencrypt.html</loc>
   </url><url>
     <loc>https://transparency.dev/application/strengthen-discovery-of-encryption-keys/</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/sigsum.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/tesseratalk.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/break-day3-afternoon.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/break-day3-afternoon.html</loc>
   </url><url>
     <loc>https://transparency.dev/articles/tile-based-logs/</loc>
   </url><url>
     <loc>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/friday.html</loc>
   </url><url>
@@ -100,6 +136,14 @@
     <loc>https://transparency.dev/summit2024/thursday.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/wednesday.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/monday.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/schedule.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/tuesday.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/wednesday.html</loc>
   </url><url>
     <loc>https://transparency.dev/articles/transparency-an-implementers-story/</loc>
   </url><url>
@@ -113,6 +157,8 @@
   </url><url>
     <loc>https://transparency.dev/summit2024/intro.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/intro.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/sigsum.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/witness-breakout.html</loc>
@@ -123,6 +169,8 @@
   </url><url>
     <loc>https://transparency.dev/summit2024/digitalid.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/digitalid.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/lightning-talks-day1.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/sct-auditing.html</loc>
@@ -131,9 +179,13 @@
   </url><url>
     <loc>https://transparency.dev/summit2024/lightning-talks-day3.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/reception.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/rooftop-reception.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/break-day1-afternoon.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/break-day1-afternoon.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/bof.html</loc>
   </url>
