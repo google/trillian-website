@@ -25,7 +25,7 @@ Harassment includes offensive comments related to gender, age, sexual orientatio
 
 Unacceptable behavior in a conference setting includes actions that disrupt the productive exchange of ideas and create a hostile environment. This can manifest as repeated interruptions during presentations or discussions, excessive arguing that derails the conversation, and bad faith criticisms that are personal or not aimed at constructive dialogue. Instead, disagreements should be approached with openness and curiosity, focusing on identifying and evaluating trade offs rather than pushing a single idea. Participants should strive to create a culture where questions and proposals are welcome, challenges are expressed concretely with suggestions for improvement, and communication is concise and respectful.
 
-There are different ways to report an incident. Please contact a conference organizer on site or email Patrick Flynn (paflynn@google.com) or Tracy Miranda (tracy@tracymiranda.com).
+There are different ways to report an incident. Please contact a conference organizer on site or email Patrick Flynn (paflynn@google.com) or Kat Joyce (kat@taknira.com).
 
 ### Disclaimer
 
