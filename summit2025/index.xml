@@ -101,6 +101,26 @@ Preliminary Agenda  TBD   Session Leader: TBD description</description>
     </item>
     
     <item>
+      <title>Implementing transparency in UEFI boot managers</title>
+      <link>https://transparency.dev/summit2025/talks/uefi.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/uefi.html</guid>
+      <description>The creation of go-boot, an UEFI boot manager written entirely in bare metal Go, eases use of modern cryptographic frameworks in very early boot stages. We will showcase our integration effort in bringing transparency frameworks to pre-boot environments and their role in defining an API abstraction for bootloader use in Secure Boot and Claimant model enforcement.
+ Speakers Andrea Barisani (https://andrea.bio) is an internationally recognized security researcher. Since owning his first Commodore-64 he has never stopped studying new technologies, developing unconventional attack vectors and exploring what makes things tick…and break.</description>
+    </item>
+    
+    <item>
+      <title>Key Transparency / When Collusion-Based Security Fails</title>
+      <link>https://transparency.dev/summit2025/talks/kt-brendon.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/kt-brendon.html</guid>
+      <description>Almost all deployed transparency systems require finding at least one independent and trustworthy third party to help operate the system. Key Transparency systems, however, are deployed by individual organizations to protect their own users. Finding an independent and trustworthy third party in these use-cases is often an overwhelming hurdle to deployment. This talk discusses why, and how the Key Transparency protocol being standardized at IETF solves this problem.
+ Speaker Brendan is a freelance cryptography engineer who focuses on developing and deploying standards that make the whole Internet safer.</description>
+    </item>
+    
+    <item>
       <title>Keynote</title>
       <link>https://transparency.dev/summit2025/keynote.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -140,6 +160,25 @@ Breakfast
     </item>
     
     <item>
+      <title>Reproducible Builds, a very brief summary of the last 12 years and a glimpse into the future</title>
+      <link>https://transparency.dev/summit2025/talks/reproducible-builds.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/reproducible-builds.html</guid>
+      <description>In this lightning talk Holger will briefly present the achievements of the Reproducible Builds project in the last 12 years, covering both upstream developments as well as some distro specific details. The talk will conclude with an outlook into the future and an invitation to collaborate to bring transparency logs into Reproducible Builds projects.
+ Speaker Holger Levsen has been a Debian user since almost 30 years and an official Debian member since 2007.</description>
+    </item>
+    
+    <item>
+      <title>Split-View protection in centralised transparency logs</title>
+      <link>https://transparency.dev/summit2025/talks/split-view.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/split-view.html</guid>
+      <description>In this talk I will present an approach to achieve split-view protection in centralised transparency log. The technique relies on a few cryptographic building blocks (digital signatures and verifiable random function) and is provably secure against 1/3 corrupted active users, in settings where all communication goes via the transparency log. This is the case of the original design of messaging apps, and may be relevant to other centralised services. For further details, see https://eprint.</description>
+    </item>
+    
+    <item>
       <title>Talk 1</title>
       <link>https://transparency.dev/summit2025/sigsum.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -167,6 +206,15 @@ Breakfast
       
       <guid>https://transparency.dev/summit2025/break-day3-afternoon.html</guid>
       <description> Break  </description>
+    </item>
+    
+    <item>
+      <title>Transparency.dev Summit 2025 Confirmed Talks</title>
+      <link>https://transparency.dev/summit2025/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/</guid>
+      <description>Transparency.dev Summit Confirmed Talks   Accepted Talks     Brendan McMillion  Key Transparency / When Collusion-Based Security Fails   Elena Pagnin  Split-View protection in centralised transparency logs   Holger Levsen  Reproducible Builds, a very brief summary of the last 12 years and a glimpse into the future   Andrea Barisani, Daniele Bianco  Implementing transparency in UEFI boot managers        </description>
     </item>
     
     <item>
@@ -198,7 +246,8 @@ Dennis Jackson, Mozilla</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/summit2025/schedule/</guid>
-      <description>Transparency.dev Summit 2025 Schedule The schedule for the 2025 summit is currently a work in progress and may change.  Full Schedule     Monday, 20th October  9:00am  Registration    10:00am  Welcome    10:15am  Keynote    10:45am  Break    11:00am  Certificate Transparency talks (x3)    12:30pm  Lunch    2:00pm  Certificate Transparency talks (x3 with break)    3:45pm  Breakout sessions    5:00pm  Lightning talks    5:30pm  Closing remarks    Evening  Activities (TBD)   Tuesday, 21st October  9:00am  Welcome    9:15am  Talks (x5 with break)    12:30pm  Lunch    2:00pm  Talks (x3 with break)    3:45pm  Breakout sessions    5:00pm  Lightning talks    5:30pm  Closing remarks    Evening  Social dinner - location TBC, within walking distance of venue   Wednesday, 22nd October  9:00am  Welcome    9:15am  Quiz    10:00am  Lightning talks (unscheduled)    10:45am  Breakout sessions    12:00pm  Close        </description>
+      <description>Transparency.dev Summit 2025 Schedule The schedule for the 2025 summit is currently a work in progress and may change.
+Talks that have been accepted so far can be seen here.  Full Schedule     Monday, 20th October  9:00am  Registration    10:00am  Welcome    10:15am  Keynote    10:45am  Break    11:00am  Certificate Transparency talks (x3)    12:30pm  Lunch    2:00pm  Certificate Transparency talks (x3 with break)    3:45pm  Breakout sessions    5:00pm  Lightning talks    5:30pm  Closing remarks    Evening  Activities (TBD)   Tuesday, 21st October  9:00am  Welcome    9:15am  Talks (x5 with break)    12:30pm  Lunch    2:00pm  Talks (x3 with break)    3:45pm  Breakout sessions    5:00pm  Lightning talks    5:30pm  Closing remarks    Evening  Social dinner - location TBC, within walking distance of venue   Wednesday, 22nd October  9:00am  Welcome    9:15am  Quiz    10:00am  Lightning talks (unscheduled)    10:45am  Breakout sessions    12:00pm  Close        </description>
     </item>
     
     <item>

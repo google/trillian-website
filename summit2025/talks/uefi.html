@@ -23,13 +23,11 @@
     <title>
       
         
-          Code of Conduct
+          Implementing transparency in UEFI boot managers
          |
        Trillian
     </title>
 
-    
-      <meta name="description" content="This means you can detect if a package file has been modified since it was first added to the package manager." property="og:description"/>
     
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
@@ -170,153 +168,57 @@
   })();
 </script>
 
-<section class="glue-page gmt-6 gmb-4">
+<div class="glue-page gmt-6 gmb-4 markdown">
   <div class="glue-grid">
-    <div class="col-span-12 lg:col-span-10 lg:col-start-2 md:text-center">
-      <h1 class="headline2">
+    <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
+      <h1 class="headline3 md:text-center mb-5 md:mb-16">
+        <div class="eyebrow">Transparency.dev Summit</div>
+	
+        Implementing transparency in UEFI boot managers
         <div class="eyebrow"></div>
-        Code of Conduct
+        
+        
       </h1>
       
-        <img src="/images/transparency-dev-summit/tdev_summit_banner.svg" class="gmt-4 illustration-mb w-full" />
+        <div class="gmb-5"></div>
       
     </div>
   </div>
-  <div class="glue-grid gmb-5 linked-headers">
-    <aside class="submenu col-span-4 gpb-4 sm:col-span-6 md:col-span-4 lg:col-span-3 lg:col-start-2 md:pb-0 md:h-screen md:sticky top-header-plus-padding">
-      <ul id="section-links-list" class="bg-Grey-100">
+  <div class="glue-grid">
+    <aside class="submenu col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 gmb-3">
+      
+      
+        <p class="font-bold">
+          Andrea Barisani, Daniele Bianco
+        </p>
         
-        
-          <li><a href="#code-of-conduct">Code of Conduct</a></li>
-        
-          <li><a href="#the-full-version">The Full Version</a></li>
-        
-      </ul>
+      
+      
     </aside>
-    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-7 gmb-7 markdown">
-      <h2 id="code-of-conduct">Code of Conduct</h2>
-<p>All event participants, whether they are attending in-person or participating virtually, are expected to behave in accordance with professional standards, the following code of conduct as well as venue policies and applicable laws. We expect cooperation from all participants to help ensure a safe environment for everyone.‍</p>
-<h3 id="tldr">TL;DR</h3>
-<p>We are committed to fostering a positive and inclusive environment for all participants. Our event is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). Constructive engagement is encouraged, where ideas are shared respectfully and with an openness to dialogue. Disruptive interruptions, personal judgments on others' work, and non-constructive, repetitive debate are not conducive to a productive atmosphere and will not be tolerated. We expect all attendees to contribute thoughtfully and help maintain a collaborative space for learning and growth. Anyone who witnesses or is subjected to unacceptable behavior should notify a conference organizer at once.</p>
-<h2 id="the-full-version">The Full Version</h2>
-<p>Harassment includes offensive comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately. Speakers, sponsors and attendees are also subject to the anti-harassment policy. In particular, community members or organizers should not use sexualized images, activities, or other material. If a participant engages in harassing behavior, the event organizers will take any action they deem appropriate, including warning the offender, expulsion from the event or community. If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact an organiser immediately. We value your attendance. We expect participants to follow these rules on all utilised platforms.</p>
-<p>Unacceptable behavior in a conference setting includes actions that disrupt the productive exchange of ideas and create a hostile environment. This can manifest as repeated interruptions during presentations or discussions, excessive arguing that derails the conversation, and bad faith criticisms that are personal or not aimed at constructive dialogue. Instead, disagreements should be approached with openness and curiosity, focusing on identifying and evaluating trade offs rather than pushing a single idea. Participants should strive to create a culture where questions and proposals are welcome, challenges are expressed concretely with suggestions for improvement, and communication is concise and respectful.</p>
-<p>There are different ways to report an incident. Please contact a conference organizer on site or email Patrick Flynn (<a href="mailto:paflynn@google.com">paflynn@google.com</a>) or Kat Joyce (<a href="mailto:kat@taknira.com">kat@taknira.com</a>).</p>
-<h3 id="disclaimer">Disclaimer</h3>
-<p>We are all learning together. This Code of Conduct is subject to change based upon our learnings as a community. We reserve the right to remove people from this community that are in violation of this code of conduct.</p>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
+      <div class="font-google font-medium">
+<p>The creation of go-boot, an UEFI boot manager written entirely in bare metal Go,
+eases use of modern cryptographic frameworks in very early boot stages. We will
+showcase our integration effort in bringing transparency frameworks to pre-boot
+environments and their role in defining an API abstraction for bootloader use in
+Secure Boot and Claimant model enforcement.</p>
+<hr>
+<h3 id="speakers">Speakers</h3>
+<p>Andrea Barisani (<a href="https://andrea.bio">https://andrea.bio</a>) is an internationally recognized security
+researcher. Since owning his first Commodore-64 he has never stopped studying
+new technologies, developing unconventional attack vectors and exploring what
+makes things tick…and break. His main focus lies on the converge between secure
+hardware and software, an interest consolidated in the authorship of the USB
+armory hardware project and the TamaGo bare metal framework.</p>
+<p>Daniele Bianco is a Principal Security Consultant at Reversec where he applies
+his long experience in embedded system security services, built ahead of its
+times in his Inverse Path days. He his now responsible for all testing
+activities in Reversec Product Security team.</p>
+</div>
 
     </article>
   </div>
-</section>
-
-<script>
-  const scrollHelper = (function() {
-    let scrolling = false;
-    let scrollHandlers = [];
-
-    const recordPageIsScrolling = function(e) {
-      scrolling = true;
-    };
-
-    const checkAndRunScrollHandlers = function() {
-      if (!scrolling || scrollHandlers.length == 0) {
-        return;
-      }
-      scrolling = false;
-
-      console.debug('running ', scrollHandlers.length, 'scroll handlers:', scrollHandlers);
-
-      for (let i = 0, size = scrollHandlers.length; i < size; i++) {
-        const shouldDetach = scrollHandlers[i]();
-
-        if (shouldDetach) {
-          console.debug('scroll handler is done, will remove');
-          scrollHandlers[i] = false; 
-        }
-      }
-
-      scrollHandlers = scrollHandlers.filter(function(h) {
-        return h != false;
-      }); 
-    };
-
-    ready(function() {
-      setInterval(checkAndRunScrollHandlers, 500);
-      window.addEventListener('scroll', recordPageIsScrolling);
-    });
-
-    return {
-      
-
-      
-      
-      
-      addScrollHandler: function(handler) {
-        console.log("handler", handler);
-        scrollHandlers.push(handler);
-      },
-
-      scrollYIsBetween: function(lower, upper) {
-        console.log("checking between ", lower, upper);
-        return (lower <= window.scrollY && window.scrollY < upper);
-      },
-
-      
-      getScrollPercent: function() {
-        const h = document.documentElement;
-        const b = document.body;
-        const st = 'scrollTop';
-        const sh = 'scrollHeight';
-        return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-      },
-    };
-  })();
-
-  const links = document.getElementById('section-links-list').getElementsByTagName('a');
-  const h2s = document.getElementById('content').getElementsByTagName('h2');
-
-  function highlightSectionLink(j) {
-    for (let step = 0; step < links.length; step++) {
-      
-      removeClass(links[step], 'in-section');
-    }
-    addClass(links[j], 'in-section');
-  }
-
-  ready(function() {
-    scrollHelper.addScrollHandler(function() {
-        if (scrollHelper.scrollYIsBetween(0, 711)) {
-          highlightSectionLink(0);
-        }
-    });
-    scrollHelper.addScrollHandler(function() {
-        if (scrollHelper.scrollYIsBetween(711, 1239)) {
-          highlightSectionLink(1);
-        }
-    });
-    scrollHelper.addScrollHandler(function() {
-        if (scrollHelper.scrollYIsBetween(1239, 2347)) {
-          highlightSectionLink(2);
-        }
-    });
-    scrollHelper.addScrollHandler(function() {
-        if (scrollHelper.scrollYIsBetween(2347, 2755)) {
-          highlightSectionLink(3);
-        }
-    });
-    scrollHelper.addScrollHandler(function() {
-        if (scrollHelper.scrollYIsBetween(2755, 3211)) {
-          highlightSectionLink(4);
-        }
-    });
-    scrollHelper.addScrollHandler(function() {
-        if (scrollHelper.scrollYIsBetween(3211, 3475)) {
-          highlightSectionLink(5);
-        }
-    });
-  });
-
-</script>
+</div>
 
 
 <div class="text-white bg-Grey-050 font-google font-medium footer">

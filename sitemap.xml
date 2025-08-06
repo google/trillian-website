@@ -75,7 +75,11 @@
   </url><url>
     <loc>https://transparency.dev/summit2024/pypi.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/uefi.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/tesseratalk.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/kt-brendon.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/keytransparencyproton.html</loc>
   </url><url>
@@ -109,7 +113,11 @@
   </url><url>
     <loc>https://transparency.dev/application/reliably-log-all-actions-performed-on-your-servers/</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/reproducible-builds.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/letsencrypt.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/split-view.html</loc>
   </url><url>
     <loc>https://transparency.dev/application/strengthen-discovery-of-encryption-keys/</loc>
   </url><url>
@@ -130,6 +138,8 @@
     <loc>https://transparency.dev/summit2024/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/organisation/</loc>
   </url><url>
