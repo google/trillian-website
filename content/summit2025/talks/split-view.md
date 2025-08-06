@@ -3,7 +3,7 @@ url: summit2025/talks/split-view.html
 layout: summittalk
 title: "Split-View protection in centralised transparency logs"
 topImage:
-type: lightning
+type:
 room:
 start:
 speaker: Elena Pagnin
