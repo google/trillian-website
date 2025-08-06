@@ -1,5 +1,5 @@
 ---
-url: summit2025/uefi.html
+url: summit2025/talks/uefi.html
 layout: summittalk
 title: "Implementing transparency in UEFI boot managers"
 topImage:

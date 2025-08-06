@@ -1,9 +1,13 @@
 ---
-url: summit2025/brendan-kt.html
+url: summit2025/talks/kt-brendon.html
 layout: summittalk
-title: Key Transparency / When Collusion-Based Security Fails
+title: "Key Transparency / When Collusion-Based Security Fails"
+topImage:
 type: lightning
+room:
+start:
 speaker: Brendan McMillion
+speakerTitle:
 ---
 
 <div class="font-google font-medium">

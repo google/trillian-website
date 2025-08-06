@@ -1,5 +1,5 @@
 ---
-url: summit2025/reproducible-builds.html
+url: summit2025/talks/reproducible-builds.html
 layout: summittalk
 title: "Reproducible Builds, a very brief summary of the last 12 years and a glimpse into the future"
 topImage:
