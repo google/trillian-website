@@ -3,11 +3,18 @@
   <div class="glue-grid">
     <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
       <h1 class="headline3 md:text-center mb-5 md:mb-16">
-        <div class="eyebrow">Transparency.dev Summit 2024</div>
+        <div class="eyebrow">Transparency.dev Summit</div>
+	{{ if eq .Params.type "lightning" }}
+	  ⚡ Lightning Talk ⚡<br>
+	{{end}}
         {{ .Title }}
         <div class="eyebrow"></div>
-        <div class="eyebrow">🗓️ {{ time.Format "Monday 2 Jan 2006, 03:04pm" .Params.start }}</div>
-        <div class="eyebrow">📍 {{ .Params.room }}</div>
+        {{ if .Params.start }}
+	  <div class="eyebrow">🗓️ {{ time.Format "Monday 2 Jan 2006, 03:04pm" .Params.start }}</div>
+        {{ end }}
+        {{ if .Params.room }}
+	  <div class="eyebrow">📍 {{ .Params.room }}</div>
+        {{ end }}
       </h1>
       {{ if .Params.topImage }}
         <img src="{{ partial "rel" (dict "context" . "url" (printf "%s%s" "/images/transparency-dev-summit/" .Params.topImage)) }}" class="gmt-3 illustration-mb w-full" />
