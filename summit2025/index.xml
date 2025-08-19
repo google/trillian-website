@@ -170,6 +170,15 @@ Breakfast
     </item>
     
     <item>
+      <title>silentct: A Certificate Transparency monitor that filters out the noise</title>
+      <link>https://transparency.dev/summit2025/talks/silentct.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/silentct.html</guid>
+      <description>Certificate Transparency sets out to make the web&amp;rsquo;s public-key infrastructure auditable. Yet, anyone who&amp;rsquo;s tried to opt in to such auditing quickly notices they get a lot of notifications about legitimately issued certificates. For example, a site that uses Let&amp;rsquo;s Encrypt regularly gets their certificate renewed once every 60 days. With the upcoming short lived certificates, this could go as low as once every few days. This is a lot of certificate notifications for a single site, not to mention if one is someone managing multiple sites!</description>
+    </item>
+    
+    <item>
       <title>Split-View protection in centralised transparency logs</title>
       <link>https://transparency.dev/summit2025/talks/split-view.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -214,7 +223,7 @@ Breakfast
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/summit2025/talks/</guid>
-      <description>Transparency.dev Summit Confirmed Talks   Accepted Talks     Brendan McMillion  Key Transparency / When Collusion-Based Security Fails   Elena Pagnin  Split-View protection in centralised transparency logs   Holger Levsen  Reproducible Builds, a very brief summary of the last 12 years and a glimpse into the future   Andrea Barisani, Daniele Bianco  Implementing transparency in UEFI boot managers        </description>
+      <description>Transparency.dev Summit Confirmed Talks   Accepted Talks     Brendan McMillion  Key Transparency / When Collusion-Based Security Fails   Elena Pagnin  Split-View protection in centralised transparency logs   Holger Levsen  Reproducible Builds, a very brief summary of the last 12 years and a glimpse into the future   Andrea Barisani, Daniele Bianco  Implementing transparency in UEFI boot managers   Rasmus Dahlberg  silentct: A Certificate Transparency monitor that filters out the noise        </description>
     </item>
     
     <item>
