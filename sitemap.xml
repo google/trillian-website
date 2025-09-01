@@ -7,6 +7,8 @@
     <loc>https://transparency.dev/get-started/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/webcat.html</loc>
+  </url><url>
     <loc>https://transparency.dev/application/add-tamper-checking-to-a-package-manager/</loc>
   </url><url>
     <loc>https://transparency.dev/</loc>
@@ -67,11 +69,19 @@
   </url><url>
     <loc>https://transparency.dev/summit/codeofconduct/</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/confidential-computing.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/crescendo.html</loc>
+  </url><url>
     <loc>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/package-registries.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/witness.html</loc>
   </url><url>
     <loc>https://transparency.dev/how-to-design-a-verifiable-system/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/gopherwatch.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/pypi.html</loc>
   </url><url>
@@ -91,6 +101,8 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/keynote.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/app-store.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/break-day1-lunch.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/break-day2-lunch.html</loc>
@@ -100,6 +112,8 @@
     <loc>https://transparency.dev/summit2025/break-day1-lunch.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/break-day2-lunch.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/mtcs.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/modelsigning.html</loc>
   </url><url>
@@ -160,6 +174,8 @@
     <loc>https://transparency.dev/summit2024/healthcare.html</loc>
   </url><url>
     <loc>https://transparency.dev/verifiable-data-structures/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/verifiable-indexes.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/hsm.html</loc>
   </url><url>

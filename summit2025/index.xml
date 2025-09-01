@@ -6,6 +6,16 @@
     <description>Recent content in Transparency.dev Summit on Transparency.dev</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/summit2025/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A decentralized integrity and transparency model for web applications</title>
+      <link>https://transparency.dev/summit2025/talks/webcat.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/webcat.html</guid>
+      <description>How can we bring transparency and integrity guarantees to a decentralized web, where open-source applications are hosted by many different entities? And how can we clearly communicate these complex trust relationships to end-users? This talk explores the challenges of modeling these dynamics in such ecosystems and presents design ideas from WEBCAT, a fail-closed framework that enables verifiable integrity for web applications.
+ Speaker Giulio is a researcher at Freedom of the Press Foundation.</description>
+    </item>
+    
+    <item>
       <title>Break</title>
       <link>https://transparency.dev/summit2025/break-day1-afternoon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -101,6 +111,45 @@ Preliminary Agenda  TBD   Session Leader: TBD description</description>
     </item>
     
     <item>
+      <title>Confidential computing: Trusted computing in the cloud</title>
+      <link>https://transparency.dev/summit2025/talks/confidential-computing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/confidential-computing.html</guid>
+      <description>The witness network safeguards against split-view attacks by transparency logs, but detecting malicious behavior by witnesses is more difficult than with transparency logs. Today&amp;rsquo;s witness network is primarily backed by custom hardware to protect witness private keys, but scaling the network will require an approach that&amp;rsquo;s easier to deploy.
+Confidential computing is a hardware backed approach to protecting virtual machines in the cloud, such that neither the cloud providers or operators can tamper with key material.</description>
+    </item>
+    
+    <item>
+      <title>Crescendo: Increasing the intensity of binary transparency in the Android ecosystem</title>
+      <link>https://transparency.dev/summit2025/talks/crescendo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/crescendo.html</guid>
+      <description>In this talk I will be discussing the progress that we made since The Odyssey, Android&amp;rsquo;s First Firmware Binary Transparency [CATS2023]. In particular, I will walk through the process of expanding coverage of the type of binaries that&amp;rsquo;s running on an Android device, and the rationale behind that.
+In particular, I will discuss how we expanded coverage from the granularity of an entire firmware as a whole to the APK level, particularly privileged/system APKs.</description>
+    </item>
+    
+    <item>
+      <title>End-to-End Transparent Package Registries</title>
+      <link>https://transparency.dev/summit2025/talks/package-registries.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/package-registries.html</guid>
+      <description>Over the last couple of years, we&amp;rsquo;ve seen signed provenance adopted by package registries to provide authenticity and integrity for artifacts, with transparency logs used to record signatures for discoverability of key and identity usage. How can we further leverage transparency to protect all parties involved in the production of software, adding transparency for producers, consumers and distributors?
+This talk will delve into software supply chain security for package registries, applying transparency systems to secure publication and distribution.</description>
+    </item>
+    
+    <item>
+      <title>Go module notifications with gopherwatch.org, and more!</title>
+      <link>https://transparency.dev/summit2025/talks/gopherwatch.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/gopherwatch.html</guid>
+      <description>Gopherwatch monitors the &amp;ldquo;Go modules&amp;rdquo; transparency log (containing libraries and applications), and sends notifications by email or webhook to users with subscriptions with matching Go module patterns. For example dependencies of your own software, or all software published by your organization, or friends, etc. Gopherwatch.org is a free public service, the code is open source, and it&amp;rsquo;s easy to run your own. In this talk, we&amp;rsquo;ll briefly look at Gopherwatch functionality (which, surprisingly, includes a DNS server), look at how Go modules make it into the transparency log, and discuss future work.</description>
+    </item>
+    
+    <item>
       <title>Implementing transparency in UEFI boot managers</title>
       <link>https://transparency.dev/summit2025/talks/uefi.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -131,6 +180,15 @@ Preliminary Agenda  TBD   Session Leader: TBD description</description>
     </item>
     
     <item>
+      <title>Let’s Make the Internet an App Store (but not in the dystopian way)</title>
+      <link>https://transparency.dev/summit2025/talks/app-store.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/app-store.html</guid>
+      <description>The web browser is the most powerful application platform in existence. As long as you have the right hardware APIs, you can run anything you want in a browser. Well, almost anything. Common wisdom is that end-to-end encrypted applications should not be run in the browser. In fact, Javascript cryptography as a whole is widely Considered Harmful. This is because the server ultimately has control: if the server gives a client malicious Javascript, the client’s end-to-end security guarantees vanish.</description>
+    </item>
+    
+    <item>
       <title>Lunch</title>
       <link>https://transparency.dev/summit2025/break-day1-lunch.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -146,6 +204,15 @@ Preliminary Agenda  TBD   Session Leader: TBD description</description>
       
       <guid>https://transparency.dev/summit2025/break-day2-lunch.html</guid>
       <description>Keynote  Content/abstract here.  </description>
+    </item>
+    
+    <item>
+      <title>Merkle Tree Certificates: transparency as the root of trust for the post-quantum age</title>
+      <link>https://transparency.dev/summit2025/talks/mtcs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/mtcs.html</guid>
+      <description>As highlighted in last year&amp;rsquo;s transparency.dev summit, the top quantum-safe signature algorithms require significant increases in key and signature sizes. As a result, a straightforward adaptation of TLS and CT to use these algorithms results in a massive increase in the size of the TLS handshake and the storage and bandwidth requirements for CT logs. Combined with shorter certificate lifetimes, this path would introduce several significant challenges to the CT ecosystem.</description>
     </item>
     
     <item>
@@ -223,7 +290,7 @@ Breakfast
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/summit2025/talks/</guid>
-      <description>Transparency.dev Summit Confirmed Talks   Accepted Talks     Brendan McMillion  Key Transparency / When Collusion-Based Security Fails   Elena Pagnin  Split-View protection in centralised transparency logs   Holger Levsen  Reproducible Builds, a very brief summary of the last 12 years and a glimpse into the future   Andrea Barisani, Daniele Bianco  Implementing transparency in UEFI boot managers   Rasmus Dahlberg  silentct: A Certificate Transparency monitor that filters out the noise        </description>
+      <description>Transparency.dev Summit Confirmed Talks   Accepted Talks     Andrea Barisani, Daniele Bianco  Implementing transparency in UEFI boot managers   Giulio Berra  A decentralized integrity and transparency model for web applications   Hayden Blauzvern  End-to-End Transparent Package Registries   Rasmus Dahlberg  silentct: A Certificate Transparency monitor that filters out the noise   Joe DeBlasio  Merkle Tree Certificates: transparency as the root of trust for the post-quantum age   Martin Hutchinson  Verifiable Indexes for a More Usable Transparency Ecosystem   Billy Lau  Crescendo: Increasing the intensity of binary transparency in the Android ecosystem   Holger Levsen  Reproducible Builds, a very brief summary of the last 12 years and a glimpse into the future   Mechiel Lukkien  Go module notifications with gopherwatch.</description>
     </item>
     
     <item>
@@ -257,6 +324,15 @@ Dennis Jackson, Mozilla</description>
       <guid>https://transparency.dev/summit2025/schedule/</guid>
       <description>Transparency.dev Summit 2025 Schedule The schedule for the 2025 summit is currently a work in progress and may change.
 Talks that have been accepted so far can be seen here.  Full Schedule     Monday, 20th October  9:00am  Registration    10:00am  Welcome    10:15am  Keynote    10:45am  Break    11:00am  Certificate Transparency talks (x3)    12:30pm  Lunch    2:00pm  Certificate Transparency talks (x3 with break)    3:45pm  Breakout sessions    5:00pm  Lightning talks    5:30pm  Closing remarks    Evening  Activities (TBD)   Tuesday, 21st October  9:00am  Welcome    9:15am  Talks (x5 with break)    12:30pm  Lunch    2:00pm  Talks (x3 with break)    3:45pm  Breakout sessions    5:00pm  Lightning talks    5:30pm  Closing remarks    Evening  Social dinner at Restaurant Tegel (within walking distance of venue)   Wednesday, 22nd October  9:00am  Welcome    9:15am  Quiz    10:00am  Lightning talks (unscheduled)    10:45am  Breakout sessions    12:00pm  Close        </description>
+    </item>
+    
+    <item>
+      <title>Verifiable Indexes for a More Usable Transparency Ecosystem</title>
+      <link>https://transparency.dev/summit2025/talks/verifiable-indexes.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/verifiable-indexes.html</guid>
+      <description>Transparency logs, the bedrock of systems like Certificate Transparency and the Go SumDB, promise unparalleled verifiability. But this promise comes with a hidden cost. How can a user find their specific entries (their domain&amp;rsquo;s certificates, or their software&amp;rsquo;s releases) within a log containing billions of entries, without downloading terabytes of data or blindly trusting a centralized indexer? This trade-off between efficiency and verifiability has held back the full potential of transparency adoption and verification.</description>
     </item>
     
     <item>
