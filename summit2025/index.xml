@@ -327,6 +327,16 @@ Talks that have been accepted so far can be seen here.  Full Schedule     Monday
     </item>
     
     <item>
+      <title>Transparent transparency hardware</title>
+      <link>https://transparency.dev/summit2025/talks/hardware.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/hardware.html</guid>
+      <description>Hardware security modules (HSMs) and transparency technology complement each other. For example, a transparency capable HSM can help adding transparency to legacy systems, such as UEFI Secure Boot, which uses RSA signatures and is unlikely to support spicy signatures anytime soon. To do that, we need an HSM that is sufficiently open and flexible.
+This talk will explain how the radically open-source Tillitis TKey and Tillitis HSM work, and report the current state of development of our transparency apps for these devices.</description>
+    </item>
+    
+    <item>
       <title>Verifiable Indexes for a More Usable Transparency Ecosystem</title>
       <link>https://transparency.dev/summit2025/talks/verifiable-indexes.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
