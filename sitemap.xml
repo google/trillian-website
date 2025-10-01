@@ -13,6 +13,8 @@
   </url><url>
     <loc>https://transparency.dev/</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/android-ct.html</loc>
+  </url><url>
     <loc>https://transparency.dev/application/</loc>
   </url><url>
     <loc>https://transparency.dev/articles/</loc>
@@ -20,6 +22,8 @@
     <loc>https://transparency.dev/summit2024/bt-breakout-part1.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/bt-breakout-part2.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/binary-trans.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/break-day1-afternoon.html</loc>
   </url><url>
@@ -73,9 +77,13 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/crescendo.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/ca.html</loc>
+  </url><url>
     <loc>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/package-registries.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/ent.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/witness.html</loc>
   </url><url>
@@ -83,13 +91,17 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/gopherwatch.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/heliotorrent.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/chrome.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/pypi.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/uefi.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/tesseratalk.html</loc>
   </url><url>
-    <loc>https://transparency.dev/summit2025/talks/kt-brendon.html</loc>
+    <loc>https://transparency.dev/summit2025/talks/kt-brendan.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/keytransparencyproton.html</loc>
   </url><url>
@@ -97,9 +109,13 @@
   </url><url>
     <loc>https://transparency.dev/summit2024/kt-breakout-part2.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/kt-melissa.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/keynote.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/keynote.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/log-failures.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/app-store.html</loc>
   </url><url>
@@ -117,6 +133,8 @@
   </url><url>
     <loc>https://transparency.dev/summit2024/modelsigning.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2025/talks/logos.html</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/sigstore.html</loc>
   </url><url>
     <loc>https://transparency.dev/privacy/</loc>
@@ -128,6 +146,8 @@
     <loc>https://transparency.dev/application/reliably-log-all-actions-performed-on-your-servers/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/reproducible-builds.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/tessera.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/letsencrypt.html</loc>
   </url><url>
@@ -146,6 +166,8 @@
     <loc>https://transparency.dev/summit2025/break-day3-afternoon.html</loc>
   </url><url>
     <loc>https://transparency.dev/articles/tile-based-logs/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/digital-id.html</loc>
   </url><url>
     <loc>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</loc>
   </url><url>
@@ -188,6 +210,8 @@
     <loc>https://transparency.dev/summit2025/intro.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/sigsum.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2025/talks/things-bad.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/witness-breakout.html</loc>
   </url><url>

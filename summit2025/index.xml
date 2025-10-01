@@ -16,6 +16,25 @@
     </item>
     
     <item>
+      <title>Android Certificate Transparency</title>
+      <link>https://transparency.dev/summit2025/talks/android-ct.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/android-ct.html</guid>
+      <description>This talk provides a deep dive into Android&amp;rsquo;s Certificate Transparency (CT) initiative, a crucial defense against fraudulent TLS certificates and Man-in-the-Middle (MITM) attacks. We&amp;rsquo;ll explore the journey of implementing CT across the vast Android ecosystem.
+The session will cover the straightforward process for how Android app developers can opt-in CT via the Network Security Configuration to significantly enhance their app&amp;rsquo;s security. We will highlight the technical architecture, focusing on how the CT log list is securely distributed to billions of devices.</description>
+    </item>
+    
+    <item>
+      <title>Binary Transparency via Endorsements</title>
+      <link>https://transparency.dev/summit2025/talks/binary-trans.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/binary-trans.html</guid>
+      <description>Distributing binary blobs across organizational boundaries — such as between internal and open-source repositories or from a developer to the public — requires establishing trust and mitigating security risks. Binary transparency refers to the collective efforts to create this trust, ensuring that a binary has not been tampered with. This challenge is particularly relevant at Google, where binaries from open-source environments are untrusted in the corporate network, and conversely, corporate binaries are untrusted by the public.</description>
+    </item>
+    
+    <item>
       <title>Break</title>
       <link>https://transparency.dev/summit2025/break-day1-afternoon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -131,6 +150,15 @@ In particular, I will discuss how we expanded coverage from the granularity of a
     </item>
     
     <item>
+      <title>CT: Managing uptime as a CA</title>
+      <link>https://transparency.dev/summit2025/talks/ca.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/ca.html</guid>
+      <description>As a Certificate Authority, Let&amp;rsquo;s Encrypt needs to submit pre-certificates to CT logs to get SCTs for embedding in certificates. This adds an external dependency on our issuance process, which was historically one of the big concerns CAs have had about CT. In this talk, we&amp;rsquo;ll discuss how we&amp;rsquo;ve managed that availability risk through the different submission algorithms we&amp;rsquo;ve used, and what the real world impact CT has had on our certificate issuance process.</description>
+    </item>
+    
+    <item>
       <title>End-to-End Transparent Package Registries</title>
       <link>https://transparency.dev/summit2025/talks/package-registries.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -141,12 +169,41 @@ This talk will delve into software supply chain security for package registries,
     </item>
     
     <item>
+      <title>ent: a protocol for distributed Content Addressable Storage</title>
+      <link>https://transparency.dev/summit2025/talks/ent.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/ent.html</guid>
+      <description>What if you could resolve a content digest (e.g. a SHA-256) to its location anywhere on the internet, just like DNS resolves a domain name to an IP address? This talk introduces ent, a simple protocol for distributed Content-Addressable Storage (CAS) that does exactly that, preserving integrity and verifiability of the underlying data even when servers are untrusted.
+A common pattern that arises in many systems (and especially in anything related to transparency) is that of mutable pointers (e.</description>
+    </item>
+    
+    <item>
       <title>Go module notifications with gopherwatch.org, and more!</title>
       <link>https://transparency.dev/summit2025/talks/gopherwatch.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/summit2025/talks/gopherwatch.html</guid>
       <description>Gopherwatch monitors the &amp;ldquo;Go modules&amp;rdquo; transparency log (containing libraries and applications), and sends notifications by email or webhook to users with subscriptions with matching Go module patterns. For example dependencies of your own software, or all software published by your organization, or friends, etc. Gopherwatch.org is a free public service, the code is open source, and it&amp;rsquo;s easy to run your own. In this talk, we&amp;rsquo;ll briefly look at Gopherwatch functionality (which, surprisingly, includes a DNS server), look at how Go modules make it into the transparency log, and discuss future work.</description>
+    </item>
+    
+    <item>
+      <title>HelioTorrent: Serving Static CT over BitTorrent</title>
+      <link>https://transparency.dev/summit2025/talks/heliotorrent.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/heliotorrent.html</guid>
+      <description>Operating a Certificate Transparency log is bandwidth-intensive and expensive. HelioTorrent can help address this by distributing Static CT tiles over BitTorrent, allowing peers to give bandwidth back whilst consuming the log. The design supports both existing torrent clients and CT clients, and lets log operators (or third party mirrors) seed torrents without needing to run any torrent-specific infrastructure. This talk will introduce the HelioTorrent implementation, outline a draft C2SP extension spec, and discuss the technical challenges encountered during development.</description>
+    </item>
+    
+    <item>
+      <title>How Chrome monitors CT logs</title>
+      <link>https://transparency.dev/summit2025/talks/chrome.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/chrome.html</guid>
+      <description>Chrome&amp;rsquo;s CT program requires CT logs to maintain compliance with Chrome&amp;rsquo;s CT policy, which requires logs meet certain availability requirements, as well as adhere to RFC6962 and/or static-ct-api. This lightning talk describes how the Chrome CT team monitors for compliance with this policy, including what we check for, how, and what our process is for handling issues that we detect.
+ Speaker Mustafa is a software engineer at Google on the Chrome Security team where he works on certificate transparency and web platform security.</description>
     </item>
     
     <item>
@@ -161,12 +218,22 @@ This talk will delve into software supply chain security for package registries,
     
     <item>
       <title>Key Transparency / When Collusion-Based Security Fails</title>
-      <link>https://transparency.dev/summit2025/talks/kt-brendon.html</link>
+      <link>https://transparency.dev/summit2025/talks/kt-brendan.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/summit2025/talks/kt-brendon.html</guid>
+      <guid>https://transparency.dev/summit2025/talks/kt-brendan.html</guid>
       <description>Almost all deployed transparency systems require finding at least one independent and trustworthy third party to help operate the system. Key Transparency systems, however, are deployed by individual organizations to protect their own users. Finding an independent and trustworthy third party in these use-cases is often an overwhelming hurdle to deployment. This talk discusses why, and how the Key Transparency protocol being standardized at IETF solves this problem.
  Speaker Brendan is a freelance cryptography engineer who focuses on developing and deploying standards that make the whole Internet safer.</description>
+    </item>
+    
+    <item>
+      <title>Key Transparency: Introduction, recent results, and active research areas</title>
+      <link>https://transparency.dev/summit2025/talks/kt-melissa.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/kt-melissa.html</guid>
+      <description>End-to-end encryption security guarantees crucially rely on the assumption that the user has the correct identity public key for the person they wish to communicate with. Traditionally, E2EE communication systems have required the user to perform cumbersome manual checks to verify these keys, e.g. by physically scanning QR codes, or by verbally reading a fingerprint. In practice, these verifications are rarely performed.
+Key transparency, first introduced in CONIKS, allows much of this verification to be automated.</description>
     </item>
     
     <item>
@@ -177,6 +244,15 @@ This talk will delve into software supply chain security for package registries,
       <guid>https://transparency.dev/summit2025/keynote.html</guid>
       <description>The opening keynote kicking off the event will be delivered by TBD
   </description>
+    </item>
+    
+    <item>
+      <title>Learning from Certificate Transparency Log Failures</title>
+      <link>https://transparency.dev/summit2025/talks/log-failures.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/log-failures.html</guid>
+      <description>Certificate Transparency&amp;rsquo;s defining property is verifiability, which allows any party to check that a log is behaving properly. Verifiability is intended to catch malicious logs, but in practice innocent operational mistakes have caused logs to fail to uphold their verifiable properties. Some failures, like signing an inconsistent tree head, are irrecoverable and require the log to be retired, threatening ecosystem stability. Other failures, like returning incorrect entries, are recoverable, but cause temporary disruptions to monitoring.</description>
     </item>
     
     <item>
@@ -216,6 +292,16 @@ This talk will delve into software supply chain security for package registries,
     </item>
     
     <item>
+      <title>Monitoring Brand Logos through Certificate Transparency</title>
+      <link>https://transparency.dev/summit2025/talks/logos.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/logos.html</guid>
+      <description>This lightning talk explores how BIMI (Brand Indicators for Message Identification) Certificate Transparency logs expose a new dataset centered not on server identities, but on brand logos and trademarks. It will shed light on the state of BIMI CT logs, providing insights into issuance patterns, CA distribution, certificate types, and anomalies.
+The talk will further discuss how monitoring BIMI CT logs can be used to strengthen brand protection. This includes detecting logo misuse, brand impersonation, phishing attempts, monitoring certificate expiry, certificate hygiene issues, and discovery.</description>
+    </item>
+    
+    <item>
       <title>Registration</title>
       <link>https://transparency.dev/summit2025/registration.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -234,6 +320,15 @@ Breakfast
       <guid>https://transparency.dev/summit2025/talks/reproducible-builds.html</guid>
       <description>In this lightning talk Holger will briefly present the achievements of the Reproducible Builds project in the last 12 years, covering both upstream developments as well as some distro specific details. The talk will conclude with an outlook into the future and an invitation to collaborate to bring transparency logs into Reproducible Builds projects.
  Speaker Holger Levsen has been a Debian user since almost 30 years and an official Debian member since 2007.</description>
+    </item>
+    
+    <item>
+      <title>Running production-grade logs safely with Tessera</title>
+      <link>https://transparency.dev/summit2025/talks/tessera.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/tessera.html</guid>
+      <description>Tessera is a Go library designed for constructing tile-based transparency logs, compatible with both cloud (AWS, GCP) and non-cloud infrastructures (MySQL, POSIX, Vanilla S3+MySQL). Its engineering prioritizes secure log operation, incorporating insights gained from extensive experience managing production-grade transparency logs. This presentation will address the challenges and complexities inherent in operating such logs, and how Tessera and TesseraCT (Certificate Transparency log built on top of Tessera) provide concrete solutions for issues such as: How to protect one’s log against spam data?</description>
     </item>
     
     <item>
@@ -285,12 +380,21 @@ Breakfast
     </item>
     
     <item>
+      <title>Transparency in Digital ID Systems</title>
+      <link>https://transparency.dev/summit2025/talks/digital-id.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/digital-id.html</guid>
+      <description>Digital ID systems are being considered and created by various governments around the world. However it is rarely being discussed on how we can create these systems to be transparent and accountable. This lightening talk will discuss the holes of these systems. Especially when it comes to verifiers and issuers of digital credentials; and how transparency logs and other lessons of accountability can possibly be applied to empower the people who are being forced to trust private companies and governments with their digital ID information.</description>
+    </item>
+    
+    <item>
       <title>Transparency.dev Summit 2025 Confirmed Talks</title>
       <link>https://transparency.dev/summit2025/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/summit2025/talks/</guid>
-      <description>Transparency.dev Summit Confirmed Talks   Accepted Talks     Andrea Barisani, Daniele Bianco  Implementing transparency in UEFI boot managers   Giulio Berra  A decentralized integrity and transparency model for web applications   Hayden Blauzvern  End-to-End Transparent Package Registries   Rasmus Dahlberg  silentct: A Certificate Transparency monitor that filters out the noise   Joe DeBlasio  Merkle Tree Certificates: transparency as the root of trust for the post-quantum age   Martin Hutchinson  Verifiable Indexes for a More Usable Transparency Ecosystem   Billy Lau  Crescendo: Increasing the intensity of binary transparency in the Android ecosystem   Holger Levsen  Reproducible Builds, a very brief summary of the last 12 years and a glimpse into the future   Mechiel Lukkien  Go module notifications with gopherwatch.</description>
+      <description>Transparency.dev Summit Confirmed Talks   Accepted Talks     Mustafa Emre Acer  How Chrome monitors CT logs   Andrew Ayer  Learning from Certificate Transparency Log Failures   Andrea Barisani, Daniele Bianco  Implementing transparency in UEFI boot managers   Giulio Berra  A decentralized integrity and transparency model for web applications   Tom Binder  Binary Transparency via Endorsements   Hayden Blauzvern  End-to-End Transparent Package Registries   Philippe Boneff, Roger Ng  Running production-grade logs safely with Tessera   Melissa Chase  Key Transparency: Introduction, recent results, and active research areas   Rasmus Dahlberg  silentct: A Certificate Transparency monitor that filters out the noise   Joe DeBlasio  Merkle Tree Certificates: transparency as the root of trust for the post-quantum age   Joe DeBlasio  When things go bad: real world breakage from a transparency library misconfiguration   Alexis Hancock  Transparency in Digital ID Systems   Martin Hutchinson  Verifiable Indexes for a More Usable Transparency Ecosystem   Dennis Jackson  HelioTorrent: Serving Static CT over BitTorrent   Billy Lau  Crescendo: Increasing the intensity of binary transparency in the Android ecosystem   Holger Levsen  Reproducible Builds, a very brief summary of the last 12 years and a glimpse into the future   Bhushan Lokhande  Monitoring Brand Logos through Certificate Transparency    Mechiel Lukkien  Go module notifications with gopherwatch.</description>
     </item>
     
     <item>
@@ -322,8 +426,7 @@ Dennis Jackson, Mozilla</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/summit2025/schedule/</guid>
-      <description>Transparency.dev Summit 2025 Schedule The schedule for the 2025 summit is currently a work in progress and may change.
-Talks that have been accepted so far can be seen here.  Full Schedule     Monday, 20th October  9:00am  Registration    10:00am  Welcome    10:15am  Keynote    10:45am  Break    11:00am  Certificate Transparency talks (x3)    12:30pm  Lunch    2:00pm  Certificate Transparency talks (x3 with break)    3:45pm  Breakout sessions    5:00pm  Lightning talks    5:30pm  Closing remarks    Evening  Activities (TBD)   Tuesday, 21st October  9:00am  Welcome    9:15am  Talks (x5 with break)    12:30pm  Lunch    2:00pm  Talks (x3 with break)    3:45pm  Breakout sessions    5:00pm  Lightning talks    5:30pm  Closing remarks    Evening  Social dinner at Restaurant Tegel (within walking distance of venue)   Wednesday, 22nd October  9:00am  Welcome    9:15am  Quiz    10:00am  Lightning talks (unscheduled)    10:45am  Breakout sessions    12:00pm  Close        </description>
+      <description>Transparency.dev Summit 2025 Schedule The schedule for the 2025 summit may still undergo small tweaks in the lead up to the event.  Full Schedule     Monday, 20th October   9:00am  Registration   10:00am  Welcome   10:15am  Keynote: To be announced   10:45am  Break   11:00am  Real-world lessons and insights:    Learning from Certificate Transparency Log Failures - Andrew Ayer    CT: Managing uptime as a CA - Matthew McPherrin    ⚡ How Chrome monitors CT logs - Mustafa Emre Acer    ⚡ Monitoring Brand Logos through Certificate Transparency - Bhushan Lokhande    ⚡ When things go bad: real world breakage from a transparency library misconfiguration - Joe DeBlasio   12:30pm  Lunch   2:00pm  Operations and new developments:    ⚡ Android Certificate Transparency - Roger Ng    ⚡ HelioTorrent: Serving Static CT over BitTorrent - Dennis Jackson    Running production-grade logs safely with Tessera - Philippe Boneff, Roger Ng    Merkle Tree Certificates: transparency as the root of trust for the post-quantum age - Joe DeBlasio   3:20pm  Introducting breakout sessions   3:30pm  Swedish fika   4:00pm  Breakout sessions and collective summary   5:00pm  Efficient and effective monitoring:    ⚡ silentct: A Certificate Transparency monitor that filters out the noise - Rasmus Dahlberg    Verifiable Indexes for a More Usable Transparency Ecosystem - Martin Hutchinson   5:40pm  Closing remarks   Evening  Free time   Tuesday, 21st October    9:00am  Welcome   9:10am  Hardware-backed approaches:    Transparent transparency hardware - Fredrik Stromberg    Confidential computing: Trusted computing in the cloud - Adit Sachde   10:10am  Website Transparency:    Let’s Make the Internet an App Store (but not in the dystopian way) - Michael Rosenberg, Dennis Jackson    ⚡ A decentralized integrity and transparency model for web applications - Giulio Berra   10:50am  Break   11:20am  Package management:    Go module notifications with gopherwatch.</description>
     </item>
     
     <item>
@@ -352,6 +455,15 @@ This talk will explain how the radically open-source Tillitis TKey and Tillitis 
       
       <guid>https://transparency.dev/summit2025/intro.html</guid>
       <description>Welcome and introductory session to kick off Transparency.dev Summit</description>
+    </item>
+    
+    <item>
+      <title>When things go bad: real world breakage from a transparency library misconfiguration</title>
+      <link>https://transparency.dev/summit2025/talks/things-bad.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/things-bad.html</guid>
+      <description>On a Saturday in June, after a third-party CT library failed to parse Chrome&amp;rsquo;s correctly-formatted log list, hundreds of Android apps suddenly stopped working, affecting millions of users, and costing potentially millions in lost revenue for impacted applications. This talk will discuss what happened, how we mitigated the issue, and the ongoing risks that this and other libraries pose to the CT ecosystem. We&amp;rsquo;ll also cover how we in Chrome are working to shake free dependencies that risk Chrome&amp;rsquo;s ability to enforce CT.</description>
     </item>
     
     <item>
