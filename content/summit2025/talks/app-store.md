@@ -6,7 +6,7 @@ topImage:
 type:
 room:
 start:
-speaker: Michael Rosenberg
+speaker: Michael Rosenberg, Dennis Jackson
 speakerTitle:
 ---
 
@@ -41,5 +41,8 @@ apps.
 Michael Rosenberg is a cryptography engineer at Cloudflare. His work lately has
 involved drafting and implementing transparency standards and constructing
 hybrid-PQ password-based cryptographic primitives.
+
+Dennis Jackson is a Senior Staff Engineer at Mozilla, working on cryptography,
+standards and (when all else fails) policy.
 
 </div>
