@@ -1,5 +1,5 @@
 ---
-url: summit2025/talks/kt-brendon.html
+url: summit2025/talks/kt-brendan.html
 layout: summittalk
 title: "Key Transparency / When Collusion-Based Security Fails"
 topImage:
