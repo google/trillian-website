@@ -1,5 +1,7 @@
 This page contains information about the witnesses operated by the TrustFabric team at Google.
-This is the same team which developed and maintains Google CT logs, Trillian, Tessera, and TesseraCT.
+This is the same team which developed and maintains Google CT logs,
+[Trillian](https://github.com/google/trillian), [Tessera](https://github.com/transparency-dev/tessera),
+and [TesseraCT](https://github.com/transparency-dev/tesseract).
 
 The witnesses listed below conform to the C2SP
 [tlog-witness@v0.1.0](https://github.com/C2SP/C2SP/blob/tlog-witness/v0.1.0/tlog-witness.md)
@@ -41,4 +43,4 @@ to being provisioned.
 
 Direct requests may also be sent directly to the TrustFabric team via issues on the
 https://github.com/transparency-dev/witness repo, or getting in touch with the team via
-[slack](https://transparency-dev.slack.com/).
+[slack](https://transparency.dev/slack).
