@@ -1,0 +1,14 @@
+{{ define "main"}}
+<div class="glue-page markdown">
+      <h1 class="headline2 md:text-center mb-5 md:mb-16">
+        <div class="eyebrow">{{ .Params.eyebrow }}</div>
+        {{ .Title }}
+      </h1>
+  </div>
+  <div class="glue-page markdown">
+    <article id="content" class="markdown">
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+{{end}}
