@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TrustFabric Witnesses on Transparency.dev</title>
+    <link>https://transparency.dev/witnesses/</link>
+    <description>Recent content in TrustFabric Witnesses on Transparency.dev</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/witnesses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://transparency.dev/witnesses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/witnesses/</guid>
+      <description>This page contains information about the witnesses operated by the TrustFabric team at Google. This is the same team which developed and maintains Google CT logs, Trillian, Tessera, and TesseraCT.
+The witnesses listed below conform to the C2SP tlog-witness@v0.1.0 and related specs.
+Dev witnesses These witnesses are intended for testing and development purposes only, you are welcome to integrate with them but they should not be relied upon for any reason.</description>
+    </item>
+    
+  </channel>
+</rss>

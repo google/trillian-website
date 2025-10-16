@@ -27,6 +27,17 @@ Assumptions:
     </item>
     
     <item>
+      <title></title>
+      <link>https://transparency.dev/witnesses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/witnesses/</guid>
+      <description>This page contains information about the witnesses operated by the TrustFabric team at Google. This is the same team which developed and maintains Google CT logs, Trillian, Tessera, and TesseraCT.
+The witnesses listed below conform to the C2SP tlog-witness@v0.1.0 and related specs.
+Dev witnesses These witnesses are intended for testing and development purposes only, you are welcome to integrate with them but they should not be relied upon for any reason.</description>
+    </item>
+    
+    <item>
       <title>A decentralized integrity and transparency model for web applications</title>
       <link>https://transparency.dev/summit2025/talks/webcat.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

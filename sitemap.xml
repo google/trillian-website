@@ -7,6 +7,8 @@
     <loc>https://transparency.dev/get-started/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://transparency.dev/witnesses/</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2025/talks/webcat.html</loc>
   </url><url>
     <loc>https://transparency.dev/application/add-tamper-checking-to-a-package-manager/</loc>
@@ -194,6 +196,8 @@
     <loc>https://transparency.dev/articles/transparency-an-implementers-story/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/hardware.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/witnesses/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/healthcare.html</loc>
   </url><url>
