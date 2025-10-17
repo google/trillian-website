@@ -21,7 +21,7 @@ on Google Cloud.
 
 |                       |                                                                                                    |
 |-----------------------|----------------------------------------------------------------------------------------------------|
-| **vkey**              | `transparency.dev/DEV:witness-little-garden+4b7fca75+AStusOxINQNUTN5Oj8HObRkh2yHf/MwYaGX4CPdiVEPM` |
+| **vkey**              | `transparency.dev/DEV:witness-little-garden+d8042a87+BCtusOxINQNUTN5Oj8HObRkh2yHf/MwYaGX4CPdiVEPM` |
 | **url**               | https://api.transparency.dev/dev/witness/little-garden                                             |
 | **configured lists**  | testing/log-list.1                                                                                 |
 | **updated**           | Multiple times per day                                                                             |
