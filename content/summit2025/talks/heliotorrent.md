@@ -21,6 +21,7 @@ torrent-specific infrastructure. This talk will introduce the HelioTorrent
 implementation, outline a draft C2SP extension spec, and discuss the technical
 challenges encountered during development.
 
+* [Talk Recording](https://youtu.be/MRmjMduVMTk)
 ---
 
 ### Speaker

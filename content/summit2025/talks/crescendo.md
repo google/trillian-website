@@ -41,6 +41,7 @@ To end, we will peek at some projects in the pipeline to entice continuous
 engagements with the community. I will also include a couple of open ended
 questions to stir thoughts and provoke further discussions.
 
+* [Talk Recording](https://youtu.be/TZMspOgnr_A)
 ---
 
 ### Speaker

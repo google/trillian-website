@@ -33,6 +33,8 @@ experimenting with MTCs, discuss how Chrome imagines adopting and migrating the
 web to MTCs, and what the future might look like from a CT - and root program -
 policy perspective.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/mtcs.pdf" >}})
+* [Talk Recording](https://youtu.be/uSP9uT_wBDw)
 ---
 
 ### Speaker

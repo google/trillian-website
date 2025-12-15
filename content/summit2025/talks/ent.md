@@ -28,6 +28,7 @@ The presentation will cover the protocol, our open-source client and server
 libraries, a few use cases, and a demonstration of static.space, a public ent
 server you can use today.
 
+* [Talk Recording](https://youtu.be/zIanFo7l9No)
 ---
 
 ### Speaker

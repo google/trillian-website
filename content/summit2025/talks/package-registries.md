@@ -32,6 +32,7 @@ package versions. As we scale up the number of transparency logs, so too must we
 scale up monitoring, so we'll wrap up by discussing strategies for claim
 verification.
 
+* [Talk Recording](https://youtu.be/-L55qpcIdus)
 ---
 
 ### Speaker

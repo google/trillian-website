@@ -26,6 +26,8 @@ lookalike logos, and mismatches between logos and certificate organization
 names. This demonstrates how transparency helps defenders detect brand abuse
 early and strengthen trust in email ecosystems.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/logos.pdf" >}})
+* [Talk Recording](https://youtu.be/j43xzM18hyA)
 ---
 
 ### Speaker

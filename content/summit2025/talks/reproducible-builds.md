@@ -18,6 +18,8 @@ developments as well as some distro specific details. The talk will conclude
 with an outlook into the future and an invitation to collaborate to bring
 transparency logs into Reproducible Builds projects.
 
+* [Speaker Slides](https://reproducible-builds.org/_lfs/presentations/2025-10-21-Reproducible-Builds-brief-summary-of-12-years-and-a-glimpse-into-the-future/#/)
+* [Talk Recording](https://youtu.be/YN1XiflsK2w)
 ---
 
 ### Speaker

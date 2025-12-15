@@ -22,9 +22,10 @@ TesseraCT (Certificate Transparency log built on top of Tessera) provide
 concrete solutions for issues such as: How to protect one’s log against spam
 data? What information to hand over to clients, and when? And much more...
 
+* [Talk Recording](https://youtu.be/o9tEjADoJck)
 ---
 
-### Speaker
+### Speakers
 
 Philippe is an engineer at Google in London. He works in the TrustFabric team,
 building and deploying software that powers transparency ecosystems, where he's

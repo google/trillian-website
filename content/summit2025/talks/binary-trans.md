@@ -34,6 +34,7 @@ and publishing differ significantly. We have developed one such implementation,
 designed to manage the boundary between open-source and internal repositories at
 Google.
 
+* [Talk Recording](https://youtu.be/ZF4kLvm0k_o)
 ---
 
 ### Speaker

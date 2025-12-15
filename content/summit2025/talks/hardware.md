@@ -25,6 +25,8 @@ includes a general-purpose signer app that only signs a message if it is already
 published in a transparency log; as well as log and witness signing apps that
 can mitigate split views at the hardware level.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/hardware.pdf" >}})
+* [Talk Recording](https://youtu.be/-5HtYd4O7vE)
 ---
 
 ### Speaker

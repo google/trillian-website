@@ -24,6 +24,7 @@ tamper with key material. This talk will cover how confidential computing works,
 how we can leverage it to run witnesses in the cloud, and other potential
 applications of confidential computing.
 
+* [Talk Recording](https://youtu.be/W_eT0gCRE24)
 ---
 
 ### Speaker

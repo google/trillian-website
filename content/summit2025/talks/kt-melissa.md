@@ -32,6 +32,7 @@ approach and intuition behind the constructions. It will then overview the state
 of the art, survey current deployments, and discuss some areas of active
 research.
 
+* [Talk Recording](https://youtu.be/GKn0wqwQHCw)
 ---
 
 ### Speaker

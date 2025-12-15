@@ -34,6 +34,7 @@ buy-in, we will soon be able to run browser-based tools like WhatsApp, Cryptpad,
 Jitsi, and Bitwarden with the same security properties as if they were native
 apps.
 
+* [Talk Recording](https://youtu.be/4VDGEVtdCAE)
 ---
 
 ### Speaker

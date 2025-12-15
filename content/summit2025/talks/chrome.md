@@ -18,6 +18,8 @@ adhere to RFC6962 and/or static-ct-api. This lightning talk describes how the
 Chrome CT team monitors for compliance with this policy, including what we check
 for, how, and what our process is for handling issues that we detect.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/chrome.pdf" >}})
+* [Talk Recording](https://youtu.be/TM7UTzghDQI)
 ---
 
 ### Speaker
