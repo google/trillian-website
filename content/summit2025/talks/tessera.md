@@ -22,6 +22,7 @@ TesseraCT (Certificate Transparency log built on top of Tessera) provide
 concrete solutions for issues such as: How to protect one’s log against spam
 data? What information to hand over to clients, and when? And much more...
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/tessera.pdf" >}})
 * [Talk Recording](https://youtu.be/o9tEjADoJck)
 ---
 
