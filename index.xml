@@ -44,7 +44,7 @@ Dev witnesses These witnesses are intended for testing and development purposes 
       
       <guid>https://transparency.dev/summit2025/talks/webcat.html</guid>
       <description>How can we bring transparency and integrity guarantees to a decentralized web, where open-source applications are hosted by many different entities? And how can we clearly communicate these complex trust relationships to end-users? This talk explores the challenges of modeling these dynamics in such ecosystems and presents design ideas from WEBCAT, a fail-closed framework that enables verifiable integrity for web applications.
- Speaker Giulio is a researcher at Freedom of the Press Foundation.</description>
+ Talk Recording   Speaker Giulio is a researcher at Freedom of the Press Foundation.</description>
     </item>
     
     <item>
@@ -427,7 +427,7 @@ A common pattern that arises in many systems (and especially in anything related
       
       <guid>https://transparency.dev/summit2025/talks/chrome.html</guid>
       <description>Chrome&amp;rsquo;s CT program requires CT logs to maintain compliance with Chrome&amp;rsquo;s CT policy, which requires logs meet certain availability requirements, as well as adhere to RFC6962 and/or static-ct-api. This lightning talk describes how the Chrome CT team monitors for compliance with this policy, including what we check for, how, and what our process is for handling issues that we detect.
- Speaker Mustafa is a software engineer at Google on the Chrome Security team where he works on certificate transparency and web platform security.</description>
+ Speaker Slides Talk Recording   Speaker Mustafa is a software engineer at Google on the Chrome Security team where he works on certificate transparency and web platform security.</description>
     </item>
     
     <item>
@@ -446,7 +446,7 @@ A common pattern that arises in many systems (and especially in anything related
       
       <guid>https://transparency.dev/summit2025/talks/uefi.html</guid>
       <description>The creation of go-boot, an UEFI boot manager written entirely in bare metal Go, eases use of modern cryptographic frameworks in very early boot stages. We will showcase our integration effort in bringing transparency frameworks to pre-boot environments and their role in defining an API abstraction for bootloader use in Secure Boot and Claimant model enforcement.
- Speakers Andrea Barisani (https://andrea.bio) is an internationally recognized security researcher. Since owning his first Commodore-64 he has never stopped studying new technologies, developing unconventional attack vectors and exploring what makes things tick…and break.</description>
+ Speaker Slides Talk Recording   Speakers Andrea Barisani (https://andrea.bio) is an internationally recognized security researcher.</description>
     </item>
     
     <item>
@@ -467,7 +467,7 @@ Al is the Tech Lead for the TrustFabric team at Google, where he&amp;rsquo;s bee
       
       <guid>https://transparency.dev/summit2025/talks/kt-brendan.html</guid>
       <description>Almost all deployed transparency systems require finding at least one independent and trustworthy third party to help operate the system. Key Transparency systems, however, are deployed by individual organizations to protect their own users. Finding an independent and trustworthy third party in these use-cases is often an overwhelming hurdle to deployment. This talk discusses why, and how the Key Transparency protocol being standardized at IETF solves this problem.
- Speaker Brendan is a freelance cryptography engineer who focuses on developing and deploying standards that make the whole Internet safer.</description>
+ Speaker Slides Talk Recording   Speaker Brendan is a freelance cryptography engineer who focuses on developing and deploying standards that make the whole Internet safer.</description>
     </item>
     
     <item>
@@ -529,6 +529,15 @@ Key transparency, first introduced in CONIKS, allows much of this verification t
       <guid>https://transparency.dev/summit2025/keynote.html</guid>
       <description>The opening keynote kicking off the event will be delivered by TBD
   </description>
+    </item>
+    
+    <item>
+      <title>Keynote: The tlog ecosystem</title>
+      <link>https://transparency.dev/summit2025/talks/keynote.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2025/talks/keynote.html</guid>
+      <description> Talk Recording   </description>
     </item>
     
     <item>
@@ -680,7 +689,7 @@ Breakfast
       
       <guid>https://transparency.dev/summit2025/talks/reproducible-builds.html</guid>
       <description>In this lightning talk Holger will briefly present the achievements of the Reproducible Builds project in the last 12 years, covering both upstream developments as well as some distro specific details. The talk will conclude with an outlook into the future and an invitation to collaborate to bring transparency logs into Reproducible Builds projects.
- Speaker Holger Levsen has been a Debian user since almost 30 years and an official Debian member since 2007.</description>
+ Speaker Slides Talk Recording   Speaker Holger Levsen has been a Debian user since almost 30 years and an official Debian member since 2007.</description>
     </item>
     
     <item>
@@ -843,7 +852,7 @@ Dennis Jackson, Mozilla</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/summit2025/schedule/</guid>
-      <description>Transparency.dev Summit 2025 Schedule The schedule for the 2025 summit may still undergo small tweaks in the lead up to the event.  Full Schedule     Monday, 20th October   9:00am  Registration   10:00am  Welcome   10:15am  Keynote: To be announced   10:45am  Break   11:00am  Real-world lessons and insights:    Learning from Certificate Transparency Log Failures - Andrew Ayer    CT: Managing uptime as a CA - Matthew McPherrin    ⚡ How Chrome monitors CT logs - Mustafa Emre Acer    ⚡ Monitoring Brand Logos through Certificate Transparency - Bhushan Lokhande    ⚡ When things go bad: real world breakage from a transparency library misconfiguration - Joe DeBlasio   12:30pm  Lunch   2:00pm  Operations and new developments:    ⚡ Android Certificate Transparency - Roger Ng    ⚡ HelioTorrent: Serving Static CT over BitTorrent - Dennis Jackson    Running production-grade logs safely with Tessera - Philippe Boneff, Roger Ng    Merkle Tree Certificates: transparency as the root of trust for the post-quantum age - Joe DeBlasio   3:20pm  Introducting breakout sessions   3:30pm  Swedish fika   4:00pm  Breakout sessions and collective summary   5:00pm  Efficient and effective monitoring:    ⚡ silentct: A Certificate Transparency monitor that filters out the noise - Rasmus Dahlberg    Verifiable Indexes for a More Usable Transparency Ecosystem - Martin Hutchinson   5:40pm  Closing remarks   Evening  Free time   Tuesday, 21st October    9:00am  Welcome   9:10am  Hardware-backed approaches:    Transparent transparency hardware - Fredrik Stromberg    Confidential computing: Trusted computing in the cloud - Adit Sachde   10:10am  Website Transparency:    Let’s Make the Internet an App Store (but not in the dystopian way) - Michael Rosenberg, Dennis Jackson    ⚡ A decentralized integrity and transparency model for web applications - Giulio Berra   10:50am  Break   11:20am  Package management:    Go module notifications with gopherwatch.</description>
+      <description>Transparency.dev Summit 2025 Schedule The schedule for the 2025 summit may still undergo small tweaks in the lead up to the event.  Full Schedule     Monday, 20th October   9:00am  Registration   10:00am  Welcome   10:15am  Keynote: The tlog ecosystem - Filippo Valsorda   10:45am  Break   11:00am  Real-world lessons and insights:    Learning from Certificate Transparency Log Failures - Andrew Ayer    CT: Managing uptime as a CA - Matthew McPherrin    ⚡ How Chrome monitors CT logs - Mustafa Emre Acer    ⚡ Monitoring Brand Logos through Certificate Transparency - Bhushan Lokhande    ⚡ When things go bad: real world breakage from a transparency library misconfiguration - Joe DeBlasio   12:30pm  Lunch   2:00pm  Operations and new developments:    ⚡ Android Certificate Transparency - Roger Ng    ⚡ HelioTorrent: Serving Static CT over BitTorrent - Dennis Jackson    Running production-grade logs safely with Tessera - Philippe Boneff, Roger Ng    Merkle Tree Certificates: transparency as the root of trust for the post-quantum age - Joe DeBlasio   3:20pm  Introducting breakout sessions   3:30pm  Swedish fika   4:00pm  Breakout sessions and collective summary   5:00pm  Efficient and effective monitoring:    ⚡ silentct: A Certificate Transparency monitor that filters out the noise - Rasmus Dahlberg    Verifiable Indexes for a More Usable Transparency Ecosystem - Martin Hutchinson   5:40pm  Closing remarks   Evening  Free time   Tuesday, 21st October    9:00am  Welcome   9:10am  Hardware-backed approaches:    Transparent transparency hardware - Fredrik Stromberg    Confidential computing: Trusted computing in the cloud - Adit Sachde   10:10am  Website Transparency:    Let’s Make the Internet an App Store (but not in the dystopian way) - Michael Rosenberg, Dennis Jackson    ⚡ A decentralized integrity and transparency model for web applications - Giulio Berra   10:50am  Break   11:20am  Package management:    Go module notifications with gopherwatch.</description>
     </item>
     
     <item>
