@@ -26,6 +26,8 @@ will present the different ways that logs can fail, what I've learned about
 building a monitor that handles recoverable failures robustly, and offer
 suggestions to log implementers for reducing the likelihood of log failure.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/log_failures.pdf" >}})
+* [Talk Recording](https://youtu.be/6fKRsLagk3E)
 ---
 
 ### Speaker

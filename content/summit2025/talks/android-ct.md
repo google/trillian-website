@@ -24,6 +24,8 @@ focusing on how the CT log list is securely distributed to billions of devices.
 We'll also share an honest look at the challenges and valuable lessons learned
 from deploying a critical security feature at Android's scale safely.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/android_ct.pdf" >}})
+* [Talk Recording](https://youtu.be/TcUQJO8UBfU)
 ---
 
 ### Speaker

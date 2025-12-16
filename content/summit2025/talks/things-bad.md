@@ -20,6 +20,8 @@ mitigated the issue, and the ongoing risks that this and other libraries pose to
 the CT ecosystem. We'll also cover how we in Chrome are working to shake free
 dependencies that risk Chrome's ability to enforce CT.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/things_bad.pdf" >}})
+* [Talk Recording](https://youtu.be/GhsSpCAJSnY)
 ---
 
 ### Speaker

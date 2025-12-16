@@ -21,6 +21,7 @@ accountability can possibly be applied to empower the people who are being
 forced to trust private companies and governments with their digital ID
 information.
 
+* [Talk Recording](https://youtu.be/RVePsCd1Ul4)
 ---
 
 ### Speaker

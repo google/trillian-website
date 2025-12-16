@@ -20,6 +20,8 @@ these use-cases is often an overwhelming hurdle to deployment. This talk
 discusses why, and how the Key Transparency protocol being standardized at IETF
 solves this problem.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/kt_brendan.pdf" >}})
+* [Talk Recording](https://youtu.be/71Vos6bNhI0)
 ---
 
 ### Speaker

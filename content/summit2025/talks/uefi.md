@@ -18,6 +18,8 @@ showcase our integration effort in bringing transparency frameworks to pre-boot
 environments and their role in defining an API abstraction for bootloader use in
 Secure Boot and Claimant model enforcement.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/uefi.pdf" >}})
+* [Talk Recording](https://youtu.be/Srv2R7gZm6A)
 ---
 
 ### Speakers

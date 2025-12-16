@@ -27,6 +27,8 @@ implementation, including the speaker's usage experiences so far.
 The free and open-source software implementation is available at:
 https://git.glasklar.is/rgdd/silentct
 
+* [Speaker Slides]({{< rel "/pdfs/summit2025/silentct.pdf" >}})
+* [Talk Recording](https://youtu.be/eCMKjWDNHTQ)
 ---
 
 ### Speaker

@@ -28,6 +28,7 @@ with. By extending the end-to-end chain of trust from the log to the query
 itself, Verifiable Indexes make transparency data practical and accessible,
 paving the way for a new generation of powerful, trustworthy applications.
 
+* [Talk Recording](https://youtu.be/gfrXTgmbS1s)
 ---
 
 ### Speaker

@@ -20,6 +20,8 @@ communication goes via the transparency log. This is the case of the original
 design of messaging apps, and may be relevant to other centralised services.
 For further details, see https://eprint.iacr.org/2024/879
 
+* [Speaker Slides](https://epagnin.github.io/slides/tl_from_ac/)
+* [Talk Recording](https://youtu.be/pTWs1R2iCRk)
 ---
 
 ### Speaker

@@ -19,6 +19,7 @@ talk explores the challenges of modeling these dynamics in such ecosystems and
 presents design ideas from [WEBCAT](https://github.com/freedomofpress/webcat), a
 fail-closed framework that enables verifiable integrity for web applications.
 
+* [Talk Recording](https://youtu.be/8ZJqV_zog7s)
 ---
 
 ### Speaker

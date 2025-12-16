@@ -23,6 +23,7 @@ into the transparency log, and discuss future work. Then we'll switch to a
 higher gear and discuss (a glimpse of) two other tools delivering automated
 software updates, with a transparency log of their own.
 
+* [Talk Recording](https://youtu.be/V9G6MxRifDg)
 ---
 
 ### Speaker

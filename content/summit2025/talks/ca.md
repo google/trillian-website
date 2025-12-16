@@ -22,6 +22,7 @@ our new Static CT logs provide different tradeoffs on latency and reliability,
 which will make the Let's Encrypt CA more reliable overall, and how operating CT
 logs helps us keep our CA running.
 
+* [Talk Recording](https://youtu.be/GrQN7c9EPhA)
 ---
 
 ### Speaker
