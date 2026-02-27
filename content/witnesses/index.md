@@ -16,10 +16,10 @@ may be unavailable, withdrawn, reset, or have their keys rotated at any time and
 
 ### transparency.dev/DEV:witness-little-garden
 This witness is running the
-[open-source OmniGCP implementation](https://github.com/transparency-dev/witness/tree/main/cmd/gcp/omniwitness)
+[open-source OmniGCP implementation](https://github.com/transparency-dev/witness/tree/main/cmd/omniwitness_gcp)
 on Google Cloud.
 
-|                       |                                                                                                    |
+|Little Garden          |                                                                                                    |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **vkey**              | `transparency.dev/DEV:witness-little-garden+d8042a87+BCtusOxINQNUTN5Oj8HObRkh2yHf/MwYaGX4CPdiVEPM` |
 | **url**               | https://api.transparency.dev/dev/witness/little-garden                                             |
@@ -29,17 +29,35 @@ on Google Cloud.
 
 ## Staging witnesses
 
-There are no staging witnesses, currently.
-We are actively working on completing the internal processes necessary to launch a staging witness instance.
+These witnesses are intended to be prod-like in most respects, but will be the first to be updated with new software versions
+before rolling out to the prod instances.
+They are operated on a best-effort basis, and consequently are monitored but are non-paging.
+We intend to keep these witnesses stable and will not reset their data or rotate keys without a good reason.
+
+These witnesses run the
+[open-source OmniGCP implementation](https://github.com/transparency-dev/witness/tree/main/cmd/omniwitness_gcp), with multi-region
+frontends backed by a regional Spanner instance.
+
+Key material is stored encrypted-at-rest in Secret Manager.
+
+|Ring any bells?        |                                                                                                          |
+|-----------------------|----------------------------------------------------------------------------------------------------------|
+| **vkey**              | `staging.witness.transparency.goog/ring-any-bells+c7337bc8+AW5JTpLc3FJtwzgh1Uv+Qelz9qeOH2bfWjS1s0s+y4rL` |
+| **url**               | https://staging.witness.transparency.goog/ring-any-bells                                                 |
+| **configured lists**  | testing/log-list.1 staging/log-list-10qps-4klogs.1                                                       |
+| **updated**           | Multiple times per day                                                                                   |
+
 
 ## Production witnesses
-There are no production witnesses, currently.
-We are actively working on completing the internal processes necessary to launch a production witness instance.
+
+We are in the process of productionising our production witness.
+
+## SLA witnessing
+
+Please get in touch with the team to discuss.
 
 ## How to request witnessing of a log
-Requesting via the Public Witness Network configs stored in the
-https://github.com/transparency-dev/witness-network repo is preferred, and is likely to be the fastest route
-to being provisioned.
+To have your log witnessed, please follow the instructions at https://witness-network.org/participate/
 
 Direct requests may also be sent directly to the TrustFabric team via issues on the
 https://github.com/transparency-dev/witness repo, or getting in touch with the team via
