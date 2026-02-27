@@ -192,12 +192,12 @@ They are operated on a best-effort basis, and, while we do not envisage it happe
 may be unavailable, withdrawn, reset, or have their keys rotated at any time and without prior notice.</p>
 <h3 id="transparencydevdevwitness-little-garden">transparency.dev/DEV:witness-little-garden</h3>
 <p>This witness is running the
-<a href="https://github.com/transparency-dev/witness/tree/main/cmd/gcp/omniwitness">open-source OmniGCP implementation</a>
+<a href="https://github.com/transparency-dev/witness/tree/main/cmd/omniwitness_gcp">open-source OmniGCP implementation</a>
 on Google Cloud.</p>
 <table>
 <thead>
 <tr>
-<th></th>
+<th>Little Garden</th>
 <th></th>
 </tr>
 </thead>
@@ -221,15 +221,46 @@ on Google Cloud.</p>
 </tbody>
 </table>
 <h2 id="staging-witnesses">Staging witnesses</h2>
-<p>There are no staging witnesses, currently.
-We are actively working on completing the internal processes necessary to launch a staging witness instance.</p>
+<p>These witnesses are intended to be prod-like in most respects, but will be the first to be updated with new software versions
+before rolling out to the prod instances.
+They are operated on a best-effort basis, and consequently are monitored but are non-paging.
+We intend to keep these witnesses stable and will not reset their data or rotate keys without a good reason.</p>
+<p>These witnesses run the
+<a href="https://github.com/transparency-dev/witness/tree/main/cmd/omniwitness_gcp">open-source OmniGCP implementation</a>, with multi-region
+frontends backed by a regional Spanner instance.</p>
+<p>Key material is stored encrypted-at-rest in Secret Manager.</p>
+<table>
+<thead>
+<tr>
+<th>Ring any bells?</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>vkey</strong></td>
+<td><code>staging.witness.transparency.goog/ring-any-bells+c7337bc8+AW5JTpLc3FJtwzgh1Uv+Qelz9qeOH2bfWjS1s0s+y4rL</code></td>
+</tr>
+<tr>
+<td><strong>url</strong></td>
+<td><a href="https://staging.witness.transparency.goog/ring-any-bells">https://staging.witness.transparency.goog/ring-any-bells</a></td>
+</tr>
+<tr>
+<td><strong>configured lists</strong></td>
+<td>testing/log-list.1 staging/log-list-10qps-4klogs.1</td>
+</tr>
+<tr>
+<td><strong>updated</strong></td>
+<td>Multiple times per day</td>
+</tr>
+</tbody>
+</table>
 <h2 id="production-witnesses">Production witnesses</h2>
-<p>There are no production witnesses, currently.
-We are actively working on completing the internal processes necessary to launch a production witness instance.</p>
+<p>We are in the process of productionising our production witness.</p>
+<h2 id="sla-witnessing">SLA witnessing</h2>
+<p>Please get in touch with the team to discuss.</p>
 <h2 id="how-to-request-witnessing-of-a-log">How to request witnessing of a log</h2>
-<p>Requesting via the Public Witness Network configs stored in the
-<a href="https://github.com/transparency-dev/witness-network">https://github.com/transparency-dev/witness-network</a> repo is preferred, and is likely to be the fastest route
-to being provisioned.</p>
+<p>To have your log witnessed, please follow the instructions at <a href="https://witness-network.org/participate/">https://witness-network.org/participate/</a></p>
 <p>Direct requests may also be sent directly to the TrustFabric team via issues on the
 <a href="https://github.com/transparency-dev/witness">https://github.com/transparency-dev/witness</a> repo, or getting in touch with the team via
 <a href="https://transparency.dev/slack">slack</a>.</p>
