@@ -10,6 +10,6 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "postcss": "^8.4.31"
+    "postcss": "^8.5.10"
   }
 }
