@@ -42,7 +42,7 @@ Key material is stored encrypted-at-rest in Secret Manager.
 
 |Ring any bells?        |                                                                                                          |
 |-----------------------|----------------------------------------------------------------------------------------------------------|
-| **vkey**              | `staging.witness.transparency.goog/ring-any-bells+c7337bc8+AW5JTpLc3FJtwzgh1Uv+Qelz9qeOH2bfWjS1s0s+y4rL` |
+| **vkey**              | `staging.witness.transparency.goog/ring-any-bells+2e1a8dc9+BG5JTpLc3FJtwzgh1Uv+Qelz9qeOH2bfWjS1s0s+y4rL` |
 | **url**               | https://staging.witness.transparency.goog/ring-any-bells                                                 |
 | **configured lists**  | testing/log-list.1 staging/log-list-10qps-4klogs.1                                                       |
 | **updated**           | Multiple times per day                                                                                   |
