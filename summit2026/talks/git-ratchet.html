@@ -23,7 +23,7 @@
     <title>
       
         
-          Go module notifications with gopherwatch.org, and more!
+          Git-ratchet: tooling for Git commit transparency
          |
        Trillian
     </title>
@@ -174,7 +174,7 @@
       <h1 class="headline3 md:text-center mb-5 md:mb-16">
         <div class="eyebrow">Transparency.dev Summit</div>
 	
-        Go module notifications with gopherwatch.org, and more!
+        Git-ratchet: tooling for Git commit transparency
         <div class="eyebrow"></div>
         
         
@@ -189,7 +189,7 @@
       
       
         <p class="font-bold">
-          Mechiel Lukkien
+          Ben Birt
         </p>
         
       
@@ -197,24 +197,20 @@
     </aside>
     <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
       <div class="font-google font-medium">
-<p>Gopherwatch monitors the &ldquo;Go modules&rdquo; transparency log (containing libraries and
-applications), and sends notifications by email or webhook to users with
-subscriptions with matching Go module patterns. For example dependencies of your
-own software, or all software published by your organization, or friends, etc.
-Gopherwatch.org is a free public service, the code is open source, and it&rsquo;s easy
-to run your own. In this talk, we&rsquo;ll briefly look at Gopherwatch functionality
-(which, surprisingly, includes a DNS server), look at how Go modules make it
-into the transparency log, and discuss future work. Then we&rsquo;ll switch to a
-higher gear and discuss (a glimpse of) two other tools delivering automated
-software updates, with a transparency log of their own.</p>
-<ul>
-<li><a href="https://youtu.be/V9G6MxRifDg">Talk Recording</a></li>
-</ul>
+<p>Dependents of Git repositories often depend directly on a
+branch or tag. Unfortunately, without taking further precautions, this
+exposes those dependents to attack by any party authorised to change the
+target commits of those branches or tags. Worse, those attacks can then be
+hidden by scrubbing the evidence - by repointing the branch or tag back to
+a legitimate commit. Git-ratchet is a tool which dependents can use to
+enforce that upstream Git repository owners are transparent about their
+branch and tag state (and how it evolves over time) - and it uses witnesses
+to prevent split-view attacks on that commit transparency.</p>
 <hr>
 <h3 id="speaker">Speaker</h3>
-<p>Mechiel studied Computer Science at the University Twente about 20 years ago and
-has been a software developer ever since, mostly freelance, with an interest in
-all things software development, including security.</p>
+<p>Ben is a software engineer on Google&rsquo;s Oak team. He is part
+of the group that launched Google&rsquo;s new Private AI Compute (PAIC) platform
+and most recently set up PAIC&rsquo;s new Tessera-based binary transparency log.</p>
 </div>
 
     </article>

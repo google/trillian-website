@@ -403,6 +403,15 @@ A common pattern that arises in many systems (and especially in anything related
     </item>
     
     <item>
+      <title>Git-ratchet: tooling for Git commit transparency</title>
+      <link>https://transparency.dev/summit2026/talks/git-ratchet.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/git-ratchet.html</guid>
+      <description>Dependents of Git repositories often depend directly on a branch or tag. Unfortunately, without taking further precautions, this exposes those dependents to attack by any party authorised to change the target commits of those branches or tags. Worse, those attacks can then be hidden by scrubbing the evidence - by repointing the branch or tag back to a legitimate commit. Git-ratchet is a tool which dependents can use to enforce that upstream Git repository owners are transparent about their branch and tag state (and how it evolves over time) - and it uses witnesses to prevent split-view attacks on that commit transparency.</description>
+    </item>
+    
+    <item>
       <title>Go module notifications with gopherwatch.org, and more!</title>
       <link>https://transparency.dev/summit2025/talks/gopherwatch.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -428,6 +437,15 @@ A common pattern that arises in many systems (and especially in anything related
       <guid>https://transparency.dev/summit2025/talks/chrome.html</guid>
       <description>Chrome&amp;rsquo;s CT program requires CT logs to maintain compliance with Chrome&amp;rsquo;s CT policy, which requires logs meet certain availability requirements, as well as adhere to RFC6962 and/or static-ct-api. This lightning talk describes how the Chrome CT team monitors for compliance with this policy, including what we check for, how, and what our process is for handling issues that we detect.
  Speaker Slides Talk Recording   Speaker Mustafa is a software engineer at Google on the Chrome Security team where he works on certificate transparency and web platform security.</description>
+    </item>
+    
+    <item>
+      <title>How Let&#39;s Encrypt is deploying Merkle Tree Certificates</title>
+      <link>https://transparency.dev/summit2026/talks/le-mtcs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/le-mtcs.html</guid>
+      <description>Let&amp;rsquo;s Encrypt is working on launching Merkle Tree Certificates. In this talk, we&amp;rsquo;ll discuss how we&amp;rsquo;ve added Merkle Tree certificates to our Boulder CA software, how we&amp;rsquo;re serving our logs, and the testing, monitoring, and disaster planning we&amp;rsquo;re doing to ship a production-quality CA the world can rely on. We&amp;rsquo;ll compare running an MTCA and mirror to our previous ACME CA and static CT logs, and what lessons from the past have informed our future architecture.</description>
     </item>
     
     <item>
@@ -721,6 +739,16 @@ Breakfast
     </item>
     
     <item>
+      <title>Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore</title>
+      <link>https://transparency.dev/summit2026/talks/sigstore.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/sigstore.html</guid>
+      <description>The transition to post-quantum cryptography is an emerging necessity, but PQC algorithms like ML-DSA introduce a significant hurdle for signing: keys and signatures are orders of magnitude larger, ballooning metadata, egress and storage costs for transparency ecosystems.
+In this talk, we present the design for PQC for Sigstore, showing how migrating to quantum-resistant algorithms is a greenfield opportunity to drastically simplify artifact signing and verification with Sigstore. Instead of just swapping out classical algorithms, we leveraged this unique opportunity to revisit the system architecture and focus the design around the transparency log as the primary enabler of simplicity and auditability.</description>
+    </item>
+    
+    <item>
       <title>Split-View protection in centralised transparency logs</title>
       <link>https://transparency.dev/summit2025/talks/split-view.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -853,6 +881,15 @@ Dennis Jackson, Mozilla</description>
       
       <guid>https://transparency.dev/summit2025/schedule/</guid>
       <description>Transparency.dev Summit 2025 Schedule The schedule for the 2025 summit may still undergo small tweaks in the lead up to the event.  Full Schedule     Monday, 20th October   9:00am  Registration   10:00am  Welcome   10:15am  Keynote: The tlog ecosystem - Filippo Valsorda   10:45am  Break   11:00am  Real-world lessons and insights:    Learning from Certificate Transparency Log Failures - Andrew Ayer    CT: Managing uptime as a CA - Matthew McPherrin    ⚡ How Chrome monitors CT logs - Mustafa Emre Acer    ⚡ Monitoring Brand Logos through Certificate Transparency - Bhushan Lokhande    ⚡ When things go bad: real world breakage from a transparency library misconfiguration - Joe DeBlasio   12:30pm  Lunch   2:00pm  Operations and new developments:    ⚡ Android Certificate Transparency - Roger Ng    ⚡ HelioTorrent: Serving Static CT over BitTorrent - Dennis Jackson    Running production-grade logs safely with Tessera - Philippe Boneff, Roger Ng    Merkle Tree Certificates: transparency as the root of trust for the post-quantum age - Joe DeBlasio   3:20pm  Introducting breakout sessions   3:30pm  Swedish fika   4:00pm  Breakout sessions and collective summary   5:00pm  Efficient and effective monitoring:    ⚡ silentct: A Certificate Transparency monitor that filters out the noise - Rasmus Dahlberg    Verifiable Indexes for a More Usable Transparency Ecosystem - Martin Hutchinson   5:40pm  Closing remarks   Evening  Free time   Tuesday, 21st October    9:00am  Welcome   9:10am  Hardware-backed approaches:    Transparent transparency hardware - Fredrik Stromberg    Confidential computing: Trusted computing in the cloud - Adit Sachde   10:10am  Website Transparency:    Let’s Make the Internet an App Store (but not in the dystopian way) - Michael Rosenberg, Dennis Jackson    ⚡ A decentralized integrity and transparency model for web applications - Giulio Berra   10:50am  Break   11:20am  Package management:    Go module notifications with gopherwatch.</description>
+    </item>
+    
+    <item>
+      <title>Transparency.dev Summit 2026 Confirmed Talks</title>
+      <link>https://transparency.dev/summit2026/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/</guid>
+      <description>Transparency.dev Summit Confirmed Talks   Matthew McPherrin  How Let&#39;s Encrypt is deploying Merkle Tree Certificates   Hayden Blauzvern  Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore   Ben Birt  Git-ratchet: tooling for Git commit transparency        </description>
     </item>
     
     <item>

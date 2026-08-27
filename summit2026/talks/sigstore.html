@@ -23,7 +23,7 @@
     <title>
       
         
-          Go module notifications with gopherwatch.org, and more!
+          Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore
          |
        Trillian
     </title>
@@ -174,7 +174,7 @@
       <h1 class="headline3 md:text-center mb-5 md:mb-16">
         <div class="eyebrow">Transparency.dev Summit</div>
 	
-        Go module notifications with gopherwatch.org, and more!
+        Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore
         <div class="eyebrow"></div>
         
         
@@ -189,7 +189,7 @@
       
       
         <p class="font-bold">
-          Mechiel Lukkien
+          Hayden Blauzvern
         </p>
         
       
@@ -197,24 +197,28 @@
     </aside>
     <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
       <div class="font-google font-medium">
-<p>Gopherwatch monitors the &ldquo;Go modules&rdquo; transparency log (containing libraries and
-applications), and sends notifications by email or webhook to users with
-subscriptions with matching Go module patterns. For example dependencies of your
-own software, or all software published by your organization, or friends, etc.
-Gopherwatch.org is a free public service, the code is open source, and it&rsquo;s easy
-to run your own. In this talk, we&rsquo;ll briefly look at Gopherwatch functionality
-(which, surprisingly, includes a DNS server), look at how Go modules make it
-into the transparency log, and discuss future work. Then we&rsquo;ll switch to a
-higher gear and discuss (a glimpse of) two other tools delivering automated
-software updates, with a transparency log of their own.</p>
-<ul>
-<li><a href="https://youtu.be/V9G6MxRifDg">Talk Recording</a></li>
-</ul>
+<p>The transition to post-quantum cryptography is an emerging necessity, but
+PQC algorithms like ML-DSA introduce a significant hurdle for signing: keys
+and signatures are orders of magnitude larger, ballooning metadata, egress
+and storage costs for transparency ecosystems.</p>
+<p>In this talk, we present the design for PQC for Sigstore, showing how
+migrating to quantum-resistant algorithms is a greenfield opportunity to
+drastically simplify artifact signing and verification with Sigstore.
+Instead of just swapping out classical algorithms, we leveraged this unique
+opportunity to revisit the system architecture and focus the design around
+the transparency log as the primary enabler of simplicity and auditability.</p>
+<p>Sigstore will provide &ldquo;keyless&rdquo; identity-bound signatures rooted in
+transparency. We&rsquo;ll explore how this shift shrinks verification metadata
+down to just a signed checkpoint while still preserving Sigstore&rsquo;s security
+and threat models. Finally, we will discuss how a new leaf format elegantly
+solves PQC signing algorithm storage overhead while concurrently preventing
+log poisoning and preserving user privacy.</p>
 <hr>
 <h3 id="speaker">Speaker</h3>
-<p>Mechiel studied Computer Science at the University Twente about 20 years ago and
-has been a software developer ever since, mostly freelance, with an interest in
-all things software development, including security.</p>
+<p>Hayden Blauzvern is a technical lead on Google’s Open Source Security
+Team, focused on making open-source software supply chain more secure and
+auditable. Hayden is a maintainer and the community chair on the Sigstore
+project.</p>
 </div>
 
     </article>
