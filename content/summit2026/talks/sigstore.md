@@ -24,7 +24,7 @@ Instead of just swapping out classical algorithms, we leveraged this unique
 opportunity to revisit the system architecture and focus the design around
 the transparency log as the primary enabler of simplicity and auditability.
 
-Sigstore will provide ""keyless"" identity-bound signatures rooted in
+Sigstore will provide "keyless" identity-bound signatures rooted in
 transparency. We'll explore how this shift shrinks verification metadata
 down to just a signed checkpoint while still preserving Sigstore's security
 and threat models. Finally, we will discuss how a new leaf format elegantly
