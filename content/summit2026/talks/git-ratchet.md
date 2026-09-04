@@ -1,9 +1,9 @@
 ---
-url: summit2026/talks/git-ratchet.html
+url: summit2026/talks/git-ratchet
 layout: summittalk
 title: "Git-ratchet: tooling for Git commit transparency"
 topImage:
-type:
+type: lightning
 room:
 start:
 speaker: Ben Birt

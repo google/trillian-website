@@ -1,5 +1,5 @@
 ---
-url: summit2026/talks/le-mtcs.html
+url: summit2026/talks/le-mtcs
 layout: summittalk
 title: "How Let's Encrypt is deploying Merkle Tree Certificates"
 topImage:

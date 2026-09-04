@@ -1,5 +1,5 @@
 ---
-url: summit2026/talks/sigstore.html
+url: summit2026/talks/sigstore
 layout: summittalk
 title: "Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore"
 topImage:
