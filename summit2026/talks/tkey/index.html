@@ -23,7 +23,7 @@
     <title>
       
         
-          Git-ratchet: tooling for Git commit transparency
+          The TKey sign-if-logged tool
          |
        Trillian
     </title>
@@ -174,7 +174,7 @@
       <h1 class="headline3 md:text-center mb-5 md:mb-16">
         <div class="eyebrow">Transparency.dev Summit</div>
 	
-        Git-ratchet: tooling for Git commit transparency
+        The TKey sign-if-logged tool
         <div class="eyebrow"></div>
         
         
@@ -189,7 +189,7 @@
       
       
         <p class="font-bold">
-          Ben Birt
+          Niels Möller
         </p>
         
       
@@ -197,20 +197,47 @@
     </aside>
     <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
       <div class="font-google font-medium">
-<p>Dependents of Git repositories often depend directly on a
-branch or tag. Unfortunately, without taking further precautions, this
-exposes those dependents to attack by any party authorised to change the
-target commits of those branches or tags. Worse, those attacks can then be
-hidden by scrubbing the evidence - by repointing the branch or tag back to
-a legitimate commit. Git-ratchet is a tool which dependents can use to
-enforce that upstream Git repository owners are transparent about their
-branch and tag state (and how it evolves over time) - and it uses witnesses
-to prevent split-view attacks on that commit transparency.</p>
+<p>The Sigsum transparency system enables detection of unexpected or
+malicious use of a signing key. The owner of a signing key submits
+each signature made to a Sigsum log, and gets back a corresponding
+Sigsum proof of logging. The parties that rely on these signatures
+(e.g., for installing signed software updates) are expected to reject
+any signature that does not come with a valid proof of logging. The
+key owner can then monitor the log and discover all signatures made
+that are going to be accepted.</p>
+<p>Discoverability of signatures is a desirable property, but what if you
+are making signatures in a context where those relying on your
+signatures are unable to process a Sigsum proof? E.g., the signature
+may have to follow some standard that&rsquo;s not easily extended with a
+Sigsum proof, or the signatures have to be verified on a slow embedded
+system where extended verification is impractical for performance
+reasons.</p>
+<p>The Tillitis TKey is an open source USB hardware security device which
+allows running small arbitrary applications in a more secure
+environment, using measured boot to give each application its own
+secret. Security keys and HSMs, including the TKey, are often used as
+signing oracles. But we can do better, by having the device also
+enforce Sigsum logging of the data before signing.</p>
+<p>The sign-if-logged tool consists of a host program, and a TKey device
+app. The host program configures the device app with a Sigsum policy
+and a list of authorized submitter keys. The host program can then ask
+the device to sign data, but the device requires that the host also
+provides a Sigsum proof, valid according to its configuration.</p>
+<p>This way, the signing party gets discoverability of signatures, and
+the ability to detect unexpected or malicious key usage, without the
+parties relying on those signatures having to know about it.</p>
+<p>The talk will give a brief introduction to Sigsum and the TKey
+hardware. It will explain how the sign-if-logged tool works and how to
+use it. If time permits, it will also introduce the Sigsum C library,
+which is designed with constrained embedded systems in mind.</p>
+<p>A version 1.0.0 of the sign-if-logged tool was released this summer.</p>
+<p>Source code and documentation:
+<a href="https://git.glasklar.is/sigsum/apps/sign-if-logged">https://git.glasklar.is/sigsum/apps/sign-if-logged</a></p>
 <hr>
 <h3 id="speaker">Speaker</h3>
-<p>Ben is a software engineer on Google&rsquo;s Oak team. He is part
-of the group that launched Google&rsquo;s new Private AI Compute (PAIC) platform
-and most recently set up PAIC&rsquo;s new Tessera-based binary transparency log.</p>
+<p>Working with the Sigsum project at Glasklar Teknik since 2022. Main
+author and maintainer of the GNU Nettle crypto library. PhD from the
+Automatic Control group at KTH.</p>
 </div>
 
     </article>

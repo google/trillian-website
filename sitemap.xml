@@ -19,6 +19,8 @@
   </url><url>
     <loc>https://transparency.dev/application/</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2026/talks/archive/</loc>
+  </url><url>
     <loc>https://transparency.dev/articles/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/bt-breakout-part1.html</loc>
@@ -91,7 +93,7 @@
   </url><url>
     <loc>https://transparency.dev/how-to-design-a-verifiable-system/</loc>
   </url><url>
-    <loc>https://transparency.dev/summit2026/talks/git-ratchet.html</loc>
+    <loc>https://transparency.dev/summit2026/talks/git-ratchet/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/gopherwatch.html</loc>
   </url><url>
@@ -99,7 +101,7 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/chrome.html</loc>
   </url><url>
-    <loc>https://transparency.dev/summit2026/talks/le-mtcs.html</loc>
+    <loc>https://transparency.dev/summit2026/talks/le-mtcs/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/pypi.html</loc>
   </url><url>
@@ -161,7 +163,9 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/silentct.html</loc>
   </url><url>
-    <loc>https://transparency.dev/summit2026/talks/sigstore.html</loc>
+    <loc>https://transparency.dev/summit2026/talks/sigstore/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2026/talks/sostenuto/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/split-view.html</loc>
   </url><url>
@@ -174,6 +178,8 @@
     <loc>https://transparency.dev/summit2024/break-day3-afternoon.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/break-day3-afternoon.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2026/talks/tkey/</loc>
   </url><url>
     <loc>https://transparency.dev/articles/tile-based-logs/</loc>
   </url><url>

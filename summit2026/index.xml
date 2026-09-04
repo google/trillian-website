@@ -6,31 +6,59 @@
     <description>Recent content in Transparency.dev Summit on Transparency.dev</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/summit2026/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Git-ratchet: tooling for Git commit transparency</title>
-      <link>https://transparency.dev/summit2026/talks/git-ratchet.html</link>
+      <title>Archive Transparency</title>
+      <link>https://transparency.dev/summit2026/talks/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/summit2026/talks/git-ratchet.html</guid>
+      <guid>https://transparency.dev/summit2026/talks/archive/</guid>
+      <description>Everyday online resources move, change, or disappear, making users rely on third-party repositories to keep the past available for them. The good reputation of these repositories makes them attractive targets for quiet tampering by attackers. This threatens trust in the authenticity of historical records, especially in an era of mechanized intelligence.
+This talk will introduce Archive Transparency, a prototype that explores how transparency logs, Sigsum, and the witness network can solve this issue by establishing that a third-party repository content has remained unchanged over a long time.</description>
+    </item>
+    
+    <item>
+      <title>Git-ratchet: tooling for Git commit transparency</title>
+      <link>https://transparency.dev/summit2026/talks/git-ratchet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/git-ratchet/</guid>
       <description>Dependents of Git repositories often depend directly on a branch or tag. Unfortunately, without taking further precautions, this exposes those dependents to attack by any party authorised to change the target commits of those branches or tags. Worse, those attacks can then be hidden by scrubbing the evidence - by repointing the branch or tag back to a legitimate commit. Git-ratchet is a tool which dependents can use to enforce that upstream Git repository owners are transparent about their branch and tag state (and how it evolves over time) - and it uses witnesses to prevent split-view attacks on that commit transparency.</description>
     </item>
     
     <item>
       <title>How Let&#39;s Encrypt is deploying Merkle Tree Certificates</title>
-      <link>https://transparency.dev/summit2026/talks/le-mtcs.html</link>
+      <link>https://transparency.dev/summit2026/talks/le-mtcs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/summit2026/talks/le-mtcs.html</guid>
+      <guid>https://transparency.dev/summit2026/talks/le-mtcs/</guid>
       <description>Let&amp;rsquo;s Encrypt is working on launching Merkle Tree Certificates. In this talk, we&amp;rsquo;ll discuss how we&amp;rsquo;ve added Merkle Tree certificates to our Boulder CA software, how we&amp;rsquo;re serving our logs, and the testing, monitoring, and disaster planning we&amp;rsquo;re doing to ship a production-quality CA the world can rely on. We&amp;rsquo;ll compare running an MTCA and mirror to our previous ACME CA and static CT logs, and what lessons from the past have informed our future architecture.</description>
     </item>
     
     <item>
       <title>Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore</title>
-      <link>https://transparency.dev/summit2026/talks/sigstore.html</link>
+      <link>https://transparency.dev/summit2026/talks/sigstore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/summit2026/talks/sigstore.html</guid>
+      <guid>https://transparency.dev/summit2026/talks/sigstore/</guid>
       <description>The transition to post-quantum cryptography is an emerging necessity, but PQC algorithms like ML-DSA introduce a significant hurdle for signing: keys and signatures are orders of magnitude larger, ballooning metadata, egress and storage costs for transparency ecosystems.
 In this talk, we present the design for PQC for Sigstore, showing how migrating to quantum-resistant algorithms is a greenfield opportunity to drastically simplify artifact signing and verification with Sigstore. Instead of just swapping out classical algorithms, we leveraged this unique opportunity to revisit the system architecture and focus the design around the transparency log as the primary enabler of simplicity and auditability.</description>
+    </item>
+    
+    <item>
+      <title>Sostenuto: Scaling &amp; Sustaining Android Binary Transparency</title>
+      <link>https://transparency.dev/summit2026/talks/sostenuto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/sostenuto/</guid>
+      <description>Since its inception, Android Binary Transparency (ABT) has served as a foundational security primitive for the Android ecosystem. While our effort began by tackling transparency at the firmware level (characterized by low-cadence monolithic OS builds and manually curated log entries), extending these guarantees to the application layer (building on our previous work presented in Crescendo) introduces distinct onerational requirements, such as high-volume input processing and data integrity. Unlike OS images, apps have continuous release cadences, multi-variant delivery formats, and widespread deployment footprints.</description>
+    </item>
+    
+    <item>
+      <title>The TKey sign-if-logged tool</title>
+      <link>https://transparency.dev/summit2026/talks/tkey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/tkey/</guid>
+      <description>The Sigsum transparency system enables detection of unexpected or malicious use of a signing key. The owner of a signing key submits each signature made to a Sigsum log, and gets back a corresponding Sigsum proof of logging. The parties that rely on these signatures (e.g., for installing signed software updates) are expected to reject any signature that does not come with a valid proof of logging. The key owner can then monitor the log and discover all signatures made that are going to be accepted.</description>
     </item>
     
     <item>
@@ -39,7 +67,7 @@ In this talk, we present the design for PQC for Sigstore, showing how migrating 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/summit2026/talks/</guid>
-      <description>Transparency.dev Summit Confirmed Talks   Matthew McPherrin  How Let&#39;s Encrypt is deploying Merkle Tree Certificates   Hayden Blauzvern  Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore   Ben Birt  Git-ratchet: tooling for Git commit transparency        </description>
+      <description>Transparency.dev Summit Confirmed Talks   Ben Birt  ⚡ Git-ratchet: tooling for Git commit transparency   Hayden Blauzvern  Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore   Matthieu Daumas  ⚡ Archive Transparency   Billy Lau  Sostenuto: Scaling &amp; Sustaining Android Binary Transparency   Matthew McPherrin  How Let&#39;s Encrypt is deploying Merkle Tree Certificates   Niels Möller  The TKey sign-if-logged tool        </description>
     </item>
     
   </channel>

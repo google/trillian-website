@@ -23,13 +23,11 @@
     <title>
       
         
-          Transparency.dev Summit 2026 Confirmed Talks
+          Sostenuto: Scaling &amp; Sustaining Android Binary Transparency
          |
        Trillian
     </title>
 
-    
-      <meta name="description" content="Talks that have been confirmed for the Transparency.dev Summit 2026" property="og:description"/>
     
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173407084-1"></script>
@@ -170,69 +168,105 @@
   })();
 </script>
 
-<section class="glue-page gmt-6 gmb-7">
-  <h1 class="headline2 sm:text-center gmb-4">
-    <div class="eyebrow">Transparency.dev Summit</div>
-    Confirmed Talks
-  </h1>
-  <div class="glue-grid gmt-4 gmb-2">
-    <div class="col-span-4 sm:col-span-8 sm:col-start-3">
-      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 gmb-2">
-        <tbody>
-          <tr class="border-b border-gray-200 dark:border-gray-700">
-            <td class="px-6 py-3">
-              Ben Birt
-            </td>
-            <td class="px-6 py-3">
-              <a href="/summit2026/talks/git-ratchet">⚡ Git-ratchet: tooling for Git commit transparency</a>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-200 dark:border-gray-700">
-            <td class="px-6 py-3">
-              Hayden Blauzvern
-            </td>
-            <td class="px-6 py-3">
-              <a href="/summit2026/talks/sigstore">Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore</a>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-200 dark:border-gray-700">
-            <td class="px-6 py-3">
-              Matthieu Daumas
-            </td>
-            <td class="px-6 py-3">
-              <a href="/summit2026/talks/archive">⚡ Archive Transparency</a>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-200 dark:border-gray-700">
-            <td class="px-6 py-3">
-              Billy Lau
-            </td>
-            <td class="px-6 py-3">
-              <a href="/summit2026/talks/sostenuto">Sostenuto: Scaling & Sustaining Android Binary Transparency</a>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-200 dark:border-gray-700">
-            <td class="px-6 py-3">
-              Matthew McPherrin
-            </td>
-            <td class="px-6 py-3">
-              <a href="/summit2026/talks/le-mtcs">How Let's Encrypt is deploying Merkle Tree Certificates</a>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-200 dark:border-gray-700">
-            <td class="px-6 py-3">
-              Niels Möller
-            </td>
-            <td class="px-6 py-3">
-              <a href="/summit2026/talks/tkey">The TKey sign-if-logged tool</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<div class="glue-page gmt-6 gmb-4 markdown">
+  <div class="glue-grid">
+    <div class="col-span-4 sm:col-span-12 md:col-span-10 md:col-start-2">
+      <h1 class="headline3 md:text-center mb-5 md:mb-16">
+        <div class="eyebrow">Transparency.dev Summit</div>
+	
+        Sostenuto: Scaling &amp; Sustaining Android Binary Transparency
+        <div class="eyebrow"></div>
+        
+        
+      </h1>
+      
+        <div class="gmb-5"></div>
+      
     </div>
   </div>
-</section>
+  <div class="glue-grid">
+    <aside class="submenu col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 gmb-3">
+      
+      
+        <p class="font-bold">
+          Billy Lau
+        </p>
+        
+      
+      
+    </aside>
+    <article id="content" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 gmb-7 markdown">
+      <div class="font-google font-medium">
+<p>Since its inception, Android Binary Transparency (ABT) has served as a
+foundational security primitive for the Android ecosystem. While our effort
+began by tackling transparency at the firmware level (characterized by
+low-cadence monolithic OS builds and manually curated log entries),
+extending these guarantees to the application layer (building on our
+previous work presented in <a href="https://www.youtube.com/watch?v=TZMspOgnr_A">Crescendo</a>)
+introduces distinct onerational requirements, such as high-volume input
+processing and data integrity. Unlike OS images, apps have continuous release
+cadences, multi-variant delivery formats, and widespread deployment footprints.</p>
+<p>In this talk, we discuss <a href="https://developers.google.com/android/binary_transparency/google_apk/overview">Google Product Application Transparency</a>
+(GPAT) and <a href="https://developers.google.com/android/binary_transparency/mainline_modules/overview">Android Mainline Modules Transparency</a>
+(modular OS components delivered via app update channels), extending
+cryptographic transparency guarantees to standalone product applications
+and OS modules. Logging continuous-release applications such as Google Play
+Services (com.google.android.gms) and YouTube (com.google.android.youtube)
+differs substantially from firmware logging: release cadences shift from
+monthly to continuous, and binary releases involve multidimensional variant
+matrices (varying across ABIs, screen densities, and dynamic feature
+splits). Consequently, a single logical version does not yield a single
+binary hash; it produces a combinatorial explosion of split binaries that
+must all be mapped, deduplicated, and verified without corrupting the log&rsquo;s
+state.</p>
+<p>To address these requirements, we designed and built TLUaaS (Transparency
+Log Updater as a Service), a backend ingestion and orchestration pipeline
+engineered for large-scale log writing. We will discuss the design
+decisions, failure modes, and operational lessons learned from running
+TLUaaS in production, including:</p>
+<ul>
+<li>Variant Resolution and Pre-Ingestion Deduplication: How TLUaaS computes
+document deltas across continuous release streams, resolves multi-APK
+variant sets, and deterministically normalizes binaries before committing
+irreversible writes to the log.</li>
+<li>Production Safeguards and Ingestion Containment: Managing ingestion
+pipelines where source metadata (including app signing keys, true release
+manifests, and distribution streams) only exists in production environments
+restricts our ability to perform pre-production testing. Because synthetic
+data cannot account for real-world production variability, we will cover
+the operational safeguards developed to mitigate bad-data ingestion, such
+as emergency containment fail-safes for test packages and strict
+server-targeting controls.</li>
+</ul>
+<p>To illustrate end-to-end verification, we will demonstrate <a href="https://github.com/android/android-binary-transparency/tree/main/uraniborg">Uraniborg</a>,
+an open-source audit tool used to scan on-device APKs and verify them
+against published transparency logs and cryptographic proofs. Attendees
+will leave with practical design patterns for operating immutable
+transparency logs that take input from multiple pipelines at scale,
+techniques for handling variant-heavy release pipelines, and strategies for
+maintaining data integrity in supply-chain verification systems.</p>
+<hr>
+<h3 id="speaker">Speaker</h3>
+<p>Billy Lau is a security engineer in the Android Security team. He is
+primarily interested in information security, with emphasis on operating
+systems and user applications. In recent years, he has been trying to
+leverage transparency constructs into the Android OS and influence the
+larger ecosystem for the further protection of users. He has been examining
+various security designs for mobile devices and analyzing the security and
+privacy impacts of mobile computing devices in everyday life. He
+particularly loves to challenge the status quo on conventional security
+assumptions, which are often broken when put to test. He aspires to push
+the scientific envelope in mobile security and to make Android the most
+secure consumer operating system by identifying and solving the deepest
+problems in the realm of mobile security and leveraging his position in the
+industry to make mobile computing more reliable and secure. In general, he
+hopes to make a difference by making usable computer systems more secure
+and secure systems more usable.</p>
+</div>
 
+    </article>
+  </div>
+</div>
 
 
 <div class="text-white bg-Grey-050 font-google font-medium footer">
