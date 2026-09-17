@@ -16,10 +16,10 @@ Transparency logs (TLs) underpin key transparency, binary transparency, and
 software supply-chain security.  Deployed TLs rely on witness cosigning to
 cryptographically prevent a malicious log operator from serving incompatible
 views of the log to different clients, a so-called split-view attack.  This is
-achieved by appointing a small set of $n$ trustworthy entities called witnesses,
+achieved by appointing a small set of `n` trustworthy entities called witnesses,
 who independently verify that each new log state is consistent with the previous
-one and cosign it.  Clients accept a log state only if it carries at least $t$
-out of $n$ valid cosignatures.  Witness cosigning is sound in an idealized
+one and cosign it.  Clients accept a log state only if it carries at least `t`
+out of `n` valid cosignatures.  Witness cosigning is sound in an idealized
 setting where witnesses are honest and always online.  Real deployments,
 however, must withstand witnesses becoming malicious, going temporarily
 unresponsive, or both at once.
@@ -31,8 +31,8 @@ cosignature, since a witness that stops signing for a long period is removed
 from the witness set.
 
 This talk analyzes witness cosigning in two models. In the first, without
-monitors, protecting against split views in the presence of up to $m$ malicious
-witnesses requires a threshold of at least $\lceil (n+m+1)/2 \rceil$
+monitors, protecting against split views in the presence of up to `m` malicious
+witnesses requires a threshold of aft least `⌈(n+m+1)/2⌉`
 cosignatures, strictly above a simple majority.  The same bound caps how many
 witnesses may be unresponsive before split-view protection is lost.
 
