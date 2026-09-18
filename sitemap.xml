@@ -83,6 +83,8 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/ca.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2026/talks/mtcs-cdn-scale/</loc>
+  </url><url>
     <loc>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/package-registries.html</loc>
@@ -96,6 +98,8 @@
     <loc>https://transparency.dev/summit2026/talks/git-ratchet/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/gopherwatch.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2026/talks/google-witnessing/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/heliotorrent.html</loc>
   </url><url>
@@ -129,6 +133,8 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/app-store.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2026/talks/logcabin/</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/break-day1-lunch.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/break-day2-lunch.html</loc>
@@ -145,9 +151,17 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/logos.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2026/talks/chrome-mtc/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2026/talks/lint-mtc/</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/sigstore.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2026/talks/operation-transparency/</loc>
+  </url><url>
     <loc>https://transparency.dev/privacy/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2026/talks/project-hail-merkle/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/registration.html</loc>
   </url><url>
@@ -159,11 +173,15 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/tessera.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2026/talks/witness-cosigning/</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/letsencrypt.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/silentct.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2026/talks/sigstore/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2026/talks/kt/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2026/talks/sostenuto/</loc>
   </url><url>
@@ -175,6 +193,8 @@
   </url><url>
     <loc>https://transparency.dev/summit2025/tesseratalk.html</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2026/talks/sigsum/</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/break-day3-afternoon.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/break-day3-afternoon.html</loc>
@@ -182,6 +202,8 @@
     <loc>https://transparency.dev/summit2026/talks/tkey/</loc>
   </url><url>
     <loc>https://transparency.dev/articles/tile-based-logs/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2026/talks/tlog-addenda/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/digital-id.html</loc>
   </url><url>
@@ -223,9 +245,13 @@
   </url><url>
     <loc>https://transparency.dev/witnesses/</loc>
   </url><url>
+    <loc>https://transparency.dev/summit2026/talks/third-parties/</loc>
+  </url><url>
     <loc>https://transparency.dev/summit2024/healthcare.html</loc>
   </url><url>
     <loc>https://transparency.dev/verifiable-data-structures/</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2026/talks/vindex/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/verifiable-indexes.html</loc>
   </url><url>
@@ -238,6 +264,8 @@
     <loc>https://transparency.dev/summit2025/intro.html</loc>
   </url><url>
     <loc>https://transparency.dev/summit2024/sigsum.html</loc>
+  </url><url>
+    <loc>https://transparency.dev/summit2026/talks/passkey-recovery/</loc>
   </url><url>
     <loc>https://transparency.dev/summit2025/talks/things-bad.html</loc>
   </url><url>

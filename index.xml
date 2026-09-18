@@ -362,6 +362,15 @@ In particular, I will discuss how we expanded coverage from the granularity of a
     </item>
     
     <item>
+      <title>Deploying MTCs at CDN scale</title>
+      <link>https://transparency.dev/summit2026/talks/mtcs-cdn-scale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/mtcs-cdn-scale/</guid>
+      <description>Cloudflare aims to provision Merkle Tree Certificates (MTCs) with ML-DSA signatures for the millions of Cloudflare-proxied domains we manage classical certificates for today. But ML-DSA public keys and signatures are far larger than their classical counterparts, and naïvely storing MTCs would overwhelm the capacity budgets of the globally-distributed key-value store backing our control plane. Fortunately, the properties of MTCs (e.g., batch signing) open up optimizations and deduplication that are not possible with directly-signed certificates, and make our MTC deployment feasible.</description>
+    </item>
+    
+    <item>
       <title>Discourage misbehaviour by third parties in Certificate Transparency</title>
       <link>https://transparency.dev/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -428,6 +437,16 @@ A common pattern that arises in many systems (and especially in anything related
       
       <guid>https://transparency.dev/summit2025/talks/gopherwatch.html</guid>
       <description>Gopherwatch monitors the &amp;ldquo;Go modules&amp;rdquo; transparency log (containing libraries and applications), and sends notifications by email or webhook to users with subscriptions with matching Go module patterns. For example dependencies of your own software, or all software published by your organization, or friends, etc. Gopherwatch.org is a free public service, the code is open source, and it&amp;rsquo;s easy to run your own. In this talk, we&amp;rsquo;ll briefly look at Gopherwatch functionality (which, surprisingly, includes a DNS server), look at how Go modules make it into the transparency log, and discuss future work.</description>
+    </item>
+    
+    <item>
+      <title>Google&#39;s Transparency Log Witnessing Programme</title>
+      <link>https://transparency.dev/summit2026/talks/google-witnessing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/google-witnessing/</guid>
+      <description>This talk presents Google&amp;rsquo;s new transparency log witnessing programme (https://witnessplz.transparency.goog/). I&amp;rsquo;ll explain what these t-logs are for&amp;mdash;Private AI Compute binary transparency&amp;mdash;and describe the framework, including some of the technical detail, for how and why we have made agreements with various witness operators to witness the t-logs.
+ Speaker Ben is a software engineer on Google&amp;rsquo;s Oak team. He is part of the group that launched Google&amp;rsquo;s new Private AI Compute (PAIC) platform and most recently set up PAIC&amp;rsquo;s new Tessera-based binary transparency log.</description>
     </item>
     
     <item>
@@ -587,6 +606,16 @@ Key transparency, first introduced in CONIKS, allows much of this verification t
     </item>
     
     <item>
+      <title>LogCabin: a split-view resistant ledger as a t-log witness</title>
+      <link>https://transparency.dev/summit2026/talks/logcabin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/logcabin/</guid>
+      <description>Third-party witness networks are an effective defense against split-view attacks on transparency logs, but they require coordinating multiple independent organizations — incurring reliability, legal, and operational cross-org constraints and risks.
+This talk presents LogCabin, an open-source, split-view resistant ledger service built on a Nimble-inspired protocol (Nimble: OSDI &amp;lsquo;23). When deployed as a witness, LogCabin enables a new scenario: a single operator can offer a scalable t-log where the operator itself is technically — not just practically — incapable of creating undetected split views.</description>
+    </item>
+    
+    <item>
       <title>Lunch</title>
       <link>https://transparency.dev/summit2024/break-day1-lunch.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -660,6 +689,24 @@ The talk will further discuss how monitoring BIMI CT logs can be used to strengt
     </item>
     
     <item>
+      <title>MTC support is only step 1: How Chrome will protect all users from quantum attackers</title>
+      <link>https://transparency.dev/summit2026/talks/chrome-mtc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/chrome-mtc/</guid>
+      <description>Chrome plans to gradually roll out support for MTCs trusted by default in Chrome in early 2027, with current Certificate Transparency log operators leading the way. The final milestone for 2027 will hopefully result in MTCs usable in Chrome being widely available from multiple CAs. But Chrome&amp;rsquo;s PQ transition isn&amp;rsquo;t over at that point &amp;ndash; offering MTCs isn&amp;rsquo;t enough to protect our users from an attacker with a quantum computer, ideally no matter what site they&amp;rsquo;re talking to.</description>
+    </item>
+    
+    <item>
+      <title>Nobody Can Lint a Merkle Tree Certificate Yet</title>
+      <link>https://transparency.dev/summit2026/talks/lint-mtc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/lint-mtc/</guid>
+      <description>The Web PKI learned two lessons the hard way: catch problems before issuance, and make anything that slips through publicly visible. Pre-issuance certificate linting provides the first, preventing key material from signing malformed or non-compliant objects; Certificate Transparency provides the second. Both arrived only after the Web PKI had been in widespread use for many years, by which point preventable problems were already common and long-standing requirements had gone unenforced at issuance until linters were available.</description>
+    </item>
+    
+    <item>
       <title>Nowhere to Hide: Using Transparency Logs to Secure Your Supply Chain with Sigstore</title>
       <link>https://transparency.dev/summit2024/sigstore.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -667,6 +714,16 @@ The talk will further discuss how monitoring BIMI CT logs can be used to strengt
       <guid>https://transparency.dev/summit2024/sigstore.html</guid>
       <description>This talk explores the motivations behind signature transparency, the role of transparency in Sigstore identities, and the ongoing improvements we&amp;rsquo;re making to enhance Sigstore&amp;rsquo;s transparency adoption.
  Speaker Slides Talk Recording   Speaker Hayden Blauzvern is a technical lead &amp;amp; manager on Google’s Open Source Security Team, focused on making open-source software more secure through code signing and applied transparency. Hayden is a maintainer and the community chair on the Sigstore project, and is currently focused on improving supply chain security for package registries.</description>
+    </item>
+    
+    <item>
+      <title>Operation Transparency for Encrypted Spaces</title>
+      <link>https://transparency.dev/summit2026/talks/operation-transparency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/operation-transparency/</guid>
+      <description>The Encrypted Spaces project is a research and open source project working on end-to-end encryption for shared persistent data like documents, chat forums etc. (https://encryptedspaces.org)
+As part of this work, we&amp;rsquo;re exploring an operation transparency notion to provide each group of users with a shared, fork-resistant operation log for their shared data. In our system this log is used with zero knowledge proofs to provide users with succinct, privacy-preserving proofs that the server has applied the operation log correctly.</description>
     </item>
     
     <item>
@@ -679,6 +736,15 @@ The talk will further discuss how monitoring BIMI CT logs can be used to strengt
 This activity is anonymous to us: we cannot identify a user in Google Analytics, and we don’t send identifiable information to them, either.
 To disable our use of Google Analytics, enable the Do Not Track setting in your browser. Here are instructions for:
  Chrome Firefox  </description>
+    </item>
+    
+    <item>
+      <title>Project Hail Merkle - MTCs and Challenges for European Trust Service Providers</title>
+      <link>https://transparency.dev/summit2026/talks/project-hail-merkle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/project-hail-merkle/</guid>
+      <description>Merkle Tree Certificates (MTCs) are more than a serialization or transport optimization since they change the way trust is built. This is a challenge for European qualified trust service providers (QTSPs) and the regulatory supervision. The talk will sketch challenges and advantages when applying MTC concepts to the eIDAS ecosystem, like Cosigner role, certificate revocation, interplay with Qualified Website Authentication Certificates (QWACs), Qualified Signatures and other eIDAS services. MTCs are not presented as a ready-made replacement for today’s infrastructure, but to identify the protocol, governance and policy questions that must be resolved before Merkle-based certificates can support European trust services at scale.</description>
     </item>
     
     <item>
@@ -730,6 +796,15 @@ Breakfast
     </item>
     
     <item>
+      <title>Setting Thresholds in Witness Cosigning</title>
+      <link>https://transparency.dev/summit2026/talks/witness-cosigning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/witness-cosigning/</guid>
+      <description>Transparency logs (TLs) underpin key transparency, binary transparency, and software supply-chain security. Deployed TLs rely on witness cosigning to cryptographically prevent a malicious log operator from serving incompatible views of the log to different clients, a so-called split-view attack. This is achieved by appointing a small set of n trustworthy entities called witnesses, who independently verify that each new log state is consistent with the previous one and cosign it. Clients accept a log state only if it carries at least t out of n valid cosignatures.</description>
+    </item>
+    
+    <item>
       <title>Shining a new light on Certificate Transparency</title>
       <link>https://transparency.dev/summit2024/letsencrypt.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -756,6 +831,16 @@ Breakfast
       <guid>https://transparency.dev/summit2026/talks/sigstore/</guid>
       <description>The transition to post-quantum cryptography is an emerging necessity, but PQC algorithms like ML-DSA introduce a significant hurdle for signing: keys and signatures are orders of magnitude larger, ballooning metadata, egress and storage costs for transparency ecosystems.
 In this talk, we present the design for PQC for Sigstore, showing how migrating to quantum-resistant algorithms is a greenfield opportunity to drastically simplify artifact signing and verification with Sigstore. Instead of just swapping out classical algorithms, we leveraged this unique opportunity to revisit the system architecture and focus the design around the transparency log as the primary enabler of simplicity and auditability.</description>
+    </item>
+    
+    <item>
+      <title>So, you want to deploy Key Transparency?</title>
+      <link>https://transparency.dev/summit2026/talks/kt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/kt/</guid>
+      <description>Key Transparency closes one of the most important gaps in modern end-to-end encryption: it lets users verify that the public keys they use for encryption actually belong to the users they’re talking to. For too long, KT was either omitted by end-to-end encrypted services or accomplished through a custom protocol. The IETF is now standardizing a protocol, and this talk is a practical guide for anyone considering adopting it.
+The first portion of the talk covers the high-level security and privacy properties that the IETF protocol provides and the pitfalls we often hit trying to reach them: optional rather than mandatory trusted third parties, rapid updates, and efficient user auditing, all while strongly protecting user privacy.</description>
     </item>
     
     <item>
@@ -808,6 +893,16 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
     </item>
     
     <item>
+      <title>The diff between sigsum/v1 and sigsum/v2?</title>
+      <link>https://transparency.dev/summit2026/talks/sigsum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/sigsum/</guid>
+      <description>Sigsum is a transparency system that makes signatures discoverable [1]. In other words: everytime a signature is created that an end-user accepts as valid, then that signature also becomes discoverable in a global append-only log.
+Since dubbing the stable version of Sigsum in 2023 [2], many of the bits and pieces have been made available as independent specifications at C2SP.org [3]. The next major version of Sigsum (v2.0.0) is therefore expected to be mostly composed of multiple C2SP.</description>
+    </item>
+    
+    <item>
       <title>The End</title>
       <link>https://transparency.dev/summit2024/break-day3-afternoon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -841,6 +936,16 @@ Advantages of Key Transparency  Automate user discovery of end-to-end encryption
       
       <guid>https://transparency.dev/articles/tile-based-logs/</guid>
       <description>Background The TrustFabric team launched Trillian in 2016 as an implementation for verifiable logs - a tamper-evident data structure based on Merkle trees. Since then, Trillian has been adopted by, and had transformative impact on, applications like Certificate Transparency, binary transparency, and AI model transparency. Trillian provides readers with APIs to get entries from the log and request proofs from the log to verify it hasn&amp;rsquo;t been tampered with. To read more or brush up on verifiable logs, head over to the Verifiable Data Structures page.</description>
+    </item>
+    
+    <item>
+      <title>tlog-addenda: an adoptable standard for log-adjacent data, mirroring, and redaction too!</title>
+      <link>https://transparency.dev/summit2026/talks/tlog-addenda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/tlog-addenda/</guid>
+      <description>Transparency Logs are great for publishing commitments of data, but when rolling them out in a new domain, there are two common questions that can cause stalls in the design process:
+ what do we do with this data that we want the log&amp;rsquo;s commitment on, but is&amp;hellip; big? what do we do with data that we might need to redact (e.g. stop publishing, without taking down the whole log) someday?</description>
     </item>
     
     <item>
@@ -917,8 +1022,7 @@ Dennis Jackson, Mozilla</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://transparency.dev/summit2026/talks/</guid>
-      <description>Transparency.dev Summit Confirmed Talks  The full program of sessions is now published on the Summit Schedule.
-Detailed talk abstracts and speaker bios below are gradually being added over the next few days.  Ben Birt  ⚡ Git-ratchet: tooling for Git commit transparency   Hayden Blauzvern  Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore   Matthieu Daumas  ⚡ Archive Transparency   Billy Lau  Sostenuto: Scaling &amp; Sustaining Android Binary Transparency   Matthew McPherrin  How Let&#39;s Encrypt is deploying Merkle Tree Certificates   Niels Möller  The TKey sign-if-logged tool        </description>
+      <description>Transparency.dev Summit Confirmed Talks  The full program can be seen on the summit schedule.  David Benjamin  Transparency Log Developments from MTCs   Ben Birt  ⚡ Git-ratchet: tooling for Git commit transparency   Ben Birt  ⚡ Google&#39;s Transparency Log Witnessing Programme   Hayden Blauzvern  Simplicity through Transparency: How the PQC Migration is Streamlining Sigstore   Corey Bonnell  ⚡ Nobody Can Lint a Merkle Tree Certificate Yet   Rasmus Dahlberg  ⚡ The diff between sigsum/v1 and sigsum/v2?</description>
     </item>
     
     <item>
@@ -951,7 +1055,7 @@ Elena Pagnin, Chalmers University</description>
       
       <guid>https://transparency.dev/summit2026/schedule/</guid>
       <description>Transparency.dev Summit 2026 Schedule The schedule for the 2026 summit may still undergo small tweaks in the lead up to the event.
-All times are in local Montreal time i.e. EDT (UTC/GMT-4)  Full Schedule     Tuesday, 29th September   9:00am - 10am  Arrival and registration   10:00am  Welcome and opening remarks   10:15am  Welcome, Transparency overview &amp; Getting started with MTCs — Martin Hutchinson, Rasmus Dahlberg, &amp; Joe DeBlasio   10:45am  Break   11:00am  Transparency Log Developments from MTCs - David Benjamin (Google Chrome)    How Let&#39;s Encrypt is deploying Merkle Tree Certificates - Matthew McPherrin (Let&#39;s Encrypt)    Deploying MTCs at CDN Scale - Luke Valenta (Cloudflare)   12:30pm  Lunch   2:00pm  MTCs and CT in Chrome in 2028 and Beyond - Joe DeBlasio (Google Chrome)    ⚡ Nobody Can Lint a Merkle Tree Certificate Yet - Corey Bonnell (TurboLight)    ⚡ Project Hail Merkle - MTCs: a new way for PKI and Trust Services - Jan Klaussner (Bundesdruckerei GmbH)    ⚡ MTC Revocation Status (MTCRS) - Rob Stradling (Sectigo)   3:15pm  Break   3:45pm  Breakout sessions and summaries   5:30pm  Closing remarks   6:00pm - 9:00pm  Evening reception   Wednesday, 30th September    9:00am - 9:25am  Arrival and badge collection   9:25am  Welcome   9:30am  ⚡ Google&#39;s Transparency Log Witnessing Programme - Ben Birt (Google)    ⚡ Setting Thresholds in Witness Cosigning - Lucia Lavagnino (Chalmers University)    ⚡ LogCabin: a split-view resistant ledger as a t-log witness - Ernesto Ocampo (Google DeepMind)    On Trusting Trusted Third Parties: transparency systems with designated auditors - Tjaden Hess (Trail of Bits)   10:45am  Break   11:00am  So, you want to deploy Key Transparency - Brendan McMillion    Operation Transparency for Encrypted Spaces - Trevor Perrin (Encrypted Spaces Foundation)    ⚡ Verifiable Index: from prototype to production - Martin Hutchinson (Google)    ⚡ tlog-addenda: a convention for more data, mirroring, and redaction too!</description>
+All times are in local Montreal time i.e. EDT (UTC/GMT-4)  Full Schedule     Tuesday, 29th September   9:00am - 10am  Arrival and registration   10:00am  Welcome and opening remarks   10:15am  Welcome, Transparency overview &amp; Getting started with MTCs — Martin Hutchinson, Rasmus Dahlberg, &amp; Joe DeBlasio   10:45am  Break   11:00am  Transparency Log Developments from MTCs - David Benjamin (Google Chrome)    How Let&#39;s Encrypt is deploying Merkle Tree Certificates - Matthew McPherrin (Let&#39;s Encrypt)    Deploying MTCs at CDN Scale - Luke Valenta (Cloudflare)   12:30pm  Lunch   2:00pm  MTC support is only step 1: How Chrome will protect all users from quantum attackers - Joe DeBlasio (Google Chrome)    ⚡ Nobody Can Lint a Merkle Tree Certificate Yet - Corey Bonnell (TurboLight)    ⚡ Project Hail Merkle - MTCs: a new way for PKI and Trust Services - Jan Klaussner (Bundesdruckerei GmbH)    ⚡ MTC Revocation Status (MTCRS) - Rob Stradling (Sectigo)   3:15pm  Break   3:45pm  Breakout sessions and summaries   5:30pm  Closing remarks   6:00pm - 9:00pm  Evening reception   Wednesday, 30th September    9:00am - 9:25am  Arrival and badge collection   9:25am  Welcome   9:30am  ⚡ Google&#39;s Transparency Log Witnessing Programme - Ben Birt (Google)    ⚡ Setting Thresholds in Witness Cosigning - Lucia Lavagnino (Chalmers University)    ⚡ LogCabin: a split-view resistant ledger as a t-log witness - Ernesto Ocampo (Google DeepMind)    Trusting Third Parties: transparency systems with designated auditors - Tjaden Hess (Trail of Bits)   10:45am  Break   11:00am  So, you want to deploy Key Transparency?</description>
     </item>
     
     <item>
@@ -1019,6 +1123,16 @@ This talk will explain how the radically open-source Tillitis TKey and Tillitis 
     </item>
     
     <item>
+      <title>Trusting Third Parties: transparency systems with designated auditors</title>
+      <link>https://transparency.dev/summit2026/talks/third-parties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/third-parties/</guid>
+      <description>For user privacy and corporate IP reasons, many of the largest deployed transparency systems rely on designated auditors, both in the informal software sense and as protocol participants. Key Transparency auditing requires access to sensitive metadata about key churn, some Binary Transparency schemes rely on a trusted party for append-only guarantees, and private AI systems often cannot release all source code due to IP or guardrail considerations.
+Trail of Bits serves as an auditor (in at least one of the senses) for five large-scale private AI systems and for the Signal key transparency deployment.</description>
+    </item>
+    
+    <item>
       <title>Using verifiable logs to bring human-centred transparency to healthcare</title>
       <link>https://transparency.dev/summit2024/healthcare.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1034,6 +1148,15 @@ This talk will explain how the radically open-source Tillitis TKey and Tillitis 
       
       <guid>https://transparency.dev/verifiable-data-structures/</guid>
       <description>Verifiable data structures    Verifiable log Trillian uses a Merkle tree to implement a verifiable log. Every record inserted into a verifiable log is added as a new leaf in the Merkle tree. In the diagram aboveon the right, the four records are shown along the bottom. The squares in the diagram are cryptographic hash values. The bottom level of hashes - A, B, D and F - are calculated by hashing records 1, 2, 3 and 4.</description>
+    </item>
+    
+    <item>
+      <title>Verifiable Index: from prototype to production architecture</title>
+      <link>https://transparency.dev/summit2026/talks/vindex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/vindex/</guid>
+      <description>Following up on the Verifiable Index (VIndex) prototype presented last year, this talk presents an updated architecture designed to support verifiable search at Certificate Transparency (CT) and Merkle Tree Certificate (MTC) scale. While the code remains an evolving, experimental implementation, the design has matured to address hard production realities: high-fanout storage layouts, deterministic sandboxed execution, and crash-resilient pipeline lifecycles. Backed by benchmark data from indexing hundreds of millions of public log entries, we will explore what has changed since the initial prototype and the practical engineering lessons learned along the way.</description>
     </item>
     
     <item>
@@ -1091,6 +1214,15 @@ This talk will explain how the radically open-source Tillitis TKey and Tillitis 
       <guid>https://transparency.dev/summit2024/sigsum.html</guid>
       <description>Sigsum is a free and open-source software project that makes a signer&amp;rsquo;s key-usage transparent. This talk introduces the design, which can be used as a building block to transparently publish executable binaries, reproducibility statements, KT tree heads, configuration files, and much more.
  Speaker slides Talk Recording   Speaker Rasmus Dahlberg is a computer scientist and software engineer based in Karlstad, Sweden. He has contributed to transparency log research and development since 2016.</description>
+    </item>
+    
+    <item>
+      <title>When Every Retry Matters: Tamper-Evident Passkey Recovery at Internet Scale</title>
+      <link>https://transparency.dev/summit2026/talks/passkey-recovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/passkey-recovery/</guid>
+      <description>Passkey recovery is a high-stakes state machine: every failed PIN attempt must advance a counter, the counter must not roll back, and an attacker must not be able to create a split view of whether a user has reached lockout. In Microsoft Password Manager, Azure Confidential Ledger is used to integrity-protect the retry counter and recovery metadata that govern cross-device passkey activation. The result is a practical transparency system embedded directly in an authentication control plane, not simply an audit log examined after an incident.</description>
     </item>
     
     <item>
