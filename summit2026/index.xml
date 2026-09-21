@@ -63,6 +63,16 @@ This talk presents LogCabin, an open-source, split-view resistant ledger service
     </item>
     
     <item>
+      <title>MTC Revocation Status (MTCRS)</title>
+      <link>https://transparency.dev/summit2026/talks/mtc-revocation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/mtc-revocation/</guid>
+      <description>Effective revocation is a hard problem. Should we abandon revocation in the MTC WebPKI and rely instead on the expiration of short-lived certificates? Or might there be a better solution? In this talk, Rob will introduce an idea for a lightweight revocation mechanism for MTCs that avoids introducing any PQC signatures and that aims to avoid various deployment hurdles that have plagued other revocation mechanisms in the past.
+ Speaker A Distinguished Engineer at Sectigo, Rob implements PKI systems, maintains several popular open-source PKI projects (notably crt.</description>
+    </item>
+    
+    <item>
       <title>MTC support is only step 1: How Chrome will protect all users from quantum attackers</title>
       <link>https://transparency.dev/summit2026/talks/chrome-mtc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -167,6 +177,15 @@ Since dubbing the stable version of Sigsum in 2023 [2], many of the bits and pie
     </item>
     
     <item>
+      <title>Transparency Log Developments from MTCs</title>
+      <link>https://transparency.dev/summit2026/talks/t-logs-for-mtcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://transparency.dev/summit2026/talks/t-logs-for-mtcs/</guid>
+      <description>Merkle Tree Certificates reimagine transparency for the Web PKI by integrating transparency logs into certificate issuance. This applies many of this community&amp;rsquo;s transparency innovations to certificate issuance, from tiled logs to witness cosignatures. In putting this together, MTC introduced some new constructions of its own. In this talk, we’ll discuss these and how they might apply to other transparency applications. This talk will discuss subtrees (how to efficiently talk about portions of a log), pruning (a tile-compatible way to remove old entries, while maintaining meaningful guarantees on the rest), and mirrors (generalized witnesses that serve a copy of the log).</description>
+    </item>
+    
+    <item>
       <title>Transparency.dev Summit 2026 Confirmed Talks</title>
       <link>https://transparency.dev/summit2026/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -205,7 +224,7 @@ Elena Pagnin, Chalmers University</description>
       
       <guid>https://transparency.dev/summit2026/schedule/</guid>
       <description>Transparency.dev Summit 2026 Schedule The schedule for the 2026 summit may still undergo small tweaks in the lead up to the event.
-All times are in local Montreal time i.e. EDT (UTC/GMT-4)  Full Schedule     Tuesday, 29th September   9:00am - 10am  Arrival and registration   10:00am  Welcome and opening remarks   10:15am  Welcome, Transparency overview &amp; Getting started with MTCs — Martin Hutchinson, Rasmus Dahlberg, &amp; Joe DeBlasio   10:45am  Break   11:00am  Transparency Log Developments from MTCs - David Benjamin (Google Chrome)    How Let&#39;s Encrypt is deploying Merkle Tree Certificates - Matthew McPherrin (Let&#39;s Encrypt)    Deploying MTCs at CDN Scale - Luke Valenta (Cloudflare)   12:30pm  Lunch   2:00pm  MTC support is only step 1: How Chrome will protect all users from quantum attackers - Joe DeBlasio (Google Chrome)    ⚡ Nobody Can Lint a Merkle Tree Certificate Yet - Corey Bonnell (TurboLight)    ⚡ Project Hail Merkle - MTCs: a new way for PKI and Trust Services - Jan Klaussner (Bundesdruckerei GmbH)    ⚡ MTC Revocation Status (MTCRS) - Rob Stradling (Sectigo)   3:15pm  Break   3:45pm  Breakout sessions and summaries   5:30pm  Closing remarks   6:00pm - 9:00pm  Evening reception   Wednesday, 30th September    9:00am - 9:25am  Arrival and badge collection   9:25am  Welcome   9:30am  ⚡ Google&#39;s Transparency Log Witnessing Programme - Ben Birt (Google)    ⚡ Setting Thresholds in Witness Cosigning - Lucia Lavagnino (Chalmers University)    ⚡ LogCabin: a split-view resistant ledger as a t-log witness - Ernesto Ocampo (Google DeepMind)    Trusting Third Parties: transparency systems with designated auditors - Tjaden Hess (Trail of Bits)   10:45am  Break   11:00am  So, you want to deploy Key Transparency?</description>
+All times are in local Montreal time i.e. EDT (UTC/GMT-4)  Full Schedule     Tuesday, 29th September   9:00am - 10am  Arrival and registration   10:00am  Welcome and opening remarks   10:15am  Welcome, Transparency overview &amp; Getting started with MTCs — Martin Hutchinson, Rasmus Dahlberg, &amp; Joe DeBlasio   10:45am  Break   11:00am  Transparency Log Developments from MTCs - David Benjamin (Google Chrome)    How Let&#39;s Encrypt is deploying Merkle Tree Certificates - Matthew McPherrin (Let&#39;s Encrypt)    Deploying MTCs at CDN Scale - Luke Valenta (Cloudflare)   12:30pm  Lunch   2:00pm  MTC support is only step 1: How Chrome will protect all users from quantum attackers - Joe DeBlasio (Google Chrome)    ⚡ Nobody Can Lint a Merkle Tree Certificate Yet - Corey Bonnell (TurboLight Solutions)    ⚡ Project Hail Merkle - MTCs: a new way for PKI and Trust Services - Jan Klaussner (Bundesdruckerei GmbH)    ⚡ MTC Revocation Status (MTCRS) - Rob Stradling (Sectigo)   3:15pm  Break   3:45pm  Breakout sessions and summaries   5:30pm  Closing remarks   6:00pm - 9:00pm  Evening reception   Wednesday, 30th September    9:00am - 9:25am  Arrival and badge collection   9:25am  Welcome   9:30am  ⚡ Google&#39;s Transparency Log Witnessing Programme - Ben Birt (Google)    ⚡ Setting Thresholds in Witness Cosigning - Lucia Lavagnino (Chalmers University)    ⚡ LogCabin: a split-view resistant ledger as a t-log witness - Ernesto Ocampo (Google DeepMind)    Trusting Third Parties: transparency systems with designated auditors - Tjaden Hess (Trail of Bits)   10:45am  Break   11:00am  So, you want to deploy Key Transparency?</description>
     </item>
     
     <item>
