@@ -30,6 +30,8 @@ designing applications that rely on credentials vs interactive lookups,
 compliance with privacy regulation, and headline numbers for proof size,
 throughput, and storage.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/kt.pdf" >}})
+
 ---
 
 ### Speaker

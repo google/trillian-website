@@ -24,6 +24,8 @@ solve this issue by establishing that a third-party repository content
 has remained unchanged over a long time. This talk will conclude with
 data from a small-scale deployment.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/archive.pdf" >}})
+
 ---
 
 ### Speaker

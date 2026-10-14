@@ -27,6 +27,8 @@ validation-native as well as transparency-native. Building the tooling now,
 while the spec is still draft, surfaces ambiguities and contradictions in the
 standard and gives implementation guidance to everyone who will build on MTC.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/lint-mtc.pdf" >}})
+
 ---
 
 ### Speaker

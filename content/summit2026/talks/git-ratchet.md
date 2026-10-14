@@ -22,6 +22,8 @@ enforce that upstream Git repository owners are transparent about their
 branch and tag state (and how it evolves over time) - and it uses witnesses
 to prevent split-view attacks on that commit transparency.
 
+* [Speaker Slides](https://project-oak.github.io/git-ratchet/transparency-dev-summit-2026.html)
+
 ---
 
 ### Speaker

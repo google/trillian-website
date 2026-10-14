@@ -23,6 +23,8 @@ talking to. So how do we get there? In this talk, I'll talk through
 Chrome's plans and timelines for moving to an MTC-only web, covering what
 that means for the sites, CAs, and CT logs of today.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/chrome-mtc.pdf" >}})
+
 ---
 
 ### Speaker

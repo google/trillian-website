@@ -59,6 +59,8 @@ At present, the LogCabin core endorser TEE application is complete and
 open-sourced, while the coordination, interface, and storage layers are
 under construction.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/logcabin.pdf" >}})
+
 ---
 
 ### Speaker
