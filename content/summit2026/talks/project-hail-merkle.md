@@ -25,6 +25,8 @@ certificates can support European trust services at scale.
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/project-hail-merkle.pdf" >}})
 
+---
+
 ### Speaker
 
 Jan Klaußner is Senior Product Architect at Bundesdruckerei in Berlin with more
