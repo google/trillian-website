@@ -23,6 +23,8 @@ log), pruning (a tile-compatible way to remove old entries, while
 maintaining meaningful guarantees on the rest), and mirrors (generalized
 witnesses that serve a copy of the log).
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/t-logs-for-mtcs.pdf" >}})
+
 ---
 
 ### Speaker

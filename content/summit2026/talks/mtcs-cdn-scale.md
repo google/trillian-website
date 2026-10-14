@@ -24,6 +24,8 @@ feasible. We'll walk through the optimizations we apply, share the size
 savings, and offer practical lessons for anyone planning to operate MTCs at
 scale.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/mtcs-cdn-scale.pdf" >}})
+
 ---
 
 ### Speaker

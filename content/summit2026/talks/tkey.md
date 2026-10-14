@@ -56,6 +56,8 @@ A version 1.0.0 of the sign-if-logged tool was released this summer.
 Source code and documentation:
 https://git.glasklar.is/sigsum/apps/sign-if-logged
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/tkey.pdf" >}})
+
 ---
 
 ### Speaker

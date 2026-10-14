@@ -23,6 +23,10 @@ replacement for today’s infrastructure, but to identify the protocol,
 governance and policy questions that must be resolved before Merkle-based
 certificates can support European trust services at scale.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/project-hail-merkle.pdf" >}})
+
+---
+
 ### Speaker
 
 Jan Klaußner is Senior Product Architect at Bundesdruckerei in Berlin with more

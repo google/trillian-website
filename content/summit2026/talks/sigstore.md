@@ -31,6 +31,8 @@ and threat models. Finally, we will discuss how a new leaf format elegantly
 solves PQC signing algorithm storage overhead while concurrently preventing
 log poisoning and preserving user privacy.
 
+* [Speaker Slides]({{< rel "/pdfs/summit2026/sigstore.pdf" >}})
+
 ---
 
 ### Speaker

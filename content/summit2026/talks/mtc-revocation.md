@@ -19,6 +19,8 @@ a lightweight revocation mechanism for MTCs that avoids introducing any PQC
 signatures and that aims to avoid various deployment hurdles that have plagued
 other revocation mechanisms in the past.
 
+* [Speaker Slides](https://docs.google.com/presentation/d/e/2PACX-1vSebKkEXDpvR1-fSYmC8vTd7TRDoZbI7P8gfPQsa_6UEtaB22-O6RMyHeb3NKwbNUnsWEktVY0Q6BrU/pub?start=false&loop=false&delayms=3000)
+
 ---
 
 ### Speaker
