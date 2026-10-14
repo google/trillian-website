@@ -69,7 +69,7 @@ This talk presents LogCabin, an open-source, split-view resistant ledger service
       
       <guid>https://transparency.dev/summit2026/talks/mtc-revocation/</guid>
       <description>Effective revocation is a hard problem. Should we abandon revocation in the MTC WebPKI and rely instead on the expiration of short-lived certificates? Or might there be a better solution? In this talk, Rob will introduce an idea for a lightweight revocation mechanism for MTCs that avoids introducing any PQC signatures and that aims to avoid various deployment hurdles that have plagued other revocation mechanisms in the past.
- Speaker A Distinguished Engineer at Sectigo, Rob implements PKI systems, maintains several popular open-source PKI projects (notably crt.</description>
+ Speaker Slides   Speaker A Distinguished Engineer at Sectigo, Rob implements PKI systems, maintains several popular open-source PKI projects (notably crt.</description>
     </item>
     
     <item>
