@@ -60,6 +60,7 @@ open-sourced, while the coordination, interface, and storage layers are
 under construction.
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/logcabin.pdf" >}})
+* [Talk Recording](https://youtu.be/PRpAqbQ2kE0)
 
 ---
 

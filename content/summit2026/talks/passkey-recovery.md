@@ -30,6 +30,8 @@ separation of duties: confidential compute protects sensitive operations while
 they execute, and the ledger makes security-critical state changes durable,
 ordered, and independently verifiable against rollback or manipulation.
 
+* [Talk Recording](https://youtu.be/S4QDmT7cYYQ)
+
 ---
 
 ### Speaker

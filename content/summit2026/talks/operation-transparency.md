@@ -46,6 +46,8 @@ Certificate Transparency, etc. be viewed as different points in a
 unified design space?  How much reuse of code, protocols, ZK
 techniques, infrastructure etc can be achieved?
 
+* [Talk Recording](https://youtu.be/cG4Ly6A8-Y4)
+
 ---
 
 ### Speaker

@@ -57,6 +57,7 @@ Source code and documentation:
 https://git.glasklar.is/sigsum/apps/sign-if-logged
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/tkey.pdf" >}})
+* [Talk Recording](https://youtu.be/Neq9vukCWQk)
 
 ---
 

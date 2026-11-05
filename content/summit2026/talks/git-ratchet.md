@@ -23,6 +23,7 @@ branch and tag state (and how it evolves over time) - and it uses witnesses
 to prevent split-view attacks on that commit transparency.
 
 * [Speaker Slides](https://project-oak.github.io/git-ratchet/transparency-dev-summit-2026.html)
+* [Talk Recording](https://youtu.be/DR0x9t9jzLU)
 
 ---
 

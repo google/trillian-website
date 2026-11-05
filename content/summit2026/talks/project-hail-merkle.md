@@ -24,6 +24,7 @@ governance and policy questions that must be resolved before Merkle-based
 certificates can support European trust services at scale.
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/project-hail-merkle.pdf" >}})
+* [Talk Recording](https://youtu.be/3trCc2MHwqA)
 
 ---
 

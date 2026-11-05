@@ -42,6 +42,7 @@ tlog-addenda is grounded in lessons learned from static-ct log entry designs,
 and refined while building new systems."
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/tlog-addenda.pdf" >}})
+* [Talk Recording](https://youtu.be/Wu0qjLlFMsI)
 
 ---
 
