@@ -41,6 +41,7 @@ signing contexts [5, 6, 7].
 7: https://git.glasklar.is/sigsum/project/documentation/-/blob/main/archive/2026-05-12-sigsum-next-meetup-notes
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/sigsum.pdf" >}})
+* [Talk Recording](https://youtu.be/fJV9jRsGCqQ)
 
 ---
 

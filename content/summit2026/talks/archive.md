@@ -25,6 +25,7 @@ has remained unchanged over a long time. This talk will conclude with
 data from a small-scale deployment.
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/archive.pdf" >}})
+* [Talk Recording](https://youtu.be/xFkaZu6lCxM)
 
 ---
 

@@ -24,6 +24,7 @@ Chrome's plans and timelines for moving to an MTC-only web, covering what
 that means for the sites, CAs, and CT logs of today.
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/chrome-mtc.pdf" >}})
+* [Talk Recording](https://youtu.be/EYEo6aC9SLQ)
 
 ---
 

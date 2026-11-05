@@ -64,6 +64,7 @@ techniques for handling variant-heavy release pipelines, and strategies for
 maintaining data integrity in supply-chain verification systems.
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/sostenuto.pdf" >}})
+* [Talk Recording](https://youtu.be/hdhenOBSUcg)
 
 ---
 

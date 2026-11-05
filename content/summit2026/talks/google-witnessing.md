@@ -18,6 +18,8 @@ for---Private AI Compute binary transparency---and describe the framework,
 including some of the technical detail, for how and why we have made agreements
 with various witness operators to witness the t-logs.
 
+* [Talk Recording](https://youtu.be/cloZmGllJSg)
+
 ---
 
 ### Speaker

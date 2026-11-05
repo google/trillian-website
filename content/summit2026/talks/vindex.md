@@ -23,6 +23,8 @@ indexing hundreds of millions of public log entries, we will explore what
 has changed since the initial prototype and the practical engineering
 lessons learned along the way.
 
+* [Talk Recording](https://youtu.be/tqCA8NfXtyI)
+
 ---
 
 ### Speaker

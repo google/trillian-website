@@ -48,6 +48,7 @@ Thresholds in deployed transparency logs are key to their security guarantees,
 and must be set considerably higher than intuition suggests.
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/witness-cosigning.pdf" >}})
+* [Talk Recording](https://youtu.be/DOcFXvVKQ_A)
 
 ---
 

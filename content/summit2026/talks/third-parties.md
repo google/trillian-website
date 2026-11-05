@@ -32,6 +32,7 @@ considerations that we consider when making attestations about non-public
 components of otherwise transparent systems.
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/third-parties.pdf" >}})
+* [Talk Recording](https://youtu.be/-L7JvUFNQoo)
 
 ---
 

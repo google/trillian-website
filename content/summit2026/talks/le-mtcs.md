@@ -20,6 +20,7 @@ We'll compare running an MTCA and mirror to our previous ACME CA and static CT
 logs, and what lessons from the past have informed our future architecture.
 
 * [Speaker Slides]({{< rel "/pdfs/summit2026/le-mtcs.pdf" >}})
+* [Talk Recording](https://youtu.be/p3Fozp29ARQ)
 
 ---
 
