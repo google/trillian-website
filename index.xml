@@ -446,7 +446,7 @@ A common pattern that arises in many systems (and especially in anything related
       
       <guid>https://transparency.dev/summit2026/talks/google-witnessing/</guid>
       <description>This talk presents Google&amp;rsquo;s new transparency log witnessing programme (https://witnessplz.transparency.goog/). I&amp;rsquo;ll explain what these t-logs are for&amp;mdash;Private AI Compute binary transparency&amp;mdash;and describe the framework, including some of the technical detail, for how and why we have made agreements with various witness operators to witness the t-logs.
- Speaker Ben is a software engineer on Google&amp;rsquo;s Oak team. He is part of the group that launched Google&amp;rsquo;s new Private AI Compute (PAIC) platform and most recently set up PAIC&amp;rsquo;s new Tessera-based binary transparency log.</description>
+ Talk Recording   Speaker Ben is a software engineer on Google&amp;rsquo;s Oak team. He is part of the group that launched Google&amp;rsquo;s new Private AI Compute (PAIC) platform and most recently set up PAIC&amp;rsquo;s new Tessera-based binary transparency log.</description>
     </item>
     
     <item>
@@ -695,7 +695,7 @@ The talk will further discuss how monitoring BIMI CT logs can be used to strengt
       
       <guid>https://transparency.dev/summit2026/talks/mtc-revocation/</guid>
       <description>Effective revocation is a hard problem. Should we abandon revocation in the MTC WebPKI and rely instead on the expiration of short-lived certificates? Or might there be a better solution? In this talk, Rob will introduce an idea for a lightweight revocation mechanism for MTCs that avoids introducing any PQC signatures and that aims to avoid various deployment hurdles that have plagued other revocation mechanisms in the past.
- Speaker Slides   Speaker A Distinguished Engineer at Sectigo, Rob implements PKI systems, maintains several popular open-source PKI projects (notably crt.</description>
+ Speaker Slides Talk Recording   Speaker A Distinguished Engineer at Sectigo, Rob implements PKI systems, maintains several popular open-source PKI projects (notably crt.</description>
     </item>
     
     <item>
